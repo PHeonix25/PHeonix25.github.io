@@ -19,3 +19,14 @@
 - Learn Markdown
 - Push posts!
     - TRULY PARTY!
+
+
+Top level items:
+
+1. Setting the Scene
+2. Finding a Theme
+3. Common Theme Settings
+4. Modifying Templates
+5. Setting up Jekyll in Docker
+6. Learning Markdown
+7. Configuring GitHub
