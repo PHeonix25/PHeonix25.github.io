@@ -1,17 +1,17 @@
 ---
 layout: post
 title: "Getting Started with Jekyll - Setting the Scene"
-date: 2016-10-01 00:00:00 +0800
+date: 2016-10-01 00:00:00 +0000
+published: true
 ---
 
 In this series (of about 8 short posts) I want to outline the steps that you need to take to get started with Jekyll, writing your first post, previewing it via Docker, and "taking care of hosting" with GitHub Pages.
-
 <!--description-->
 
 1. Getting Started with Jekyll - Setting the Scene **<==**
-2. Getting Started with Jekyll - Finding a Theme
-3. Getting Started with Jekyll - Common Theme Settings
-4. Getting Started with Jekyll - Modifying Templates
+2. [Getting Started with Jekyll - Finding a Theme]({% post_url 2016-10-05-Getting-started-with-Jekyll-Part-2 %})
+3. [Getting Started with Jekyll - Common Theme Settings]({% post_url 2016-10-07-Getting-started-with-Jekyll-Part-3 %})
+4. [Getting Started with Jekyll - Modifying Templates]({% post_url 2016-10-08-Getting-started-with-Jekyll-Part-4 %})
 5. Getting Started with Jekyll - Setting up Jekyll in Docker
 6. Getting Started with Jekyll - Learning Markdown and Liquid
 7. Getting Started with Jekyll - Transitioning Content

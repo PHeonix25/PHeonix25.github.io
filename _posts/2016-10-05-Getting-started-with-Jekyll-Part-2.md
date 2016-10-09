@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "Getting Started with Jekyll - Finding a Theme"
-date: 2016-10-05 00:00:00 +0800
+date: 2016-10-05 00:00:00 +0000
+published: true
 ---
 
 In this post we're going to try and find a theme, and see why that might be the easiest way to get started.
-
 <!--description-->
 
 1. [Getting Started with Jekyll - Setting the Scene]({% post_url 2016-10-01-Getting-started-with-Jekyll-Part-1 %}) 
@@ -21,7 +21,7 @@ In this post we're going to try and find a theme, and see why that might be the 
 
 Long story short, it's much easier to copy then it is to create, both in life and in getting started with Jekyll. Hence, finding a theme you like, and then forking it is much easier than trying to write "your perfect one" from scratch. Most demo-ed Jekyll themes also come with placeholder posts, author pages, widgets/add-ons (like Discus comments, sharing links, etc.) that will kickstart you and then you just need to modify to personalise your site. 
 
-Personally, I found this a much quicker way to get started compared to the official [Quick Start Guide][jekyll-qs], but if you would prefer, you can easily follow the Quick Start Guide, and then come back at Step 3.
+Personally, I found this a much quicker way to get started compared to the official [Quick Start Guide][jekyll-qs], but if you would prefer, you can easily follow the Quick Start Guide, and then come back at [Step 3]({% post_url 2016-10-07-Getting-started-with-Jekyll-Part-3 %}).
 
 ## You've got me sold, so where can I find a good one?
 
@@ -40,7 +40,7 @@ Cool, nice work. Now presuming it's open-source and hosted on GitHub, just fork 
 
 ## Now, how do I make it mine?
 
-Let's kick on to the next step them: [Common Theme Settings]({% post_url 2016-10-08-Getting-started-with-Jekyll-Part-3 %}).
+Let's kick on to the next step them: [Common Theme Settings]({% post_url 2016-10-07-Getting-started-with-Jekyll-Part-3 %}).
 
 
 [jekyll-qs]:    https://jekyllrb.com/docs/quickstart/
