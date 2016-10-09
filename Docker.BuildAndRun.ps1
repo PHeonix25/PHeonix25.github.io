@@ -5,4 +5,4 @@ docker build . -t blog:latest
 docker run -d -p 4000:4000 -t blog:latest
 
 # Launch the browser so that we can check our work
-start 'http://0.0.0.0:4000/'
+start 'http://localhost:4000/'
