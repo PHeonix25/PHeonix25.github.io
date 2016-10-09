@@ -18,6 +18,9 @@ url: "https://pheonix25.github.io" # the base hostname & protocol for your site
 twitter_username: phermens 
 github_username:  PHeonix25 
 
+# Enable posting into the future
+future: true
+
 # Build settings
 markdown: kramdown
 kramdown:
