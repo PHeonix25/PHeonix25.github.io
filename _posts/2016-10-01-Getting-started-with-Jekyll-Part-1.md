@@ -11,9 +11,9 @@ In this series (of about 8 short posts) I want to outline the steps that you nee
 1. Getting Started with Jekyll - Setting the Scene **<==**
 2. [Getting Started with Jekyll - Finding a Theme]({% post_url 2016-10-05-Getting-started-with-Jekyll-Part-2 %})
 3. [Getting Started with Jekyll - Common Theme Settings]({% post_url 2016-10-07-Getting-started-with-Jekyll-Part-3 %})
-4. [Getting Started with Jekyll - Modifying Templates]({% post_url 2016-10-08-Getting-started-with-Jekyll-Part-4 %})
-5. Getting Started with Jekyll - Setting up Jekyll in Docker
-6. Getting Started with Jekyll - Learning Markdown and Liquid
+4. [Getting Started with Jekyll - Setting up Jekyll in Docker]({% post_url 2016-10-08-Getting-started-with-Jekyll-Part-4 %})
+5. Getting Started with Jekyll - Learning Markdown and Liquid
+6. Getting Started with Jekyll - Modifying Templates
 7. Getting Started with Jekyll - Transitioning Content
 8. Getting Started with Jekyll - Launching your Site
 
