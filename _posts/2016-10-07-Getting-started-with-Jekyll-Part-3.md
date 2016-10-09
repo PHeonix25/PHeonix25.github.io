@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "Getting Started with Jekyll - Common Theme Settings"
-date: 2016-10-08 00:00:00 +0800
+date: 2016-10-07 00:00:00 +0000
+published: true
 ---
 
 In this post we're going modify our chosen theme a bit, and make it feel more like home.
-
 <!--description-->
 
 1. [Getting Started with Jekyll - Setting the Scene]({% post_url 2016-10-01-Getting-started-with-Jekyll-Part-1 %}) 
@@ -17,3 +17,4 @@ In this post we're going modify our chosen theme a bit, and make it feel more li
 7. Getting Started with Jekyll - Transitioning Content
 8. Getting Started with Jekyll - Launching your Site 
 
+Something something blah blah blah
