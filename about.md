@@ -4,11 +4,13 @@ title: Hi, I'm Pat
 permalink: /about/
 ---
 
-If you’re looking for me online, you should be able to find me:
+If you’re looking for me, you should be able to find me:
 
+- At my day job at [Coolblue](http://coolblue.nl)
+- As a part of [Rotterdam Parents](http://rotterdamparents.nl)
 - On GitHub as <data data-icon="ei-sc-github"></data> [PHeonix25](https://github.com/PHeonix25/)
 - On Twitter as <data data-icon="ei-sc-twitter"></data> [PHermens](https://twitter.com/phermens)
-- On LinkedIn as [myself](https://linkedin.com/in/phermens)
+- On LinkedIn as <data data-icon="ei-sc-linkedin"></data> [myself](https://linkedin.com/in/phermens)
 - On Stack Overflow Careers as [phermens](http://stackoverflow.com/cv/phermens)
 - Worst case; just <data data-icon="ei-envelope"></data> [email me](mailto:p@hermens.com.au)
 
