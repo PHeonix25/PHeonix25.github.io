@@ -2,6 +2,7 @@
 layout: post
 title: "Getting Started with Jekyll - Setting up Jekyll in Docker"
 date: 2016-10-08 00:00:00 +0000
+categories: jekyll docker
 published: true
 ---
 

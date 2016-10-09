@@ -2,6 +2,7 @@
 layout: post
 title: "Getting Started with Jekyll - Common Theme Settings"
 date: 2016-10-07 00:00:00 +0000
+categories: jekyll theme
 published: true
 ---
 

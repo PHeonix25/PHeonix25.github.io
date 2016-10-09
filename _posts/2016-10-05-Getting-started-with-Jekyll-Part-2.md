@@ -2,6 +2,7 @@
 layout: post
 title: "Getting Started with Jekyll - Finding a Theme"
 date: 2016-10-05 00:00:00 +0000
+categories: jekyll theme
 published: true
 ---
 
@@ -30,7 +31,7 @@ When I was looking for a simple theme, I found the following sites very handy. S
 - [JekyllThemes.org][jekyll-thm1],
 - [Themes.JekyllRc.org][jekyll-thm2],
 - [JekyllThemes.io][jekyll-thm3],
-- and of course; [Google!][google-thms]!
+- and of course; [Google][google-thms]!
 
 Keep in mind, in the next post I'll go over what it takes to modify your chosen theme, and there's some really good information in the official Jekyll documentation if you want to [write one yourself][jekyll-wyot], but for now I'll assume you found something half-decent on the Internet somewhere...
 
