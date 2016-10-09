@@ -13,6 +13,7 @@
     - Include files
     - Mod the Template
 - Set up Docker
+    - Shitty problems: https://github.com/jekyll/docker/issues/31
     - inc. the build/deploy scripts
     - WARN: copy the right directory
     - WARN: Adjust locale
