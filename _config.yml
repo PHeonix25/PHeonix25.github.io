@@ -6,6 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 encoding: utf-8
+timezone: UTC
 
 # Site settings
 title: Pat Hermens
@@ -13,23 +14,27 @@ email: p@hermens.com.au
 description: > # this means to ignore newlines until "baseurl:"
   Public speaker, challenge addict, father, husband and (most of all) geek. 
   Interesting problems & inspiring solutions get me out of bed in the morning.
+
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://pheonix25.github.io" # the base hostname & protocol for your site
+url: "http://hermens.com.au" # the base hostname & protocol for your site
+
+# Social media usernames for filling out links:
 twitter_username: phermens 
-github_username:  PHeonix25 
+github_username: PHeonix25 
 
 # Enable posting into the future
 future: true
 
 # Build settings
+verbose: true
 markdown: kramdown
 kramdown:
   input: GFM
 
 # Third-party services
 # just leave someone empty to disable it
-# google_analytics: 
-disqus_shortname:
+google_analytics: UA-18034022-3
+disqus_shortname: hermens
 
 # used this for post_excerpt at index_page
 excerpt_separator: <!--description-->
