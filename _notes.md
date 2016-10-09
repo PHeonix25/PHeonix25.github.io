@@ -16,6 +16,7 @@
     - inc. the build/deploy scripts
     - WARN: copy the right directory
     - WARN: Adjust locale
+    - WARN: If it's NOT running in Daemon mode, posts may not appear
 - Learn Markdown
 - Push posts!
     - TRULY PARTY!
