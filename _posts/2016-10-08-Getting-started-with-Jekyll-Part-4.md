@@ -39,7 +39,7 @@ I'm also assuming that you're using Powershell (because this is Windows) or that
 First of all, you're going to want to create a `Dockerfile`. I'll start by showing you mine (*the start to every great story*):
 
 ```YAML
-FROM starefossen/github-pages  # Graciously thank starefossen for a perfect base image
+FROM starefossen/github-pages  # Graciously thank starefossen for his base image
 COPY . /usr/src/app            # Copy everything from the current directory into the image
 ENV LC_ALL C.UTF-8             # Set the locale and override the image settings
 EXPOSE 4000/tcp                # Expose port 4000 in this image
@@ -64,7 +64,7 @@ To do this we want to run
 ```YAML
 docker build . -t blog:latest
 ```
-If this command makes sense to you - feel free to skip ahead to the next section. If not, basically we're saying:
+*If this command makes sense to you - feel free to skip ahead to the next section. If not, basically we're saying the following:*
 
 - `docker build` is the command,
 - `.` is the "working directory that contains our `Dockerfile`
@@ -107,7 +107,7 @@ Successfully built fe3a1310de9e
 SECURITY WARNING: You are building a Docker image from Windows against a non-Windows Docker host. All files and directories added to build context will have '-rwxr-xr-x' permissions. It is recommended to double check and reset permissions for sensitive files and directories.
 ```
 
-To confirm that we have our image (ready for instantiation) you can run `docker images` and you should see something like the below:
+To confirm that we have our image (*ready for instantiation*) you can run `docker images` and you should see something like the below:
 
 ```
 $ docker images
@@ -137,12 +137,12 @@ To explain:
   - `$(xxx)` means run `xxx` as an inline command that should be expanded out
   - `pwd` is a Bash command that returns the full path to the current directory
   - `/usr/src/app` is where we want it to appear within the container
-- `blog/latest` is the image that we want to use *so if you changed it above, replace it here*
+- `blog/latest` is the image that we want to use - *so if you changed it above, replace it here*
 
-The trickiest part I've had with working with Docker on Windows (including the default `jekyll/jekyll` image) is in mounting volumes. Jekyll has some **GREAT** functionality where it can monitor files in a directory and constantly re-generate them if they change on disk - which is awesome for testing your site and ensuring your Markdown is playing nice, especially while you're learning. 
+The trickiest part I've had with working with Docker on Windows is mounting volumes. Jekyll has some **great** functionality where it can monitor files in a directory and constantly re-generate them if they change on disk - which is awesome for testing your site and ensuring your Markdown is playing nice, especially while you're learning. 
 So we want to map our local directory (`$(pwd)`) to the directory Jekyll is monitoring (`/usr/src/app` in this image), but file permissions on Windows are tricky, so if this doesn't work out for you, you can remove the `-v` command and just rebuild the container - which should be quick once the base image is local.
 
-Once this container is up and running you should see something like the below:
+That being said, once this container is up and running you should see something like the below:
 
 ```YAML
 $ docker run -p 4000:4000 -v=$(pwd):/usr/src/app -t blog:latest
@@ -170,17 +170,81 @@ Now, if you switch over to your browser, you should be able to go to `http://loc
 
 > **NOTE** - If you're using Docker Toolbox, it can be hard to figure out what the IP actually is because it's deep in the Docker-Machine config. Keep an eye on IP addresses that are mentioned when Docker is starting to get a clue for the "host" IP - this is often **not** localhost, or 0.0.0.0!
 
-If you're modifying your site, and you managed to mount the directory without any issues, and want to check out the "live" results, you should see something like this in the console:
+If you're modifying your site, and you managed to mount the directory without any issues, and want to check out the "live" results, just confirm that you can see something like this in the console first:
 
 ```YAML
 Regenerating: 1 file(s) changed at 2016-10-10 20:17:38 [2016-10-10 20:17:38] 
     ...done in 0.168916244 seconds.
 ```
 
+## EEK, nothing rendered for me (or I see "site returned no data")
+
+First of all, check the console for errors. I see this happen all too often when I get too trigger happy and make a formatting mistake (like linking to a non-existent post) and Jekyll's parser throws an error but I was too busy Alt-Tabbing to see it. If there are red values in your console, you're going to need to fix them before the site will render and then the server will launch.
+
+Secondly, if there aren't any errors, check your port mapping and IP address. Remember that if you're using the Docker Toolbox you'll need to see what auto-generated IP it has chosen for you (mostly 192.168.99.100 in my experience)
+
+Finally, if you truly can't figure it out, make sure that your container is running (using `docker ps -a` - you should see "Up X minutes" in the status section) and if not, try deleting the container and starting again - or if you're braver than me and feel like wasting your time, then `exec /bin/sh` into the container and go looking for logs. 
+
 ## This is great, but can it be easier?
 
-YES - POWERSHELL SCRIPTS
+YES - SCRIPT ALL THE THINGS.
+
+I have two scripts that I've really come to rely on for working with Docker. They are `BuildAndRun` and `StopAndRemove` - I hope from the naming that they are straightforward and I won't need to explain too much. 
+
+Basically [`Docker.BuildAndRun.ps1`](/Docker.BuildAndRun.ps1) contains the following:
+
+```Powershell
+# Build the image (called blog, version 'latest')
+docker build . -t blog:latest 
+
+# Run an instance of the image in the background, opening port 4000 as well
+docker run -d -p 4000:4000 -v=$(pwd):/usr/src/app blog:latest
+
+# Launch the browser so that we can check our work
+start 'http://localhost:4000/'
+```
+ 
+and [`Docker.StopAndRemove.ps1`](/Docker.StopAndRemove.ps1) contains the rest:
+
+```Powershell
+$containers = docker ps -a -q -f ancestor=blog:latest;
+
+Write-Host ''
+
+If ($containers -eq $null)
+{
+    Write-Host -ForegroundColor Gray 'There is nothing to remove. You are done here; go have fun!' 
+}
+Else {
+    Write-Host -ForegroundColor Gray 'Found' $containers.Count 'container(s) to remove.'
+    Write-Host -ForegroundColor Gray 'Sit back and relax - this may take a moment.'
+    Write-Host ''
+}
+
+ForEach ($container in $containers)
+{
+    Write-Host 'Stopping' $container;
+    Write-Host -NoNewline 'Stopped' $(docker stop $container);
+    Write-Host -ForegroundColor Green ' ['$([char]8730)']'
+
+    Write-Host 'Destroying' $container;
+    Write-Host -NoNewLine 'Destroyed' $(docker rm $container);
+    Write-Host -ForegroundColor Green ' ['$([char]8730)']'
+
+    Write-Host -ForegroundColor Green 'Destruction of' $container 'should be complete.';
+    Write-Host ''
+}
+
+Write-Host ''
+```
 
 ## Anything else that could mess me up?
 
-`docker run -d` mode - without it posts might not show.
+Occasionally I've found that even when everything goes right, and the mounting works, and the container reports that it's up and running if I haven't launched the container in daemon/detached mode (`-d`) then the site will render but nothing will update. Adding `-d` to my Docker commands (as shown in the Powershell scripts above) fixed that issue for me.
+
+Apart from that, keep an eye on the Jekyll Issues list on GitHub, and google will be your friend as more and more people start working with this.
+
+## So Jekyll is running in Docker; what's next?
+
+Hopefully now you have a working blog running on a local URL, but looking quite like the template that you chose in [Part 2]({% post_url 2016-10-05-Getting-started-with-Jekyll-Part-2 %}). 
+Lets go through some basic formatting steps with Markdown and Liquid to make your site look like it's yours!
