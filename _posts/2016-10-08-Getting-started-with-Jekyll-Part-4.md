@@ -18,3 +18,169 @@ In this post we're going to get our site up and running locally, taking advantag
 7. Getting Started with Jekyll - Transitioning Content
 8. Getting Started with Jekyll - Launching your Site 
 
+## Disclaimer - this is for Windows.
+
+First of all, I want to say that this particular step and the advice below is designed for Windows (10, Home or Pro). If you're using a Mac, or Linux, or a VM, then there are plenty of other guides available for you and it might even be easier to "just get it up and running". The steps that I want to outline below cover off some of the "gotcha's" that I had getting this up and running on both `Docker for Windows` (on Windows 10 Pro) and `Docker Toolbox` (on Windows 10 Home). Where required I'll try and outline any differences, but I hope for you, following this, that everything *just works*.
+
+## Understood, so what do I need?
+
+You'll need at least the following installed:
+
+- Docker Toolbox (version 1.12) [from here](https://www.docker.com/products/docker-toolbox) **OR**
+- Docker for Windows (version XXX.XXX) [from here](https://docs.docker.com/docker-for-windows/)
+
+If you have either of those installed I'll step you through the rest below. 
+Oh, and I'm assuming that you understand a little bit about how Docker works, and what it means to run/control containers. If not, that's cool but do yourself a favour and jump over here and give it a read first -- it'll definitely be worth the 10 minutes it takes you.
+
+I'm also assuming that you're using Powershell (because this is Windows) or that you're able to translate these commands into MING/Bash/whatever. I think they are the same across both platforms, but I'd prefer you just start using Powershell (it'll make my friend [Flynn](https://flynnbundy.com/) happy).
+
+## Great! Lets get moving!
+
+First of all, you're going to want to create a `Dockerfile`. I'll start by showing you mine (*the start to every great story*):
+
+```YAML
+FROM starefossen/github-pages  # Graciously thank starefossen for a perfect base image
+COPY . /usr/src/app            # Copy everything from the current directory into the image
+ENV LC_ALL C.UTF-8             # Set the locale and override the image settings
+EXPOSE 4000/tcp                # Expose port 4000 in this image
+```
+*Now, I'll step you through what each line means above, if you're good with those commands, feel free to skip to the next section.*
+
+Firstly, we say `FROM` and we list a publicly available image (in this case a nicely set up image from `starefossen`). Docker will go looking for this image in the public Docker Hub and pull it down for us (it's about 800Mb). 
+> **NOTE** - There IS an "official" [`jekyll/jekyll:pages` image](https://github.com/jekyll/docker/wiki) that is supposed to be the same as the one from GitHub, but I've not had much luck getting it to work, primarily because of [this issue](https://github.com/jekyll/docker/issues/31) which they flagged as `enhancement` and `closed` but is still a problem. So for now my recommendation is to use `starefossen`'s image, and if they ever decide to support Jekyll on Windows 10 **because they still officially don't** then switch this line out for that image.
+
+Secondly, we want to `COPY` everything from the current directory (the dot) to `/usr/src/app` inside the container. This is to give Jekyll a "starting point" in case your mounting volumes (in the next section) doesn't work out.
+
+Third, we want to set the environment variable `LC_ALL` on the target system to the value `C.UTF-8` to prevent `jekyll 3.1.6 | Error:  Invalid US-ASCII character "\xE2"` errors. For the record, that character doesn't exist in any of the files in my site, but there's something stupid going on that has been sitting in the Jekyll issues list on GitHub for quite some time. The simplest solution is to just change the locale. You can Google this all you want, and you can rebuild the locales on the image, and you can try and hunt down anything that's not supported in US-ASCII like I did, but for now, just add this line to your Dockerfile and save yourself the headache.
+
+Finally, we want to `EXPOSE` the port that we are going to use from the image. This is the port that the Jekyll server process inside the image is going to listen on, and respond to. We can always remap that to something different later for our local testing, and when our site goes live, it'll live on port 80 because GitHub doesn't use this Dockerfile.
+
+## Let's build our first image!
+
+Now that we have our Dockerfile, we should ask Docker to build us our image. 
+
+To do this we want to run 
+
+```YAML
+docker build . -t blog:latest
+```
+If this command makes sense to you - feel free to skip ahead to the next section. If not, basically we're saying:
+
+- `docker build` is the command,
+- `.` is the "working directory that contains our `Dockerfile`
+- `-t blog:latest` is the "tag" that we're going to name our image (the 'latest' version of our 'blog') - but you can change this to whatever you want.  
+
+Hopefully after running the `docker build` command, it looks something like the snippet below:
+
+```
+$ docker build . -t blog:latest
+Sending build context to Docker daemon 831.5 kB
+Step 1 : FROM starefossen/github-pages
+latest: Pulling from starefossen/github-pages
+6a5a5368e0c2: Pull complete
+7b9457ec39de: Pull complete
+ff18e19c2db4: Pull complete
+6a3d69edbe90: Pull complete
+eaf982eec5d9: Pull complete
+e7587c67cc39: Pull complete
+f75b3a5b2dbd: Pull complete
+f5ec07ccbb2c: Pull complete
+c61008b8007b: Pull complete
+eb95cd4a3855: Pull complete
+f9fffd086a6b: Pull complete
+b68c93f21acc: Pull complete
+Digest: sha256:4ea6985b6f4a650e437876f97f6db110de92b3a8872ae120c1d602caabdd104b
+Status: Downloaded newer image for starefossen/github-pages:latest
+ ---> c6e5ee6a8a17
+Step 2 : COPY . /usr/src/app
+ ---> eb2e7b68177f
+Removing intermediate container a538a5c6194e
+Step 3 : ENV LC_ALL C.UTF-8
+ ---> Running in efb01208ed78
+ ---> 47b4ee931d7f
+Removing intermediate container efb01208ed78
+Step 4 : EXPOSE 4000/tcp
+ ---> Running in b586e8c215d5
+ ---> fe3a1310de9e
+Removing intermediate container b586e8c215d5
+Successfully built fe3a1310de9e
+SECURITY WARNING: You are building a Docker image from Windows against a non-Windows Docker host. All files and directories added to build context will have '-rwxr-xr-x' permissions. It is recommended to double check and reset permissions for sensitive files and directories.
+```
+
+To confirm that we have our image (ready for instantiation) you can run `docker images` and you should see something like the below:
+
+```
+$ docker images
+REPOSITORY                 TAG                 IMAGE ID            CREATED             SIZE
+blog                       latest              bbe258a9860c        12 minutes ago      840 MB
+starefossen/github-pages   latest              c6e5ee6a8a17        10 days ago         839 MB
+```
+
+> **NOTE** - I know 840Mb is quite big for base image, but that's the price we're going to pay to make sure that we have this as easy as possible -- remember the points about the `jekyll/jekyll:pages` image above? That base image is about 123Mb, but it just doesn't work nicely with Windows (in my experience)
+
+## So the image built, let's run a container!    
+
+Now that we have an image that we can build containers from, lets get one up and running!
+
+```YAML
+docker run -i -p 4000:4000 -v=$(pwd):/usr/src/app/ blog:latest
+```
+
+To explain:
+
+- `docker run` is the command,
+- `-i` asks Docker to run this image "interactively" (stealing our window)
+- `-p 4000:4000` is asking Docker to map a port from the container to the host
+  - *This is where you can change the outward-facing port*
+  - *A common mistake is to include the IP here (like 127.0.0.1:4000:4000) - **don't do this** as it'll only bind to a single adapter inside the container. Let it bind to all (0.0.0.0) which is the default behaviour*
+- `-v` is a little tricky, but you're asking Docker to mount a "volume"
+  - `$(xxx)` means run `xxx` as an inline command that should be expanded out
+  - `pwd` is a Bash command that returns the full path to the current directory
+  - `/usr/src/app` is where we want it to appear within the container
+- `blog/latest` is the image that we want to use *so if you changed it above, replace it here*
+
+The trickiest part I've had with working with Docker on Windows (including the default `jekyll/jekyll` image) is in mounting volumes. Jekyll has some **GREAT** functionality where it can monitor files in a directory and constantly re-generate them if they change on disk - which is awesome for testing your site and ensuring your Markdown is playing nice, especially while you're learning. 
+So we want to map our local directory (`$(pwd)`) to the directory Jekyll is monitoring (`/usr/src/app` in this image), but file permissions on Windows are tricky, so if this doesn't work out for you, you can remove the `-v` command and just rebuild the container - which should be quick once the base image is local.
+
+Once this container is up and running you should see something like the below:
+
+```YAML
+$ docker run -p 4000:4000 -v=$(pwd):/usr/src/app -t blog:latest
+Configuration file: /usr/src/app/_config.yml
+            Source: /usr/src/app
+       Destination: /_site
+ Incremental build: disabled. Enable with --incremental
+      Generating...
+                    done in 0.658 seconds.
+ Auto-regeneration: enabled for '/usr/src/app'
+Configuration file: /usr/src/app/_config.yml
+[2016-10-11 20:17:26] INFO  WEBrick 1.3.1
+[2016-10-11 20:17:26] INFO  ruby 2.3.1 (2016-04-26) [x86_64-linux]
+[2016-10-11 20:17:26] DEBUG WEBrick::HTTPServlet::FileHandler is mounted on /.
+[2016-10-11 20:17:26] DEBUG unmount .
+[2016-10-11 20:17:26] DEBUG Jekyll::Commands::Serve::Servlet is mounted on .
+    Server address: http://0.0.0.0:4000/
+[2016-10-11 20:17:26] INFO  WEBrick::HTTPServer#start: pid=5 port=4000
+  Server running... press ctrl-c to stop.
+```
+
+## Let there be light!
+
+Now, if you switch over to your browser, you should be able to go to `http://localhost:4000` (or maybe `http://192.168.99.100:4000` if you're running Docker Toolbox = see the NOTE below) and live-preview your site!
+
+> **NOTE** - If you're using Docker Toolbox, it can be hard to figure out what the IP actually is because it's deep in the Docker-Machine config. Keep an eye on IP addresses that are mentioned when Docker is starting to get a clue for the "host" IP - this is often **not** localhost, or 0.0.0.0!
+
+If you're modifying your site, and you managed to mount the directory without any issues, and want to check out the "live" results, you should see something like this in the console:
+
+```YAML
+Regenerating: 1 file(s) changed at 2016-10-10 20:17:38 [2016-10-10 20:17:38] 
+    ...done in 0.168916244 seconds.
+```
+
+## This is great, but can it be easier?
+
+YES - POWERSHELL SCRIPTS
+
+## Anything else that could mess me up?
+
+`docker run -d` mode - without it posts might not show.
