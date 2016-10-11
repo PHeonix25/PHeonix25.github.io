@@ -24,10 +24,10 @@ First of all, I want to say that this particular step and the advice below is de
 
 ## Understood, so what do I need?
 
-You'll need at least the following installed:
+You'll need at least one of the following installed:
 
-- Docker Toolbox (version 1.12) [from here](https://www.docker.com/products/docker-toolbox) **OR**
-- Docker for Windows (version XXX.XXX) [from here](https://docs.docker.com/docker-for-windows/)
+- Docker Toolbox (v1.12) [from here](https://www.docker.com/products/docker-toolbox) **OR**
+- Docker for Windows (v1.12) [from here](https://docs.docker.com/docker-for-windows/)
 
 If you have either of those installed I'll step you through the rest below. 
 Oh, and I'm assuming that you understand a little bit about how Docker works, and what it means to run/control containers. If not, that's cool but do yourself a favour and jump over here and give it a read first -- it'll definitely be worth the 10 minutes it takes you.
@@ -38,7 +38,7 @@ I'm also assuming that you're using Powershell (because this is Windows) or that
 
 First of all, you're going to want to create a `Dockerfile`. I'll start by showing you mine (*the start to every great story*):
 
-```YAML
+```
 FROM starefossen/github-pages  # Graciously thank starefossen for his base image
 COPY . /usr/src/app            # Copy everything from the current directory into the image
 ENV LC_ALL C.UTF-8             # Set the locale and override the image settings
@@ -61,7 +61,7 @@ Now that we have our Dockerfile, we should ask Docker to build us our image.
 
 To do this we want to run 
 
-```YAML
+```
 docker build . -t blog:latest
 ```
 *If this command makes sense to you - feel free to skip ahead to the next section. If not, basically we're saying the following:*
@@ -122,7 +122,7 @@ starefossen/github-pages   latest              c6e5ee6a8a17        10 days ago  
 
 Now that we have an image that we can build containers from, lets get one up and running!
 
-```YAML
+```
 docker run -i -p 4000:4000 -v=$(pwd):/usr/src/app/ blog:latest
 ```
 
@@ -144,7 +144,7 @@ So we want to map our local directory (`$(pwd)`) to the directory Jekyll is moni
 
 That being said, once this container is up and running you should see something like the below:
 
-```YAML
+```
 $ docker run -p 4000:4000 -v=$(pwd):/usr/src/app -t blog:latest
 Configuration file: /usr/src/app/_config.yml
             Source: /usr/src/app
@@ -172,9 +172,9 @@ Now, if you switch over to your browser, you should be able to go to `http://loc
 
 If you're modifying your site, and you managed to mount the directory without any issues, and want to check out the "live" results, just confirm that you can see something like this in the console first:
 
-```YAML
+```
 Regenerating: 1 file(s) changed at 2016-10-10 20:17:38 [2016-10-10 20:17:38] 
-    ...done in 0.168916244 seconds.
+    ...done in 0.268916244 seconds.
 ```
 
 ## EEK, nothing rendered for me (or I see "site returned no data")
@@ -187,13 +187,13 @@ Finally, if you truly can't figure it out, make sure that your container is runn
 
 ## This is great, but can it be easier?
 
-YES - SCRIPT ALL THE THINGS.
+![Yes, script all the things!](/assets/img/script-all-the-things.jpg)
 
 I have two scripts that I've really come to rely on for working with Docker. They are `BuildAndRun` and `StopAndRemove` - I hope from the naming that they are straightforward and I won't need to explain too much. 
 
 Basically [`Docker.BuildAndRun.ps1`](/Docker.BuildAndRun.ps1) contains the following:
 
-```Powershell
+```powershell
 # Build the image (called blog, version 'latest')
 docker build . -t blog:latest 
 
@@ -206,7 +206,7 @@ start 'http://localhost:4000/'
  
 and [`Docker.StopAndRemove.ps1`](/Docker.StopAndRemove.ps1) contains the rest:
 
-```Powershell
+```powershell
 $containers = docker ps -a -q -f ancestor=blog:latest;
 
 Write-Host ''
@@ -238,11 +238,13 @@ ForEach ($container in $containers)
 Write-Host ''
 ```
 
+> Thanks to [Matt Hodgkins](https://hodgkins.io/) and Niels (*nope, no link*) for the inspiration in making these 🙂
+
 ## Anything else that could mess me up?
 
-Occasionally I've found that even when everything goes right, and the mounting works, and the container reports that it's up and running if I haven't launched the container in daemon/detached mode (`-d`) then the site will render but nothing will update. Adding `-d` to my Docker commands (as shown in the Powershell scripts above) fixed that issue for me.
+Occasionally I've found that even when everything goes right, and the mounting works, and the container reports that it's up and running - if I haven't launched the container in daemon/detached mode (`-d`) then the site will render but nothing will update. Adding `-d` to my Docker commands (as shown in the Powershell scripts above) fixed that issue for me.
 
-Apart from that, keep an eye on the Jekyll Issues list on GitHub, and google will be your friend as more and more people start working with this.
+Apart from that, keep an eye on the [Jekyll Issues](https://github.com/jekyll/jekyll/issues) list on GitHub, and Google will be your friend as more and more people start working with this.
 
 ## So Jekyll is running in Docker; what's next?
 
