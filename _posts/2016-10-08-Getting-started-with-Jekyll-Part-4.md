@@ -30,7 +30,7 @@ You'll need at least one of the following installed:
 - Docker for Windows (v1.12) [from here](https://docs.docker.com/docker-for-windows/)
 
 If you have either of those installed I'll step you through the rest below. 
-Oh, and I'm assuming that you understand a little bit about how Docker works, and what it means to run/control containers. If not, that's cool but do yourself a favour and jump over here and give it a read first -- it'll definitely be worth the 10 minutes it takes you.
+Oh, and I'm assuming that you understand a little bit about how Docker works, and what it means to run/control containers. If not, that's cool but do yourself a favour and jump over [here](https://docs.docker.com/engine/getstarted/) and give it a read first -- it'll definitely be worth the 10 minutes it takes you.
 
 I'm also assuming that you're using Powershell (because this is Windows) or that you're able to translate these commands into MING/Bash/whatever. I think they are the same across both platforms, but I'd prefer you just start using Powershell (it'll make my friend [Flynn](https://flynnbundy.com/) happy).
 
