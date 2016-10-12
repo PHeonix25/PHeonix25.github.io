@@ -20,7 +20,7 @@ In this post we're going to try and find a theme, and see why that might be the 
 
 ## Why find a theme first?
 
-Long story short, it's much easier to copy then it is to create, both in life and in getting started with Jekyll. Hence, finding a theme you like, and then forking it is much easier than trying to write "your perfect one" from scratch. Most demo-ed Jekyll themes also come with placeholder posts, author pages, widgets/add-ons (like Discus comments, sharing links, etc.) that will kickstart you and then you just need to modify to personalise your site. 
+Long story short, it's much easier to copy then it is to create, both in life and in getting started with Jekyll. Hence, finding a theme you like, and then forking it is much easier than trying to write "your perfect one" from scratch. Most demo-ed Jekyll themes also come with placeholder posts, author pages, widgets/add-ons (like Disqus comments, sharing links, etc.) that will kickstart you and then you just need to modify to personalise your site. 
 
 Personally, I found this a much quicker way to get started compared to the official [Quick Start Guide][jekyll-qs], but if you would prefer, you can easily follow the Quick Start Guide, and then come back at [Step 3]({% post_url 2016-10-07-Getting-started-with-Jekyll-Part-3 %}).
 

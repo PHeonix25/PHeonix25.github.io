@@ -70,11 +70,10 @@ excerpt_separator: <!--description-->
 
 I'd say (from my limited personal experience) that Jekyll has some great defaults, and the only settings you truly need to change are in the `Site settings` block above:
 
-- title
-- email
-- description
-- baseurl
-- url
+- `title`: What do you want your site to be called?
+- `description`: Meta values for your social media sharing stuff
+- `baseurl`: Do you want to put the site in a subdirectory? 
+- `url`: This is used with the `baseurl` above to find assets in themes.
 
 Once those are set correctly, the rest has a lot to do with your site's functionality. You can see from the above that mine came with Google Analytics, Disqus and some in-built links to my Twitter and GitHub accounts - yours may differ slightly, but I'm sure it'll be straight-forward or predictable like the example above.
 
