@@ -39,10 +39,14 @@ I'm also assuming that you're using Powershell (because this is Windows) or that
 First of all, you're going to want to create a `Dockerfile`. I'll start by showing you mine (*the start to every great story*):
 
 ```
-FROM starefossen/github-pages  # Graciously thank starefossen for his base image
-COPY . /usr/src/app            # Copy everything from the current directory into the image
-ENV LC_ALL C.UTF-8             # Set the locale and override the image settings
-EXPOSE 4000/tcp                # Expose port 4000 in this image
+# Graciously thank starefossen for his base image
+FROM starefossen/github-pages
+# Copy everything from the current directory into the image
+COPY . /usr/src/app
+# Set the locale and override the image settings
+ENV LC_ALL C.UTF-8
+# Expose port 4000 in this image
+EXPOSE 4000/tcp
 ```
 *Now, I'll step you through what each line means above, if you're good with those commands, feel free to skip to the next section.*
 
