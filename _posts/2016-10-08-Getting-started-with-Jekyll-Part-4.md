@@ -71,7 +71,7 @@ docker build . -t blog:latest
 *If this command makes sense to you - feel free to skip ahead to the next section. If not, basically we're saying the following:*
 
 - `docker build` is the command,
-- `.` is the "working directory that contains our `Dockerfile`
+- `.` is the "working directory" that contains our `Dockerfile`
 - `-t blog:latest` is the "tag" that we're going to name our image (the 'latest' version of our 'blog') - but you can change this to whatever you want.  
 
 Hopefully after running the `docker build` command, it looks something like the snippet below:
@@ -133,14 +133,15 @@ docker run -i -p 4000:4000 -v=$(pwd):/usr/src/app/ blog:latest
 To explain:
 
 - `docker run` is the command,
-- `-i` asks Docker to run this image "interactively" (stealing our window)
+- `-i` asks Docker to run this image "interactively" (stealing our window) 
+  - Note: *We will change this to `-d` (daemon mode) later when we've confirmed everything is working properly* 
 - `-p 4000:4000` is asking Docker to map a port from the container to the host
   - *This is where you can change the outward-facing port*
   - *A common mistake is to include the IP here (like 127.0.0.1:4000:4000) - **don't do this** as it'll only bind to a single adapter inside the container. Let it bind to all (0.0.0.0) which is the default behaviour*
 - `-v` is a little tricky, but you're asking Docker to mount a "volume"
-  - `$(xxx)` means run `xxx` as an inline command that should be expanded out
+  - `$(xxx)` means run `xxx` as an inline command that should be expanded out first
   - `pwd` is a Bash command that returns the full path to the current directory
-  - `/usr/src/app` is where we want it to appear within the container
+  - `/usr/src/app` is where we want it to 'appear' within the container
 - `blog/latest` is the image that we want to use - *so if you changed it above, replace it here*
 
 The trickiest part I've had with working with Docker on Windows is mounting volumes. Jekyll has some **great** functionality where it can monitor files in a directory and constantly re-generate them if they change on disk - which is awesome for testing your site and ensuring your Markdown is playing nice, especially while you're learning. 
@@ -180,6 +181,8 @@ If you're modifying your site, and you managed to mount the directory without an
 Regenerating: 1 file(s) changed at 2016-10-10 20:17:38 [2016-10-10 20:17:38] 
     ...done in 0.268916244 seconds.
 ```
+
+... and there you go, you've got Jekyll running inside a Docker container, with mapped ports and constant page regeneration. You're ready to roll!
 
 ## EEK, nothing rendered for me (or I see "site returned no data")
 
