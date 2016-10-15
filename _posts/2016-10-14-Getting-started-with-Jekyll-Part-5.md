@@ -79,7 +79,7 @@ A lot of these details are covered on their [Mastering Markdown][mastering] guid
 
 ## Jekyll features with Liquid
 
-so, I mentioned this above, with the link to the [Jekyll documentation about Liquid][jekyll-lqd], but it's worth noting again, there are some really cool things you can do with Liquid. 
+I mentioned this above, with the link to the [Jekyll documentation about Liquid][jekyll-lqd], but it's worth noting again, there are some really cool things you can do with Liquid. 
 
 The first one is obviously the most basic: `post_url`, which can return a complete link to a post, ready for Markdown, like this: `{% raw %}{% post_url 2016-10-01-Getting-started-with-Jekyll-Part-1 %}{% endraw %}` which will turn into this: `{% post_url 2016-10-01-Getting-started-with-Jekyll-Part-1 %}` - you don't need the extension, or the folder, so long as you're following some of the advised Jekyll folder structures.
 
@@ -110,18 +110,18 @@ end
 
 So I've give you a few example above (*including a screenshot, what more could you want?*), but so long as you remember 
 
-- the processing order: Liquid commands first, then Markdown, and 
+- the processing order: Liquid commands first, then Markdown, & 
 - the syntax: `[Square braces for link text][{% raw %}{% post_url 2010-01-01-for-your-post %}{% endraw%}]`
 
 Then you're good to go!
 
-Now, one thing I haven't touched on, is some Jekyll post-etiquette, like putting your links at the bottom of your post or linking to assets. 
-This'll help for referencing them later, and it's easy to see what you're linking to and replace it once if it needs updating.
-For your reference, here's what the bottom of this post looks like so far:
+Now, one thing I haven't touched on, is some Markdown/post-etiquette tips, like putting your (named) links at the bottom of your post or linking (relatively) to assets. 
+Having named links will help for referencing them later, and it's easy to see what you're linking to and replace it once if it needs updating.
+For your reference, here's what the bottom of this post looks like so far with all the named links you could ever want:
 
 ![so many links](/assets/img/post_link_example.png)
 
-Small things like this will help you later on - trust me.
+Small things like this will help you later on - trust me, so it's worth learning Markdown properly if you want to do this seriously.
 
 ## TLDR; Links pls.
 
