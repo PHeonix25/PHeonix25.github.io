@@ -9,11 +9,11 @@ published: true
 In this post we're going modify our chosen theme a bit, and make it feel more like home.
 <!--description-->
 
-1. [Getting Started with Jekyll - Setting the Scene]({% post_url 2016-10-01-Getting-started-with-Jekyll-Part-1 %}) 
-2. [Getting Started with Jekyll - Finding a Theme]({% post_url 2016-10-05-Getting-started-with-Jekyll-Part-2 %})
+1. [Getting Started with Jekyll - Setting the Scene][ph-part1]
+2. [Getting Started with Jekyll - Finding a Theme][ph-part2]
 3. Getting Started with Jekyll - Common Theme Settings **<==**
-4. [Getting Started with Jekyll - Setting up Jekyll in Docker]({% post_url 2016-10-08-Getting-started-with-Jekyll-Part-4 %}) 
-5. Getting Started with Jekyll - Learning Markdown and Liquid
+4. [Getting Started with Jekyll - Setting up Jekyll in Docker][ph-part4] 
+5. [Getting Started with Jekyll - Learning Markdown and Liquid][ph-part5]
 6. Getting Started with Jekyll - Modifying Templates
 7. Getting Started with Jekyll - Transitioning Content
 8. Getting Started with Jekyll - Launching your Site 
@@ -79,7 +79,13 @@ Once those are set correctly, the rest has a lot to do with your site's function
 
 ## So I've provided defaults, what next?
 
-We'll get it up and running in Docker now so that you can preview your new site! [Onward to Part 4!]({% post_url 2016-10-08-Getting-started-with-Jekyll-Part-4 %})
+We'll get it up and running in Docker now so that you can preview your new site! [Onward to Part 4!][ph-part4]
 
+
+[ph-part1]:   {% post_url 2016-10-01-Getting-started-with-Jekyll-Part-1 %}
+[ph-part2]:   {% post_url 2016-10-05-Getting-started-with-Jekyll-Part-2 %}
+[ph-part3]:   {% post_url 2016-10-07-Getting-started-with-Jekyll-Part-3 %}
+[ph-part4]:   {% post_url 2016-10-08-Getting-started-with-Jekyll-Part-4 %}
+[ph-part5]:   {% post_url 2016-10-14-Getting-started-with-Jekyll-Part-5 %}
 
 [jekyll-conf]: https://jekyllrb.com/docs/configuration/

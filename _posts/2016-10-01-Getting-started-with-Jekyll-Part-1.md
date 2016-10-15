@@ -10,10 +10,10 @@ In this series (of about 8 short posts) I want to outline the steps that you nee
 <!--description-->
 
 1. Getting Started with Jekyll - Setting the Scene **<==**
-2. [Getting Started with Jekyll - Finding a Theme]({% post_url 2016-10-05-Getting-started-with-Jekyll-Part-2 %})
-3. [Getting Started with Jekyll - Common Theme Settings]({% post_url 2016-10-07-Getting-started-with-Jekyll-Part-3 %})
-4. [Getting Started with Jekyll - Setting up Jekyll in Docker]({% post_url 2016-10-08-Getting-started-with-Jekyll-Part-4 %})
-5. Getting Started with Jekyll - Learning Markdown and Liquid
+2. [Getting Started with Jekyll - Finding a Theme][ph-part2]
+3. [Getting Started with Jekyll - Common Theme Settings][ph-part3] 
+4. [Getting Started with Jekyll - Setting up Jekyll in Docker][ph-part4] 
+5. [Getting Started with Jekyll - Learning Markdown and Liquid][ph-part5]
 6. Getting Started with Jekyll - Modifying Templates
 7. Getting Started with Jekyll - Transitioning Content
 8. Getting Started with Jekyll - Launching your Site
@@ -48,8 +48,14 @@ In my daily job, it's quite common for me to be writing Markdown documents for G
 
 ## Let's get started!
 
-I think that's enough explanation (and links) for now, why don't we [continue with finding a theme]({% post_url 2016-10-05-Getting-started-with-Jekyll-Part-2 %})?
+I think that's enough explanation (and links) for now, why don't we [continue with finding a theme][ph-part2]?
 
+
+[ph-part1]:   {% post_url 2016-10-01-Getting-started-with-Jekyll-Part-1 %}
+[ph-part2]:   {% post_url 2016-10-05-Getting-started-with-Jekyll-Part-2 %}
+[ph-part3]:   {% post_url 2016-10-07-Getting-started-with-Jekyll-Part-3 %}
+[ph-part4]:   {% post_url 2016-10-08-Getting-started-with-Jekyll-Part-4 %}
+[ph-part5]:   {% post_url 2016-10-14-Getting-started-with-Jekyll-Part-5 %}
 
 [jekyll]:       https://jekyllrb.com/
 [jekyll-docs]:  https://jekyllrb.com/docs/home/
