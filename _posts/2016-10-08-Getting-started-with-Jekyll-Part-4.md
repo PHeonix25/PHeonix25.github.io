@@ -9,11 +9,11 @@ published: true
 In this post we're going to get our site up and running locally, taking advantage of Docker and a quick feedback loop.
 <!--description-->
 
-1. [Getting Started with Jekyll - Setting the Scene]({% post_url 2016-10-01-Getting-started-with-Jekyll-Part-1 %})
-2. [Getting Started with Jekyll - Finding a Theme]({% post_url 2016-10-05-Getting-started-with-Jekyll-Part-2 %})
-3. [Getting Started with Jekyll - Common Theme Settings]({% post_url 2016-10-07-Getting-started-with-Jekyll-Part-3 %})
+1. [Getting Started with Jekyll - Setting the Scene][ph-part1]
+2. [Getting Started with Jekyll - Finding a Theme][ph-part2]
+3. [Getting Started with Jekyll - Common Theme Settings][ph-part3]
 4. Getting Started with Jekyll - Setting up Jekyll in Docker **<==**
-5. Getting Started with Jekyll - Learning Markdown and Liquid
+5. [Getting Started with Jekyll - Learning Markdown and Liquid][ph-part5]
 6. Getting Started with Jekyll - Modifying Templates
 7. Getting Started with Jekyll - Transitioning Content
 8. Getting Started with Jekyll - Launching your Site 
@@ -26,13 +26,13 @@ First of all, I want to say that this particular step and the advice below is de
 
 You'll need at least one of the following installed:
 
-- Docker Toolbox (v1.12) [from here](https://www.docker.com/products/docker-toolbox) **OR**
-- Docker for Windows (v1.12) [from here](https://docs.docker.com/docker-for-windows/)
+- Docker Toolbox (v1.12) [from here][docker-toolbox] **OR**
+- Docker for Windows (v1.12) [from here][docker-windows]
 
 If you have either of those installed I'll step you through the rest below. 
-Oh, and I'm assuming that you understand a little bit about how Docker works, and what it means to run/control containers. If not, that's cool but do yourself a favour and jump over [here](https://docs.docker.com/engine/getstarted/) and give it a read first -- it'll definitely be worth the 10 minutes it takes you.
+Oh, and I'm assuming that you understand a little bit about how Docker works, and what it means to run/control containers. If not, that's cool but do yourself a favour and jump over [here][docker-started] and give it a read first -- it'll definitely be worth the 10 minutes it takes you.
 
-I'm also assuming that you're using Powershell (because this is Windows) or that you're able to translate these commands into MING/Bash/whatever. I think they are the same across both platforms, but I'd prefer you just start using Powershell (it'll make my friend [Flynn](https://flynnbundy.com/) happy).
+I'm also assuming that you're using Powershell (because this is Windows) or that you're able to translate these commands into MING/Bash/whatever. I think they are the same across both platforms, but I'd prefer you just start using Powershell (it'll make my friend [Flynn][bundy-blog] happy).
 
 ## Great! Lets get moving!
 
@@ -51,11 +51,11 @@ EXPOSE 4000/tcp
 *Now, I'll step you through what each line means above, if you're good with those commands, feel free to skip to the next section.*
 
 Firstly, we say `FROM` and we list a publicly available image (in this case a nicely set up image from `starefossen`). Docker will go looking for this image in the public Docker Hub and pull it down for us (it's about 800Mb). 
-> **NOTE** - There IS an "official" [`jekyll/jekyll:pages` image](https://github.com/jekyll/docker/wiki) that is supposed to be the same as the one from GitHub, but I've not had much luck getting it to work, primarily because of [this issue](https://github.com/jekyll/docker/issues/31) which they flagged as `enhancement` and `closed` but is still a problem. So for now my recommendation is to use `starefossen`'s image, and if they ever decide to support Jekyll on Windows 10 **because they still officially don't** then switch this line out for that image.
+> **NOTE** - There IS an "official" [`jekyll/jekyll:pages` image][jekyll-image] that is supposed to be the same as the one from GitHub, but I've not had much luck getting it to work, primarily because of [this issue][docker-issue31] which they flagged as `enhancement` and `closed` but is still a problem. So for now my recommendation is to use `starefossen`'s image, and if they ever decide to support Jekyll on Windows 10 **because they still officially don't** then switch this line out for that image.
 
 Secondly, we want to `COPY` everything from the current directory (the dot) to `/usr/src/app` inside the container. This is to give Jekyll a "starting point" in case your mounting volumes (in the next section) doesn't work out.
 
-Third, we want to set the environment variable `LC_ALL` on the target system to the value `C.UTF-8` to prevent `jekyll 3.1.6 | Error:  Invalid US-ASCII character "\xE2"` errors. For the record, that character doesn't exist in any of the files in my site, but there's something stupid going on that [has been sitting in the Jekyll issues list on GitHub](https://github.com/jekyll/jekyll/issues/4268) for quite some time. The simplest solution is to just change the locale. You can Google this all you want, and you can rebuild the locales on the image, and you can try and hunt down anything that's not supported in US-ASCII like I did, but for now, just add this line to your Dockerfile and save yourself the headache.
+Third, we want to set the environment variable `LC_ALL` on the target system to the value `C.UTF-8` to prevent `jekyll 3.1.6 | Error:  Invalid US-ASCII character "\xE2"` errors. For the record, that character doesn't exist in any of the files in my site, but there's something stupid going on that [has been sitting in the Jekyll issues list on GitHub][jekyll-issue4268] for quite some time. The simplest solution is to just change the locale. You can Google this all you want, and you can rebuild the locales on the image, and you can try and hunt down anything that's not supported in US-ASCII like I did, but for now, just add this line to your Dockerfile and save yourself the headache.
 
 Finally, we want to `EXPOSE` the port that we are going to use from the image. This is the port that the Jekyll server process inside the image is going to listen on, and respond to. We can always remap that to something different later for our local testing, and when our site goes live, it'll live on port 80 because GitHub doesn't use this Dockerfile.
 
@@ -245,15 +245,32 @@ ForEach ($container in $containers)
 Write-Host ''
 ```
 
-> Thanks to [Matt Hodgkins](https://hodgkins.io/) and Niels (*nope, no link*) for the inspiration in making these 🙂
+> Thanks to [Matt Hodgkins][hodgkins-blog] and Niels (*nope, no link*) for the inspiration in making these 🙂
 
 ## Anything else that could mess me up?
 
 Occasionally I've found that even when everything goes right, and the mounting works, and the container reports that it's up and running - if I haven't launched the container in daemon/detached mode (`-d`) then the site will render but nothing will update. Adding `-d` to my Docker commands (as shown in the Powershell scripts above) fixed that issue for me.
 
-Apart from that, keep an eye on the [Jekyll Issues](https://github.com/jekyll/jekyll/issues) list on GitHub, and Google will be your friend as more and more people start working with this.
+Apart from that, keep an eye on the [Jekyll Issues][jekyll-issues] list on GitHub, and Google will be your friend as more and more people start working with this.
 
 ## So Jekyll is running in Docker; what's next?
 
-Hopefully now you have a working blog running on a local URL, but looking quite like the template that you chose in [Part 2]({% post_url 2016-10-05-Getting-started-with-Jekyll-Part-2 %}). 
-Lets go through some basic formatting steps with Markdown and Liquid to make your site look like it's yours!
+Hopefully now you have a working blog running on a local URL, but looking quite like the template that you chose in [Part 2][ph-part2]. 
+Lets go through some basic formatting steps with Markdown and Liquid to help you pump out those posts in no time at all, over in [Part 5][ph-part5]! 
+
+
+[ph-part1]:   {% post_url 2016-10-01-Getting-started-with-Jekyll-Part-1 %}
+[ph-part2]:   {% post_url 2016-10-05-Getting-started-with-Jekyll-Part-2 %}
+[ph-part3]:   {% post_url 2016-10-07-Getting-started-with-Jekyll-Part-3 %}
+[ph-part4]:   {% post_url 2016-10-08-Getting-started-with-Jekyll-Part-4 %}
+[ph-part5]:   {% post_url 2016-10-14-Getting-started-with-Jekyll-Part-5 %}
+
+[docker-toolbox]:   https://www.docker.com/products/docker-toolbox
+[docker-windows]:   https://docs.docker.com/docker-for-windows/
+[docker-started]:   https://docs.docker.com/engine/getstarted/
+[bundy-blog]:       https://flynnbundy.com/
+[jekyll-image]:     https://github.com/jekyll/docker/wiki
+[docker-issue31]:   https://github.com/jekyll/docker/issues/31
+[jekyll-issue4268]: https://github.com/jekyll/jekyll/issues/4268
+[hodgkins-blog]:    https://hodgkins.io/
+[jekyll-issues]:    https://github.com/jekyll/jekyll/issues
