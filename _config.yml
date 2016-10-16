@@ -20,8 +20,9 @@ url: "http://hermens.com.au" # the base hostname & protocol for your site
 permalink: /:year/:month/:day/:title/
 
 # Social media usernames for filling out links:
-twitter_username: phermens 
+linkedin_username: phermens
 github_username: PHeonix25 
+twitter_username: phermens 
 
 # Enable posting into the future
 future: true

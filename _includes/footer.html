@@ -6,12 +6,9 @@
 
     <div class="footer right column one-half">
       <section class="small-font">
-        {% if site.github_username %}
-        {% include icon-github.html username=site.github_username %}
-        {% endif %}
-        {% if site.twitter_username %}
-        {% include icon-twitter.html username=site.twitter_username %}
-        {% endif %}
+        <!-- Let's not make this too prominent. {% if site.linkedin_username %}{% include icon-linkedin.html username=site.linkedin_username %}{% endif %}-->
+        {% if site.github_username %}{% include icon-github.html username=site.github_username %}{% endif %}
+        {% if site.twitter_username %}{% include icon-twitter.html username=site.twitter_username %}{% endif %}
       </section>
     </div>
     {% include ga.html %}
