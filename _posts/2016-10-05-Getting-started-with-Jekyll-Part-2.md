@@ -14,7 +14,7 @@ In this post we're going to try and find a theme, and see why that might be the 
 3. [Getting Started with Jekyll - Common Theme Settings][ph-part3] 
 4. [Getting Started with Jekyll - Setting up Jekyll in Docker][ph-part4] 
 5. [Getting Started with Jekyll - Learning Markdown and Liquid][ph-part5]
-6. Getting Started with Jekyll - Modifying Templates
+6. [Getting Started with Jekyll - Modifying Templates][ph-part6]
 7. Getting Started with Jekyll - Transitioning Content
 8. Getting Started with Jekyll - Launching your Site 
 
@@ -49,6 +49,7 @@ Let's kick on to the next step them: [Common Theme Settings][ph-part3].
 [ph-part3]:   {% post_url 2016-10-07-Getting-started-with-Jekyll-Part-3 %}
 [ph-part4]:   {% post_url 2016-10-08-Getting-started-with-Jekyll-Part-4 %}
 [ph-part5]:   {% post_url 2016-10-14-Getting-started-with-Jekyll-Part-5 %}
+[ph-part6]:   {% post_url 2016-10-17-Getting-started-with-Jekyll-Part-6 %}
 
 [jekyll-qs]:    https://jekyllrb.com/docs/quickstart/
 [jekyll-thm1]:  http://jekyllthemes.org/
