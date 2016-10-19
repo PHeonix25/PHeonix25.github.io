@@ -255,10 +255,12 @@ p.readmore {
   @media (min-width: $on-laptop+1) {
     float:left;
   }
+  background: url(/assets/img/me.jpg);
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
   display:inline-block;
-  width: 90px;
-  height: 90px;
-  border-radius: 5%;
   -webkit-background-size: cover !important;
   background-size: cover !important;
   background-position: center center !important;
