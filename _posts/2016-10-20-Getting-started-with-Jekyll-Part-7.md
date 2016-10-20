@@ -35,7 +35,8 @@ Granted, most of the import documentation assumes that you have a locally availa
 For now, here's a series of steps that'll help you get it up and running in an interactive session so that you can test it out, and if it all works fine, then you should be able to copy the files (_provided you have your mount points working_) onto your local system and then copy them into your new site!
 
 Let's run the following script step by step from Powershell:
-{% highlight YAML %}
+
+```powershell
 # Run the standard Jekyll image interactively and start a bash session:
 docker run --rm -ti -v $(pwd):/usr/content jekyll/jekyll /bin/sh
 
@@ -53,7 +54,7 @@ gem install jekyll-import
 cd /usr/content
 
 # Now go ahead and install your other importers and go nuts :)
-{% endhighlight %}
+```
 
 ## Working with the final output
 
