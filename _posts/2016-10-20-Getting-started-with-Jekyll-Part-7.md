@@ -73,9 +73,7 @@ For now, we should be done migrating our existing content to Markdown/Liquid and
 [ph-part4]:   {% post_url 2016-10-08-Getting-started-with-Jekyll-Part-4 %}
 [ph-part5]:   {% post_url 2016-10-14-Getting-started-with-Jekyll-Part-5 %}
 [ph-part6]:   {% post_url 2016-10-17-Getting-started-with-Jekyll-Part-6 %}
-[ph-archive]: /archive
-[ph-feed]:    /feed.xml
-[ph-aboutme]: /about
+[ph-part7]:   {% post_url 2016-10-20-Getting-started-with-Jekyll-Part-7 %}
 
 [jekyll-wiki]:   https://en.wikipedia.org/wiki/Jekyll_(software)#History
 [jekyll-docs]:   http://jekyllrb.com/docs/migrations/

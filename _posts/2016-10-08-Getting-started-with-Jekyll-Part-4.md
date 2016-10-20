@@ -15,7 +15,7 @@ In this post we're going to get our site up and running locally, taking advantag
 4. Getting Started with Jekyll - Setting up Jekyll in Docker **<==**
 5. [Getting Started with Jekyll - Learning Markdown and Liquid][ph-part5]
 6. [Getting Started with Jekyll - Modifying Templates][ph-part6]
-7. Getting Started with Jekyll - Transitioning Content
+7. [Getting Started with Jekyll - Transitioning Content][ph-part7]
 8. Getting Started with Jekyll - Launching your Site 
 
 ## Disclaimer - this is for Windows.
@@ -265,6 +265,7 @@ Lets go through some basic formatting steps with Markdown and Liquid to help you
 [ph-part4]:   {% post_url 2016-10-08-Getting-started-with-Jekyll-Part-4 %}
 [ph-part5]:   {% post_url 2016-10-14-Getting-started-with-Jekyll-Part-5 %}
 [ph-part6]:   {% post_url 2016-10-17-Getting-started-with-Jekyll-Part-6 %}
+[ph-part7]:   {% post_url 2016-10-20-Getting-started-with-Jekyll-Part-7 %}
 
 [docker-toolbox]:   https://www.docker.com/products/docker-toolbox
 [docker-windows]:   https://docs.docker.com/docker-for-windows/

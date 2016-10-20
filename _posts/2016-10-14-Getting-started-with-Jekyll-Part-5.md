@@ -15,7 +15,7 @@ In this post we're going to go over a few tips and tricks for working with Markd
 4. [Getting Started with Jekyll - Setting up Jekyll in Docker][ph-part4]
 5. Getting Started with Jekyll - Learning Markdown and Liquid **<==**
 6. [Getting Started with Jekyll - Modifying Templates][ph-part6]
-7. Getting Started with Jekyll - Transitioning Content
+7. [Getting Started with Jekyll - Transitioning Content][ph-part7]
 8. Getting Started with Jekyll - Launching your Site 
 
 ## Wait, what is Markdown?
@@ -146,6 +146,7 @@ In the next section, we're going to use this new-found knowledge of Markdown and
 [ph-part4]:   {% post_url 2016-10-08-Getting-started-with-Jekyll-Part-4 %}
 [ph-part5]:   {% post_url 2016-10-14-Getting-started-with-Jekyll-Part-5 %}
 [ph-part6]:   {% post_url 2016-10-17-Getting-started-with-Jekyll-Part-6 %}
+[ph-part7]:   {% post_url 2016-10-20-Getting-started-with-Jekyll-Part-7 %}
 
 [wiki-md]:    https://en.wikipedia.org/wiki/Markdown
 [wiki-lml]:   https://en.wikipedia.org/wiki/Lightweight_markup_language
