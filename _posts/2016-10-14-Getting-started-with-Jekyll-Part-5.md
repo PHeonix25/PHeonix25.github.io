@@ -138,7 +138,7 @@ So this post is getting quite long, and (*as usual*) there's quite a lot of opin
 
 ## Ok, this is cool. What's next?
 
-In the next section, we're going to use this new-found knowledge of Markdown and Liquid to modify our templates. We'll also go through setting up some `_includes` and some `_layouts` and maybe even a static page (or two), so, get familiar with these two new languages and their syntax and we'll continue into Part 6.
+In the next section, we're going to use this new-found knowledge of Markdown and Liquid to modify our templates. We'll also go through setting up some `_includes` and some `_layouts` and maybe even a static page (or two), so, get familiar with these two new languages and their syntax and we'll continue into [Part 6][ph-part6].
 
 [ph-part1]:   {% post_url 2016-10-01-Getting-started-with-Jekyll-Part-1 %}
 [ph-part2]:   {% post_url 2016-10-05-Getting-started-with-Jekyll-Part-2 %}
