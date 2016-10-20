@@ -259,7 +259,7 @@ So long as you know SOME basics about HTML and understand the Jekyll and Liquid 
 
 In the next step, we'll assume that we've customised our theme a bit (and it's still running fine after [we set it up in Docker][ph-part4]) - so lets move on to some of the more difficult steps, like getting our old content migrated into this new setup. 
 
-I'll talk (very generally) about how to do this from Wordpress and some other CMS's over in Part 7. 
+I'll talk (very generally) about how to do this from Wordpress and some other CMS's over in [Part 7][ph-part7]. 
 
 
 [ph-part1]:   {% post_url 2016-10-01-Getting-started-with-Jekyll-Part-1 %}
