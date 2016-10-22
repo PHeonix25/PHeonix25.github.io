@@ -10,13 +10,13 @@ In this post we're going to try and find a theme, and see why that might be the 
 <!--description-->
 
 1. [Getting Started with Jekyll - Setting the Scene][ph-part1]
-2. [Getting Started with Jekyll - Finding a Theme **<==**
+2. Getting Started with Jekyll - Finding a Theme **<==**
 3. [Getting Started with Jekyll - Common Theme Settings][ph-part3] 
 4. [Getting Started with Jekyll - Setting up Jekyll in Docker][ph-part4] 
 5. [Getting Started with Jekyll - Learning Markdown and Liquid][ph-part5]
 6. [Getting Started with Jekyll - Modifying Templates][ph-part6]
 7. [Getting Started with Jekyll - Transitioning Content][ph-part7]
-8. Getting Started with Jekyll - Launching your Site 
+8. [Getting Started with Jekyll - Launching your Site][ph-part8] 
 
 ## Why find a theme first?
 
@@ -51,6 +51,7 @@ Let's kick on to the next step them: [Common Theme Settings][ph-part3].
 [ph-part5]:   {% post_url 2016-10-14-Getting-started-with-Jekyll-Part-5 %}
 [ph-part6]:   {% post_url 2016-10-17-Getting-started-with-Jekyll-Part-6 %}
 [ph-part7]:   {% post_url 2016-10-20-Getting-started-with-Jekyll-Part-7 %}
+[ph-part8]:   {% post_url 2016-10-22-Getting-started-with-Jekyll-Part-8 %}
 
 [jekyll-qs]:    https://jekyllrb.com/docs/quickstart/
 [jekyll-thm1]:  http://jekyllthemes.org/

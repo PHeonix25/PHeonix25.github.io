@@ -16,7 +16,7 @@ In this series (of about 8 short posts) I want to outline the steps that you nee
 5. [Getting Started with Jekyll - Learning Markdown and Liquid][ph-part5]
 6. [Getting Started with Jekyll - Modifying Templates][ph-part6]
 7. [Getting Started with Jekyll - Transitioning Content][ph-part7]
-8. Getting Started with Jekyll - Launching your Site
+8. [Getting Started with Jekyll - Launching your Site][ph-part8]
 
 ## What is Jekyll?
 
@@ -58,6 +58,7 @@ I think that's enough explanation (and links) for now, why don't we [continue wi
 [ph-part5]:   {% post_url 2016-10-14-Getting-started-with-Jekyll-Part-5 %}
 [ph-part6]:   {% post_url 2016-10-17-Getting-started-with-Jekyll-Part-6 %}
 [ph-part7]:   {% post_url 2016-10-20-Getting-started-with-Jekyll-Part-7 %}
+[ph-part8]:   {% post_url 2016-10-22-Getting-started-with-Jekyll-Part-8 %}
 
 [jekyll]:       https://jekyllrb.com/
 [jekyll-docs]:  https://jekyllrb.com/docs/home/

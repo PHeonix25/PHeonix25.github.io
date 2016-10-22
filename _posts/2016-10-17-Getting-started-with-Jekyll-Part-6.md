@@ -16,7 +16,7 @@ In this post we're going to discuss how we can modify our template using Markdow
 5. [Getting Started with Jekyll - Learning Markdown and Liquid][ph-part5]
 6. Getting Started with Jekyll - Modifying Templates **<==**
 7. [Getting Started with Jekyll - Transitioning Content][ph-part7]
-8. Getting Started with Jekyll - Launching your Site 
+8. [Getting Started with Jekyll - Launching your Site][ph-part8]
 
 ## Jekyll and the file structure
 
@@ -269,6 +269,7 @@ I'll talk (very generally) about how to do this from Wordpress and some other CM
 [ph-part5]:   {% post_url 2016-10-14-Getting-started-with-Jekyll-Part-5 %}
 [ph-part6]:   {% post_url 2016-10-17-Getting-started-with-Jekyll-Part-6 %}
 [ph-part7]:   {% post_url 2016-10-20-Getting-started-with-Jekyll-Part-7 %}
+[ph-part8]:   {% post_url 2016-10-22-Getting-started-with-Jekyll-Part-8 %}
 [ph-archive]: /archive
 [ph-feed]:    /feed.xml
 [ph-aboutme]: /about

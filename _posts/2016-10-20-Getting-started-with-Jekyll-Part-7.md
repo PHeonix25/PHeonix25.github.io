@@ -16,7 +16,7 @@ In this post we're going to discuss how we can move our content from our existin
 5. [Getting Started with Jekyll - Learning Markdown and Liquid][ph-part5]
 6. [Getting Started with Jekyll - Modifying Templates][ph-part6]
 7. Getting Started with Jekyll - Transitioning Content **<==**
-8. Getting Started with Jekyll - Launching your Site 
+8. [Getting Started with Jekyll - Launching your Site][ph-part8]
 
 ## Nice and simple
 
@@ -75,6 +75,7 @@ For now, we should be done migrating our existing content to Markdown/Liquid and
 [ph-part5]:   {% post_url 2016-10-14-Getting-started-with-Jekyll-Part-5 %}
 [ph-part6]:   {% post_url 2016-10-17-Getting-started-with-Jekyll-Part-6 %}
 [ph-part7]:   {% post_url 2016-10-20-Getting-started-with-Jekyll-Part-7 %}
+[ph-part8]:   {% post_url 2016-10-22-Getting-started-with-Jekyll-Part-8 %}
 
 [jekyll-wiki]:   https://en.wikipedia.org/wiki/Jekyll_(software)#History
 [jekyll-docs]:   http://jekyllrb.com/docs/migrations/
