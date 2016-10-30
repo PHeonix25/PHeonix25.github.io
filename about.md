@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Pat Hermens - About
+title: About
 permalink: /about/
 ---
 
