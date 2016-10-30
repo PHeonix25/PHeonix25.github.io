@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Hi, I'm Pat
+title: Pat Hermens - About
 permalink: /about/
 ---
 
