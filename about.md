@@ -11,7 +11,7 @@ Over the course of my career, I've found that interesting problems & inspiring s
 If you're interested in my previous roles or experience you can look at my [Developer Story][http://stackoverflow.com/story/phermens], 
 or if looking to get in touch for any other reason, just check out the links to my other stuff online, listed below.
 
-Cheers!
+Cheers!    
 -**Pat**
 
 ----
