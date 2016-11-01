@@ -16,7 +16,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Interesting problems & inspiring solutions get me out of bed in the morning.
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://hermens.com.au" # the base hostname & protocol for your site
+url: "https://hermens.com.au" # the base hostname & protocol for your site
 permalink: /:year/:month/:day/:title/
 
 # Social media usernames for filling out links:
