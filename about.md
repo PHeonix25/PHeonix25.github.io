@@ -8,7 +8,7 @@ I'm a loud Australian that's been living in the Netherlands for a few years -- a
 At risk of sounding cliché; I'm an accomplished public speaker, skilled .Net developer, husband and father, but most of all, a geek. 
 Over the course of my career, I've found that interesting problems & inspiring solutions are what gets me out of bed in the morning.
 
-If you're interested in my previous roles or experience you can look at my [Developer Story][http://stackoverflow.com/story/phermens], 
+If you're interested in my previous roles or experience you can look at my [Developer Story](http://stackoverflow.com/story/phermens), 
 or if looking to get in touch for any other reason, just check out the links to my other stuff online, listed below.
 
 Cheers!    
