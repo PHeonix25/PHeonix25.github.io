@@ -7,23 +7,18 @@ title: Archive
 
   <h2>Archive</h2>
 
-  <section class="archive_list" itemscope itemtype="http://schema.org/Blog">>
+  <section class="archive_list" itemscope itemtype="http://schema.org/Blog">
     {% for category in site.categories %}
-
-    <div class="category-name">
-      <h2>{{ category | first }}</h2>
-    </div>
-    {% for post in category.last %}
-
-    <div class="post_title" itemscope itemtype="http://schema.org/BlogPosting">
-      <a href="{{ post.url | prepend: site.baseurl }}" itemprop="url"><span itemprop="name headline">{{ post.title}}</span></a>
-      <span class="post-meta date"><time itemprop="datePublished" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time></span>
-    </div>
-
+      <div class="category-name">
+        <h2>{{ category | first }}</h2>
+      </div>
+      {% for post in category.last %}
+        <div class="post_title" itemscope itemtype="http://schema.org/BlogPosting">
+          <a href="{{ post.url | prepend: site.baseurl }}" itemprop="url"><span itemprop="name headline">{{ post.title}}</span></a>
+          <span class="post-meta date"><time itemprop="datePublished" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time></span>
+        </div>
+      {% endfor %}
     {% endfor %}
-
-    {% endfor %}
-
   </section>
 
   <footer class="article-footer" mar>
