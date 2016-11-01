@@ -1,0 +1,21 @@
+<script type="application/ld+json">
+{
+ "@context": "http://schema.org", 
+ "@type": "Blog",
+ "keywords": "{{ site.keywords }}", 
+ "url": "{{ site.url }}",
+ "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ site.url }}"
+  },
+ "author": {
+    "@type": "Person",
+    "name": "Pat Hermens",
+    "sameAs": [
+        "https://twitter.com/{{ site.twitter_username }}",
+        "https://github.com/{{ site.github_username }}",
+        "https://linkedin.com/in/{{ site.linkedin_username }}"
+    ]
+  }
+ }
+</script>
