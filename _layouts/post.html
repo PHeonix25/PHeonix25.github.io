@@ -5,7 +5,13 @@ layout: default
 
   <header class="article_header">
     <h1 class="article_title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="article_meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+    <p class="article_meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>.
+      {% if page.modified %}
+        Last updated <time datetime="{{ page.modified | date_to_xmlschema }}" itemprop="dateModified">{{ page.modified | date: "%b %-d, %Y" }}</time>.
+      {% endif %}
+      <meta itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="pat">
+    </p>
   </header>
 
   <div class="article-content" itemprop="articleBody">
