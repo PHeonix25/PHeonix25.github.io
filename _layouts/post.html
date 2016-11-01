@@ -5,7 +5,7 @@ layout: default
 
   <header class="article_header">
     <h1 class="article_title" itemprop="name headline">{{ page.title }}</h1>
-    <p class="article_meta">
+    <p class="article_meta post_date">
       <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>.
       {% if page.modified %}
         Last updated <time datetime="{{ page.modified | date_to_xmlschema }}" itemprop="dateModified">{{ page.modified | date: "%b %-d, %Y" }}</time>.
