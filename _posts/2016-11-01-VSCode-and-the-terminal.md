@@ -11,11 +11,11 @@ Did you know that there is an embedded terminal running within Visual Studio Cod
 
 ## Wait, what?
 
-Yeah, if you're like me, and you've been using VS Code for a while, but not really paying attention to the release notes, then you may have been greeted with a nice surprise when launching the latest version. Namely, this screen:
+Yeah, if you're like me, and you've been using VS Code for a while, but not really paying attention to the release notes, then you may have been greeted with a nice surprise when launching a new instance. Namely, this screen:
 
 [![Whoa there, what's that terminal thing they mention?][img-vs-ls]][img-vs-ls]
 
-It turns out that there has been an integrated terminal in VS Code for quite some time, and it's pretty slick.
+See that bottom line? `Toggle Terminal`!? It turns out that there has been an integrated terminal in VS Code for quite some time, and it's pretty slick.
 
 Using ``Ctrl+` `` now launches a perfectly reasonable `cmd` terminal (at least here, on Windows), which you can switch into a "more fully fledged console" by launching PowerShell:
 
@@ -42,12 +42,12 @@ You can launch multiple instances of the terminal, so why not set it up in anoth
 /// Or just use Ctrl+Shif+P and type SHORTCUTS
 [
     { 
-        "key":      "ctrl+n",      
+        "key":      "ctrl+` n",      
         "command":  "workbench.action.terminal.focusNext",
         "when":     "terminalFocus" 
     },
     { 
-        "key":      "ctrl+p",
+        "key":      "ctrl+` p",
         "command":  "workbench.action.terminal.focusPrevious",
         "when":     "terminalFocus" 
     }
@@ -58,6 +58,7 @@ You can launch multiple instances of the terminal, so why not set it up in anoth
 
 Great idea! Back in [Part 4][ph-part4] I showed you how to set up Jekyll in Docker, and because this is a command window, you can check Docker, or launch containers, or attach to running containers -- the sky is your limit!
 
+## Keep an eye on those notes!
 
 So that's all for now; one less reason to leave the Visual Studio Code window, and one more reason to keep an eye on the [Release Notes][vs-relnts] in the future!
 
