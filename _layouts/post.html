@@ -11,6 +11,7 @@ layout: default
         Last updated <time datetime="{{ page.modified | date_to_xmlschema }}" itemprop="dateModified">{{ page.modified | date: "%b %-d, %Y" }}</time>.
       {% endif %}
       <meta itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="pat">
+      <meta itemprop="mainEntityOfPage" content="{{ site.url }}{{ page.url }}">
     </p>
   </header>
 
