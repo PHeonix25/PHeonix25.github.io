@@ -283,6 +283,7 @@ p.readmore {
 
 .left {
   text-align:center;
+  float:left;
 
   @media (min-width: $on-laptop) {
     text-align:left;
@@ -291,6 +292,7 @@ p.readmore {
 
 .right {
   text-align:center;
+  float:right;
 
   @media (min-width: $on-laptop) {
     text-align:right;
@@ -332,18 +334,6 @@ body.custom-background {
 div.post_title span.date {
   font-size: 80%;
   color: $grey-color;
-}
-
-/* Pagination */
-
-
-.pagination {
-  width:50%;
-}  
-
-.pagination.older-post{
-  float: right;
-  text-align: right;
 }
 
 /* others */

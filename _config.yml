@@ -20,9 +20,9 @@ url: "https://hermens.com.au" # the base hostname & protocol for your site
 permalink: /:year/:month/:day/:title/
 
 # Social media usernames for filling out links:
-linkedin_username: phermens
 github_username: PHeonix25 
 twitter_username: phermens 
+linkedin_username: phermens
 
 # Enable posting into the future
 future: true
@@ -41,6 +41,10 @@ disqus_shortname: hermens
 # used this for post_excerpt at index_page
 excerpt_separator: <!--description-->
 
-# Lets add a sitemap for Google rank:
+# Pagination settings
+paginate: 5
+
+# These are the add-ins we want to use
 gems:
   - jekyll-sitemap
+  - jekyll-paginate
