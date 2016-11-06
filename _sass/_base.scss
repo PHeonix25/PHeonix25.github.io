@@ -459,8 +459,8 @@ blockquote {
 /* sharing */
 
 .share{
-  display: block;
-  height: 1.5em;
+  display: inline-block;
+  min-height: 1.5em;
 
   .title {
     font-weight: bold;

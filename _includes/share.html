@@ -1,9 +1,14 @@
 <div class="share">
     <div class="title">
-        <data data-icon="ei-share-google"></data> Liked it? Share it!
+        <data data-icon="ei-share-google"></data> Liked it? Share it! Let me know...
     </div>
     <div class="links">
-        <a class="twitter" href="https://twitter.com/intent/tweet?text={{ page.url | prepend: site.url }} - {{page.title}} by @{{ site.twitter_username }}">
+        <a class="twitter" href="#" onclick="
+            window.open(
+                'https://twitter.com/intent/tweet?text=.@{{ site.twitter_username }}, thanks! I really enjoyed \'{{page.title}}\' ({{ page.url | prepend: site.url }})',
+                'twitter-share-dialog',
+                'width=600,height=260');
+                return false;">
             <data data-icon="ei-sc-twitter"></data>Tweet
         </a>
         <a class="facebook" href="#" onclick="
