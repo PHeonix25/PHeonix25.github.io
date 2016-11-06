@@ -218,11 +218,13 @@ p.readmore {
 
 }
 
-.article-content a {
+.article-content a,
+.share a {
   border-bottom:1px dotted red;
   text-decoration:none;
 }
-.article-content a:hover {
+.article-content a:hover,
+.share a:hover {
   color:red;
   border-bottom:1px dotted red;
 }
@@ -255,7 +257,7 @@ p.readmore {
   @media (min-width: $on-laptop+1) {
     float:left;
   }
-  background: url(/assets/img/me.jpg);
+  background: url(/assets/img/avatar_bw.jpg);
   background-repeat: no-repeat;
   border-radius: 50%;
   width: 120px;

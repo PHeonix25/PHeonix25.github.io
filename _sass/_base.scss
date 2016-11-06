@@ -24,7 +24,7 @@
 - Clearing
 - Media Queries
 - Styled
-- Framse
+- Frames
 */
 
 %vertical-rhythm {
@@ -448,3 +448,30 @@ blockquote {
   border-left: 3px solid #D0E5F2;
   font-size: 1.3rem;
 } 
+
+/* footnotes */
+
+.footnotes {
+  color: #999;
+  font-size: small;
+}
+
+/* sharing */
+
+.share{
+  display: block;
+  height: 1.5em;
+
+  .title {
+    font-weight: bold;
+    float:left;
+    display: block;
+  }
+  .links {
+    float:right;
+    display: block;
+  }
+  a {
+    margin-right: 1em;
+  }
+}

@@ -23,6 +23,7 @@ permalink: /:year/:month/:day/:title/
 github_username: PHeonix25 
 twitter_username: phermens 
 linkedin_username: phermens
+facebook_username: hermens.p
 
 # Enable posting into the future
 future: true
