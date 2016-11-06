@@ -459,17 +459,10 @@ blockquote {
 /* sharing */
 
 .share{
-  display: inline-block;
   min-height: 1.5em;
 
   .title {
     font-weight: bold;
-    float:left;
-    display: block;
-  }
-  .links {
-    float:right;
-    display: block;
   }
   a {
     margin-right: 1em;
