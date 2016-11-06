@@ -1,15 +1,17 @@
-<footer class="site-footer">
+<footer class="site-footer small-font">
   <div class="container">
     <div class="footer left column one-half">
-      <section class="small-font">&nbsp;</section>
-    </div>
-
-    <div class="footer right column one-half">
-      <section class="small-font">
-        <!-- Let's not make this too prominent. {% if site.linkedin_username %}{% include icon-linkedin.html username=site.linkedin_username %}{% endif %}-->
-        {% if site.github_username %}{% include icon-github.html username=site.github_username %}{% endif %}
-        {% if site.twitter_username %}{% include icon-twitter.html username=site.twitter_username %}{% endif %}
+      <section class="copyright">
+        <a href="{{ site.baseurl }}">{{ site.title }}</a> &copy; 
+        {{ page.date | date: "%Y" }} &bull; All rights reserved.
       </section>
+      <section class="poweredby">
+        Handcrafted with love -- and <a href="https://jekyllrb.com/">Jekyll</a>.
+      </section>
+    </div>
+      
+    <div class="footer right column one-half">
+      {% include profilelinks.html %}
     </div>
     {% include ga.html %}
   </div>
