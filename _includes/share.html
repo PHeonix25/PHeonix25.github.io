@@ -3,12 +3,12 @@
         <data data-icon="ei-share-google"></data> Liked it? Share it!
     </div>
     <div class="links">
-        <a class="twitter" href="https://twitter.com/intent/tweet?text={{ site.domain_name }}{{ page.url }} - {{page.title}} by @{{ site.authorTwitter }}">
+        <a class="twitter" href="https://twitter.com/intent/tweet?text={{ page.url | prepend: site.url }} - {{page.title}} by @{{ site.twitter_username }}">
             <data data-icon="ei-sc-twitter"></data>Tweet
         </a>
         <a class="facebook" href="#" onclick="
             window.open(
-            'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
+            'https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.url }}',
             'facebook-share-dialog',
             'width=626,height=436');
             return false;">
