@@ -1,16 +1,27 @@
-# jekyll-simple
+# hermens.com.au
 
-## simple
-simple is a theme designed for blogger using static site generator like jekyll, Hexo etc.
+[![forthebadge](http://forthebadge.com/images/badges/fuck-it-ship-it.svg)](http://forthebadge.com)
+[![forthebadge](http://forthebadge.com/images/badges/kinda-sfw.svg)](http://forthebadge.com)
+[![forthebadge](http://forthebadge.com/images/badges/ages-20-30.svg)](http://forthebadge.com)
 
-Especially for those who writes in both Chinese and English. The font-type setting looks really good when writers use Chinese mixed with English.
+## pheonix25.github.io
+This is a site that I've set up for my personal blogging - all nice and clean, and simple - using Jekyll and GitHub Pages for deployment.
 
-Supposedly, this could work with Japanese as well but never had a chance to try.
+Feel free to copy parts of the code -- I know it's not that good, or performant, but while we're on the topic: **the content is all mine**, please don't steal that!
 
-## Story behind this theme
+Alternatively, if you're looking to set up a Jekyll site (maybe one that looks like mine), maybe you could start at the beginning of [my series on the topic](https://hermens.com.au/2016/10/01/Getting-started-with-Jekyll-Part-1/), or check out the [`jekyll` category](https://hermens.com.au/archive/#jekyll) on my blog?
 
-It has been long that using font with Chinese in web was a tedious and time-consuming work. It would be almost impossible to make different OS or devices to look the same.
+## author information
+I'm Pat, this is my blog. If you want to know more about me, just check out my [about page](https://hermens.com.au/about/).
 
-iOS 9 has pulished some new fonts in Chinese and I decided to make one theme that looks good on iOS devices, at the same time, making it acceptable on computers using other fonts.
+## theme
+I based my theme off [`simple`](https://github.com/wild-flame/jekyll-simple) and have continued to modify it to suit my needs.
 
-So mobile goes first, then the macOS.
+From the `simple` README, it is described in the following manner:
+> `simple` is a theme designed for blogger using static site generator like jekyll, Hexo etc.
+> Especially for those who writes in both Chinese and English. The font-type setting looks really good when writers use Chinese mixed with English.
+> Supposedly, this could work with Japanese as well but never had a chance to try.
+
+## moar badges plz
+[![forthebadge](http://forthebadge.com/images/badges/built-by-developers.svg)](http://forthebadge.com)
+[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
