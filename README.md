@@ -1,15 +1,15 @@
-# hermens.com.au
+# [hermens.com.au](https://hermens.com.au)
 
 [![forthebadge](http://forthebadge.com/images/badges/fuck-it-ship-it.svg)](http://forthebadge.com)
 [![forthebadge](http://forthebadge.com/images/badges/kinda-sfw.svg)](http://forthebadge.com)
 [![forthebadge](http://forthebadge.com/images/badges/ages-20-30.svg)](http://forthebadge.com)
 
-## pheonix25.github.io
+## aka. [pheonix25.github.io](https://hermens.com.au)
 This is a site that I've set up for my personal blogging - all nice and clean, and simple - using Jekyll and GitHub Pages for deployment.
 
 Feel free to copy parts of the code -- I know it's not that good, or performant, but while we're on the topic: **the content is all mine**, please don't steal that!
 
-Alternatively, if you're looking to set up a Jekyll site (maybe one that looks like mine), maybe you could start at the beginning of [my series on the topic](https://hermens.com.au/2016/10/01/Getting-started-with-Jekyll-Part-1/), or check out the [`jekyll` category](https://hermens.com.au/archive/#jekyll) on my blog?
+Alternatively, if you're looking to set up a Jekyll site (*maybe one that looks like mine?*), you could start at the beginning of [my series on the topic](https://hermens.com.au/2016/10/01/Getting-started-with-Jekyll-Part-1/), or check out the [`jekyll` category](https://hermens.com.au/archive/#jekyll) on my blog?
 
 ## author information
 I'm Pat, this is my blog. If you want to know more about me, just check out my [about page](https://hermens.com.au/about/).
