@@ -4,6 +4,7 @@ title: "Listening to Steven Schuurman about Elastic"
 date: 2016-11-08 00:00:00 +0000
 categories: elastic-stack
 published: true
+image: img-ssvb
 ---
 
 Tonight I got the opportunity to meet with [Steven Schuurman](https://twitter.com/stevenschuurman) from [Elastic](https://www.elastic.co/) - aka. the guys that created ELK/Elastic Stack. I wanted to take some notes for myself, and figurd I'd just turn them into a blog-post all about the latest Coolblue [#vrijbelijvers](https://twitter.com/hashtag/vrijblijvers) session!
@@ -14,7 +15,7 @@ Tonight I got the opportunity to meet with [Steven Schuurman](https://twitter.co
 ## *Super tof!*
 Jazeker! Not only did he give us some great stories about the successes of Elastic Stack (all the way up to the reversioning of `v2`+`v3`+`v4` into `v5`) but I also took the opportunity to share a beer with him after the talk and learn about how Elastic works as a development-oriented company.
 
-![Steven Schuurman presenting at Coolblue #vrijblijvers](/assets/img/stevenschuurman_vrijblivers.jpg)
+[![Steven Schuurman presenting at Coolblue #vrijblijvers][img-ssvb]][img-ssvb]
 
 ## Some background on my expectations
 Firstly, I didn't expect the talk to be very technical, because although Steven is listed as a [Founder of Elastic Search](https://www.elastic.co/about/leadership) -- he is no [Shay Bannon](http://thedudeabides.com/). **That being said**, the way that Steven was able to deliver the story of Elastic - and growing a company from a team of 4 to a team of 400 - shows that he has had his finger on the (technical) pulse for the whole trip, and what a trip it must have been!
@@ -55,3 +56,5 @@ Finally, Steven, if this gets back to you at all, thanks again. It was a great s
 [^1]: My face is still the placeholder image for some of the roles after all... 
 [^2]: ...except the VP of Engineering, [Kevin Kluge](https://twitter.com/kevinkluge).
 [^3]: I have a "Behind The Scenes" talk coming up in December about it after all.
+
+[img-ssvb]: /assets/img/stevenschuurman_vrijblivers.jpg
