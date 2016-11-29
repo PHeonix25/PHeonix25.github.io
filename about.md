@@ -33,7 +33,7 @@ If you’re looking for me, you should be able to find me:
 
 ## Upcoming speaking events:
 
-**2016-12-08**: Coolblue's Behind the Scenes, Rotterdam, NL.
+**2016-12-08**: [Coolblue's Behind the Scenes](https://www.coolblue.nl/behindthescenes0812), Rotterdam, NL - Using the Elastic Stack as a .Net developer
 
 ## Previous speaking events:
 
