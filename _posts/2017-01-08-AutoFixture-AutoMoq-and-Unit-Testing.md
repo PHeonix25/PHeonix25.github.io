@@ -95,7 +95,9 @@ namespace SuperCoolTool78.SFTP.Tests
 
 Well, this little bad boy of an exception is thrown by our instantiation of the `SessionOptionsCreator.Create()` method:
 
-> System.ArgumentException: SSH host key fingerprint "RemoteSshHostKeyFingerprintb53defcd-7a9a-4fc2-9532-067f009fd7fa" does not match pattern /((ssh-rsa|ssh-dss|ssh-ed25519|ecdsa-sha2-nistp(256|384|521))( |-))?(\d+ )?([0-9a-f]{2}(:|-)){15}[0-9a-f]{2}(;((ssh-rsa|ssh-dss|ssh-ed25519|ecdsa-sha2-nistp(256|384|521))( |-))?(\d+ )?([0-9a-f]{2}(:|-)){15}[0-9a-f]{2})*/
+```
+System.ArgumentException: SSH host key fingerprint "RemoteSshHostKeyFingerprintb53defcd-7a9a-4fc2-9532-067f009fd7fa" does not match pattern /((ssh-rsa|ssh-dss|ssh-ed25519|ecdsa-sha2-nistp(256|384|521))( |-))?(\d+ )?([0-9a-f]{2}(:|-)){15}[0-9a-f]{2}(;((ssh-rsa|ssh-dss|ssh-ed25519|ecdsa-sha2-nistp(256|384|521))( |-))?(\d+ )?([0-9a-f]{2}(:|-)){15}[0-9a-f]{2})*/
+```
 
 Ah, OK, so it needs a very specific format for it's own constructor. Let's not worry about how troublesome this type of verification is, and just appreciate that we learnt about this now - and thank AutoFixture for that randomised `RemoteSshHostKeyFingerprintb53defcd-7a9a-4fc2-9532-067f009fd7fa` input value!
 
