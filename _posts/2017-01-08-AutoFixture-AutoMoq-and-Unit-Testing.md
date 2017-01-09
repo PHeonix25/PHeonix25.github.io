@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AutoFixture, AutoMoq, and building Unit Tests with Specimen Builders"
+title: "AutoFixture, AutoMoq, and Unit Tests with Specimen Builders"
 date: 2017-01-08 00:00:00 +0000
 categories: unit-testing
 published: true
@@ -9,11 +9,11 @@ published: true
 I'm a big fan of unit-testing. I especially like unit testing that is simple, clean and easy to follow. It gives me a good feeling that the rest of the code that is behind the tests is easy to understand and easy to maintain, and whilst this isn't *always* true, from my experience, it's pretty close. 
 <!--description-->
 
-Some of the best tools that I've found to help with making clean, clear, reliable unit-tests are [AutoFixture][tool-af] and [Moq][tool-moq]. Using these two, we can generate some REALLY clean tests with (relatively) randomised input data.
+Some of the best tools that I've found to help with making clean, clear, reliable unit-tests are [AutoFixture][tool-af] and [Moq][tool-moq]. Using the combination of these two, we can generate some REALLY clean tests with (relatively) randomised input data.
 
 ## Let's cover a project
 
-Recently, I've had the opportunity to go back to one of my previous [hackathon][hackathon] projects, a dashboard for representing internal numbers on some of the TV's here in the office, and make it a bit more "production-ready". One of the ways that I've started making it a bit more reliable is by covering everything with unit-tests (primarily so we can be sure it DOES do what we want it to do). 
+Recently, I've had the opportunity to go back to one of my previous [hackathon][hackathon] projects, a dashboard for representing internal numbers on some of the [dashboard screens][canteen] here in the office at Coolblue, and make it a bit more "production-ready". One of the ways that I've started making it a bit more reliable is by covering everything with unit-tests -- primarily so we can be sure it DOES do what we want it to do. 
 
 At the same time, we have a few people in the office that are still quite new to unit testing, and how to refactor code-bases to integrate better with tests (no more inline `new` statements!) so I've been making some of these "upgrades" into Pull Requests on GitHub for other people to review.
 
@@ -22,7 +22,8 @@ At the same time, we have a few people in the office that are still quite new to
 We had a class, pretty simple and straightforward. Only one function to test, and only one injected class. _"Perfect! Easy!"_ I hear you say... :)
 
 It looked something like this:
-```
+
+```C#
 using WinSCP;
 
 namespace SuperCoolTool78.SFTP
@@ -51,7 +52,8 @@ namespace SuperCoolTool78.SFTP
 ```
 
 So naturally, using my favourite tooling, I set up some unit tests:
-```
+
+```C#
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Ploeh.AutoFixture;
@@ -104,7 +106,8 @@ We can see from the error that our test throws, that the `SessionOptions` constr
 We also need to satisfy the rest of the regex: `((ssh-rsa|ssh-dss|ssh-ed25519|ecdsa-sha2-nistp(256|384|521))( |-))`. Now, I'm sure that we can find a way to get AutoFixture to generate one of these required values (the pipe character means "OR"), but I'm also a pragmatist and we need to draw the line somewhere, so lets just hardcode this half of the required input.
 
 For now, something like this looks like it might work to generate the second half of the required string:
-```
+
+```C#
 string GenerateOctetString_UGLY()
 {
     var guidAsOctetString = new StringBuilder();
@@ -186,7 +189,7 @@ Now, it's time to dive a bit deeper into [AutoFixture][tool-af], where they have
 
 If we convert the logic that we have above in our initialiser into a ISpecimenBuilder, it should look something like this:
 
-```
+```C#
 public class SshHostKeySpecimenBuilder : ISpecimenBuilder
 {
     private const string SSH_HOSTKEY_PREFIX = "ssh-ed25519 256 ";
@@ -198,7 +201,8 @@ public class SshHostKeySpecimenBuilder : ISpecimenBuilder
 
         if(propertyInfo != null &&
             propertyInfo.PropertyType == typeof(string) &&
-            propertyInfo.Name.Equals(PROPERTY_NAME, StringComparison.CurrentCultureIgnoreCase))
+            propertyInfo.Name.Equals(PROPERTY_NAME, 
+                StringComparison.CurrentCultureIgnoreCase))
         {
             var guidAsOctetString = new StringBuilder();
 
@@ -224,7 +228,8 @@ We can then just reference this behaviour in the test initialisation for the cla
 ## Ah, there we go
 
 So now, we end up with something like the following:
-```
+
+```C#
 namespace SuperCoolTool78.SFTP.Tests
 {
     [TestClass]
@@ -269,6 +274,7 @@ To wrap up, I would advise if you're Unit Testing in any of the .Net languages t
 
 
 [hackathon]: http://blog.coolblue.nl/de-coolblue-hackathon-2016
+[canteen]:   https://www.google.com/maps/@51.9228969,4.4725992,3a,30y,333.67h,99.11t/data=!3m7!1e1!3m5!1s4sWFAZLORBsAAAQGD3NnvA!2e0!3e2!7i13312!8i6656?hl=en
 [msdn-sfs]:  https://msdn.microsoft.com/en-us/library/dwhawy9k(v=vs.110).aspx
 [ploeh]:     http://blog.ploeh.dk/about/
 [ploeh-cbc]: http://blog.ploeh.dk/2010/10/19/Convention-basedCustomizationswithAutoFixture/
