@@ -23,7 +23,7 @@ We had a class, pretty simple and straightforward. Only one function to test, an
 
 It looked something like this:
 
-```C#
+```cs
 using WinSCP;
 
 namespace SuperCoolTool78.SFTP
@@ -53,7 +53,7 @@ namespace SuperCoolTool78.SFTP
 
 So naturally, using my favourite tooling, I set up some unit tests:
 
-```C#
+```cs
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Ploeh.AutoFixture;
@@ -107,7 +107,7 @@ We also need to satisfy the rest of the regex: `((ssh-rsa|ssh-dss|ssh-ed25519|ec
 
 For now, something like this looks like it might work to generate the second half of the required string:
 
-```C#
+```cs
 string GenerateOctetString_UGLY()
 {
     var guidAsOctetString = new StringBuilder();
@@ -189,7 +189,7 @@ Now, it's time to dive a bit deeper into [AutoFixture][tool-af], where they have
 
 If we convert the logic that we have above in our initialiser into a ISpecimenBuilder, it should look something like this:
 
-```C#
+```cs
 public class SshHostKeySpecimenBuilder : ISpecimenBuilder
 {
     private const string SSH_HOSTKEY_PREFIX = "ssh-ed25519 256 ";
@@ -229,7 +229,7 @@ We can then just reference this behaviour in the test initialisation for the cla
 
 So now, we end up with something like the following:
 
-```C#
+```cs
 namespace SuperCoolTool78.SFTP.Tests
 {
     [TestClass]
