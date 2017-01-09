@@ -95,7 +95,7 @@ namespace SuperCoolTool78.SFTP.Tests
 
 Well, this little bad boy of an exception is thrown by our instantiation of the `SessionOptionsCreator.Create()` method:
 
-> `System.ArgumentException: SSH host key fingerprint "RemoteSshHostKeyFingerprintb53defcd-7a9a-4fc2-9532-067f009fd7fa" does not match pattern /((ssh-rsa|ssh-dss|ssh-ed25519|ecdsa-sha2-nistp(256|384|521))( |-))?(\d+ )?([0-9a-f]{2}(:|-)){15}[0-9a-f]{2}(;((ssh-rsa|ssh-dss|ssh-ed25519|ecdsa-sha2-nistp(256|384|521))( |-))?(\d+ )?([0-9a-f]{2}(:|-)){15}[0-9a-f]{2})*/`
+> System.ArgumentException: SSH host key fingerprint "RemoteSshHostKeyFingerprintb53defcd-7a9a-4fc2-9532-067f009fd7fa" does not match pattern /((ssh-rsa|ssh-dss|ssh-ed25519|ecdsa-sha2-nistp(256|384|521))( |-))?(\d+ )?([0-9a-f]{2}(:|-)){15}[0-9a-f]{2}(;((ssh-rsa|ssh-dss|ssh-ed25519|ecdsa-sha2-nistp(256|384|521))( |-))?(\d+ )?([0-9a-f]{2}(:|-)){15}[0-9a-f]{2})*/
 
 Ah, OK, so it needs a very specific format for it's own constructor. Let's not worry about how troublesome this type of verification is, and just appreciate that we learnt about this now - and thank AutoFixture for that randomised `RemoteSshHostKeyFingerprintb53defcd-7a9a-4fc2-9532-067f009fd7fa` input value!
 
@@ -226,9 +226,9 @@ public class SshHostKeySpecimenBuilder : ISpecimenBuilder
 }
 ```
 
-Basically, this says, if there we are looking at a property (_because `SpecimenBuilders` get called for just about every `request` that AutoFixture needs to handle_), and that property identifes of type `string`, and the `Name` of that property matches the `PROPERTY_NAME` value that we are looking for - ignoring the letter casing, then we should apply our customisation function. 
+Basically, this says, if there we are looking at a property (because `SpecimenBuilders` get called for just about every `request` that AutoFixture needs to handle), and that property identifes of type `string`, and the `Name` of that property matches the `PROPERTY_NAME` value that we are looking for - ignoring the letter casing, then we should apply our customisation function. 
 
-Otherwise we just return the default `NoSpecimen` function, which is a `SpecimenBuilder` default behaviour. 
+Otherwise we just return the default `NoSpecimen` function, which is the default behaviour of a `SpecimenBuilder` that doesn't match the given input. 
 
 We can then just reference this behaviour in the test initialisation for the classes we need to apply this rule to, and our test classes will be much cleaner, and much more focussed.
 
