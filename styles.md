@@ -99,6 +99,8 @@ First of all, let's have a glance at the basic styles: [link](http://github.com/
 
 ### Code snippet
 
+Typically, some JavaScript had to sneak in:
+
 ```javascript
 // index.js
 var arr = [1, 2, 3, 4, 5];
@@ -109,4 +111,37 @@ function foo(){
 	console.log('foo');
 }
 
+```
+
+...and we'll add a C# sample (using the `cs` shorthand): 
+
+```cs
+namespace SuperCoolTool78.SFTP.Tests
+{
+    [TestClass]
+    public class SftpSessionOptionsCreatorTests
+    {
+        private IFixture _fixture;
+        private Settings _settings;
+
+        [TestInitialize]
+        public void Initialise()
+        {
+            _fixture = new Fixture().Customize(new AutoConfiguredMoqCustomization());
+            _fixture.Customizations.Add(new SshHostKeySpecimenBuilder());
+
+            _settings = _fixture.Freeze<Settings>();
+        }
+
+        [TestMethod]
+        public void Create_GivenAppropriateSettings_ShouldReturnHostNameFromSettings()
+        {
+            var sut = _fixture.Create<SftpSessionOptionsCreator>();
+
+            var result = sut.Create();
+
+            result.HostName.Should().Be(_settings.RemoteHostName);
+        }
+    }
+}
 ```
