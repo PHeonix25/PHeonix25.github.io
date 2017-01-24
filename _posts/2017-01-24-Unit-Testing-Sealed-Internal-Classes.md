@@ -56,11 +56,12 @@ namespace SuperCoolTool78.SFTP.Tests
 ```
 
 The above unit test fails on the **first line** with the following error message:
+
 > `Ploeh.AutoFixture.ObjectCreationException: `
 > `AutoFixture was unable to create an instance from WinSCP.SessionException,`
 > `most likely because it has no public constructor, is an abstract or non-public type.`
 
-_"OK OK OK"_, I hear you say, _but these are `exceptions` - you're not supposed to build on top of exceptions generated from an external library_, and again, you'd be right, so how about a test that checks that we get some files back assuming the connection can be opened and the remote operation is successful?
+_"OK OK OK"_, I hear you say, _"but these are *exceptions* - you're not supposed to build on top of exceptions generated from an external library"_, and again, you'd be right, so how about a test that checks that we get some files back assuming the connection can be opened and the remote operation is successful?
 
 ```cs
 using FluentAssertions;
@@ -158,7 +159,7 @@ So, with `private` setters on the collections, collections abstracted away via `
 
 ## So, what now?
 
-This is where it gets... fun (in a very perverse way) - we will need to use Reflection to make the required instances that we can then apply behavior to (in other words, we want to find these types, and trick them into thinking that we are in control of them - ignoring the access modifiers)
+This is where it gets... fun (in a very perverse way) - we will need to use [Reflection][reflection] to make the required instances that we can then apply behavior to (in other words, we want to find these types, and trick them into thinking that we are in control of them - ignoring the access modifiers)
 
 What does this look like? It looks like this:
 
@@ -546,9 +547,11 @@ namespace SuperCoolTool78.SFTP.Tests
 }
 ```
 
+... and we're done. We have unit tests that can confirm the behavior of our `sut` by abstracting away & controlling the results from the dependency in our `sut`.
+
 ## But we're never truly done...
 
-Now this is not perfect; we're using Reflection all over the place, and this will get even worse when we need to test other return types or return results from the WinSCP library, and I don't mean to pick on WinSCP in this regard, but I do want to demonstrate how ugly and difficult your consuming code gets when a library chooses to use `sealed` classes with `internal` constructors. **Please, just, don't do it.**
+Now this is not perfect; we're using [Reflection][reflection] all over the place, and this will get even worse when we need to test other return types or return results from the WinSCP library, and I don't mean to pick on WinSCP in this regard, but I do want to demonstrate how ugly and difficult your consuming code gets when a library chooses to use `sealed` classes with `internal` constructors. **Please, just, don't do it.**
 
 All that being said; do you have any better examples, or any suggestions for making this code better than what I've used above?
 
@@ -561,4 +564,5 @@ Let me know in the comments below, or get in touch on [Twitter](https://twitter.
 [customis8n]:  http://blog.ploeh.dk/2011/03/18/EncapsulatingAutoFixtureCustomizations/
 [factory]:     https://en.wikipedia.org/wiki/Factory_method_pattern
 [moq]:         https://github.com/moq/moq4
+[reflection]:  https://msdn.microsoft.com/en-us/library/f7ykdhsy(v=vs.110).aspx
 [winscp]:      https://winscp.net/eng/docs/library_install#nuget
