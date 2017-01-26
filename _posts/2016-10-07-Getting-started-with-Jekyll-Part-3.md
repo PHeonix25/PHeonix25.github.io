@@ -39,8 +39,9 @@ timezone: UTC
 title: Pat Hermens
 email: p@hermens.com.au
 description: > # this means to ignore newlines until "baseurl:"
-  Public speaker, challenge addict, father, husband and (most of all) geek. 
-  Interesting problems & inspiring solutions get me out of bed in the morning.
+  This description will appear in Google search results,
+  and in the meta-data of your site, so make sure you
+  type up something short that defines you...
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://hermens.com.au" # the base hostname & protocol for your site
