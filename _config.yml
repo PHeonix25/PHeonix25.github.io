@@ -12,7 +12,7 @@ timezone: UTC
 title: Pat Hermens
 email: p@hermens.com.au
 description: > # this means to ignore newlines until "baseurl:"
-  Public speaker, challenge addict, father, husband and (most of all) geek. 
+  .Net developer, public speaker, challenge addict, father, husband and (most of all) geek. 
   Interesting problems & inspiring solutions get me out of bed in the morning.
 
 baseurl: "" # the subpath of your site, e.g. /blog

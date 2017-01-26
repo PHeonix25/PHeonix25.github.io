@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 I'm a loud Australian that's been living in the Netherlands for a few years -- and still trying to learn Dutch.
-At risk of sounding cliché; I'm an accomplished public speaker, skilled .Net developer, husband and father, but most of all, a geek. 
+At risk of sounding cliché; I'm an experienced .Net developer, accomplished public speaker, skilled .Net developer, husband and father, but most of all, a geek. 
 Over the course of my career, I've found that interesting problems & inspiring solutions are what gets me out of bed in the morning.
 
 If you're interested in my previous roles or experience you can look at my [Developer Story](http://stackoverflow.com/story/phermens), 
@@ -33,7 +33,7 @@ If you’re looking for me, you should be able to find me:
 
 ## Upcoming speaking events:
 
-**2016-12-08**: [Coolblue's Behind the Scenes](https://www.coolblue.nl/behindthescenes0812), Rotterdam, NL - Using the Elastic Stack as a .Net developer
+**2016-02-21**: [Coolblue's Behind the Scenes](https://www.coolblue.nl/behindthescenes2102), Rotterdam, NL - Using the Elastic Stack as a .Net developer
 
 ## Previous speaking events:
 
