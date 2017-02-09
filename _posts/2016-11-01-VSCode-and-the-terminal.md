@@ -8,6 +8,7 @@ published: true
 
 Did you know that there is an embedded terminal running within Visual Studio Code as of [May 2016][vs-may16]? I didn't!
 <!--description-->
+![2016-11-01-VSCode-and-the-terminal](/assets/headers/2016-11-01-VSCode-and-the-terminal.png)
 
 ## Wait, what?
 

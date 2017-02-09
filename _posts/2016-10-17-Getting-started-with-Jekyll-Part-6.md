@@ -8,6 +8,7 @@ published: true
 
 In this post we're going to discuss how we can modify our template using Markdown, Liquid and HTML.
 <!--description-->
+![2016-10-17-Getting-started-with-Jekyll-Part-6](/assets/headers/2016-10-17-Getting-started-with-Jekyll-Part-6.png)
 
 1. [Getting Started with Jekyll - Setting the Scene][ph-part1]
 2. [Getting Started with Jekyll - Finding a Theme][ph-part2]

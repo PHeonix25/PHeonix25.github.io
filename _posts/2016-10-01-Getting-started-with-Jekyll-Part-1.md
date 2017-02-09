@@ -7,7 +7,8 @@ category: jekyll
 ---
 
 In this series (of about 8 short posts) I want to outline the steps that you need to take to get started with Jekyll, writing your first post, previewing it via Docker, and "taking care of hosting" with GitHub Pages.
-<!--description-->
+<!--description--> 
+![2016-10-01-Getting-started-with-Jekyll-Part-1](/assets/headers/2016-10-01-Getting-started-with-Jekyll-Part-1.png)
 
 1. Getting Started with Jekyll - Setting the Scene **<==**
 2. [Getting Started with Jekyll - Finding a Theme][ph-part2]

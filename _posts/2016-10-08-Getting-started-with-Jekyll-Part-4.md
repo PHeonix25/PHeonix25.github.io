@@ -8,6 +8,7 @@ published: true
 
 In this post we're going to get our site up and running locally, taking advantage of Docker and a quick feedback loop.
 <!--description-->
+![2016-10-08-Getting-started-with-Jekyll-Part-4](/assets/headers/2016-10-08-Getting-started-with-Jekyll-Part-4.png)
 
 1. [Getting Started with Jekyll - Setting the Scene][ph-part1]
 2. [Getting Started with Jekyll - Finding a Theme][ph-part2]

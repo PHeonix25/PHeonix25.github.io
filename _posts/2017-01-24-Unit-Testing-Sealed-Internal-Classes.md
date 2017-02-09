@@ -8,6 +8,7 @@ published: true
 
 As I wrote in my last post, I'm a big fan of clean, clear, simple unit-tests. Part of this involves figuring out where your "boundary" is and clarifying the limits of the code that you're responsible for. Normally this is simple and straightforward, but ~sometimes~most of the time, trying to test a class with an unnecessary access modifier and limited construction options is going to end in frustration.
 <!--description-->
+![2017-01-24-Unit-Testing-Sealed-Internal-Classes](/assets/headers/2017-01-24-Unit-Testing-Sealed-Internal-Classes.png)
 
 So, as I showed you [in my last post][last-post], we were writing a nice small, simple application, but it had a requirement to grab some files via SFTP. Easy, we thought, we'll just grab [WinSCP][winscp] and use that because it has a nice interface and a decent NuGet package. It's pretty easy to use and has been around for ages, so it should be nice and stable. 
 

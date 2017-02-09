@@ -8,6 +8,7 @@ published: true
 
 In this post we're going to try and find a theme, and see why that might be the easiest way to get started.
 <!--description-->
+![2016-10-05-Getting-started-with-Jekyll-Part-2](/assets/headers/2016-10-05-Getting-started-with-Jekyll-Part-2.png)
 
 1. [Getting Started with Jekyll - Setting the Scene][ph-part1]
 2. Getting Started with Jekyll - Finding a Theme **<==**

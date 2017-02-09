@@ -8,6 +8,7 @@ published: true
 
 In this post we're going to go over a few tips and tricks for working with Markdown and Liquid, in the context of creating Jekyll pages and posts.
 <!--description-->
+![2016-10-14-Getting-started-with-Jekyll-Part-5](/assets/headers/2016-10-14-Getting-started-with-Jekyll-Part-5.png)
 
 1. [Getting Started with Jekyll - Setting the Scene][ph-part1]
 2. [Getting Started with Jekyll - Finding a Theme][ph-part2]

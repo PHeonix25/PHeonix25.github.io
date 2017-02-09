@@ -8,6 +8,7 @@ published: true
 
 In this post we're going modify our chosen theme a bit, and make it feel more like home.
 <!--description-->
+![2016-10-07-Getting-started-with-Jekyll-Part-3](/assets/headers/2016-10-07-Getting-started-with-Jekyll-Part-3.png)
 
 1. [Getting Started with Jekyll - Setting the Scene][ph-part1]
 2. [Getting Started with Jekyll - Finding a Theme][ph-part2]
@@ -65,6 +66,7 @@ disqus_shortname:
 
 # used this for post_excerpt at index_page
 excerpt_separator: <!--description-->
+![2016-10-07-Getting-started-with-Jekyll-Part-3](/assets/headers/2016-10-07-Getting-started-with-Jekyll-Part-3.png)
 ```
 
 ## Whoa, that's a lot of config. What's truly important?

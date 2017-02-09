@@ -8,6 +8,7 @@ published: true
 
 I'm a big fan of unit-testing. I especially like unit testing that is simple, clean and easy to follow. It gives me a good feeling that the rest of the code that is behind the tests is easy to understand and easy to maintain, and whilst this isn't *always* true, from my experience, it's pretty close. 
 <!--description-->
+![2017-01-08-AutoFixture-AutoMoq-and-Unit-Testing](/assets/headers/2017-01-08-AutoFixture-AutoMoq-and-Unit-Testing.png)
 
 Some of the best tools that I've found to help with making clean, clear, reliable unit-tests are [AutoFixture][tool-af] and [Moq][tool-moq]. Using the combination of these two, we can generate some REALLY clean tests with (relatively) randomised input data.
 

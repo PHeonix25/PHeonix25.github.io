@@ -9,6 +9,7 @@ modified: 2016-10-30
 
 In this post - we're going to push our site live!
 <!--description-->
+![2016-10-22-Getting-started-with-Jekyll-Part-8](/assets/headers/2016-10-22-Getting-started-with-Jekyll-Part-8.png)
 
 1. [Getting Started with Jekyll - Setting the Scene][ph-part1]
 2. [Getting Started with Jekyll - Finding a Theme][ph-part2]

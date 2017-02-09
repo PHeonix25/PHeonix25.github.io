@@ -8,6 +8,7 @@ published: true
 
 In this post we're going to discuss how we can move our content from our existing blog.
 <!--description-->
+![2016-10-20-Getting-started-with-Jekyll-Part-7](/assets/headers/2016-10-20-Getting-started-with-Jekyll-Part-7.png)
 
 1. [Getting Started with Jekyll - Setting the Scene][ph-part1]
 2. [Getting Started with Jekyll - Finding a Theme][ph-part2]

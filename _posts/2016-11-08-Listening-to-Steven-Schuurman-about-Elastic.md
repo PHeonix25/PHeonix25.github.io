@@ -9,6 +9,7 @@ image: img-ssvb
 
 Tonight I got the opportunity to meet with [Steven Schuurman](https://twitter.com/stevenschuurman) from [Elastic](https://www.elastic.co/) - aka. the guys that created ELK/Elastic Stack. I wanted to take some notes for myself, and figurd I'd just turn them into a blog-post all about the latest Coolblue [#vrijbelijvers](https://twitter.com/hashtag/vrijblijvers) session!
 <!--description-->
+![2016-11-08-Listening-to-Steven-Schuurman-about-Elastic](/assets/headers/2016-11-08-Listening-to-Steven-Schuurman-about-Elastic.png)
 
 ---
 
