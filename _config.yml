@@ -17,7 +17,9 @@ description: > # this means to ignore newlines until "baseurl:"
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://hermens.com.au" # the base hostname & protocol for your site
+image: "/assets/img/avatar_bw.jpg" # The fallback image used for OG
 permalink: /:year/:month/:day/:title/
+
 
 # Social media usernames for filling out links:
 github_username: PHeonix25 
