@@ -12,14 +12,12 @@
   <meta property="og:title" content="{% if page.title %}{{ page.title | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title }}{% endif %}">
   <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-
-
-  <meta property="og:image" content="{{ site.url }}{% if page.image %}{{ page.image }}{% else %}{{ site.image }}{% endif %}">
-  <meta property="og:image:secure_url" content="{{ site.url }}{% if page.image %}{{ page.image }}{% else %}{{ site.image }}{% endif %}">
-<!--
-  <meta property="og:image:type" content="{% if page.og_image %}{{ page.og_image_type }}{% else %}{{ site.og_image_type }}{% endif %}">
-  <meta property="og:image:width" content="{% if page.og_image %}{{ page.og_image_width }}{% else %}{{ site.og_image_width }}{% endif %}">
-  <meta property="og:image:height" content="{% if page.og_image %}{{ page.og_image_height }}{% else %}{{ site.og_image_height }}{% endif %}">
--->
+{% if page.image %}
+  <meta property="og:image" content="{{ page.image | prepend: site.baseurl | prepend: site.url }}">
+  <meta property="og:image:secure_url" content="{{ page.image | prepend: site.baseurl | prepend: site.url }}">
+  <meta property="og:image:width" content="800">
+  <meta property="og:image:height" content="400">
+  <meta property="og:image:type" content="image/png">
+{% endif %}
   <meta property="fb:profile_id" content="{{ site.facebook_username }}">
   <meta property="fb:admins" content="{{ site.facebook_username }}">
