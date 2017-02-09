@@ -4,7 +4,7 @@ title: "Getting Started with Jekyll - Setting the Scene"
 date: 2016-10-01 00:00:00 +0000
 published: true
 category: jekyll
-image: "/assets/headers/2016-10-01-Getting-started-with-Jekyll-Part-1.png"
+image: /assets/headers/2016-10-01-Getting-started-with-Jekyll-Part-1.png
 ---
 
 In this series (of about 8 short posts) I want to outline the steps that you need to take to get started with Jekyll, writing your first post, previewing it via Docker, and "taking care of hosting" with GitHub Pages.

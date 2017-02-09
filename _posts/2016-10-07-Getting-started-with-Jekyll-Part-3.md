@@ -4,6 +4,7 @@ title: "Getting Started with Jekyll - Common Theme Settings"
 date: 2016-10-07 00:00:00 +0000
 categories: jekyll theme
 published: true
+image: /assets/headers/2016-10-07-Getting-started-with-Jekyll-Part-3.png
 ---
 
 In this post we're going modify our chosen theme a bit, and make it feel more like home.

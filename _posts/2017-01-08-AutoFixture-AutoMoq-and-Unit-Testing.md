@@ -4,6 +4,7 @@ title: "AutoFixture, AutoMoq, and Unit Tests with Specimen Builders"
 date: 2017-01-08 00:00:00 +0000
 categories: unit-testing
 published: true
+image: /assets/headers/2017-01-08-AutoFixture-AutoMoq-and-Unit-Testing.png
 ---
 
 I'm a big fan of unit-testing. I especially like unit testing that is simple, clean and easy to follow. It gives me a good feeling that the rest of the code that is behind the tests is easy to understand and easy to maintain, and whilst this isn't *always* true, from my experience, it's pretty close. 

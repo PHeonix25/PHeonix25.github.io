@@ -4,6 +4,7 @@ title: "Getting Started with Jekyll - Modifying Templates"
 date: 2016-10-17 00:00:00 +0000
 categories: jekyll markdown liquid
 published: true
+image: /assets/headers/2016-10-17-Getting-started-with-Jekyll-Part-6.png
 ---
 
 In this post we're going to discuss how we can modify our template using Markdown, Liquid and HTML.

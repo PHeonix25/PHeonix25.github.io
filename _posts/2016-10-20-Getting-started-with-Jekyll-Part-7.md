@@ -4,6 +4,7 @@ title: "Getting Started with Jekyll - Transitioning Content"
 date: 2016-10-20 00:00:00 +0000
 categories: jekyll
 published: true
+image: /assets/headers/2016-10-20-Getting-started-with-Jekyll-Part-7.png
 ---
 
 In this post we're going to discuss how we can move our content from our existing blog.

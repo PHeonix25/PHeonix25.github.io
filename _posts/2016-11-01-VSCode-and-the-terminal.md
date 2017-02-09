@@ -4,6 +4,7 @@ title: "Visual Studio Code and the inbuilt terminal"
 date: 2016-11-01 00:00:00 +0000
 categories: vscode
 published: true
+image: /assets/headers/2016-11-01-VSCode-and-the-terminal.png
 ---
 
 Did you know that there is an embedded terminal running within Visual Studio Code as of [May 2016][vs-may16]? I didn't!

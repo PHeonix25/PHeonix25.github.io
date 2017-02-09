@@ -4,7 +4,7 @@ title: "Getting Started with Jekyll - Finding a Theme"
 date: 2016-10-05 00:00:00 +0000
 categories: jekyll theme
 published: true
-image: "/assets/headers/2016-10-05-Getting-started-with-Jekyll-Part-2.png"
+image: /assets/headers/2016-10-05-Getting-started-with-Jekyll-Part-2.png
 ---
 
 In this post we're going to try and find a theme, and see why that might be the easiest way to get started.

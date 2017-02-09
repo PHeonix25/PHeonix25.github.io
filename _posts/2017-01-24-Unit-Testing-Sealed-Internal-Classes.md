@@ -4,6 +4,7 @@ title: "Unit Testing Sealed Internal Classes"
 date: 2017-01-24 00:00:00 +0000
 categories: unit-testing
 published: true
+image: /assets/headers/2017-01-24-Unit-Testing-Sealed-Internal-Classes.png
 ---
 
 As I wrote in my last post, I'm a big fan of clean, clear, simple unit-tests. Part of this involves figuring out where your "boundary" is and clarifying the limits of the code that you're responsible for. Normally this is simple and straightforward, but ~sometimes~most of the time, trying to test a class with an unnecessary access modifier and limited construction options is going to end in frustration.

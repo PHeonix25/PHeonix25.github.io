@@ -4,6 +4,7 @@ title: "Getting Started with Jekyll - Learning Markdown and Liquid"
 date: 2016-10-14 00:00:00 +0000
 categories: jekyll markdown liquid
 published: true
+image: /assets/headers/2016-10-14-Getting-started-with-Jekyll-Part-5.png
 ---
 
 In this post we're going to go over a few tips and tricks for working with Markdown and Liquid, in the context of creating Jekyll pages and posts.

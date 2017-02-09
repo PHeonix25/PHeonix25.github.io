@@ -5,6 +5,7 @@ date: 2016-10-22 00:00:00 +0000
 categories: jekyll github
 published: true
 modified: 2016-10-30
+image: /assets/headers/2016-10-22-Getting-started-with-Jekyll-Part-8.png
 ---
 
 In this post - we're going to push our site live!

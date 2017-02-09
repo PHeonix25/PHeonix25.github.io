@@ -4,6 +4,7 @@ title: "Getting Started with Jekyll - Setting up Jekyll in Docker"
 date: 2016-10-08 00:00:00 +0000
 categories: jekyll docker
 published: true
+image: /assets/headers/2016-10-08-Getting-started-with-Jekyll-Part-4.png
 ---
 
 In this post we're going to get our site up and running locally, taking advantage of Docker and a quick feedback loop.
