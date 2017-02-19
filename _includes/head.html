@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   
-  <title>{{ site.title }}{% if page.title %} - {{ page.title }}{% else %}{% endif %}</title>
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
   <link rel="icon" href="/favicon.ico">
@@ -12,7 +12,6 @@
   <!-- evil icon -->
   <link rel="stylesheet" href="{{"/assets/evil-icons.min.css" | prepend:site.baseurl | prepend: site.url }}">
   <script src="{{"/assets/evil-icons.min.js" | prepend:site.baseurl | prepend: site.url }}"></script>
-
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl | prepend: site.url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
