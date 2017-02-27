@@ -7,7 +7,7 @@ published: true
 image: /assets/headers/2017-02-27-Behind-the-Scenes-of-the-'Behind-the-Scenes'.png
 ---
 
-I thought it might be interesting to type up what I do to prepare for an event like the ["Behind the Scenes" at Coolblue](cb-bts) - to get you truly "behind the scenes" of the "Behind the Scenes" if you will.
+I thought it might be interesting to type up what I do to prepare for an event like the ["Behind the Scenes" at Coolblue][cb-bts] - to get you truly "behind the scenes" of the "Behind the Scenes" if you will.
 
 <!--description-->
 ![2017-02-27-Behind-the-Scenes-of-the-'Behind-the-Scenes'](/assets/headers/2017-02-27-Behind-the-Scenes-of-the-'Behind-the-Scenes'.png)
@@ -33,21 +33,21 @@ We'll also do some rudimentary checking for dates that look good (and aren't ove
 
 # The discussion
 
-After we've figured out when we can host the event, and who should talk, the next step is finding a decent topic, and maybe setting a "theme" for the evening. Previously, we've had "failure nights", and "CI/CD at Coolblue", where both speakers will talk about different angles of the same topic, but there are also evenings (like [the last one](bts-feb17)) where Nathan and I found a way to relate to each other (_as "that bloody Kiwi & the stupid Aussie"_) but spoke about completely separate topics: Nathan about the Mikado method, and me about how we use the Elastic Stack as .NET developers.
+After we've figured out when we can host the event, and who should talk, the next step is finding a decent topic, and maybe setting a "theme" for the evening. Previously, we've had "failure nights", and "CI/CD at Coolblue", where both speakers will talk about different angles of the same topic, but there are also evenings (like [the last one][bts-feb17]) where Nathan and I found a way to relate to each other (_as "that bloody Kiwi & the stupid Aussie"_) but spoke about completely separate topics: Nathan about the Mikado method, and me about how we use the Elastic Stack as .NET developers.
 
-It's normally at this point that we have to give the Recruiters a high level summary for the [BtS page](cb-bts) and a opening statement for the website - and this is often six weeks to two months out from the actual event itself.
+It's normally at this point that we have to give the Recruiters a high level summary for the [BtS page][cb-bts] and a opening statement for the website - and this is often six weeks to two months out from the actual event itself.
 
 # The research
 
 So now we have our speakers, and our topics, and a general theme - so we need to get to it and start work on the presentations!
 
-At this point, it's not uncommon for us to reach around the organisation and find people that can help us straighten out the facts for whatever we're trying to implement. As an example of the Elastic Stack presentation I gave in Feb 2017, I spent some time talking with [Matt Hodgkins](matthodge) as head of the "back-office deployment" team about what I could (and occasionally, couldn't) say and how much information I could give away during the demo's and presentations.
+At this point, it's not uncommon for us to reach around the organisation and find people that can help us straighten out the facts for whatever we're trying to implement. As an example of the Elastic Stack presentation I gave in Feb 2017, I spent some time talking with [Matt Hodgkins][matthodge] as head of the "back-office deployment" team about what I could (and occasionally, couldn't) say and how much information I could give away during the demo's and presentations.
 
-For me, I quite enjoy delivering live demos (it really gets my blood pumping), and so it's about this time that I sit down with a Markdown document (like [this one](bts-readme)) and start fleshing out the structure of the talk and which parts would be interesting to demonstrate to the audience. I also try and figure out which technologies that I'll need to work with and make sure that I understand their quirks - _I'm looking at you 'Docker for Windows' and your OS-switching support..._
+For me, I quite enjoy delivering live demos (it really gets my blood pumping), and so it's about this time that I sit down with a Markdown document (like [this one][bts-readme]) and start fleshing out the structure of the talk and which parts would be interesting to demonstrate to the audience. I also try and figure out which technologies that I'll need to work with and make sure that I understand their quirks - _I'm looking at you 'Docker for Windows' and your OS-switching support..._
 
 At this point it's also quite common to spend some time with the other presenter (_if you both have time_) to go over what you're going to say, and to make sure there aren't any overlaps (if you're sharing a topic) or that there aren't any ... general disagreements about anything that either of you want to say on the night. You'll also figure out the order, and if you need or want any additional support or assistance from each other. In the instance of the latest event, Nathan hadn't presented at Coolblue before - and would have greatly benefitted by a write-up like this - and didn't know much about the Coolblue "huisstijl", the way that we should present our slides, so I could help him out with that.
 
-It's normally about this time that I start a repository and start publicly committing all my research and resources that I'll need for the talk. This helps me to get my thoughts straight, and I can use GitHub (and a combination of Markdown, PowerShell & Google Sheets) to keep it all lined up nicely. You can see an example of this when you look at my latest talk's commit history [over here](bts-commits).
+It's normally about this time that I start a repository and start publicly committing all my research and resources that I'll need for the talk. This helps me to get my thoughts straight, and I can use GitHub (and a combination of Markdown, PowerShell & Google Sheets) to keep it all lined up nicely. You can see an example of this when you look at my latest talk's commit history [over here][bts-commits].
 
 # The talk (and the dry runs!)
 
@@ -67,9 +67,9 @@ From here on out, we allow the audience in at about 6pm, feed them and allow the
 
 # Any suggestions for improvement?
 
-I hope that this little write-up gives you some additional insight into what it takes to keep these events running, and I hope that I can see you at one of them! If nothing else, hopefully this will help my fellow colleagues in knowing what to expect when it comes to presenting at one of our [Behind the Scenes](cb-bts) nights. If anyone has any suggestions (or anything I missed), hit me up in the comments below, or get in touch on [Twitter](https://twitter.com/{{ site.twitter_username }}).
+I hope that this little write-up gives you some additional insight into what it takes to keep these events running, and I hope that I can see you at one of them! If nothing else, hopefully this will help my fellow colleagues in knowing what to expect when it comes to presenting at one of our [Behind the Scenes][cb-bts] nights. If anyone has any suggestions (or anything I missed), hit me up in the comments below, or get in touch on [Twitter](https://twitter.com/{{ site.twitter_username }}).
 
-If you're interested in what the end-result is (in terms of "assets" from a talk like this), feel free to have a look at my latest talk by [snooping around the repository](bts-repo), and checking out [the slides over on SlideShare](bts-slides). Cheers!
+If you're interested in what the end-result is (in terms of "assets" from a talk like this), feel free to have a look at my latest talk by [snooping around the repository][bts-repo], and checking out [the slides over on SlideShare][bts-slides]. Cheers!
 
 [cb-bts]:       https://www.coolblue.nl/behindthescenes
 [bts-feb17]:    https://www.coolblue.nl/behindthescenes2102
