@@ -40,18 +40,18 @@ There are plenty more supporting docs on this, [at the official site][vs-term], 
 You can launch multiple instances of the terminal, so why not set it up in another instance of the terminal and switch between them easily? By default the keybindings are not preset, but there's a simple solution to that: just add your own keybindings!
 
 ```json
-/// Add this in your own keybindings.json 
+/// Add this in your own keybindings.json
 /// Or just use Ctrl+Shif+P and type SHORTCUTS
 [
-    { 
-        "key":      "ctrl+` n",      
+    {
+        "key":      "ctrl+` n",
         "command":  "workbench.action.terminal.focusNext",
-        "when":     "terminalFocus" 
+        "when":     "terminalFocus"
     },
-    { 
+    {
         "key":      "ctrl+` p",
         "command":  "workbench.action.terminal.focusPrevious",
-        "when":     "terminalFocus" 
+        "when":     "terminalFocus"
     }
 ]
 ```
