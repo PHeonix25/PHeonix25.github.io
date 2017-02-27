@@ -25,7 +25,7 @@ Now normally, this event is organised by the Recruitment department (in the name
 
 # The preparation
 
-It all starts with the decision of when and who - when should we host the session and who should talk? These are the two big questions that we need to answer up front.
+It all starts with the decision of when and who - **when** should we host the session and **who** should talk? These are the two big questions that we need to answer up front.
 
 As a result, the .Net recruitment guys will normally start the conversation by asking the Leads and Pathfinders if there is anyone willing to talk about anything interesting. I regularly shoot my hand up to speak at these events because I find them quite enjoyable, and often it's comfortable knowing that you'll be presenting on "your home turf". It's also a great chance to improve my public speaking (and improvisation) skills and help other people within the company that want to also get better at presenting. So it's a decent win all around as far as I am concerned!
 
@@ -41,7 +41,7 @@ It's normally at this point that we have to give the Recruiters a high level sum
 
 So now we have our speakers, and our topics, and a general theme - so we need to get to it and start work on the presentations!
 
-At this point, it's not uncommon for us to reach around the organisation and find people that can help us straighten out the facts for whatever we're trying to implement. As an example of the Elastic Stack presentation I gave in Feb 2017, I spent some time talking with [Matt Hodgkins][matthodge] as head of the "back-office deployment" team about what I could (and occasionally, couldn't) say and how much information I could give away during the demo's and presentations.
+At this point, it's not uncommon for us to reach around the organisation and find people that can help us straighten out the facts for whatever we're trying to implement. As an example of [the Elastic Stack-based presentation I gave in Feb 2017][bts-slides], I spent some time talking with [Matt Hodgkins][matthodge] as head of the "back-office deployment" team about what I could (and occasionally, couldn't) say and how much information I could give away during the demo's and presentations.
 
 For me, I quite enjoy delivering live demos (it really gets my blood pumping), and so it's about this time that I sit down with a Markdown document (like [this one][bts-readme]) and start fleshing out the structure of the talk and which parts would be interesting to demonstrate to the audience. I also try and figure out which technologies that I'll need to work with and make sure that I understand their quirks - _I'm looking at you 'Docker for Windows' and your OS-switching support..._
 
