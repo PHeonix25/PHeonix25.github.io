@@ -2,7 +2,7 @@
 layout: post
 title: "Behind the Scenes of the 'Behind the Scenes'"
 date: 2017-02-27 00:00:00 +0000
-categories: presenting, talks
+categories: presenting talks elastic-stack github
 published: true
 image: /assets/headers/2017-02-27-Behind-the-Scenes-of-the-'Behind-the-Scenes'.png
 ---
