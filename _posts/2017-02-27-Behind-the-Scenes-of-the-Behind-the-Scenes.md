@@ -18,7 +18,7 @@ In case you've never attended one of our events, the "Behind the Scenes" nights 
 
 - You might have the same challenges in your workplace - we are just another dev team after all
 - You might be interested in "how we do things" - even if they are better, worse, or different
-- We might want to show some stuff off - if it's new, or we're proud of an internal achievment
+- We might want to show some stuff off - if it's new, or we're proud of an internal achievement
 - We want to show you our office, and convince you that you want to join us
 
 Now normally, this event is organised by the Recruitment department (in the name of getting interesting people in the door to check out the office), but don't turn off just yet! It wouldn't happen if we didn't match the criteria above; if the developers didn't want to talk, we wouldn't force the event, and to be honest, if you've been to one of these events, you know that Coolblue is no hard sell - our office is pretty awesome after all - and hopefully you feel the people (that you're coming to listen to) are worthwhile too!
@@ -61,7 +61,7 @@ By this stage, at about a week out from the event, we'll normally have a good in
 
 For the actual night itself, the Recruitment team, and the Events team will kick off with all the setup of the room (and organisation of the space, and the meals, and the entry tickets) from about 3pm and the presenters will normally just double-check their technical requirements (set up the laptop and double check the mics) from about 4 or 5pm.
 
-In the case of technical issues (like at the latest event, where the HDMI port on my laptop decided not to work) this gives you about an hour to figure out what you're going to do before there are people eating in the room. One lession I've recently learnt is to make sure that you hold AT LEAST ONE of the "dry runs" in the actual location that the event is going to take place! Nothing beats triple-checking the real thing and being prepared!
+In the case of technical issues (like at the latest event, where the HDMI port on my laptop decided not to work) this gives you about an hour to figure out what you're going to do before there are people eating in the room. One lesson I've recently learnt is to make sure that you hold AT LEAST ONE of the "dry runs" in the actual location that the event is going to take place! Nothing beats triple-checking the real thing and being prepared!
 
 From here on out, we allow the audience in at about 6pm, feed them and allow them to mingle for about an hour and then kick off with an introduction from a Coolblue representative (who will typically tell you a little bit more about Coolblue itself) and then the first presentation, a short break, and then the second presentation and a tour of the building - all culminating in a well-deserved drink at the company bar!
 
