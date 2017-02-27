@@ -1,5 +1,6 @@
 Param(
-    # The path to the post we need to add the image to
+    # The category for the image we want to grab from Unsplash.
+    # By default this is "Nature", but "Technology" can also be good!
     [Parameter(Mandatory=$false)][string]$CategoryName = "nature"
 );
 
