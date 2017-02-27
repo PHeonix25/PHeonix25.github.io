@@ -1,3 +1,9 @@
+Param(
+    # The path to the post we need to add the image to
+    [Parameter(Mandatory=$false)][string]$CategoryName = "nature"
+);
+
+
 $BASEPATH_HEADERS = '.\assets\headers\';
 $BASEPATH_POSTS = '.\_posts\';
 
@@ -10,8 +16,8 @@ ForEach ($post in Get-ChildItem $BASEPATH_POSTS*.md) {
         
         Write-Host " > Waiting for two seconds to prevent spamming Unsplash"
         Start-Sleep -Seconds 2;
-        Write-Host " > Downloading header for post to '$requiredFile'"
-        Invoke-WebRequest https://source.unsplash.com/category/nature/800x400 -OutFile $requiredFile
+        Write-Host " > Downloading header for post from category '$CategoryName' to '$requiredFile'"
+        Invoke-WebRequest https://source.unsplash.com/category/$CategoryName/800x400 -OutFile $requiredFile
         Write-Host " > Royalty-free image downloaded from Unsplash successfully"
         
         Write-Host " > Adding image to blog-post"
