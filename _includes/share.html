@@ -1,11 +1,13 @@
 <div class="share">
+    {%- assign page_title = {{ page.title | remove "'" }} -%}
     <div class="title left">
         <data data-icon="ei-share-google"></data> Liked it? Share it!
     </div>
     <div class="right">
+        <!-- Page Title: {{page_title}} -->
         <a class="twitter" href="#" onclick="
             window.open(
-                'https://twitter.com/intent/tweet?text=.@{{ site.twitter_username }}, thanks! I really enjoyed \'{{page.title | uri_escape }}\' ({{ page.url | prepend: site.url | uri_escape }})',
+                'https://twitter.com/intent/tweet?text=.@{{ site.twitter_username }}, thanks! I really enjoyed \'{{page_title}}\' ({{ page.url | prepend: site.url }})',
                 'twitter-share-dialog',
                 'width=600,height=260');
                 return false;">
@@ -13,7 +15,7 @@
         </a>
         <a class="facebook" href="#" onclick="
             window.open(
-            'https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.url | uri_escape }}',
+            'https://www.facebook.com/sharer/sharer.php?u={{ page.url | prepend: site.url }}',
             'facebook-share-dialog',
             'width=626,height=436');
             return false;">
