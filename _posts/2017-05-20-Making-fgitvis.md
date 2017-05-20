@@ -12,6 +12,22 @@ I thought it might be interesting to outline where my latest GitHub project [`fg
 <!--description-->
 ![2017-05-20-Making-fgitvis](/assets/headers/2017-05-20-Making-fgitvis.png)
 
+```
+ ***************************************************************************
+ *                                                                         *
+ *   ########\  ######\  ######\ ########\ ##\    ##\ ######\  ######\     *
+ *   ##  _____|##  __##\ \_##  _|\__##  __|## |   ## |\_##  _|##  __##\    *
+ *   ## |      ## /  \__|  ## |     ## |   ## |   ## |  ## |  ## /  \__|   *
+ *   #####\    ## |####\   ## |     ## |   \##\  ##  |  ## |  \######\     *
+ *   ##  __|   ## |\_## |  ## |     ## |    \##\##  /   ## |   \____##\    *
+ *   ## |      ## |  ## |  ## |     ## |     \###  /    ## |  ##\   ## |   *
+ *   ## |      \######  |######\    ## |      \#  /   ######\ \######  |   *
+ *   \__|       \______/ \______|   \__|       \_/    \______| \______/    *
+ *                                                                         *
+ ***************************************************************************
+ ```
+**A Git repo visualiser, written in F#.**
+
 # Everything has a back-story
 
 At work, I've been talking with my colleague [Devon][dburriss] about life, F#, being an expat in the Netherlands, Git, GitHub, and improving ourselves (and our colleagues). By now I'm sure that's all the story you need, but...
@@ -32,9 +48,9 @@ In order to track down how and where we can improve our Git/GitHub processes, we
 
 # OK, so why F#?
 
-I've been a big fan of F# for quite some time. My first public commit to GitHub was [in 2015][yfskoans] completing some of the awesome [F# Koans][fskoans] -- which in my opinion is a great way to jump right in in!
+I've been a big fan of F# for quite some time. My first public commit to GitHub was [in 2015][fskoans-me] completing some of the awesome [F# Koans][fskoans] -- which in my opinion is a great way to jump right in in!
 
-Recently, there seems to be a bit of a "resurgence" of sorts. A lot more people around me are talking about it and there's been a whole lot more interest at local user-groups and it's momentum is [continuing at Build][fsch9vid].
+Recently, there seems to be a bit of a "resurgence" of sorts. A lot more people around me are talking about it and there's been a whole lot more interest at local user-groups (including a [F# talk][mvincze-fs] [Mark Vincze][mvincze] gave next to mine at [Amsterdam.Net][adamnetmu]) and it's momentum is [continuing at Build][fsch9vid].
 
 Devon and I were talking about the "magic" of type-providers after watching [this video][fsch9vid] and seeing him step through the Wikipedia article on Presidents - I won't spoil it, but you should watch it!
 
@@ -44,7 +60,7 @@ I also wanted to spend some more time working on improving my F# skills, especia
 
 # How can I contribute?
 
-Great question, and we'd love some help if you think that this is worthwhile for you, please feel free to jump in and make some PR's!
+Great question, and we'd love some help if you think that this is worthwhile for you, please feel free to jump in and [make some PR's][pulls]!
 
 Possible candidates for submission are things like:
 - Adding unit tests!
@@ -54,9 +70,17 @@ Possible candidates for submission are things like:
 
 Hopefully this explains some of the reasons that Devon and myself had when we were thinking about the solution, and we should continue to work on this so that we can make it into the tool that we want it to be :)
 
+
 [fgitvis]:      https://github.com/PHeonix25/fgitvis
-[dburriss]:     http://devonburriss.me/
+[pulls]:        https://github.com/PHeonix25/fgitvis/pulls
 [pulse]:        https://github.com/PHeonix25/fgitvis/pulse
-[myfskoans]:      https://github.com/PHeonix25/FSharpKoans/commit/1402a181439f6e1e6188372418b93e9d2bb5b8c9
+
+[dburriss]:     http://devonburriss.me/
+[mvincze]:      https://blog.markvincze.com/
+[mvincze-fs]:   https://docs.google.com/presentation/d/1PoIG0x1H843tTd7UkreZ_6HYYzLDqgo_CSgPGQnd0vY/edit#slide=id.p
+[adamnetmu]:    https://www.meetup.com/Amsterdam-NET/events/237831821/
+
 [fskoans]:      https://github.com/ChrisMarinos/FSharpKoans
+[fskoans-me]:   https://github.com/PHeonix25/FSharpKoans/commit/1402a181439f6e1e6188372418b93e9d2bb5b8c9
+
 [fsch9vid]:     https://channel9.msdn.com/events/Build/2017/T6064
