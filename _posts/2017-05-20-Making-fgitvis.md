@@ -26,13 +26,13 @@ I thought it might be interesting to outline where my latest GitHub project [`fg
  *                                                                         *
  ***************************************************************************
  ```
-**A Git repo visualiser, written in F#.**
+[**A Git repository visualiser, written in F#**][fgitvis]
 
 # Everything has a back-story
 
 At work, I've been talking with my colleague [Devon][dburriss] about life, F#, being an expat in the Netherlands, Git, GitHub, and improving ourselves (and our colleagues). By now I'm sure that's all the story you need, but...
 
-We thought it would be interesting to work on a F# type provider for Git repositories (not just ones hosted on GitHub), both so that you could dive through the history of a Git repository, but also to check out active contributors, commit patterns, anything really... We thought it would be cool to basically create a local copy of the [Pulse page][pulse] of your repositories on GitHub.
+We thought it would be interesting to work on a F# "type provider" for Git repositories (not just ones hosted on GitHub), both so that you could dive through the history of a Git repository, but also to check out active contributors, commit patterns, anything really... We thought it would be cool to basically create a local copy of the [Pulse page][pulse] of your repositories on GitHub.
 
 # What problem are we solving?
 
@@ -40,7 +40,7 @@ Granted, this isn't immediately apparent -- especially considering the state of 
 
 Some people are naturally a little more ... "prolific" than others, both in life and in Git discipline. We've all had a colleague that always seems to commit 100+ files (in a single commit?) at 4:30 on a Friday. Hopefully, we've also had the opportunity to work with "that Git guy" that breaks everything apart properly, puts it all in the right order, constantly `rebase`s everything so there's a perfectly clean story showing the progress of work over the course of a task or deliverable and always seems to be right on the ball.
 
-... but what about the rest of us? All the people in-between somewhere. We make commits, but sometimes they are too big (or god-forbid there's an `AND` in the commit message), or they are in the wrong order, or they have merge commits scattered through the whole story. We commit early and often, but don't "sync" regularly enough; in short, we're trying, but we could do better!
+...but what about the rest of us? All the people in-between somewhere. We make commits, but sometimes they are too big (or god-forbid there's an `AND` in the commit message), or they are in the wrong order, or they have merge commits scattered through the whole story. We commit early and often, but don't "sync" regularly enough; in short, we're trying, but we could do better!
 
 At work (and in life) I have a policy of trying to measure something before you work on improving it. You can see this as `red-green-refactor`, or as `"knowing is half the battle"`, but either way, I always try to base my decisions off real, living, data. Numbers, trend graphs, dashboards; anything but anecdotes and personal prejudices - of which I have plenty!
 
