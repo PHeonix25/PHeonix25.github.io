@@ -32,9 +32,11 @@ If you’re looking for me, you should be able to find me:
 
 ## Upcoming speaking events:
 
-**2017-03-08**: [Amsterdam .Net user group](https://www.meetup.com/Amsterdam-NET/events/237831821/), Amsterdam, NL - Demoing C#, on AWS Lambda.
+**2017-07-05**: [Betabit Microservices Evenement](https://betabit.nl/over-ons/evenementen), Rotterdam, NL - Microservices, because everyone wants to be cool.
 
 ## Previous speaking events:
+
+**2017-03-08**: [Amsterdam .Net user group](https://www.meetup.com/Amsterdam-NET/events/237831821/), Amsterdam, NL - [Demoing C#, on AWS Lambda](https://www.slideshare.net/PHeonix25/c-aws-lambda).
 
 **2017-02-21**: [Coolblue's Behind the Scenes](https://www.coolblue.nl/behindthescenes2102), Rotterdam, NL - [Using the Elastic Stack as a .Net developer](https://www.slideshare.net/PHeonix25/behind-the-scenes-at-coolblue-feb-2017).
 
