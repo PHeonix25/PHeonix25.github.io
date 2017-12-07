@@ -32,9 +32,13 @@ If you’re looking for me, you should be able to find me:
 
 ## Upcoming speaking events:
 
-**2017-07-05**: [Betabit Microservices Evenement](https://betabit.nl/over-ons/evenementen), Rotterdam, NL - Microservices, because everyone wants to be cool.
+_None yet, just a few CFP's submitted._
 
 ## Previous speaking events:
+
+**2017-10-12**: [TechDays Netherlands](https://www.techdays.nl/Sessies/#809b5eab-8d48-489b-afb3-429e19b47b8a), Amsterdam, NL - [Faster to master without disaster](https://www.slideshare.net/PHeonix25/faster-to-master-without-disaster). Video [available here](https://www.youtube.com/watch?v=uiRkWinlvY0).
+
+**2017-07-05**: [Betabit Microservices Evenement](https://betabit.nl/over-ons/evenementen), Rotterdam, NL - [Microservices, because everyone wants to be cool](https://www.slideshare.net/PHeonix25/microservices-because-everyone-wants-to-be-cool). Video coming soon.
 
 **2017-03-08**: [Amsterdam .Net user group](https://www.meetup.com/Amsterdam-NET/events/237831821/), Amsterdam, NL - [Demoing C#, on AWS Lambda](https://www.slideshare.net/PHeonix25/c-aws-lambda).
 
