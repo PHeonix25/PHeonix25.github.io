@@ -2,5 +2,5 @@
         {% if site.github_username %}{% include icon-github.html username=site.github_username %}{% endif %}
         {% if site.twitter_username %}{% include icon-twitter.html username=site.twitter_username %}{% endif %}
         {% if site.linkedin_username %}{% include icon-linkedin.html username=site.linkedin_username %}{% endif %}
-        {% if site.email %} <a href="mailto:{{ site.email }}"><data data-icon="ei-envelope"></data></a>{% endif %}
+        {% if site.email %}{% include icon-email.html email=site.email %}{% endif %}
     </section>
