@@ -4,14 +4,14 @@ title: Hi, I'm Pat.
 permalink: /speaking/
 ---
 
-I speak at technology events around the world, often with a focus on continuous integration, continuous delivery and the mindset required to be successful in these areas; occasionally diving deeper into developer mentality and/or leadership.
+I speak at technology events around the world, often with a focus on continuous integration, continuous delivery and the mindset required to be successful in these areas; occasionally diving deeper into developer mentality and/or leadership topics.
 I believe in making my talks light and lively, but at the same time ensuring there are clear drivers for attendees.
 
 Thankfully, in my current day job of Development Manager at Coolblue (one of the largest e-commerce retailers in the Netherlands), I am in a position to drive these changes, and then "report back" with the learnings we've made. Some of my most successful presentations stem from these real-world exercises & achievements.
 
 I have also done in-house talks for all sorts of organisations that have been tailored to their specific needs. From casual brown bag meetings to coverage of a specific agenda, these talks are a great way for a company to get valuable insights with minimum overhead.
 
-If you'd like me to speak at your event (or internally at your company) then please feel free to start a conversation on twitter: <data data-icon="ei-sc-twitter"></data> [@phermens](https://twitter.com/phermens), or just <data data-icon="ei-envelope"></data> [email me](mailto:p@hermens.com.au).
+If you'd like me to speak at your event (_or internally at your company_) then please feel free to start a conversation on twitter: <data data-icon="ei-sc-twitter"></data> [@phermens](https://twitter.com/phermens), or just <data data-icon="ei-envelope"></data> [email me](mailto:p@hermens.com.au).
 
 ----
 
@@ -20,6 +20,8 @@ If you'd like me to speak at your event (or internally at your company) then ple
 **2018-06-15**: [SDN event, June 2018](https://www.sdn.nl/EVENTS/15-juni-2018), Zeist, NL - _Taking CI/CD seriously - the Coolblue story_.
 
 **2018-10-18**: [PowerShell Conference Asia 2018](http://psconf.asia), Singapore - 1: _Taking CI/CD seriously - the Coolblue story_ & 2: _Creating a complete pipeline in as few questions as possible_.
+
+----
 
 ## Previous speaking events
 
