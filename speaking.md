@@ -1,10 +1,8 @@
 ---
 layout: page
-title: Come say hi!
+title: Hi, I'm Pat.
 permalink: /speaking/
 ---
-
-# Hi, I'm Pat.
 
 I speak at technology events around the world, often with a focus on continuous integration, continuous delivery and the mindset required to be successful in these areas; occasionally diving deeper into developer mentality and/or leadership.
 I believe in making my talks light and lively, but at the same time ensuring there are clear drivers for attendees.
