@@ -4,7 +4,7 @@ title: Hi, I'm Pat.
 permalink: /speaking/
 ---
 
-I speak at technology events around the world, often with a focus on continuous integration, continuous delivery and the mindset required to be successful in these areas; occasionally diving deeper into developer mentality and/or leadership topics.\
+I speak at technology events around the world, often with a focus on continuous integration, continuous delivery and the mindset required to be successful in these areas; occasionally diving deeper into developer mentality and/or leadership topics.  
 I believe in making my talks light and lively, but at the same time ensuring there are clear drivers for attendees.
 
 Thankfully, in my current day job of Development Manager at Coolblue (one of the largest e-commerce retailers in the Netherlands), I am in a position to drive these changes, and then "report back" with the learnings we've made. Some of my most successful presentations stem from these real-world exercises, experiments & achievements.
@@ -21,8 +21,8 @@ If you'd like me to speak at your event (_or internally at your company_) then p
 
 **2018-06-15**: [SDN event, June 2018](https://www.sdn.nl/EVENTS/15-juni-2018), Zeist, NL - _From 100 to 1,000+ deployments a day!_
 
-**2018-10-18**: [PowerShell Conference Asia 2018](http://psconf.asia), Singapore - two sessions:\
-**1**: _From 100 to 1,000+ deployments a day!_ \
+**2018-10-18**: [PowerShell Conference Asia 2018](http://psconf.asia), Singapore - two sessions:  
+**1**: _From 100 to 1,000+ deployments a day!_  
 **2**: _Creating a complete pipeline in as few questions as possible_.
 
 ----
