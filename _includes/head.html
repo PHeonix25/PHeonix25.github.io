@@ -10,10 +10,12 @@
   <link rel="icon" href="/favicon.ico">
   
   <!-- evil icon -->
-  <link rel="stylesheet" href="{{"/assets/evil-icons.min.css" | prepend:site.baseurl | prepend: site.url }}">
-  <script src="{{"/assets/evil-icons.min.js" | prepend:site.baseurl | prepend: site.url }}"></script>
+  <link rel="stylesheet" href="{{"/assets/evil-icons.min.css" | prepend:site.baseurl | prepend: site.url }}" media="none" onload="if(media!='all')media='all'">
+  <noscript><link rel="stylesheet" href="{{"/assets/evil-icons.min.css" | prepend:site.baseurl | prepend: site.url }}"></noscript>
+  <script src="{{"/assets/evil-icons.min.js" | prepend:site.baseurl | prepend: site.url }}" async></script>
 
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl | prepend: site.url }}" media="none" onload="if(media!='all')media='all'">
+  <noscript><link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl | prepend: site.url }}"></noscript>
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 
