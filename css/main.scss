@@ -16,10 +16,10 @@ $font-weight-bold: 600;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
-$icon-color:       #333;
+$text-color:       #222;
+$icon-color:       $text-color;
 $background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$brand-color:      #ff851b;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 25%); // #b1b1b1;
