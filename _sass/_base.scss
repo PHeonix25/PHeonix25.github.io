@@ -136,8 +136,8 @@ html {
   font-size: 62.5%;
   -webkit-font-smoothing: antialiased; }
 body {
-  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
-  line-height: 1.6;
+  font-size: 1.6em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.7;
   font-weight: 400;
   // font-family: -apple-system-font,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
   font-family: $base-font-family;
