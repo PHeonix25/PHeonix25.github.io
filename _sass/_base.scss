@@ -176,19 +176,13 @@ p {
 a {
   color:$text-color;
   text-decoration: none;
-  //background-color: transparent;
   -webkit-transition: color .4s;
   transition: color .4s;
 }
 a:hover {
-  color: #b1b1b1;
+  color:$grey-color-dark;
   text-decoration: underline;
 }
-
-
-
-// TODO
-
 
 /* Buttons
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -293,7 +287,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #33C3F0;
+  border: 1px solid $brand-color;
   outline: 0; }
 label,
 legend {

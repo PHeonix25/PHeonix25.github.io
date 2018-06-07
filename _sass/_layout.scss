@@ -34,7 +34,7 @@ body {
       text-decoration:none;
     }
     a:hover {
-      color:red;
+      color: $brand-color;
       border-bottom:1px dotted;
     }
   }
@@ -209,13 +209,13 @@ p.readmore {
 
 .article-content a,
 .share a {
-  border-bottom:1px dotted red;
+  border-bottom:1px dotted $brand-color;
   text-decoration:none;
 }
 .article-content a:hover,
 .share a:hover {
-  color:red;
-  border-bottom:1px dotted red;
+  color:$brand-color;
+  border-bottom:1px dotted $brand-color;
 }
 
 .article-footer {
