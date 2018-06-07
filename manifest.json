@@ -1,0 +1,14 @@
+{
+    "short_name": "Pat Hermens",
+    "name": "Pat Hermens",
+    "icons": [
+      {
+        "src":"assets/img/favicon_192x192.jpg",
+        "type": "image/jpg"
+      }
+    ],
+    "start_url": "/?utm_source=homescreen",
+    "background_color": "#000",
+    "theme_color": "#828282",
+    "display": "standalone"
+  }
