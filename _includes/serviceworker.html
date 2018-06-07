@@ -1,5 +1,5 @@
 <script>
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('service-worker.js').catch(function(err) { console.log("Error registering service worker: ", err) });
+    navigator.serviceWorker.register('{{"/service-worker.js" | prepend:site.baseurl | prepend: site.url }}').catch(function(err) { console.log("Error registering service worker: ", err) });
 }
 </script>
