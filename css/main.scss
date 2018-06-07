@@ -16,13 +16,14 @@ $font-weight-bold: 600;
 
 $spacing-unit:     30px;
 
-$text-color:       #222;
+$text-color:       #222222;
 $icon-color:       $text-color;
-$background-color: #fdfdfd;
-$brand-color:      #ff851b;
+$background-color: #FDFDFD;
+$brand-color:      #FF851B;
+$border-color:     #E1E1E1;
 
 $grey-color:       #696969;
-$grey-color-light: lighten($grey-color, 25%); // #b1b1b1;
+$grey-color-light: lighten($grey-color, 50%); // #b1b1b1;
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
