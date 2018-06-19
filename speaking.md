@@ -17,8 +17,6 @@ If you'd like me to speak at your event (_or internally at your company_) then p
 
 ## Upcoming public events
 
-**2018-06-15**: [SDN event, June 2018](https://www.sdn.nl/EVENTS/15-juni-2018), Zeist, NL - _From 100 to 1,000+ deployments a day!_
-
 **2018-10-01**: [Techorama NL](https://techorama.nl), CiniMec Ede, NL - _From 100 to 1,000+ deployments a day!_
 
 **2018-10-18**: [PowerShell Conference Asia 2018](http://psconf.asia), Singapore - two sessions:  
@@ -29,7 +27,9 @@ If you'd like me to speak at your event (_or internally at your company_) then p
 
 ## Previous public events
 
-**2018-05-23**: [Techorama BE](https://techoramabelgium2018.sched.com/event/DjAe), Antwerp, BE - _From 100 to 1,000+ deployments a day!_ (Slides coming soon)
+**2018-06-15**: [SDN event, June 2018](https://www.sdn.nl/EVENTS/15-juni-2018), Zeist, NL - [A Coolblue CI/CD Story](https://speakerdeck.com/pheonix25/cd-story)
+
+**2018-05-23**: [Techorama BE](https://techoramabelgium2018.sched.com/event/DjAe), Antwerp, BE - [From 100 to 1,000+ deployments a day!](https://speakerdeck.com/pheonix25/from-100-to-1-000-plus-deployments-a-day-techorama-edition)
 
 **2017-10-12**: [TechDays Netherlands](https://www.techdays.nl/Sessies/#809b5eab-8d48-489b-afb3-429e19b47b8a), Amsterdam, NL - [Faster to master without disaster](https://www.slideshare.net/PHeonix25/faster-to-master-without-disaster). Video [available here](https://www.youtube.com/watch?v=uiRkWinlvY0).
 
