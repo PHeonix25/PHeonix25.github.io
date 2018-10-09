@@ -17,15 +17,17 @@ If you'd like me to speak at your event (_or internally at your company_) then p
 
 ## Upcoming public events
 
-**2018-10-01**: [Techorama NL](https://techorama.nl), CiniMec Ede, NL - _From 100 to 1,000+ deployments a day!_
-
 **2018-10-18**: [PowerShell Conference Asia 2018](http://psconf.asia), Singapore - two sessions:  
 **1**: _From 100 to 1,000+ deployments a day!_  
 **2**: _Creating a complete pipeline in as few questions as possible_.
 
+**2018-11**: 4DotNet Developer Days, Meppel, NL - Keynote speaker.
+
 ----
 
 ## Previous public events
+
+**2018-10-01**: [Techorama NL](https://techorama.nl), CiniMec Ede, NL - [From 100 to 1,000+ deployments a day!](https://speakerdeck.com/pheonix25/from-100-to-1000-plus-deployments-a-day-techoramanl-editie)
 
 **2018-06-15**: [SDN event, June 2018](https://www.sdn.nl/EVENTS/15-juni-2018), Zeist, NL - [A Coolblue CI/CD Story](https://speakerdeck.com/pheonix25/cd-story). Video [available here](https://youtu.be/_RrFmdjt1-A).
 
