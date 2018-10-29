@@ -17,19 +17,25 @@ If you'd like me to speak at your event (_or internally at your company_) then p
 
 ## Upcoming public events
 
-**2018-10-18**: [PowerShell Conference Asia 2018](http://psconf.asia), Singapore - two sessions:  
-**1**: _From 100 to 1,000+ deployments a day!_  
-**2**: _Creating a complete pipeline in as few questions as possible_.
+**2018-11-22**: [DevTalksJnr](http://www.devtalks.ro/bucharest/devtalksjr/), Bucharest, Romania - _From Developer to Development Manager_.
 
-**2018-11**: 4DotNet Developer Days, Meppel, NL - Keynote speaker.
+**2018-11-??**: 4DotNet Developer Days, Meppel, NL - Keynote speaker.
+
+**2018-12-12**: [NISI Continuous Delivery 3.0](https://nisi.nl/cd30-cursus-in-het-kort), Utrecht, NL - Guest Lecturer.
+
+**2018-12-14**: [SDN event, December 2018](https://www.sdn.nl/EVENTS/14-december-2018), Zeist, NL - _From Developer to Development Manager_.
 
 ----
 
 ## Previous public events
 
+**2018-10-18**: [PowerShell Conference Asia 2018](http://psconf.asia), Singapore - two sessions:  
+**1**: _From 100 to 1,000+ deployments a day!_ [Slides](https://speakerdeck.com/pheonix25/from-100-to-1000-plus-deployments-a-day-psconfasia-edition) + [Video](https://livestream.com/gaelcolas/PSConfAsia/videos/182072584)  
+**2**: _Creating a complete pipeline in as few questions as possible_. [Video](https://livestream.com/gaelcolas/PSConfAsia/videos/182707065)
+
 **2018-10-01**: [Techorama NL](https://techorama.nl), CiniMec Ede, NL - [From 100 to 1,000+ deployments a day!](https://speakerdeck.com/pheonix25/from-100-to-1000-plus-deployments-a-day-techoramanl-editie)
 
-**2018-06-15**: [SDN event, June 2018](https://www.sdn.nl/EVENTS/15-juni-2018), Zeist, NL - [A Coolblue CI/CD Story](https://speakerdeck.com/pheonix25/cd-story). Video [available here](https://youtu.be/_RrFmdjt1-A).
+**2018-06-15**: [SDN event, June 2018](https://www.sdn.nl/EVENTS/15-juni-2018), Zeist, NL - A Coolblue CI/CD Story. [Slides](https://speakerdeck.com/pheonix25/cd-story) + [Video](https://youtu.be/_RrFmdjt1-A).
 
 **2018-05-23**: [Techorama BE](https://techoramabelgium2018.sched.com/event/DjAe), Antwerp, BE - [From 100 to 1,000+ deployments a day!](https://speakerdeck.com/pheonix25/from-100-to-1-000-plus-deployments-a-day-techorama-edition)
 
