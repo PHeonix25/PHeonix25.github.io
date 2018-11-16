@@ -19,8 +19,6 @@ If you'd like me to speak at your event (_or internally at your company_) then p
 
 **2018-11-22**: [DevTalksJnr](http://www.devtalks.ro/bucharest/devtalksjr/), Bucharest, Romania - _From Developer to Development Manager_.
 
-**2018-11-??**: 4DotNet Developer Days, Meppel, NL - Keynote speaker.
-
 **2018-12-12**: [NISI Continuous Delivery 3.0](https://nisi.nl/cd30-cursus-in-het-kort), Utrecht, NL - Guest Lecturer.
 
 **2018-12-14**: [SDN event, December 2018](https://www.sdn.nl/EVENTS/14-december-2018), Zeist, NL - _From Developer to Development Manager_.
@@ -28,6 +26,8 @@ If you'd like me to speak at your event (_or internally at your company_) then p
 ----
 
 ## Previous public events
+
+~~**2018-11-??**: 4DotNet Developer Days, Meppel, NL - Keynote speaker.~~ _Event was cancelled_
 
 **2018-10-18**: [PowerShell Conference Asia 2018](http://psconf.asia), Singapore - two sessions:  
 **1**: _From 100 to 1,000+ deployments a day!_ [Slides](https://speakerdeck.com/pheonix25/from-100-to-1000-plus-deployments-a-day-psconfasia-edition) + [Video](https://livestream.com/gaelcolas/PSConfAsia/videos/182072584)  
