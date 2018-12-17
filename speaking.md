@@ -17,13 +17,17 @@ If you'd like me to speak at your event (_or internally at your company_) then p
 
 ## Upcoming public events
 
-**2018-12-12**: [NISI Continuous Delivery 3.0](https://nisi.nl/cd30-cursus-in-het-kort), Utrecht, NL - Guest Lecturer.
+_PLEASE NOTE: I'll be taking a short break over the festive season of 2018-2019._
 
-**2018-12-14**: [SDN event, December 2018](https://www.sdn.nl/EVENTS/14-december-2018), Zeist, NL - _From Developer to Development Manager_.
+**2019-05-19**: 4DotNet Developer Days, Meppel, NL - Keynote presentation.
 
 ----
 
 ## Previous public events
+
+**2018-12-14**: [SDN event, December 2018](https://www.sdn.nl/EVENTS/14-december-2018), Zeist, NL - From Developer to Development Manager. [Slides](https://speakerdeck.com/pheonix25/from-developer-to-development-manager-sdn-editie) + [video](https://www.youtube.com/watch?v=gXsP8cydEgY).
+
+**2018-12-12**: [NISI Continuous Delivery 3.0](https://nisi.nl/cd30-cursus-in-het-kort), Utrecht, NL - Guest Lecturer.
 
 **2018-11-22**: [DevTalksJnr](http://www.devtalks.ro/bucharest/devtalksjr/), Bucharest, Romania - [From Developer to Development Manager](https://speakerdeck.com/pheonix25/from-developer-to-development-manager).
 
