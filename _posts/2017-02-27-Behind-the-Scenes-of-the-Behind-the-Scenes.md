@@ -4,13 +4,14 @@ title: "Behind the Scenes of the 'Behind the Scenes'"
 date: 2017-02-27 00:00:00 +0000
 categories: presenting talks elastic-stack github
 published: true
-image: /assets/headers/2017-02-27-Behind-the-Scenes-of-the-'Behind-the-Scenes'.png
+image: /assets/headers/2017-02-27-Behind-the-Scenes-of-the-Behind-the-Scenes.png
 ---
 
 I thought it might be interesting to type up what I do to prepare for an event like the ["Behind the Scenes" at Coolblue][cb-bts] - to get you truly "behind the scenes" of the "Behind the Scenes" if you will.
 
 <!--description-->
-![2017-02-27-Behind-the-Scenes-of-the-'Behind-the-Scenes'](/assets/headers/2017-02-27-Behind-the-Scenes-of-the-'Behind-the-Scenes'.png)
+
+![2017-02-27-Behind-the-Scenes-of-the-Behind-the-Scenes](/assets/headers/2017-02-27-Behind-the-Scenes-of-the-Behind-the-Scenes.png)
 
 # The background
 
