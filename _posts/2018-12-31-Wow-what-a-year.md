@@ -3,7 +3,7 @@ layout: post
 title: "Wow, what a year"
 date: 2018-12-31 00:00:00 +0000
 categories: retrospective self-evaluation
-published: false
+published: true
 image: /assets/headers/2018-12-31-Wow-what-a-year.png
 ---
 
