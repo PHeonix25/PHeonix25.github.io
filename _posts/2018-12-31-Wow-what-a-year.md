@@ -42,7 +42,7 @@ That being said, naturally, a lot of the events I put time into were very techni
 I entered this year as a Development Manager at Coolblue, reporting directly to our Head of Technology, and directly responsible & accountable for about 75-odd Developers, Designers and Team Leads.
 This was, in a word, _overwhelming_. I spent a lot of the first half of the year interviewing, and successfully hiring & promoting 6 new Team Leads (as well as countless developers) to join us in making Coolblue a better place, every day.
 
-In the spirit of this write-up being open and honest, I'm going to be blunt: I don't think I did a particularly good job of handling this number of people without implementing an appropriate (informal) framework to succeed.
+In the spirit of this write-up being open and honest, I'm going to be blunt: I don't think I did a particularly good job of handling this number of direct reports.
 I know that I directly lost a few employees I would have preferred to keep due to how I was (un)able to help them during this period.
 I can point at the fact that I didn't have the (correct) support structures in place, but looking back with the benefit of hindsight, I should have applied a motto that I used a lot as a developer, but not as a manager: _Done is better than Perfect_.
 
@@ -54,36 +54,37 @@ So even though the department has continued to grow, and I think we are still ac
 
 It would be remiss for me to not acknowledge that this has taken a toll on my personal mindset and health over the year.
 
-To end on a happy note: in terms of direct accomplishments that I can take ownership of, this year I started/co-ordinated four new events:
-Lead Onboarding Week, Beers & Laptops, Code Camp, and Blue Friday - each with the goal of bringing Coolblue Tech closer to "the business" or making Coolblue-ers more successful in their role.
+To end on a happy note: in terms of direct accomplishments that I can take ownership of, this year I started/co-ordinated four new events: Lead Onboarding Week, Beers & Laptops, Code Camp, and Blue Friday - each with the goal of bringing Coolblue Tech closer to "the business" or making Coolblue-ers more successful in their role.
 I also hosted the Coolblue Pub Quiz twice, told ***the*** Coolblue Story countless times, and helped to roll out a bunch of new (streamlined) business processes.
 
 I spent a lot of time this year working with our Brandfather (Joost), and the Events team (Doortje, Suzanne, Lenka, en Naomi), and I couldn't have achieved half of what I have without their help and support, so, if you end up reading this at some point: THANK YOU!
 
-I was also "hashtag-blessed" to close out my time on our Coolblue "_Raad voor Ondernemers_" aka. Ondernemingsraad, aka. Representatives to the Board. After holding the seat for 2 years, it was time for someone else to have a seat at the table, and I'm very happy with my successor and feel that he is also in a very good position to represent the employees of Coolblue Tech strongly, directly, and fairly. Good luck Huib.
+I was also "hashtag-blessed" to close out my time on our Coolblue "_Raad voor Ondernemers_" aka. Ondernemingsraad, aka. Representatives to the Board. After holding the seat for 2 years, it was time for someone else to have a seat at the table, and I'm very happy with my successor and feel that he is also in a very good position to represent the employees of Coolblue Tech strongly, directly, and fairly. _Good luck Huib._
 
 ## Family highlights?
 
 Not everything is about technology, or work, and there have been some significant highlights in my personal life this year.
 
-I mentioned one previously: we bought a new puppy in June, he's a Cocker-spaniel/Poodle mix, _so thankfully he doesn't shed on our couch/clothes_, and he's become a vital part of the family.
+I mentioned one previously: we bought a new puppy in June, he's a Cocker-spaniel/Poodle mix, _so thankfully he doesn't shed on our couch or clothes_, and he's become a vital part of the family.
 
-Additionally, thanks to my brother, and visiting parents, my wife and I managed to "get away" more this year than we have since before we had children! This even includes one of my key highlights of this year: spending a weekend without kids in Barcelona!
+Additionally, thanks to my brother, and visiting parents, my wife and I managed to "get away" more this year than any other year since we had children! This is probably my single best highlight of the year: spending a beautiful, fun, sunny weekend with my wife in Barcelona!
 
 We also spent a lot of time with visitors from overseas this year, hosting 7 different couples/people in our house, for periods from a weekend, to a several-week stay.
 Thankfully, this was incredibly rewarding for all of us, and made for some great memories.
 
-Finally, in terms of "just the fam", we also managed to fit in a few vacations this year: Dubai in January (very hot), Centerparcs in May (very relaxing), Efteling in August, (very fun), and I even went on a very fast road-trip through Germany to Prague with my siblings in July. I closed out the year spending a day each with my son and daughter doing things that they enjoy. Giving them my entire focus and just generally having fun: this resulted in a "LEGO day" with my son, and making a Magic Mirror with my daughter. Both of them (told me) they enjoyed this, and I think I might try and make this a more regular thing in 2019, but before I move on...
+Finally, in terms of "just the fam", we also managed to fit in a few vacations this year: Dubai in January (very hot), Centerparcs in May (very relaxing), Efteling in August, (very fun), and I even went on a very fast road-trip from Rotterdam to Prague with my siblings in July (with only one speeding ticket in the end). 
 
-I hope that you can see, that after laying everything out like that above, I came up with the title for the post: 
+I closed out the year spending a day each with my son and daughter doing things that they enjoy. Giving them my entire focus and just generally having fun: this resulted in a "LEGO day" with my son, and making a Magic Mirror with my daughter. Both of them (told me) they enjoyed this, and I think I might try and make this a more regular thing in 2019, but before I move on...
 
-> **Wow, what a year!**
+I hope that you can see, that after laying everything out like that above, I came up with the title for the post: `Wow, what a year!`
 
 # Adapt
 
-Retrospection is a great tool to help you identify challenges you've faced, or "sub-optimal approaches", or possibly even blockers that you should have addressed sooner, but it's all for naught if you don't do anything with it. 
+Retrospection is a great tool to help you identify challenges you've faced, or "sub-optimal approaches", or possibly even blockers that you should have addressed sooner, but it's all for naught if you don't do anything with it.
 
-_If you don't come out with assignable, implementable actions, did you even retro?_ So...
+_If you don't come out with assignable, implementable actions, did you even retro?_
+
+So...
 
 ## 2019, a year of... events?
 
@@ -91,14 +92,14 @@ I asked myself, which of the activities that I completed last year "gave me ener
 
 Naturally, holidays and family-time made the top of the list & spending time with close friends, and extended family also made the top 5 ;)
 
-> "But that's obvious Pat! What are *you* going to do in 2019?
+_"But that's obvious Pat! What are **you** going to do in 2019?_
 
 One of the biggest things I put time into in 2018 was _events_; so much so that there's a section almost completely dedicated to it above - but (most) of those events also gave me energy. It motivates me to be able to tell a story to a crowd and helping them with some of their challenges from a stage, at a larger scale than just pair- or mob-programming allows.
 I suppose the next step of this would be hosting a workshop, or entering into consultancy, but I'm not interested in either of those steps just yet, so what better than spending time gathering fun stories to share with larger audiences, and finding the right way to share that with them in a way that they can relate to?
 
-Toward the end of 2018, with so many events confirmed in October-December, I put a pause on submitting proposals for other events, so that I could take a moment to figure out that this is what I wanted to do... as I wrote on my [Speaking](/speaking) page. Over the last week or so, I have resumed submitting proposals, and hope to take the stage at some of the same events that I attended or spoke-at last year: Techorama, Lead Developer London, DevTalks, PSConf, and possibly even a few new ones: FutureTech, DevDays, or possible even NDC?
+Toward the end of 2018, with so many events confirmed in October-December, I put a pause on submitting proposals for other events, so that I could take a moment to figure out that this is what I wanted to do... as I wrote on my [Speaking](/speaking) page. Over the last week or so, I have resumed submitting proposals, and hope to take the stage at some of the same events that I attended or spoke-at last year: Techorama, Lead Developer London, DevTalks, PSConf, and possibly even a few new ones: FutureTech, DevDays, or possibly even an NDC?
 
-## What comes next?
+## 2019, a year of... personal growth?
 
 Events isn't going to just be the focus for the year though. I still have a "day job" of being accountable for roughly 50 people spread across 6 teams (_naturally, with a new manager came a new structure_), and even though these Developers and Leads need me to enable/unblock/empower them, I am going to start putting a lot more focus on the role of the Leads in their teams, and what those Team Leads can do for their teams, hopefully saving me a lot of time that was spent on operational duties in 2018.
 
@@ -146,6 +147,6 @@ In no particular order, but in a very particular grouping, here are the ones tha
 
 ...and there's one more that really stood out to me:
 
-> Remember that nobody knows what they're doing! We're all making it up as we go along.
+**Remember that nobody knows what they're doing! We're all making it up as we go along.**
 
 So, with that, Happy New Year, and hopefully I'll see this editor a little more regularly in 2019!
