@@ -142,7 +142,7 @@ In no particular order, but in a very particular grouping, here are the ones tha
 - Follow your curiosity, talk to more people, try things, tell your story
 - Look for where your personal voice and commercial opportunity meet
 - What is the "from... to..." you want to create?
-- Take a long-erm view of the change you want to make. How does this change the way you do things?
+- Take a long-term view of the change you want to make. How does this change the way you do things?
 - Beauty and fun is often in the little things
 
 ...and there's one more that really stood out to me:
