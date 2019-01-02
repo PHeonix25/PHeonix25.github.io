@@ -18,10 +18,11 @@ As 2018 draws to a close (_and I get closer to some of the deadlines for my long
 > I don't want this post to turn into a "woe-is-me" or (worse) a "look at all the cool shit I've done"-type of boastful success story, but instead I'm documenting it for myself, placing it somewhere that I value, and I hope that for anyone else that stumbles on it, it can provide some inspiration for self-reflection.
 > Please don't use this post for comparison toward your own achievements. We are each skilful in our own right, and the things I've done might not be the things that you need to do.
 
-I've also broken this post into two parts, following a motto from SaFE that I keep on hearing:
+Now, I've set this post up following the three [Scrum pillars](https://scrumguides.org/scrum-guide.html) like a normal retrospective:
 
-- **Inspect**: where I take a critical look at what I have achieved, and,
-- **Adapt**: where I attempt to identify areas where I can improve those outcomes
+- **Transparency**: well, this whole post should give you decent insight into my undertakings in 2018, and I'm pretty sure that we can agree that 2018 is "done" :)
+- **Inspection**: where I take a critical look at what I have achieved, and,
+- **Adaptation**: where I attempt to identify areas where I can improve those outcomes
 
 So, let's get started with the intro-, nee, retrospection...
 
