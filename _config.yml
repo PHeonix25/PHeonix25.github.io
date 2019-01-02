@@ -48,6 +48,7 @@ excerpt_separator: <!--description-->
 paginate: 5
 
 # These are the add-ins we want to use
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-paginate
+  - jemoji
