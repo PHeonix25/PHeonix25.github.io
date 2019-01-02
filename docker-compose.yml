@@ -1,7 +1,11 @@
-jekyll:
+version: '2'
+services:
+  jekyll:
+    environment:
+      - JEKYLL_ENV=docker
+    command: jekyll serve --force_polling --watch --config  _config.yml,_config.docker.yml
     image: jekyll/jekyll:pages
-    command: jekyll serve --force_polling --incremental 
-    ports:
-        - 4000:4000
     volumes:
-        - .:/srv/jekyll
+      - .:/srv/jekyll
+    ports:
+      - 4000:4000
