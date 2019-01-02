@@ -1,4 +1,4 @@
-$containers = docker ps -a -q -f ancestor=blog:latest;
+$containers = docker ps -a -q -f ancestor=jekyll/jekyll:pages
 
 Write-Host ''
 

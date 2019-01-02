@@ -1,11 +1,12 @@
-# Build the image (called blog, version 'latest')
-docker build . -t blog:latest 
+# Run an instance of the container in the background
+docker-compose up -d
 
-# Run an instance of the image in the background, opening port 4000 as well
-$container = docker run -d -p 4000:4000 -t blog:latest
+# Get the ID of the container so that we can attach to it
+$container = docker-compose ps -q jekyll
 
-# Launch the browser so that we can check our work
-start 'http://localhost:4000/'
+# Launch the browser so that we can check our work 
+# NOTE: it might not be ready yet, but at least the tab will be open...
+Start-Process 'http://localhost:4000/'
 
 # Attach to the running container (for debug purposes)
-docker attach $container
+docker attach $container  
