@@ -30,6 +30,9 @@ facebook_username: hermens.p
 # Enable posting into the future
 future: true
 
+# Be strict about the allowed front-matter
+strict_front_matter: true
+
 # Build settings
 verbose: true
 markdown: kramdown
