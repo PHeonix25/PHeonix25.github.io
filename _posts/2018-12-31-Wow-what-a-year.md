@@ -16,7 +16,7 @@ As 2018 draws to a close (_and I get closer to some of the deadlines for my long
 
 > **Disclaimer**:
 > I don't want this post to turn into a "woe-is-me" or (worse) a "look at all the cool shit I've done"-type of boastful success story, but instead I'm documenting it for myself, placing it somewhere that I value, and I hope that for anyone else that stumbles on it, it can provide some inspiration for self-reflection.
-> Please don't use this post for comparison toward your own achievements. We are each skillful in our own right, and the things I've done might not be the things that you need to do.
+> Please don't use this post for comparison toward your own achievements. We are each skilful in our own right, and the things I've done might not be the things that you need to do.
 
 I've also broken this post into two parts, following a motto from SaFE that I keep on hearing:
 
@@ -72,7 +72,7 @@ Additionally, thanks to my brother, and visiting parents, my wife and I managed 
 We also spent a lot of time with visitors from overseas this year, hosting 7 different couples/people in our house, for periods from a weekend, to a several-week stay.
 Thankfully, this was incredibly rewarding for all of us, and made for some great memories.
 
-Finally, in terms of "just the fam", we also managed to fit in a few vacations this year: Dubai in January (very hot), Centerparcs in May (very relaxing), Efteling in August, (very fun), and I even went on a very fast road-trip from Rotterdam to Prague with my siblings in July (with only one speeding ticket in the end). 
+Finally, in terms of "just the fam", we also managed to fit in a few vacations this year: Dubai in January (very hot), Centerparcs in May (very relaxing), Efteling in August, (very fun), and I even went on a very fast road-trip from Rotterdam to Prague with my siblings in July (with only one speeding ticket in the end).
 
 I closed out the year spending a day each with my son and daughter doing things that they enjoy. Giving them my entire focus and just generally having fun: this resulted in a "LEGO day" with my son, and making a Magic Mirror with my daughter. Both of them (told me) they enjoyed this, and I think I might try and make this a more regular thing in 2019, but before I move on...
 
@@ -86,13 +86,13 @@ _If you don't come out with assignable, implementable actions, did you even retr
 
 So...
 
-## 2019, a year of... events?
-
 I asked myself, which of the activities that I completed last year "gave me energy" and which of those that gave me energy I would have enjoyed even if they didn't. This thinned my achievements down significantly, and allowed me to focus on the topics that I enjoyed and made life more pleasurable.
 
 Naturally, holidays and family-time made the top of the list & spending time with close friends, and extended family also made the top 5 ;)
 
 _"But that's obvious Pat! What are **you** going to do in 2019?_
+
+## 2019, a year of... events?
 
 One of the biggest things I put time into in 2018 was _events_; so much so that there's a section almost completely dedicated to it above - but (most) of those events also gave me energy. It motivates me to be able to tell a story to a crowd and helping them with some of their challenges from a stage, at a larger scale than just pair- or mob-programming allows.
 I suppose the next step of this would be hosting a workshop, or entering into consultancy, but I'm not interested in either of those steps just yet, so what better than spending time gathering fun stories to share with larger audiences, and finding the right way to share that with them in a way that they can relate to?
