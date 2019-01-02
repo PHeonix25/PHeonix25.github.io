@@ -5,6 +5,9 @@
 [![forthebadge](https://forthebadge.com/images/badges/cc-nc-sa.svg)](https://forthebadge.com)
 
 ## aka. [pheonix25.github.io](https://hermens.com.au)
+
+[![Build Status](https://dev.azure.com/phermens/testing/_apis/build/status/PHeonix25.PHeonix25.github.io?branchName=master)](https://dev.azure.com/phermens/testing/_build/latest?definitionId=3?branchName=master)
+
 This is a site that I've set up for my personal blogging - all nice and clean, and simple - using Jekyll and GitHub Pages for deployment.
 
 Feel free to copy parts of the code or theme/layout/style, but please remember that **the content is all mine**, please don't steal that!
