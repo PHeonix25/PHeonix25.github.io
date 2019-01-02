@@ -72,9 +72,9 @@ Additionally, thanks to my brother, and visiting parents, my wife and I managed 
 We also spent a lot of time with visitors from overseas this year, hosting 7 different couples/people in our house, for periods from a weekend, to a several-week stay.
 Thankfully, this was incredibly rewarding for all of us, and made for some great memories.
 
-Finally, in terms of "just the fam", we also managed to fit in a few vacations this year: Dubai in January (very hot), Centerparcs in May (very relaxing), Efteling in August, (very fun), and I even went on a very fast road-trip from Rotterdam to Prague with my siblings in July (with only one speeding ticket in the end).
+Finally, in terms of "just the fam", we also managed to fit in a few vacations this year: Dubai in January (very pleasant weather), Centerparcs in May (very relaxing), Efteling in August (very fun), and I even went on a very fast road-trip from Rotterdam to Prague with my siblings in July - with only one speeding ticket in the end!
 
-I closed out the year spending a day each with my son and daughter doing things that they enjoy. Giving them my entire focus and just generally having fun: this resulted in a "LEGO day" with my son, and making a Magic Mirror with my daughter. Both of them (told me) they enjoyed this, and I think I might try and make this a more regular thing in 2019, but before I move on...
+I closed out the year spending a day each with my son and daughter doing things that they enjoy. Giving them my entire focus and just generally having fun: this resulted in a "LEGO day" with my son, and making a [Magic Mirror](https://magicmirror.builders/) with my daughter. Both of them told me they really enjoyed having this focussed attention, and I think I might try and make it a more regular occasion in 2019, but, before I move on...
 
 I hope that you can see, that after laying everything out like that above, I came up with the title for the post: `Wow, what a year!`
 
