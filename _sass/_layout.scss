@@ -52,6 +52,13 @@ body {
   animation: blinking_underscore_frame 1.5s infinite ease;
 }
 
+img.avatar {
+  width: 50%;
+  margin: 1rem auto 0 auto; 
+  border-radius: 50%; 
+  border: 1rem solid $border-color;
+}
+
 .logo {
   margin-bottom:12.5px;
   font-weight:$font-weight-bold;
@@ -78,8 +85,7 @@ body {
     color: $text-color;
     line-height: 1.0;
     display: block;
-    padding: 5px 0px 0px 0px;
-
+    padding: 0px;
 
     li {
       font-size:1.5rem;
@@ -124,7 +130,6 @@ body {
   #menu-toggle:checked+.site-nav {
     opacity: 1;
     height: auto;
-    margin-bottom:-25px;
   }
 }
 
