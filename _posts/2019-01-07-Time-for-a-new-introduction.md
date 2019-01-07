@@ -7,7 +7,7 @@ published: true
 image: /assets/headers/2019-01-07-Time-for-a-new-introduction.png
 ---
 
-I started my [2018 retrospective](/2018/12/31/Wow-what-a-year/) by questioning what motivates me, which has been a big part of my bio for a long time. Do _"interesting challenges"_ still _"get me out of bed in the morning"_? In this post I'll talk about why that's not necessarily the case, and what's going to replace it.
+I started my [2018 retrospective](/2018/12/31/Wow-what-a-year/) by questioning what motivates me, which has been a big part of my bio for a long time. Do _"interesting problems & inspiring solutions"_ still _"get me out of bed in the morning"_? In this post I'll talk about why that's not necessarily the case, and what's going to replace it.
 
 <!--description-->
 ![2019-01-07-Time-for-a-new-introduction](/assets/headers/2019-01-07-Time-for-a-new-introduction.png)
@@ -25,14 +25,17 @@ It felt -- and to a degree, still feels -- like I'm just punching the clock, doi
 
 So I started using [the results of the retro](/2018/12/31/Wow-what-a-year/#adapt) to figure out what gave me energy, and what I wanted to focus on: what did I do that could continue to give me concrete, repeatable, identifiable results, directly correlated with my inputs, much like coding did -- and continues to.
 
+Now, I love my job.
+I love that I can enable and empower so many people in the position that have.
+I love that I have the responsibility and accountability for the amazing work that were are continuing to produce at an amazing rate.
+I honestly love my colleagues and the company I work for!
+I'm continually amazed by the people I've hired and the great jobs they are doing.
+I'm just trying to make clear, to myself, what areas it is that I **want** to improve, and then I can check if that's something I **could**, or _should_, do in my current role.
+This post is ultimately just a means of catharsis for me.
+
 Then I read [this post](https://charity.wtf/2019/01/04/engineering-management-the-pendulum-or-the-ladder/) from [Charity Majors](https://twitter.com/mipsytipsy) which was a follow-up to [another awesome post](https://charity.wtf/2017/05/11/the-engineer-manager-pendulum/) she made a few years ago.
 I found myself nodding along to both; the idea that highly skilled engineers should try being managers, and highly skilled technical managers have been developers/engineers at some point in time.
 If it's not a "promotion" into technical management, then it's not a _demotion_ to try something else either, right?
-
-**NOTE:** before you assume what the rest of the post is about (_and think that this my instant-resignation-letter, Millennial-style_) let me reassure you, I honestly love a lot of my colleagues and the company I work for.
-I'm continually amazed by the people I've hired and the great jobs they are doing, and I'm certainly not in job-hunting mode.
-I'm just trying to make clear, to myself, what it is that I **want** to do, and then I can check if that's something I **could**, or _should_, do in my current role...
-This post is just a means of catharsis for me.
 
 # Cool, so that means...?
 
@@ -47,7 +50,7 @@ The moments that gave me the most motivation?
 
 Thankfully, making new friends, learning new presentation skills, and pushing myself to improve (_including giving my first presentation EVER just working from memory & background without pre-prepared slides_) were all nice side-effects of just doing something that I find really fun!
 
-So I've decided to spend a fair bit of my time this year further improving these skills, possibly taking on a role more like a traditional technical evangelist or motivational speaker, ...or possibly even trying to find a path towards a role as a professional "story-teller" itself -- _à la_ [Steve Clayton](http://www.stevecla.com/about/)?
+So I've decided to spend a fair bit of my time this year further improving these skills; delivering a well-prepared story, well!
 
 # That's quite a change
 
@@ -82,6 +85,4 @@ I'm still trying to figure out the right wording, but how's something like this 
 > I've been a .NET developer for 15+ years (and a technical manager for the past few), an international public speaker, a happy husband and father, but most of all, I'm just a nerd.
 > Over the course of my career, I've found that sharing fun stories about interesting challenges & creative solutions motivates me.
 
-It's a bit bland, right?
-
-Yeah, wish me luck...
+It's a bit bland, right? Wish me luck :)
