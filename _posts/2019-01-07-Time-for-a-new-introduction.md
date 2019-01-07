@@ -7,7 +7,7 @@ published: true
 image: /assets/headers/2019-01-07-Time-for-a-new-introduction.png
 ---
 
-I started my [2018 retrospective](/2018/12/31/Wow-what-a-year/) by questioning what motivates me, which has been a big part of my bio for a long time. Do `interesting challenges` still `get me out of bed in the morning`? In this post I'll talk about why that's not necessarily the case, and what's going to replace it.
+I started my [2018 retrospective](/2018/12/31/Wow-what-a-year/) by questioning what motivates me, which has been a big part of my bio for a long time. Do _"interesting challenges"_ still _"get me out of bed in the morning"_? In this post I'll talk about why that's not necessarily the case, and what's going to replace it.
 
 <!--description-->
 ![2019-01-07-Time-for-a-new-introduction](/assets/headers/2019-01-07-Time-for-a-new-introduction.png)
