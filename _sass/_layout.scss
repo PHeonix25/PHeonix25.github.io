@@ -55,8 +55,16 @@ body {
 img.avatar {
   width: 50%;
   margin: 1rem auto 0 auto; 
-  border-radius: 50%; 
+  background: url(/assets/img/avatar_bw.jpg);
+  background-repeat: no-repeat;
   border: 1rem solid $border-color;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  display:inline-block;
+  -webkit-background-size: cover !important;
+  background-size: cover !important;
+  background-position: center center !important;
 }
 
 .logo {
