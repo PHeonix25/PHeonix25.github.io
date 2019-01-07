@@ -4,6 +4,7 @@ title: "GitHub Pages, Docker, and Jekyll"
 date: 2019-01-02 00:00:00 +0000
 categories: github docker jekyll
 published: false
+image: /assets/headers/UNPUBLISHED.2019-01-02-GitHub-Pages-Docker-and-Jekyll.png
 ---
 
 It's been a while since I wrote about [setting up my blog for local testing](/2016/10/08/Getting-started-with-Jekyll-Part-4/) using [Docker](https://www.docker.com/) and Docker Toolbox, and the rest of the ecosystem has moved on. So it's time for an update...
