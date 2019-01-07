@@ -23,11 +23,11 @@ A lot of the challenges I had in my day-job were certainly challenging, and requ
 
 It felt -- and to a degree, still feels -- like I'm just punching the clock, doing the same hours, but with less results, and a lot more disappointment, but of course, I covered _some of_ that in the retrospective.
 
-So I started using [the results of the retro](/2018/12/31/Wow-what-a-year/#adapt) to figure out what gave me energy, and what I wanted to focus on: what did I do that could continue to give me concrete, repeatable, identifiable results, directly correlated with my inputs, much like coding did -- and continues to.
+So I started using [the results of the retro](/2018/12/31/Wow-what-a-year/#adapt) to figure out what gave me energy, and what I wanted to focus on: what did I do that could continue to give me concrete, repeatable, identifiable results, directly correlated with my inputs, much like coding did (and continues to).
 
 Now, I love my job.
 I love that I can enable and empower so many people in the position that have.
-I love that I have the responsibility and accountability for the amazing work that were are continuing to produce at an amazing rate.
+I love that I have the responsibility and accountability for the amazing work that we're continuing to produce at an amazing rate.
 I honestly love my colleagues and the company I work for!
 I'm continually amazed by the people I've hired and the great jobs they are doing.
 I'm just trying to make clear, to myself, what areas it is that I **want** to improve, and then I can check if that's something I **could**, or _should_, do in my current role.
@@ -40,7 +40,7 @@ If it's not a "promotion" into technical management, then it's not a _demotion_ 
 # Cool, so that means...?
 
 I found that a lot of the events that I enjoyed the most this year, were when I had the ability to tell stories from my heart.
-Addressing an engaged crowd with something as simple as an introduction to a department meeting, as storied as sharing the history of my company with new-joiners, entertaining people by being jovial at a work function, sharing tales of my failures with new developers from a completely different background, and even when I used 300+ slides in a guest lecture on decision making and continuous delivery from the perspective of a fast-moving company. These were all awesome.
+Addressing an engaged crowd with something as simple as an introduction to a department meeting, or as storied as sharing the history of my company with new-joiners, or as entertaining as being an MC at an amazing work function, or sharing my failures with new developers from a completely different background ...and even that one time I used 300+ slides in a guest lecture on "decision making and continuous delivery from the perspective of a fast-moving company". These were all awesome.
 
 The key to most of my highlights in 2018?
 
@@ -48,7 +48,7 @@ The moments that gave me the most motivation?
 
 **It was when I had a story to tell, and managed to tell it well.**
 
-Thankfully, making new friends, learning new presentation skills, and pushing myself to improve (_including giving my first presentation EVER just working from memory & background without pre-prepared slides_) were all nice side-effects of just doing something that I find really fun!
+Thankfully, making new friends, learning new presentation skills, and pushing myself to improve -- _including giving my first presentation EVER just working from memory & background without pre-prepared slides_ -- were all nice side-effects of just doing something that I find really fun!
 
 So I've decided to spend a fair bit of my time this year further improving these skills; delivering a well-prepared story, well!
 
@@ -58,7 +58,7 @@ Yeah, this could be just another [left turn at Albuquerque](https://tvtropes.org
 
 Thankfully, I feel that there might be an opportunity to pursue this within my current organisation, especially considering how supportive they've been of me and my "speaking habit" in the past.
 
-I would love that: sticking it out with friends, sharing our amazing successes (and failures), helping teams to learn from others, and especially finding the right way to bring "bad news" to a group, while leaving them feeling energised and motivated. These are the key skills I feel I still need to improve, and intend to work on over the next year.
+I would love that: sticking it out with friends, sharing our amazing successes (and failures!), helping teams to learn from others, and especially finding the right way to bring "bad news" to a group, while leaving them feeling energised and motivated. These are the key skills I feel I still need to improve, and intend to work on over the next year.
 
 I'll also reach back to that previous post and some of the "one-liners" in the summary that helped me to understand why I should work toward this... Remember these?
 
