@@ -4,9 +4,9 @@ title: Hi!
 permalink: /about/
 ---
 
-I'm a loud Australian that's been living in the Netherlands for a few years -- and still trying to learn Dutch.
-At risk of sounding cliché; I'm an skilled .Net developer, experienced public speaker, husband and father, but most of all, a geek.
-Over the course of my career, I've found that interesting problems & inspiring solutions are what gets me out of bed in the morning.
+I'm Pat Hermens, an Australian that's been based in the Netherlands for the last 5 years.
+I've been a .NET developer for 15+ years (and a technical manager for the past few), an international public speaker, a happy husband and father, but most of all, I'm just a geek.
+Over the course of my career, I've found that mentoring and coaching, sharing fun stories, and working on interesting challenges & creative solutions really motivate me, and look forward to doing these things with you.
 
 If you're interested in my previous roles or experience you can look at my [Developer Story](http://stackoverflow.com/story/phermens),
 or if looking to get in touch for any other reason, just check out the links to my other stuff online, listed below.
