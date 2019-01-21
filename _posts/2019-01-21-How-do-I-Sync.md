@@ -20,6 +20,6 @@ While I still think this is worthwhile process, _and I'm planning on following t
 
 Then I came across this post, from [Rands](http://randsinrepose.com/about/), called "[The Update, The Vent, and The Disaster](http://randsinrepose.com/archives/the-update-the-vent-and-the-disaster/), and he words it so much better than I ever could. Stop now and go and read it (if you haven't already).
 
-I had planned to share a bunch of words with you, as well as a checklist that I've used previously, as well as a series of steps you can take as your syncs mature, but I think that if you've read that post, that's enough for now. In fact, I think I'll even update my [Management README](https://management-handbook.hermens.com.au) section on syncs to just link to that post, that's how much I enjoyed it, and agree.
+I had planned to share a bunch of words with you, as well as a checklist that I've used previously, as well as a series of steps you can take as your syncs mature, but I think that if you've read that post, that's enough for now. In fact, I think I'll even update my [Management README](https://management-handbook.hermens.com.au) section on ["syncs" or "1-1's"](https://management-handbook.hermens.com.au/now-the-real-stuff/templates/regular-syncs-and-1-1s) to just link to that post, that's how much I enjoyed it, and agree with it.
 
 So that's it for today, ... guess it's just an update?
