@@ -16,7 +16,7 @@ Normally I start with a fun "[Getting to know you](https://management-handbook.h
 
 While I still think this is worthwhile process, _and I'm planning on following this format again_ because it's all prepared & achieves the goals that I want, I thought I'd go and do some further reading and jot down my thoughts.
 
-Then I came across this post, from [Rands](http://randsinrepose.com/about/) back in 2010, called "[The Update, The Vent, and The Disaster](http://randsinrepose.com/archives/the-update-the-vent-and-the-disaster/), and he words it so much better than I ever could. Stop now and go and read it (if you haven't already).
+Then I came across this post, from [Rands](http://randsinrepose.com/about/) back in 2010, called "[The Update, The Vent, and The Disaster](http://randsinrepose.com/archives/the-update-the-vent-and-the-disaster/), and he words it so much better than I ever could. Stop now and go and read it -- if you haven't already!
 
 **...**
 
