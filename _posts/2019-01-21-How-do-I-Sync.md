@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "How do I 'Sync'?"
+title: "How do I sync?"
 date: 2017-05-20 00:00:00 +0000
 categories: management
 published: true
-image: /assets/headers/2019-01-21-How-do-I-Sync.png
+image: /assets/headers/2019-01-21-How-do-I-sync.png
 ---
 
 I've recently just taken on some new teams, and started introducing myself to the Leads of those teams, and I was thinking to myself... _How should I kick this off?_
 
 <!--description-->
-![2019-01-21-How-do-I-Sync](/assets/headers/2019-01-21-How-do-I-Sync.png)
+![2019-01-21-How-do-I-Sync](/assets/headers/2019-01-21-How-do-I-sync.png)
 
 Normally I start with a fun "[Getting to know you](https://management-handbook.hermens.com.au/now-the-real-stuff/templates/gettingtoknowyou)" exercise that I borrowed from [Lara Hogan](https://larahogan.me/blog/first-one-on-one-questions/) a few years ago, and then try and work with you to figure out goals that we can work toward, and also how best you expect me to help you get there.
 
