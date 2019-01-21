@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "How do I sync?"
-date: 2017-05-20 00:00:00 +0000
+title: "How do I 'Sync'?"
+date: 2019-01-21 00:00:00 +0000
 categories: management
 published: true
 image: /assets/headers/2019-01-21-How-do-I-sync.png
