@@ -59,7 +59,7 @@ Once you have a PACKAGES.CONFIG file ([here's mine for if you're interested](/as
 choco install ~/Downloads/PACKAGES.CONFIG -y
 ```
 
-Or if you just want to use mine as a starting point:
+Or if you want to use mine as a starting point:
 
 ```powershell
 Invoke-WebRequest -Uri https://raw.githubusercontent.com/PHeonix25/PHeonix25.github.io/master/assets/PACKAGES.CONFIG -OutFile ~/packages.config;
@@ -88,7 +88,7 @@ Import [this one](https://raw.githubusercontent.com/PHeonix25/PHeonix25.github.i
 
 ### Customise PowerShell
 
-The last thing that I always load onto a new machine is my [Microsoft.Powershell_profile.ps1](/assets/Microsoft.Powershell_profile.ps1). I just drop this file into `~/Documents/WindowsPowerShell` which is on the PATH so that it gets loaded by default whenever I open PowerShell.
+The last thing that I always load onto a new machine is my [Microsoft.Powershell_profile.ps1](/assets/Microsoft.Powershell_profile.ps1). I drop this file into `~/Documents/WindowsPowerShell` which is on the PATH so that it gets loaded by default whenever I open PowerShell.
 
 There are a few custom commands I have saved in there (like `Start-Splunk` or `Start-Solution`), but the main reason I use it is to customise the prompt.
 
@@ -102,7 +102,7 @@ Invoke-WebRequest -Uri https://raw.githubusercontent.com/PHeonix25/PHeonix25.git
 > **NOTE 1:** I have a whole section in there where I import my own Personal Keys into Pageant. You can remove that, or update it to point to your keys.
 
 --
-> **NOTE 2:** You'll also notice that I hard-coded the prompt colors at the end of the `_profile.ps1` at some point. I can't remember why I did that, but I'm guessing it's because they wouldn't stick with just the registry keys. Feel free to remove that whole block if you want.
+> **NOTE 2:** You'll also notice that I hard-coded the prompt colors at the end of the `_profile.ps1` at some point. I can't remember why I did that, but I'm guessing it's because they wouldn't stick with the registry keys alone. Feel free to remove that whole block if you want.
 
 ---
 
