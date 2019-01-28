@@ -51,14 +51,14 @@ Function Set-Prompt
             Write-Host ""
             Write-Output "Setting up Posh-Git"
 
-            $profilePath = "C:\Users\p.hermens\Documents\WindowsPowerShell\Modules\posh-git\profile.example.ps1"
+            $profilePath = "~\Documents\WindowsPowerShell\Modules\posh-git\profile.example.ps1"
             Write-Verbose "Resolving and executing GitHub profile from $profilePath"
             . (Resolve-Path $profilePath)
 
             Write-Verbose "Adding personal SSH key to the running agent"
-            Add-SshKey "C:\Users\p.hermens\Dropbox\Technical\Personal Keys\PHeonix25_openssh_fixed.ppk"
+            Add-SshKey (Resolve-Path "~\Dropbox\Technical\Personal Keys\PHeonix25_openssh_fixed.ppk")
             Write-Verbose "SSH key 'PHeonix25_openssh_fixed.ppk' added."
-            Add-SshKey "C:\Users\p.hermens\Dropbox\Technical\Personal Keys\PHeonix25_June2017.ppk"
+            Add-SshKey (Resolve-Path "~\Dropbox\Technical\Personal Keys\PHeonix25_June2017.ppk")
             Write-Verbose "SSH key 'PHeonix25_June2017.ppk' added."
 
             Write-Output "Prompt depth will be set to $MaximumDisplayedPathLength. "
