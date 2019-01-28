@@ -4,11 +4,13 @@ title: "Chocolatey, and a new machine"
 date: 2019-01-28 00:00:00 +0000
 categories: chocolatey hardware
 published: true
+image: /assets/headers/2019-01-28-Chocolatey-and-a-new-machine.png
 ---
 
 I'm wiping my laptop tomorrow and starting fresh, so I figured this was as good a time as any to document how I can bring a development machine up-to-speed ASAP, using [Chocolatey](https://chocolatey.org/).
 
 <!--description-->
+![2019-01-28-Chocolatey-and-a-new-machine](/assets/headers/2019-01-28-Chocolatey-and-a-new-machine.png)
 
 # Let's get started
 
