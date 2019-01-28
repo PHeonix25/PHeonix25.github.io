@@ -17,7 +17,9 @@ If you'd like me to speak at your event (_or internally at your company_) then p
 
 ## Upcoming public events
 
-_PLEASE NOTE: I'll be taking a short break over the festive season of 2018-2019._
+**2019-03-13**: FutureTech, Utrecht, NL - From Developer, to Development Manager.
+
+**2019-04-02**: CodeMotion Amsterdam, NL - From 100, to 1000+ deployments a day.
 
 **2019-05-19**: 4DotNet Developer Days, Meppel, NL - Keynote presentation.
 
