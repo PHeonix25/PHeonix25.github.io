@@ -25,6 +25,7 @@
 - Media Queries
 - Styled
 - Frames
+- Info-button
 */
 
 %vertical-rhythm {
@@ -461,4 +462,20 @@ blockquote {
   a {
     margin-right: 1em;
   }
+}
+
+  
+/* Info-button 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.info-circle:after {
+  content: "";
+  display: inline-block;
+  color: #777;
+}
+
+input + .info-circle:after {
+  position: relative;
+  left: -1rem;
+  margin-right: -1rem;
 }
