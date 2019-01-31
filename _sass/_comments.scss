@@ -8,12 +8,17 @@ div.article-comments {
     img.comment-avatar {
       border-radius: 4px;
       float: left;
-      width: 48px;
-      height: 48px;
+      width: 60px;
+      height: 60px;
     }
 
     #comments-list {
       list-style-type: none;
+      
+      ol {
+        list-style-type: none;
+        padding: 0;
+      }
 
       li {
         padding: 8px;
@@ -24,7 +29,7 @@ div.article-comments {
         margin-top: 8px;
 
         blockquote {
-          margin-left: 60px;
+          margin: 0 0 0 70px;
 
           cite {
             font-style: normal;
