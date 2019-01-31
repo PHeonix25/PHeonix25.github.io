@@ -42,7 +42,7 @@ kramdown:
 # Third-party services
 # just leave someone empty to disable it
 google_analytics: UA-18034022-3
-disqus_shortname: hermens
+#disqus_shortname: hermens
 
 # used this for post_excerpt at index_page
 excerpt_separator: <!--description-->
@@ -55,3 +55,32 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jemoji
+
+# Parameters required for the comments
+emptyArray: []
+
+commenting: open
+comments:
+  receiver: https://haacked-blog.azurewebsites.net/api/PostComment
+
+authors:
+  phermens:
+    name: Pat Hermens
+    email: p@hermens.com.au
+    url: https://hermens.com.au
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: pages
+    values:
+      layout: page
+      author: phermens
+  -
+    scope:
+      path: '_posts'
+      type: posts
+    values:
+      layout: post
+      author: phermens
