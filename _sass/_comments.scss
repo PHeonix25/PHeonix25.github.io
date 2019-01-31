@@ -64,12 +64,10 @@ div.article-comments {
       padding: 8px;
 
       input {
+        margin: 1rem 0;
         transition: all .2s linear;
-        padding: 5px 9px;
-        margin: 10px 0 0 0;
         font-size: 13px;
         border-radius: 4px;
-        height: 32px;
       }
 
       input:focus, div.textarea:focus, button#commentbutton:active, button#commentbutton:focus {
