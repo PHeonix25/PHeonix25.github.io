@@ -21,7 +21,7 @@
   </ol>
 </div>
 {% endif %}
-<!-- Site Commenting: {{site.commenting}} + Page Commenting: {{page.commenting}}-->
+<!-- Site Commenting: '{{site.commenting}}' + Page Commenting: '{{page.commenting}}' -->
 {% if site.commenting && (page.commenting == '' || page.commenting == 'open') %}
 {% include comment-new.html %}
 {% endif %}

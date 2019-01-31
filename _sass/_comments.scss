@@ -73,6 +73,7 @@ div.article-comments {
         transition: all .2s linear;
         font-size: 13px;
         border-radius: 4px;
+        width: 45%;
       }
 
       input:focus, div.textarea:focus, button#commentbutton:active, button#commentbutton:focus {
@@ -119,7 +120,7 @@ div.article-comments {
       }
 
       div#commenttext {
-        margin-left: 60px;
+        margin-left: 70px;
       }
 
       div#comment-box {
@@ -127,7 +128,7 @@ div.article-comments {
       }
 
       div#comment-author {
-        margin-left: 60px;
+        margin-left: 70px;
       }
 
       button#commentbutton, input, div.textarea {
@@ -135,7 +136,7 @@ div.article-comments {
       }
 
       button#commentbutton {
-        margin: 1rem 0;
+        width: 100%;
         color: #505050;
         border-radius: 0.5rem;
         -webkit-appearance: none;
@@ -158,17 +159,6 @@ div.article-comments {
         &.confirm-button {
           background-color: 1px solid #ffffee;
           background-image: linear-gradient(-180deg, #ffffee 0%, #eeeedd 90%)
-        }
-      }
-
-      #remember-me {
-        display: inline-block;
-        padding: 1rem;
-
-        input {
-          margin: auto;
-          padding: auto;
-          height: auto;
         }
       }
     } // form#commentForm
