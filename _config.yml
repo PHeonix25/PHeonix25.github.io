@@ -61,7 +61,7 @@ emptyArray: []
 
 commenting: open
 comments:
-  receiver: https://haacked-blog.azurewebsites.net/api/PostComment
+  receiver: https://blogcommentsfunc24727.azurewebsites.net/api/PostComment
 
 authors:
   phermens:
