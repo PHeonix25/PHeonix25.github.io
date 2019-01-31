@@ -58,13 +58,17 @@
           status.innerText = 'Some required fields are missing: ' + missing.join(', ') + '.'
           return
         }
+        
         let button = e.target
-        if (button.innerText != 'Confirm comment') {
-          button.innerText = 'Confirm comment'
-          button.title = 'Click the button again to confirm the comment'
+        let confirmText = 'Confirm comment'
+        if (button.value != confirmText) {
+          button.innerText = confirmText
+          button.value = confirmText
+          button.title = 'Click the button again to confirm the comment @ ' + Date.now()
           button.classList.add('confirm-button')
           return
         }
+
         let name = document.getElementById('name')
         let identity = document.getElementById('identity')
         document.getElementById('avatarInput').value = avatarPreview.src
