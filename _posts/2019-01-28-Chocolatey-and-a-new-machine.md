@@ -53,17 +53,17 @@ choco install -y wsl-ubuntu-1804
 
 > **NOTE:** Unfortunately, Chocolatey doesn't have a command (YET) to export everything that you have installed to a format that it can re-read. You can follow the development of this feature in [this feature request](https://github.com/chocolatey/choco/issues/357), but for now we can use the [`InstChoco`](https://chocolatey.org/packages/instchoco) package.
 
-Once you have a PACKAGES.CONFIG file ([here's mine for if you're interested](/assets/PACKAGES.CONFIG)), it's pretty easy to tell Chocolatey to let rip:
+Once you have a PACKAGES.CONFIG file ([here's mine for if you're interested](/assets/choco.config)), it's pretty easy to tell Chocolatey to let rip:
 
 ```powershell
-choco install ~/Downloads/PACKAGES.CONFIG -y
+choco install ~/Downloads/PACKAGES.config -y
 ```
 
 Or if you want to use mine as a starting point:
 
 ```powershell
-Invoke-WebRequest -Uri https://raw.githubusercontent.com/PHeonix25/PHeonix25.github.io/master/assets/PACKAGES.CONFIG -OutFile ~/packages.config;
-choco install (Resolve-Path ~/packages.config).Path -y
+Invoke-WebRequest -Uri https://raw.githubusercontent.com/PHeonix25/PHeonix25.github.io/master/assets/choco.CONFIG -OutFile ~/choco.config;
+choco install (Resolve-Path ~/choco.config).Path -y
 ```
 
 ## Now, be patient
