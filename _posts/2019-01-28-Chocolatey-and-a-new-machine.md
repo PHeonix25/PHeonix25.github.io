@@ -66,6 +66,8 @@ Invoke-WebRequest -Uri https://raw.githubusercontent.com/PHeonix25/PHeonix25.git
 choco install (Resolve-Path ~/choco.config).Path -y
 ```
 
+> **UPDATE 2019-02-07:** For whatever reason, this didn't work when it was called `PACKAGES.CONFIG`. I needed to rename it to literally ANYTHING ELSE and then everything worked fine. I have updated my config file to be `choco.config` because of this :)
+
 ## Now, be patient
 
 This can take over an hour, even on a brand new clean system. We're talking about installing a bunch of "packages", where most of them are full applications, and one is even a complete other operating system!
@@ -84,7 +86,9 @@ For a work machine, this is not ideal because of the amount of demos and screen-
 Over the years I've found the "_right combination_" that works for me, and saved it as a Registry file: [solarized-dark.reg](/assets/solarized-dark.reg).
 This was based off the work of Niel Pankey's [cmd-colors-solarized](https://github.com/neilpa/cmd-colors-solarized) with a slight modification of the purple color.
 
-Import [this one](https://raw.githubusercontent.com/PHeonix25/PHeonix25.github.io/master/assets/solarized-dark.reg) into your registry, or if you want to know more about how to apply it system-wide, go check out the README [over here](https://github.com/neilpa/cmd-colors-solarized/README.MD).
+~Import [this one](https://raw.githubusercontent.com/PHeonix25/PHeonix25.github.io/master/assets/solarized-dark.reg) into your registry~, or if you want to know more about how to apply it system-wide, go check out the README [over here](https://github.com/neilpa/cmd-colors-solarized).
+
+> **UPDATE 2019-02-07:** This didn't work when I tried it this time around... Please just follow the instructions in the `cmd-colors-solarized` git repo instead.
 
 ### Customise PowerShell
 
