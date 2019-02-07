@@ -103,10 +103,11 @@ Invoke-WebRequest -Uri https://raw.githubusercontent.com/PHeonix25/PHeonix25.git
 . (Resolve-Path ~/Documents/WindowsPowerShell/Microsoft.Powershell_profile.ps1)
 ```
 
-> **NOTE 1:** I have a whole section in there where I import my own Personal Keys into Pageant. You can remove that, or update it to point to your keys.
+> **NOTE:** I have a whole section in there where I import my own Personal Keys into Pageant. You can remove that, or update it to point to your keys.
 
---
-> **NOTE 2:** You'll also notice that I hard-coded the prompt colors at the end of the `_profile.ps1` at some point. I can't remember why I did that, but I'm guessing it's because they wouldn't stick with the registry keys alone. Feel free to remove that whole block if you want.
+> **UPDATE 2019-02-07 - SSHKEYS:** Pageant was no longer necessary as Windows10 comes with OpenSSH! Yay! You'll need to enable the `OpenSSH Agent Service` via `Services`, but then it should "just work". 
+
+> **UPDATE 2019-02-07 - POSH-GIT:** I have also removed a lot of the clutter from the that is now incorporated into Posh-Git itself. Granted, you will need to follow [the instructions](https://github.com/dahlbyk/posh-git#installing-posh-git-via-powershellget) to install Posh-Git but once you do, then you can just call `Import-Module posh-git` from your profile [as shown here](https://github.com/dahlbyk/posh-git#using-posh-git)!
 
 ---
 

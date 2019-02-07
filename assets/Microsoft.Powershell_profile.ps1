@@ -50,16 +50,13 @@ Function Set-Prompt
         {
             Write-Host ""
             Write-Output "Setting up Posh-Git"
-
-            $profilePath = "~\Documents\WindowsPowerShell\Modules\posh-git\profile.example.ps1"
-            Write-Verbose "Resolving and executing GitHub profile from $profilePath"
-            . (Resolve-Path $profilePath)
+            Import-Module posh-git
 
             Write-Verbose "Adding personal SSH key to the running agent"
-            Add-SshKey (Resolve-Path "~\Dropbox\Technical\Personal Keys\PHeonix25_openssh_fixed.ppk")
-            Write-Verbose "SSH key 'PHeonix25_openssh_fixed.ppk' added."
-            Add-SshKey (Resolve-Path "~\Dropbox\Technical\Personal Keys\PHeonix25_June2017.ppk")
-            Write-Verbose "SSH key 'PHeonix25_June2017.ppk' added."
+            Add-SshKey (Resolve-Path "~\Dropbox\Technical\Personal Keys\PHeonix25_openssh.openssh")
+            Write-Verbose "SSH key 'PHeonix25_openssh' added."
+            Add-SshKey (Resolve-Path "~\Dropbox\Technical\Personal Keys\PHeonix25_June2017.openssh")
+            Write-Verbose "SSH key 'PHeonix25_June2017' added."
 
             Write-Output "Prompt depth will be set to $MaximumDisplayedPathLength. "
             Write-Output "Please change the 'MaximumDisplayedPathLength' environment variable if you want something different."
@@ -103,57 +100,12 @@ Set-Alias which Get-Command
 $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
 if (Test-Path($ChocolateyProfile)) {
   Import-Module "$ChocolateyProfile"
+  Write-Host "Chocolatey profile imported." -ForegroundColor Gray
 }
 
-# Load posh-git example profile
-#. 'C:\Users\p.hermens\Documents\WindowsPowerShell\Modules\posh-git\profile.example.ps1'
+# Load posh-git profile
+Import-Module posh-git
+Write-Host "PoshGit profile imported." -ForegroundColor Gray
 
-# Set the colors up as (customised) Solarized:
-## Host Foreground
-$Host.PrivateData.ErrorForegroundColor = 'Magenta'
-$Host.PrivateData.WarningForegroundColor = 'Yellow'
-$Host.PrivateData.DebugForegroundColor = 'Green'
-$Host.PrivateData.VerboseForegroundColor = 'Blue'
-$Host.PrivateData.ProgressForegroundColor = 'Gray'
-
-## Host Background
-$Host.PrivateData.ErrorBackgroundColor = 'Black'
-$Host.PrivateData.WarningBackgroundColor = 'Black'
-$Host.PrivateData.DebugBackgroundColor = 'Black'
-$Host.PrivateData.VerboseBackgroundColor = 'Black'
-$Host.PrivateData.ProgressBackgroundColor = 'Cyan'
-
-## Check for PSReadline
-if (Get-Module -Name "PSReadline") {
-    $options = Get-PSReadlineOption
-
-    ## Foreground
-    $options.CommandForegroundColor = 'Yellow'
-    $options.ContinuationPromptForegroundColor = 'DarkBlue'
-    $options.DefaultTokenForegroundColor = 'DarkBlue'
-    $options.EmphasisForegroundColor = 'Cyan'
-    $options.ErrorForegroundColor = 'Red'
-    $options.KeywordForegroundColor = 'Green'
-    $options.MemberForegroundColor = 'DarkCyan'
-    $options.NumberForegroundColor = 'DarkCyan'
-    $options.OperatorForegroundColor = 'DarkMagenta'
-    $options.ParameterForegroundColor = 'DarkMagenta'
-    $options.StringForegroundColor = 'Blue'
-    $options.TypeForegroundColor = 'DarkYellow'
-    $options.VariableForegroundColor = 'Green'
-
-    ## Background
-    $options.CommandBackgroundColor = 'Black'
-    $options.ContinuationPromptBackgroundColor = 'Black'
-    $options.DefaultTokenBackgroundColor = 'Black'
-    $options.EmphasisBackgroundColor = 'Black'
-    $options.ErrorBackgroundColor = 'Black'
-    $options.KeywordBackgroundColor = 'Black'
-    $options.MemberBackgroundColor = 'Black'
-    $options.NumberBackgroundColor = 'Black'
-    $options.OperatorBackgroundColor = 'Black'
-    $options.ParameterBackgroundColor = 'Black'
-    $options.StringBackgroundColor = 'Black'
-    $options.TypeBackgroundColor = 'Black'
-    $options.VariableBackgroundColor = 'Black'
-}
+# # Set the colors up as (customised) Solarized:
+. (Join-Path -Path (Split-Path -Parent -Path $PROFILE) -ChildPath 'Set-SolarizedDarkColorDefaults.ps1')
