@@ -3,10 +3,13 @@
     <div class="footer left column one-half">
       <section class="copyright">
         <a href="{{ site.baseurl }}">{{ site.title }}</a> &copy; 
-        {{ page.date | date: "%Y" }} &bull; All rights reserved.
+        {{ site.time | date: "%Y" }} &bull; All rights reserved.
       </section>
       <section class="poweredby">
         Handcrafted with love -- and <a href="https://jekyllrb.com/">Jekyll</a>.
+      </section>
+      <section class="lastbuilt smaller">
+        Last built: {{ site.time | date : "%B %d, %Y" }}
       </section>
     </div>
       
