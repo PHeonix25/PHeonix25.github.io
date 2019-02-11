@@ -70,3 +70,10 @@ $on-laptop:        780px;
         "syntax-highlighting",
         "comments"
 ;
+
+/* HACK to prevent FOUC: https://en.wikipedia.org/wiki/FOUC */
+// See head.html for matching declaration.
+html {
+    visibility: visible;
+    opacity: 1;
+}
