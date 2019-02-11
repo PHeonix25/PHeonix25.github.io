@@ -1,14 +1,15 @@
 {
-    "name": "Pat Hermens",
-    "short_name": "Pat Hermens",
-    "background_color": "#000",
-    "theme_color": "#828282",
-    "icons": [
-      {
-        "src":"assets/img/favicon_192x192.jpg",
-        "type": "image/jpg"
-      }
-    ],
-    "start_url": "/?utm_source=homescreen",
-    "display": "standalone"
-  }
+  "name" : "Pat Hermens",
+  "short_name" : "PatHermens",
+  "description" : "Homepage of Pat Hermens",
+  "start_url" : "https://hermens.com.au/?utm_source=homescreen",
+
+  "scope" : ".",
+  "lang" : "en-AU",
+  
+  "background_color" : "#000",
+  "theme_color" : "#828282",
+   
+  "display" : "standalone",
+  "orientation" : "portrait"
+}
