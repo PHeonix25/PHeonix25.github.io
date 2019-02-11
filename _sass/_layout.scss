@@ -77,20 +77,15 @@ img.avatar {
 }
 
 .logo a:hover {
-  color:$text-color;
-  background-image:-webkit-linear-gradient(bottom,#222,#222);
-  background-image:linear-gradient(to top,#222,#222);
-  text-shadow:-1px -1px 0 #FDFDFD,1px -1px 0 #FDFDFD,-1px 1px 0 #FDFDFD,1px 1px 0 #FDFDFD;
-  background-repeat:repeat-x;
-  background-size:2px 2px;
-  background-position:0 96%
+  color: $brand-color;
+  text-decoration: none;
 }
 
 .nav {
   line-height: $base-line-height;
 
   .page-link {
-    color: $text-color;
+    color: $brand-color;
     line-height: 1.0;
     display: block;
     padding: 0px;
@@ -102,8 +97,9 @@ img.avatar {
       margin-bottom:1rem;
     }
 
-    a:active {
-      font-weight: 500;
+    a:hover {
+      text-decoration: none;
+      color: $brand-color;
     }
   }
 }
