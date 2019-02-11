@@ -13,3 +13,24 @@ For a long time since I last re-designed this site, I've been suffering from "th
 ## What do you mean?
 
 A flash is more irritating than destructive or harmful. I've managed to capture a very slow rendering of the site showing it off below:
+
+
+## First line in your header
+
+```html
+<head>
+    <style>html{visibility:hidden;opacity:0;}</style>
+```
+
+## Matching line as the last line in your CSS
+
+```css
+html {
+    visibility: visible;
+    opacity: 1;
+}
+```
+
+## Git Commit
+
+https://github.com/PHeonix25/PHeonix25.github.io/commit/98c320259904564406369f0389a7ee1544b0539f
