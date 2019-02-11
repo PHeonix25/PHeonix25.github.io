@@ -1,15 +1,113 @@
 {
-  "name" : "Pat Hermens",
-  "short_name" : "PatHermens",
-  "description" : "Homepage of Pat Hermens",
-  "start_url" : "https://hermens.com.au/?utm_source=homescreen",
-
-  "scope" : ".",
-  "lang" : "en-AU",
-  
-  "background_color" : "#000",
-  "theme_color" : "#828282",
-   
-  "display" : "standalone",
-  "orientation" : "portrait"
+  "name": "Pat Hermens",
+  "short_name": "PatHermens",
+  "description": "Homepage of Pat Hermens",
+  "start_url": "https://hermens.com.au/?utm_source=homescreen",
+  "background_color": "#000",
+  "theme_color": "#828282",
+  "display": "standalone",
+  "orientation": "portrait",
+  "lang": "en-AU",
+  "scope": ".",
+  "icons": [
+    {
+      "src": "/pwa-images/favicon_192x192.jpg",
+      "type": "image/jpg"
+    },
+    {
+      "src": "/pwa-images/032788cc-bb63-2a53-0063-79a00ffd2709.webPlatform.png",
+      "sizes": "44x44",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa-images/4f1eb3d1-c95b-a9be-f8ca-85fb48ebd1ae.webPlatform.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa-images/windows10/SplashScreen.scale-200.png.png",
+      "sizes": "1240x600",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa-images/411b2af0-7fff-2875-ae3f-38d1c8d8ea5b.webPlatform.png",
+      "sizes": "300x300",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa-images/eda8858a-99a7-7604-2b7c-a15462517a7a.webPlatform.png",
+      "sizes": "150x150",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa-images/345b61d4-35bc-aeb7-8b6a-6532f6937bff.webPlatform.png",
+      "sizes": "88x88",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa-images/d898b148-14e7-79ad-576a-b67fb02c1751.webPlatform.png",
+      "sizes": "24x24",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa-images/036dd894-912e-0f70-8770-0b3942f70b11.webPlatform.png",
+      "sizes": "50x50",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa-images/25fbe216-32ca-de68-7099-57509cf32f93.webPlatform.png",
+      "sizes": "620x300",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa-images/6b62119e-c110-0644-525f-bd1986392dc4.webPlatform.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa-images/bb9b0543-47f2-42e9-6f5b-066ccd8d6508.webPlatform.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa-images/f7a5818e-5882-a919-75d2-8e5e4c466d73.webPlatform.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa-images/33e0caec-ecd6-de44-52e0-8fe64e971995.webPlatform.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa-images/64167ae0-eced-e510-aba4-47d87e8e75c9.webPlatform.png",
+      "sizes": "36x36",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa-images/ios/ios-appicon-1024-1024.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa-images/cb1fb467-5f21-2e1e-a333-7fdafdf767f9.webPlatform.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa-images/82aea6ac-00c4-130f-348f-e8946122418a.webPlatform.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa-images/f7cbc21a-afcf-4a88-e411-3dfb6d22b719.webPlatform.png",
+      "sizes": "120x120",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa-images/b65dcaff-9138-0f3f-8381-082b1e4a562a.webPlatform.png",
+      "sizes": "76x76",
+      "type": "image/png"
+    }
+  ]
 }

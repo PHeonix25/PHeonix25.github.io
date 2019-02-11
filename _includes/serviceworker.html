@@ -1,5 +1,13 @@
 <script>
-if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('{{"/service-worker.js" | prepend:site.baseurl | prepend: site.url }}').catch(function(err) { console.log("Error registering service worker: ", err) });
+//This is the "Offline copy of pages" service worker
+if (navigator.serviceWorker.controller) {
+  console.log('[PWA Builder] active service worker found, no need to re-register')
+} else {
+  //Register the ServiceWorker
+  navigator.serviceWorker.register('service-worker.js', {
+    scope: './'
+  }).then(function(reg) {
+    console.log('[PWA Builder] Service worker has been registered for scope: '+ reg.scope);
+  });
 }
 </script>
