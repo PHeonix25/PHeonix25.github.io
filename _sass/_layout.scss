@@ -300,7 +300,12 @@ p.readmore {
 
 .icon {
   vertical-align: text-bottom;
-  fill: $icon-color;
+  width: 2rem;
+  color: $icon-color;
+
+  &:hover {
+    color: $brand-color;
+  }
 }
 
 body.custom-background {
