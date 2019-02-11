@@ -251,6 +251,11 @@ p.readmore {
 /* footer */
 .footer {
   float:left;
+
+  .last-built {
+    font-size: 1rem;
+    color: $grey-color-light;
+  }
 }
 
 .left {
