@@ -86,7 +86,7 @@ For a work machine, this is not ideal because of the amount of demos and screen-
 Over the years I've found the "_right combination_" that works for me, and saved it as a Registry file: [solarized-dark.reg](/assets/solarized-dark.reg).
 This was based off the work of Niel Pankey's [cmd-colors-solarized](https://github.com/neilpa/cmd-colors-solarized) with a slight modification of the purple color.
 
-~Import [this one](https://raw.githubusercontent.com/PHeonix25/PHeonix25.github.io/master/assets/solarized-dark.reg) into your registry~, or if you want to know more about how to apply it system-wide, go check out the README [over here](https://github.com/neilpa/cmd-colors-solarized).
+~~Import [this one](https://raw.githubusercontent.com/PHeonix25/PHeonix25.github.io/master/assets/solarized-dark.reg) into your registry~~, or if you want to know more about how to apply it system-wide, go check out the README [over here](https://github.com/neilpa/cmd-colors-solarized).
 
 > **UPDATE 2019-02-07:** This didn't work when I tried it this time around... Please just follow the instructions in the `cmd-colors-solarized` git repo instead.
 
