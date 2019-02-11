@@ -52,19 +52,20 @@ body {
   animation: blinking_underscore_frame 1.5s infinite ease;
 }
 
-img.avatar {
-  width: 50%;
-  margin: 1rem auto 0 auto; 
-  background: url(/assets/img/avatar_bw.jpg);
-  background-repeat: no-repeat;
-  border: 1rem solid $border-color;
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  display:inline-block;
-  -webkit-background-size: cover !important;
-  background-size: cover !important;
-  background-position: center center !important;
+img.avatar, .authorimage {
+  // background: url(/assets/img/avatar_bw.jpg);
+  // background-repeat: no-repeat;
+  // border: 1rem solid $border-color;
+  // border-radius: 2rem; /* 1rem + 1rem border */
+  // min-width: 10rem;
+  // min-height: 10rem;
+  // display:inline-block;
+  // -webkit-background-size: cover !important;
+  // background-size: cover !important;
+  // background-position: center center !important;
+  
+  /* Hide it for the moment */
+  display:none;
 }
 
 .logo {
@@ -77,20 +78,15 @@ img.avatar {
 }
 
 .logo a:hover {
-  color:$text-color;
-  background-image:-webkit-linear-gradient(bottom,#222,#222);
-  background-image:linear-gradient(to top,#222,#222);
-  text-shadow:-1px -1px 0 #FDFDFD,1px -1px 0 #FDFDFD,-1px 1px 0 #FDFDFD,1px 1px 0 #FDFDFD;
-  background-repeat:repeat-x;
-  background-size:2px 2px;
-  background-position:0 96%
+  color: $brand-color;
+  text-decoration: none;
 }
 
 .nav {
   line-height: $base-line-height;
 
   .page-link {
-    color: $text-color;
+    color: $brand-color;
     line-height: 1.0;
     display: block;
     padding: 0px;
@@ -102,8 +98,9 @@ img.avatar {
       margin-bottom:1rem;
     }
 
-    a:active {
-      font-weight: 500;
+    a:hover {
+      text-decoration: none;
+      color: $brand-color;
     }
   }
 }
@@ -161,7 +158,7 @@ input#menu-toggle {
     text-align: center;
 
     &:hover {
-      >svg {
+      > svg {
         path {
           fill: $grey-color;
         }
@@ -171,7 +168,6 @@ input#menu-toggle {
     > svg {
       width: 18px;
       height: 15px;
-
 
       path {
         fill: $grey-color-dark;
@@ -252,21 +248,18 @@ p.readmore {
   @media (min-width: $on-laptop+1) {
     float:left;
   }
-  background: url(/assets/img/avatar_bw.jpg);
-  background-repeat: no-repeat;
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  display:inline-block;
-  -webkit-background-size: cover !important;
-  background-size: cover !important;
-  background-position: center center !important;
   margin: 0 1rem 1rem 0;
 }
 
 .authorinfo {
+  .byline {
+    visibility: hidden;
+    display: none;
+  }
+
   .bio {
     color: $grey-color;
+    font-size: smaller;
   }
 }
 
@@ -300,7 +293,12 @@ p.readmore {
 
 .icon {
   vertical-align: text-bottom;
-  fill: $icon-color;
+  width: 2rem;
+  color: $icon-color;
+
+  &:hover {
+    color: $brand-color;
+  }
 }
 
 body.custom-background {
