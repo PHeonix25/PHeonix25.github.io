@@ -157,7 +157,7 @@ input#menu-toggle {
     text-align: center;
 
     &:hover {
-      >svg {
+      > svg {
         path {
           fill: $grey-color;
         }
@@ -167,7 +167,6 @@ input#menu-toggle {
     > svg {
       width: 18px;
       height: 15px;
-
 
       path {
         fill: $grey-color-dark;
