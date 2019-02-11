@@ -13,12 +13,9 @@ body {
     min-height:100%;
     box-sizing: border-box;
     height:auto;
-    padding-bottom: 5em;
-    margin-bottom: 2em;
 }
 
 .site-footer {
-  position: absolute;
   bottom: 0;
   padding-bottom: 0rem;
   width:100%;
@@ -254,7 +251,6 @@ p.readmore {
 
   .last-built {
     font-size: 1rem;
-    color: $grey-color-light;
   }
 }
 
