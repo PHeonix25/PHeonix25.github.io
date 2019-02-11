@@ -52,15 +52,13 @@ body {
   animation: blinking_underscore_frame 1.5s infinite ease;
 }
 
-img.avatar {
-  width: 50%;
-  margin: 1rem auto 0 auto; 
+img.avatar, .authorimage {
   background: url(/assets/img/avatar_bw.jpg);
   background-repeat: no-repeat;
   border: 1rem solid $border-color;
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
+  border-radius: 2rem; /* 1rem + 1rem border */
+  min-width: 10rem;
+  min-height: 10rem;
   display:inline-block;
   -webkit-background-size: cover !important;
   background-size: cover !important;
@@ -247,21 +245,18 @@ p.readmore {
   @media (min-width: $on-laptop+1) {
     float:left;
   }
-  background: url(/assets/img/avatar_bw.jpg);
-  background-repeat: no-repeat;
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  display:inline-block;
-  -webkit-background-size: cover !important;
-  background-size: cover !important;
-  background-position: center center !important;
   margin: 0 1rem 1rem 0;
 }
 
 .authorinfo {
+  .byline {
+    visibility: hidden;
+    display: none;
+  }
+
   .bio {
     color: $grey-color;
+    font-size: smaller;
   }
 }
 
