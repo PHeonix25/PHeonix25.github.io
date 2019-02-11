@@ -174,12 +174,12 @@ p {
 a {
   color: $text-color;
   text-decoration: none;
-  -webkit-transition: color .4s;
-  transition: color .4s;
 }
 a:hover {
-  color:$grey-color-dark;
+  color: $grey-color-dark;
   text-decoration: underline;
+  -webkit-transition: color .4s;
+  transition: color .4s;
 }
 
 /* Buttons
