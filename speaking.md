@@ -15,9 +15,13 @@ If you'd like me to speak at your event (_or internally at your company_) then p
 
 ----
 
-## Upcoming public events
+## Videos
 
-**2019-03-13**: FutureTech, Utrecht, NL - From Developer, to Development Manager.
+If you're interested as to how I present, what I look like, or what you can expect... I've pulled together a few of the recordings of the talks that I've given previously, and they are available [over here](/speaking/video).
+
+----
+
+## Upcoming public events
 
 **2019-04-02**: CodeMotion Amsterdam, NL - From 100, to 1000+ deployments a day.
 
@@ -27,9 +31,11 @@ If you'd like me to speak at your event (_or internally at your company_) then p
 
 ## Previous public events
 
+**2019-03-13**: [FutureTech](https://futuretech.nl/sessions/from-developer-to-development-manager/), Utrecht, NL - From Developer, to Development Manager. [Slides](https://speakerdeck.com/pheonix25/from-developer-to-development-manager-sdn-editie) + video to follow.
+
 **2018-12-14**: [SDN event, December 2018](https://www.sdn.nl/EVENTS/14-december-2018), Zeist, NL - From Developer to Development Manager. [Slides](https://speakerdeck.com/pheonix25/from-developer-to-development-manager-sdn-editie) + [video](https://www.youtube.com/watch?v=gXsP8cydEgY).
 
-**2018-12-12**: [NISI Continuous Delivery 3.0](https://nisi.nl/cd30-cursus-in-het-kort), Utrecht, NL - Guest Lecturer.
+**2018-12-12**: [NISI Continuous Delivery 3.0](https://nisi.nl/cd30-cursus-in-het-kort), Utrecht University, NL - Guest Lecturer.
 
 **2018-11-22**: [DevTalksJnr](http://www.devtalks.ro/bucharest/devtalksjr/), Bucharest, Romania - [From Developer to Development Manager](https://speakerdeck.com/pheonix25/from-developer-to-development-manager).
 
