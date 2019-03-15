@@ -31,7 +31,7 @@ If you're interested as to how I present, what I look like, or what you can expe
 
 ## Previous public events
 
-**2019-03-13**: [FutureTech](https://futuretech.nl/sessions/from-developer-to-development-manager/), Utrecht, NL - From Developer, to Development Manager. [Slides](https://speakerdeck.com/pheonix25/from-developer-to-development-manager-sdn-editie) + video to follow.
+**2019-03-13**: [FutureTech](https://futuretech.nl/sessions/from-developer-to-development-manager/), Utrecht, NL - From Developer, to Development Manager. [Slides](https://speakerdeck.com/pheonix25/from-developer-to-development-manager-futuretech-edition) + video to follow.
 
 **2018-12-14**: [SDN event, December 2018](https://www.sdn.nl/EVENTS/14-december-2018), Zeist, NL - From Developer to Development Manager. [Slides](https://speakerdeck.com/pheonix25/from-developer-to-development-manager-sdn-editie) + [video](https://www.youtube.com/watch?v=gXsP8cydEgY).
 
