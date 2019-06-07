@@ -5,7 +5,7 @@ permalink: /speaking/
 ---
 
 I speak at technology events around the world, often with a focus on continuous integration, continuous delivery and the mindset required to be successful in these areas; occasionally diving deeper into developer mentality and/or leadership topics.  
-I believe in making my talks light and lively, but at the same time ensuring there are clear drivers for attendees.
+I believe in making my talks light and lively, but at the same time ensuring there are clear calls-to-action for attendees.
 
 Thankfully, in my current day job of Development Manager at Coolblue (one of the largest e-commerce retailers in the Netherlands), I am in a position to drive these changes, and then "report back" with the learnings we've made. Some of my most successful presentations stem from these real-world exercises, experiments & achievements.
 
@@ -21,15 +21,13 @@ If you're interested as to how I present, what I look like, or what you can expe
 
 ----
 
-## Upcoming public events
-
-**2019-04-02**: CodeMotion Amsterdam, NL - From 100, to 1000+ deployments a day.
-
-**2019-05-19**: 4DotNet Developer Days, Meppel, NL - Keynote presentation.
-
-----
-
 ## Previous public events
+
+**2019-06-06**: Bloemert TechEvent, Slaghorst, NL - "Culture, DevOps, and an AMA".
+
+**2019-05-16**: [4DotNet Developer Days](https://events.4dotnet.nl/move-up-with-high-performance-architecture/), Meppel, NL - Keynote - [Finding the Second Story](https://speakerdeck.com/pheonix25/finding-the-second-story-learning-from-failure).
+
+**2019-04-02**: [CodeMotion](https://events.codemotion.com/conferences/amsterdam/2019/wp-content/themes/event/detail-talk.php?detail=11032) Amsterdam, NL - [From 100, to 1000+ deployments a day](https://speakerdeck.com/pheonix25/from-100-to-1000-plus-deployments-a-day-codemotion-edition).
 
 **2019-03-13**: [FutureTech](https://futuretech.nl/sessions/from-developer-to-development-manager/), Utrecht, NL - From Developer, to Development Manager. [Slides](https://speakerdeck.com/pheonix25/from-developer-to-development-manager-futuretech-edition) + video to follow.
 
