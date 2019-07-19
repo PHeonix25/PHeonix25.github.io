@@ -1,9 +1,9 @@
 # Resilient Management
 
-> Lara Hogan ([@lara_hogan](https://twitter.com/lara_hogan)) \
+Lara Hogan ([@lara_hogan](https://twitter.com/lara_hogan))
 > Management/Leadership coach and trainer at Wherewithall. \
 > Author of bestselling book Resilient Management. \
-> Former VPE, forever an engineering manager. \
+> Former VPE, forever an engineering manager.
 
 ## General
 
