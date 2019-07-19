@@ -4,7 +4,7 @@
 
 ## General
 
-A lot of the structure of the book is based off Tuckmans' [Stages of Group Development](00-01).
+A lot of the structure of the book is based off Tuckmans' [Stages of Group Development][00-01].
 
 * Chapter 1 = Forming
 * Chapter 2 = Storming, Norming
@@ -19,7 +19,7 @@ The book then moves into more "the general skills you will need" in Chapters 4 &
 
 > _"You're optimising (your team) for balance, not perfection."_
 
-[BICEPS](01-01) (Belonging, Improvement, Choice, Equality, Predictability, Significance) are categories of the core needs that everyone has.
+[BICEPS][01-01] (Belonging, Improvement, Choice, Equality, Predictability, Significance) are categories of the core needs that everyone has.
 
 * Belonging: _"not missing out"_
 * Improvement (aka. Progress): _"what it takes to feel productive"_
@@ -39,7 +39,7 @@ There's a good example given about "desk moves" challenging all of the above!
 
 ### Work style and preferences
 
-Her "First 1:1 Questions" (that I adapted/copied into my ["First sync questions"](syncq)) are explained in depth here!
+Her "First 1:1 Questions" (that I adapted/copied into my "[First sync questions][syncq]") are explained in depth here!
 
 ### Help the team to know you
 
