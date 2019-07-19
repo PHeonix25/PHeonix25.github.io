@@ -45,7 +45,7 @@ Her "First 1:1 Questions" (that I adapted/copied into my ["First sync questions"
 
 * Actions will be discussed in Chapter 4.
 * Ask yourself _"what are you optimising for"_?
-* Use the [Mad Lib](mdlib) exercise (included below)
+* Use the Mad Lib exercise (included below)
 
 #### "Mad Lib" exercise
 
@@ -58,7 +58,10 @@ Her "First 1:1 Questions" (that I adapted/copied into my ["First sync questions"
 
 ## Handy links
 
-00-01: http://bkaprt.com/rm/00-01/
-01-01: http://bkaprt.com/rm/01-01/
-syncq: https://management-handbook.hermens.com.au/now-the-real-stuff/templates/gettingtoknowyou
-mdlib: #Something
+.
+
+***
+
+[00-01]: http://bkaprt.com/rm/00-01/
+[01-01]: http://bkaprt.com/rm/01-01/
+[syncq]: https://management-handbook.hermens.com.au/now-the-real-stuff/templates/gettingtoknowyou
