@@ -33,16 +33,16 @@ The book then moves into more "the general skills you will need" in Chapters 4 &
 
 There's a good example given about "desk moves" challenging all of the above!
 
-* B: Same group? Different floor?
-* I: Announcement might be surprise/interruption
-* C: Can I choose? Has someone chosen for me?
-* E: Closer to the food! Better views?
-* P: No longer the same spot every day
-* S: Corner office? Sitting with peers? Locality?
+* **B**: Same group? Different floor?
+* **I**: Announcement might be surprise/interruption
+* **C**: Can I choose? Has someone chosen for me?
+* **E**: Closer to the food! Better views?
+* **P**: No longer the same spot every day
+* **S**: Corner office? Sitting with peers? Locality?
 
 ### Work style and preferences
 
-Her "First 1:1 Questions" (that I adapted/copied into my "[First sync questions][syncq]") are explained in depth here!
+Her "First 1:1 Questions" (_that I adapted/copied into my "[First sync questions][syncq]"_) are explained in depth here!
 
 ### Help the team to know you
 
@@ -144,7 +144,53 @@ No matter what sort of items you're discussing, you could work to identify what 
 
 ## Chapter 3 - Set clear expectations (Performing)
 
-.
+Make sure the team's collective expectations are well documented (aka. "Values exercise"?). These normally are broken down into the following sections:
+
+* Roles and responsibilities (inc. the manager)
+* Vision and priorities
+* Collaborating, communicating, and shipping work
+
+... these areas reach back to the **B**, **E**, and **P** core needs.
+
+### Roles and responsibilities
+
+[RACI-matrices][racim] are good tools in this regard! Really helps to clarify who is responsible/accountable and who just needs to be consulted or informed. Venn diagrams are also helpful in getting more fine-grained organisational insight, and clarifying the Responsibility cell from the matrix.
+
+Building a RACI matrix and the corresponding Venn diagram can be done with any overlapping roles (think Hiring Manager, Recruiter, and Sourcer, or Heads of Design, Branding, and Tech), not to push responsibility DOWN, but instead to highlight where responsibilities are SHARED and where they overlap - all in order to prevent miscommunication/maligned expectations.
+
+### Vision and Priorities
+
+This is the first time I've heard of a [VMSO statement][03-01] (Vision, Mission, Strategy, and Objectives), but it makes sense in a world full of OKRs and KPIs...
+
+* **Vision**: the "north-star" of the organisation/group, a pipe dream
+* **Mission**: a more grounded version of the vision, that's still motivating, but more about the team
+* **Strategy**: what is the team uniquely set up to do in order to achieve the Mission?
+* **Objectives**: Measurable goals that reflect the mission and strategy; used to benchmark progress.
+
+### Team Practices
+
+1. Identify meetings that the team has together; their purpose, frequency, and participants - reassess this every few months:
+  1.1. Are the descriptions still accurate?
+  1.1. Have some of these blended together, or has the purpose evolved?
+  1.1. Can we improve their frequency, goals, ground-rules, attendees?
+1. Identify email & chat channels; their expectations around response-times and usage.
+  1.1. Which channel will get a message to all members of your team?
+  1.1. Which channel should be used for asking questions about project status?
+  1.1. Is there a URL to find OKRs and their status?
+  1.1. Is there a specific channel for questions people have of you/your team?
+1. Identify how your team works together, evaluate their expectations:
+  1.1. Do they approach problems together? Pairing on code, or splitting up work?
+  1.1. How do they communicate progress? Notify/update people on updates/outages?
+  1.1. How do they hold each other accountable? Is there a feedback culture?
+
+You can do this last point by keeping it **REAL**:
+
+* **R**eflect on the dynamics in the room
+* **E**levate the conversations
+* **A**ssume best intentions
+* **L**isten to learn
+
+Check out Etsy's [Charter of Mindful Communication][mndfl] as a foundation for employees to give feedback, course-correct relationships, improve workflows, and more.
 
 ***
 
@@ -155,3 +201,6 @@ No matter what sort of items you're discussing, you could work to identify what 
 [02-02]: http://bkaprt.com/rm/02-02/
 [02-03]: http://bkaprt.com/rm/02-03/
 [ingrp]: https://en.wikipedia.org/wiki/In-group_favoritism
+[racim]: https://en.wikipedia.org/wiki/Responsibility_assignment_matrix
+[03-01]: http://bkaprt.com/rm/03-01/
+[mndfl]: http://bkaprt.com/rm/03-02/
