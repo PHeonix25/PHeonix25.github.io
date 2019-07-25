@@ -170,18 +170,18 @@ This is the first time I've heard of a [VMSO statement][03-01] (Vision, Mission,
 ### Team Practices
 
 1. Identify meetings that the team has together; their purpose, frequency, and participants - reassess this every few months:
-  1.1. Are the descriptions still accurate?
-  1.1. Have some of these blended together, or has the purpose evolved?
-  1.1. Can we improve their frequency, goals, ground-rules, attendees?
+    1. Are the descriptions still accurate?
+    1. Have some of these blended together, or has the purpose evolved?
+    1. Can we improve their frequency, goals, ground-rules, attendees?
 1. Identify email & chat channels; their expectations around response-times and usage.
-  1.1. Which channel will get a message to all members of your team?
-  1.1. Which channel should be used for asking questions about project status?
-  1.1. Is there a URL to find OKRs and their status?
-  1.1. Is there a specific channel for questions people have of you/your team?
+    1. Which channel will get a message to all members of your team?
+    1. Which channel should be used for asking questions about project status?
+    1. Is there a URL to find OKRs and their status?
+    1. Is there a specific channel for questions people have of you/your team?
 1. Identify how your team works together, evaluate their expectations:
-  1.1. Do they approach problems together? Pairing on code, or splitting up work?
-  1.1. How do they communicate progress? Notify/update people on updates/outages?
-  1.1. How do they hold each other accountable? Is there a feedback culture?
+    1. Do they approach problems together? Pairing on code, or splitting up work?
+    1. How do they communicate progress? Notify/update people on updates/outages?
+    1. How do they hold each other accountable? Is there a feedback culture?
 
 You can do this last point by keeping it **REAL**:
 
