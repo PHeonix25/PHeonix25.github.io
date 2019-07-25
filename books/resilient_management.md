@@ -18,7 +18,7 @@ The book then moves into more "the general skills you will need" in Chapters 4 &
 * Chapter 4 = Communication skill
 * Chapter 5 = Creating resiliency (from where the book gets it's name)
 
-## Chapter 1 - Forming
+## Chapter 1 - Meet your team (Forming)
 
 > _"You're optimising (your team) for balance, not perfection."_
 
@@ -59,7 +59,90 @@ Her "First 1:1 Questions" (that I adapted/copied into my "[First sync questions]
 > I thrive in a _________________________________________ environment. \
 > I commit to being _________________________________________________.
 
-## Handy links
+In short:
+
+* What do you optimise for in your current role?
+* What do you hope your team mates will lean on you for?
+* What management skills are you currently working on learning or improving?
+
+## Chapter 2 - Grow your teammates (Storming, Norming)
+
+> To grow in this role, you'll wear four hats: Mentoring, Coaching, Sponsoring, and Delivering feedback.
+
+### Mentoring
+
+Mentoring is defined as doling out advice, sharing our perspective and helping some else problem solve based on that information.
+
+> Managers often default to mentoring mode because it feels like the fastest way to solve a problem, but it falls short in helping your teammate to connect their _own_ dots.
+
+### Coaching
+
+Coaching is doing two primary things: Asking open questions, and Reflecting.
+
+When someone comes to you with a challenge/problem, try asking questions like:
+
+* What's most important to you about it?
+* What's holding you back?
+* What does success look like?
+
+A great example is given about a team member asking about a promotion. You can handle this conversation really well by using open questions:
+
+* What would you be able to do in the new level that you can't do in your current one?
+* What skills are required in the new level? What are some of the ways that you've honed those skills?
+* Who are the people already at that level that you want to emulate? What about them do you want to emulate?
+
+"Reflecting", as described in this chapter, is the art of inverting and mirroring their statements, turning them into questions:
+
+* What I'm hearing is... Is that correct?
+
+This also forces the other person to do a bit more introspection and help them to see other angles on the same problem, and for the both of you to find the right problem statement (FYI: very helpful in a larger organisation)
+
+> It takes a lot of time/effort/practice to default to Coaching, rather than Mentoring, but it's worth it because the introspection and creativity it inspires created deeper and longer-lasting growth for your teammate.
+
+### Sponsoring
+
+Sponsorship is all about feeling "on the hook" for getting someone to the next level.
+
+The [Center for Talent Innovation][cftin] routinely measures the [career benefits of sponsorship][02-02], and they have found that when someone has a sponsor they are way more likely to have access to career-lauching work.
+
+Members of under-represented groups are typically [over-mentored and under-sponsored][02-03] due to [_in-group bias_][ingrp].
+
+### Constructing and Delivering Feedback
+
+> The best feedback is specific, actionable, and delivered in a way that ensures the receiver can actually absorb it.
+
+There's a great breakdown about the "feedback equation" here which looks like this:
+
+**Observation** of behaviour + **Impact** of behaviour + **Request** or **Question** = **Specific, Actionable Feedback**
+
+* **Observation** is the who/what/when/where part of the situation that YOU have witnessed
+* **Impact** is great if it's measurable, but it's often personal. Asking yourself "_but what is the impact of **that**?_" can help here.
+* **Request** or **Question** can often fall into the trap of Mentoring-mode (see above). Switch to Coaching-mode whenever possible!
+
+As an example (directly from the book):
+
+* **Problem Statement**: Someone on your team is writing super-terse emails.
+* **Observation**: _Over the last few weeks, I've noticed that your emails to me contain fewer than five words on average._
+* **Impact**:
+  * _As a result, I have a hard time understanding what you mean._ - good, but we can do better.
+  * _I often need to reply to your email with more questions to get clarification or add context._ - getting there...
+  * _This adds much more time to the overall process of us communicating._ - BINGO, found the impact.
+* **Question**: _Can you help me understand what you're optimising for?_, and then: _How can we come to a compromise going forward?_
+
+Sharing this formula & encouraging others to use it will hopefully contribute to an open & honest culture. Personally, I feel that making the impact visible is the biggest part that is often overlooked here. "You want me to write longer emails to make you feel good?" vs "You want me to write more detailed emails that provides adequate context for my decisions".
+
+### Striking a balance
+
+You can try and balance all of the above in your syncs (aka. 1:1's). These sessions are normally covering four types of scenarios:
+
+* Build trust,
+* Gain shared context,
+* Plan out and support career growth, and
+* Solve problems
+
+No matter what sort of items you're discussing, you could work to identify what skill(s) from the above section you're using, and help the teammate to understand why you chose to focus on applying that skill.
+
+## Chapter 3 - Set clear expectations (Performing)
 
 .
 
@@ -68,3 +151,7 @@ Her "First 1:1 Questions" (that I adapted/copied into my "[First sync questions]
 [00-01]: http://bkaprt.com/rm/00-01/
 [01-01]: http://bkaprt.com/rm/01-01/
 [syncq]: https://management-handbook.hermens.com.au/now-the-real-stuff/templates/gettingtoknowyou
+[cftin]: https://www.talentinnovation.org/
+[02-02]: http://bkaprt.com/rm/02-02/
+[02-03]: http://bkaprt.com/rm/02-03/
+[ingrp]: https://en.wikipedia.org/wiki/In-group_favoritism
