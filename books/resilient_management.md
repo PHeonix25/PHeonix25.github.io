@@ -194,13 +194,13 @@ Check out Etsy's [Charter of Mindful Communication][mndfl] as a foundation for e
 
 ***
 
-[00-01]: http://bkaprt.com/rm/00-01/
-[01-01]: http://bkaprt.com/rm/01-01/
+[00-01]: https://en.wikipedia.org/wiki/Tuckman's_stages_of_group_development
+[01-01]: https://www.palomamedina.com/biceps/
 [syncq]: https://management-handbook.hermens.com.au/now-the-real-stuff/templates/gettingtoknowyou
 [cftin]: https://www.talentinnovation.org/
-[02-02]: http://bkaprt.com/rm/02-02/
-[02-03]: http://bkaprt.com/rm/02-03/
+[02-02]: https://www.talentinnovation.org/_private/assets/TheSponsorDividend_KeyFindingsCombined-CTI.pdf
+[02-03]: https://hbr.org/2010/08/women-are-over-mentored-but-un
 [ingrp]: https://en.wikipedia.org/wiki/In-group_favoritism
 [racim]: https://en.wikipedia.org/wiki/Responsibility_assignment_matrix
-[03-01]: http://bkaprt.com/rm/03-01/
-[mndfl]: http://bkaprt.com/rm/03-02/
+[03-01]: https://www.linkedin.com/pulse/20121029044359-22330283-to-manage-hyper-growth-get-your-launch-trajectory-right/
+[mndfl]: https://larahogan.me/blog/charter-mindful-communication/
