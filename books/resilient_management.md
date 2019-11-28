@@ -1,7 +1,9 @@
 ---
 layout: page
-title: Book Review: "Resilient Management by Lara Hogan"
-permalink: /books/resilient_management/
+title: "Book Review: 'Resilient Management' by Lara Hogan"
+date: 2019-11-27
+comments: false
+published: true
 ---
 
 # Resilient Management
