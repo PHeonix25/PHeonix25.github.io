@@ -1,3 +1,9 @@
+---
+layout: page
+title: Book Review: "Resilient Management by Lara Hogan"
+permalink: /books/resilient_management/
+---
+
 # Resilient Management
 
 Lara Hogan ([@lara_hogan](https://twitter.com/lara_hogan))
