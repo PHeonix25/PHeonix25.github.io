@@ -192,6 +192,65 @@ You can do this last point by keeping it **REAL**:
 
 Check out Etsy's [Charter of Mindful Communication][mndfl] as a foundation for employees to give feedback, course-correct relationships, improve workflows, and more.
 
+## Chapter 4 - Communicate Effectively
+
+Communication Plans pop up here! Their impact on your delivery cannot be understated. Have one, know it backwards, and see it through.
+
+Here's a simple template for one from Julia Grace (Senior Director of Engineering, Slack): _PS: there's a good completed example on page 59+60 of the book!_
+
+* **Header**: 
+  * Author
+  * Date
+  * Status (eg. Draft, Approved, In Progress)
+* **Background**: 
+  * the What (_most important thing you want to communicate_)
+  * the Why (_why is this changing?_)
+* **People**:
+  * Who knows?
+  * Who will be impacted?
+* **Timeline**:
+  * What will be said, in what medium (Slack, Person, Email), when?
+* **Talking Points**: 
+  * A simple FAQ that you can already expect to need
+
+The next few pages are about how and when to trust someone to get involved with your communication plan, and then discusses "Disagree and Commit"-type of situations.
+Make sure that whenever you've utilised a communication plan that you incorporate some aspect of "feedback gathering" to try to understand the impact of your actions/communication, and learn how to improve for next time.
+
+### Communication mediums 
+
+Meetings are _push_ and _pull_ situations: you're looking to _push_ information and _pull_ feedback. Not every meeting "could be an email".
+
+During an "All Hands" meeting, make sure you cover these 5 things, slowly:
+
+1. A high-level description of what's going on
+1. Instructions on what to do with questions
+1. A deeper explanation FOR the change (the WHY)
+1. A list of specific changes - as well as what's NOT changing, and what's undecided
+1. Answers to predictable questions
+
+Emails are great for _push_ announcements, or updates. They CANNOT contain a lot of nuance or context, so use verbal for that instead, BUT, they are searchable and indexable, and so they are perfect for facts, or summaries of announcements.
+
+Recap emails are slightly different again, but you can try and cross off the 4 topics below to make them simple and understandable, but don't forget to add context!
+
+1. The stated company line on this topic (FACTS)
+1. What this means in practice (FACTS)
+1. My personal take (OPINION & EMOTION)
+1. An invitation to close: "Please come see me/Slack/Reply-All/whatever"
+
+### Iterating and Evolving
+
+Don't forget (or be afraid) to repeat the communication. People will forget the core facts and you can slightly change how you deliver it.
+
+Following on from that, different people will react differently, you should revisit this with them once it's "landed" and alter your delivery slightly to tailor the message for them.
+
+Figure 4.2 is an interesting "color map" that you can use to describe the different "hats" you have to wear for each conversation.
+> Note to self, print this and stick it on your desk - and vary your approach!
+
+You will need to find ways to deliver your message (and obtain your desired outcome) in a way that matters to your audience. Know your audience, then tailor how you deliver your message.
+
+Finally, REMEMBER TO ADAPT! No form of communication, or style, or method, is going to work forever. You will need to change as the company/environment changes!
+
+
 ***
 
 [00-01]: https://en.wikipedia.org/wiki/Tuckman's_stages_of_group_development
