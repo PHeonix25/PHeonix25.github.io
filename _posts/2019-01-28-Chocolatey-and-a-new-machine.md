@@ -62,7 +62,7 @@ choco install ~/Downloads/PACKAGES.config -y
 Or if you want to use mine as a starting point:
 
 ```powershell
-Invoke-WebRequest -Uri https://raw.githubusercontent.com/PHeonix25/PHeonix25.github.io/master/assets/choco.CONFIG -OutFile ~/choco.config;
+Invoke-WebRequest -Uri https://raw.githubusercontent.com/PHeonix25/PHeonix25.github.io/master/assets/choco.config -OutFile ~/choco.config;
 choco install (Resolve-Path ~/choco.config).Path -y
 ```
 
