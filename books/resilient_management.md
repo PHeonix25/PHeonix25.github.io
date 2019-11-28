@@ -60,12 +60,12 @@ Her "First 1:1 Questions" (_that I adapted/copied into my "[First sync questions
 
 #### "Mad Lib" exercise
 
-> I'm a ____________ leader, who values ____________ and ____________. \
-> You'll see this when I ____________________________________________. \
-> I support my team by ____________________________ and I stay aligned \
-> with company values by ____________________________________________. \
-> I thrive in a _________________________________________ environment. \
-> I commit to being _________________________________________________.
+> I'm a ____________ leader, who values ____________ and ____________. <br/>
+> You'll see this when I ____________________________________________. <br/>
+> I support my team by ____________________________ and I stay aligned <br/>
+> with company values by ____________________________________________. <br/>
+> I thrive in a _________________________________________ environment. <br/>
+> I commit to being _________________________________________________. <br/>
 
 In short:
 
