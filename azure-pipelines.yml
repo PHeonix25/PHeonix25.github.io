@@ -16,5 +16,5 @@ steps:
     volumes: |
       $(build.sourcesDirectory):/srv/jekyll
       $(build.binariesDirectory):/srv/jekyll/_site
-    containerCommand: 'jekyll build --future --strict_front_matter'
+    containerCommand: 'jekyll build --future --strict_front_matter --trace'
     detached: false
