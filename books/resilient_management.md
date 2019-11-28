@@ -9,9 +9,9 @@ published: true
 # Resilient Management
 
 Lara Hogan ([@lara_hogan](https://twitter.com/lara_hogan))
-> Management/Leadership coach and trainer at Wherewithall. \
-> Author of bestselling book Resilient Management. \
-> Former VPE, forever an engineering manager.
+> Management/Leadership coach and trainer at Wherewithall. <br />
+> Author of bestselling book Resilient Management. <br />
+> Former VPE, but "forever an Engineering Manager".
 
 ## General
 
@@ -60,12 +60,12 @@ Her "First 1:1 Questions" (_that I adapted/copied into my "[First sync questions
 
 #### "Mad Lib" exercise
 
-> I'm a ____________ leader, who values ____________ and ____________. <br/>
-> You'll see this when I ____________________________________________. <br/>
-> I support my team by ____________________________ and I stay aligned <br/>
-> with company values by ____________________________________________. <br/>
-> I thrive in a _________________________________________ environment. <br/>
-> I commit to being _________________________________________________. <br/>
+    I'm a ____________ leader, who values ____________ and ____________.
+    You'll see this when I ____________________________________________.
+    I support my team by ____________________________ and I stay aligned 
+    with company values by ____________________________________________. 
+    I thrive in a _________________________________________ environment.
+    I commit to being _________________________________________________.
 
 In short:
 
