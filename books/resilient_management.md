@@ -244,12 +244,88 @@ Don't forget (or be afraid) to repeat the communication. People will forget the 
 Following on from that, different people will react differently, you should revisit this with them once it's "landed" and alter your delivery slightly to tailor the message for them.
 
 Figure 4.2 is an interesting "color map" that you can use to describe the different "hats" you have to wear for each conversation.
-> Note to self, print this and stick it on your desk - and vary your approach!
+> Note to self, print this and stick it on your desk - and vary your approach per conversation/topic/setting!
 
 You will need to find ways to deliver your message (and obtain your desired outcome) in a way that matters to your audience. Know your audience, then tailor how you deliver your message.
 
 Finally, REMEMBER TO ADAPT! No form of communication, or style, or method, is going to work forever. You will need to change as the company/environment changes!
 
+## Chapter 5 - Build Resiliency
+
+Change is continuous - it doesn't need to be layoffs, or re-orgs, it can also be "a bunch of people left", or "we changed the caterer" (remember BICEPS from above).
+
+### Managing in times of crisis
+
+#### Before the crisis
+
+- Know your benefits, what support can the company offer?
+- Lead by example, demonstrate your expected behaviour!
+- Ask for input, gather feedback and share knowledge
+- Keep setting expectations clearly, give people clarity
+
+#### During a crisis
+
+- Check in on people! You should know their "normal", and their "abnormal" behaviour
+- Acknowledge what is going on (cat died, visa issues, etc.)
+- Talk through it with them
+- Use those company resources (Trustworthy Person, HR Rep, Councillor, etc.)
+
+### Managing your own energy
+
+"How do I handle how tired I am as a manager?" is a common question. Find ways to keep yourself sane. Know what is valuable to you - before you burn out.
+
+Track your (expected) energy levels: Color coding your calendar in terms of how much energy it's going to cost you is a good way to visualise if you're being too tough on yourself.
+
+Re-prioritise your tasks: Don't forget the [Eisenhower matrix][emtrx] when processing your tasks.
+
+**SAY NO!** Check your Eisenhower Matrix, and if it's not Important or Urgent at all, then just say no, politely.
+
+#### Delegating projects
+
+It needs to be done! You can't always give people cleanly packaged "here, I need you to do this one thing like this"-type of tasks!
+
+Tell people how you are going to support them, and via which medium. Tell them you expect this to be a stretch for them, and THAT'S THE POINT.
+
+Use a [RACI matrix][racim] to help them understand who is in what role.
+
+### Build a support network
+
+Check out the [Manager Voltron][mgrvn] exercise. Then grow it (preferably via async mediums like email). Make sure you have an answer for each square!
+
+Find your own "first team" - your peers in the organisation that have more/similar experience to you! Make sure you offer your support where you can.
+
+## Conclusion
+
+Butterflies start as a caterpillar, but then pass through a "primordial soup"-stage when transitioning.
+That's painful, just like all growth. Learn to accommodate some of that pain.
+
+Listen for others BICEPS needs, and know your own.
+
+Protect your energy.
+
+Find people you can lean on & supporters that will give you (good, but not always positive) feedback.
+
+_"Embrace the primordial goop and you'll emerge as a beautifully transformed manager"_
+
+## Further Reading
+
+- [Switch: How to Change Things When Change Is Hard][06-01], by Chip Heath and Dan Heath.
+- [The Manager's Path: A Guide for Tech Leaders Navigating Growth and Change][06-02], by Camille Fournier.
+
+Lots of additional resources/templates available in the back of the book for the following topics:
+
+- [Balancing Manager Modes][06-03]
+- [Mentoring][06-04]
+- [Coaching][06-05]
+- [Fair Feedback][06-06] & [Mediums Career Framework][06-07]
+- [Active Listening][06-08]
+- [Followership][06-09]
+- [Hiring][06-10]
+- [Switching Managers][06-11]
+- [Running Meetings][06-12]
+- [Running Working Groups][06-13]
+- [Promotions and Raises][06-14]
+- Team Trust and Safety by [Amy Edmondson][06-15], [Google 1][06-16] & [Google 2][06-17]
 
 ***
 
@@ -263,3 +339,22 @@ Finally, REMEMBER TO ADAPT! No form of communication, or style, or method, is go
 [racim]: https://en.wikipedia.org/wiki/Responsibility_assignment_matrix
 [03-01]: https://www.linkedin.com/pulse/20121029044359-22330283-to-manage-hyper-growth-get-your-launch-trajectory-right/
 [mndfl]: https://larahogan.me/blog/charter-mindful-communication/
+[emtrx]: https://www.eisenhower.me/eisenhower-matrix/
+[mgrvn]: https://larahogan.me/blog/manager-voltron/
+[06-01]: https://www.amazon.com/Switch-Change-Things-When-Hard/dp/0385528752
+[06-02]: https://www.amazon.com/Managers-Path-Leaders-Navigating-Growth-ebook/dp/B06XP3GJ7F
+[06-03]: https://larahogan.me/resources/Balanced-One-on-Ones.pdf
+[06-04]: https://www.americanjournalofsurgery.com/article/S0002-9610(13)00413-3/pdf
+[06-05]: https://shop.beplucky.com/products/the-plucky-1-1-starter-pack
+[06-06]: https://hbr.org/2018/06/research-when-managers-are-overworked-they-treat-employees-less-fairly
+[06-07]: https://medium.com/s/engineering-growth-framework/engineering-growth-assessing-progress-743620e70763
+[06-08]: https://partners.coactive.com/CTI-learning-hub/fundamentals/res/FUN-Co-Active-Coaching-Skills-Listening.pdf
+[06-09]: https://www.attack-gecko.net/2018/09/04/followership/
+[06-10]: https://larahogan.me/blog/onsite-interview-loop-template/
+[06-11]: https://larahogan.me/blog/manager-handoffs/
+[06-12]: https://larahogan.me/blog/better-meetings/
+[06-13]: https://larahogan.me/blog/running-working-groups/
+[06-14]: https://larahogan.me/blog/inclusion-math/
+[06-15]: http://www.iacmr.org/Conferences/WS2011/Submission_XM/Participant/Readings/Lecture9B_Jing/Edmondson,%20ASQ%201999.pdf
+[06-16]: https://rework.withgoogle.com/blog/five-keys-to-a-successful-google-team/
+[06-17]: https://rework.withgoogle.com/guides/understanding-team-effectiveness/steps/foster-psychological-safety/
