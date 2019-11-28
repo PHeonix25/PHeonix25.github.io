@@ -25,13 +25,12 @@ If you’re looking for me, you should be able to find me:
 - On LinkedIn as <data data-icon="ei-sc-linkedin"></data> [myself](https://linkedin.com/in/phermens)
 - On Stack Overflow Careers as [phermens](http://stackoverflow.com/cv/phermens) or [user\1677](https://stackoverflow.com/users/1677/pat-hermens)
   <ul class="stackoverflow-flair">{% include so-flair.html %}</ul>
-- At my day job at [Coolblue](https://coolblue.nl), or,
-- Worst case; <data data-icon="ei-envelope"></data> [email me](mailto:p@hermens.com.au)
+- Or worst case; <data data-icon="ei-envelope"></data> [email me](mailto:p@hermens.com.au)
 
-Oh, and I've also started documenting my [Manager Readme](https://medium.com/@kawomersley/why-and-how-to-share-your-manager-readme-plus-heres-mine-8a4fe188ee1b) over at [management-handbook.hermens.com.au](https://management-handbook.hermens.com.au/) -- using [GitBook](https://www.gitbook.com/) from [this repo](https://github.com/PHeonix25/management-handbook)! It's still a work in progress, but it's something, for now :)
+Oh, and I've also started documenting my [Manager Readme](https://medium.com/@kawomersley/why-and-how-to-share-your-manager-readme-plus-heres-mine-8a4fe188ee1b) over [here](https://management-handbook.hermens.com.au/) -- using [GitBook](https://www.gitbook.com/) from [this repo](https://github.com/PHeonix25/management-handbook)! _It's still a work in progress, but it's something, for now_ :)
 
 I've also tried to take notes for some of the books that I've been reading, you can find them listed below:
-- [Resilient Management by Lara Hogan][/books/resilient_management/]
+- [Resilient Management by Lara Hogan](/books/resilient_management/)
 
 
 ----
