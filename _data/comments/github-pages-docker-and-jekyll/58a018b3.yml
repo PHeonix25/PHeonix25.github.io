@@ -1,0 +1,5 @@
+id: 58a018b3
+date: 2020-07-03T00:32:47.5409148Z
+name: Dave Abrahams
+avatar: https://github.com/dabrahams.png
+message: This is awesome, thanks for doing it!  It seems like all I need to serve my own site for development on my Mac is your `_config.docker.yml` and `docker-compose.yml` files.  Is that about what you'd expect?
