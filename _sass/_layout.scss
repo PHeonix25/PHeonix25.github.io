@@ -38,14 +38,10 @@ body {
 }
 
 img.avatar, .authorimage {
-  background: url(/assets/img/avatar_bw.jpg);
+  background: url(/assets/img/avatar_bw.webp);
   background-repeat: no-repeat;
-  //border: 1rem solid $border-color;
-  border-radius: 5rem; /* 1rem + 1rem border */
+  border-radius: 5rem;
   width: 10rem;
-  height: 10rem;
-  min-width: 10rem;
-  min-height: 10rem;
   display:inline-block;
   -webkit-background-size: cover !important;
   background-size: cover !important;
