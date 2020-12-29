@@ -62,7 +62,8 @@
     {
       "src": "/pwa-images/6b62119e-c110-0644-525f-bd1986392dc4.webPlatform.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
       "src": "/pwa-images/bb9b0543-47f2-42e9-6f5b-066ccd8d6508.webPlatform.png",
