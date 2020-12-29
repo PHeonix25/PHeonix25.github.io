@@ -29,7 +29,7 @@ If you’re looking for me, you should be able to find me:
 
 ### Manager Readme
 
-I've also started documenting my own [Manager Readme](https://medium.com/@kawomersley/why-and-how-to-share-your-manager-readme-plus-heres-mine-8a4fe188ee1b) over [here](https://management-handbook.hermens.com.au/) -- using [GitBook](https://www.gitbook.com/) from [this repo](https://github.com/PHeonix25/management-handbook)! _It's still a work in progress, but it's something, for now_ :)
+I've also started documenting my own [Manager Readme](https://medium.com/@kawomersley/why-and-how-to-share-your-manager-readme-plus-heres-mine-8a4fe188ee1b) over [here](https://management-handbook.hermens.com.au/) -- using [GitBook](https://www.gitbook.com/) from [this repo](https://github.com/PHeonix25/management-handbook)! _It's still a work in progress, but it's something, for now_ 😊
 
 ### Book Summaries
 
