@@ -15,8 +15,6 @@ layout: default
       {% endif %}
       
       <meta itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="pat">
-      <meta property="article:author" content="https://facebook.com/{{ site.facebook_username }}" />
-      <meta property="article:publisher" content="https://www.facebook.com/{{ site.facebook_username }}" />
       <meta itemprop="mainEntityOfPage" content="{{ page.url | prepend: site.baseurl | prepend: site.url}}">
       {% for tag in page.categories %}
         <meta property="article:tag" content="{{tag}}" />
