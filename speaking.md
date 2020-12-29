@@ -7,7 +7,7 @@ permalink: /speaking/
 I speak at technology events around the world, often with a focus on continuous integration, continuous delivery and the mindset required to be successful in these areas; occasionally diving deeper into developer mentality and/or leadership topics.  
 I believe in making my talks light and lively, but at the same time ensuring there are clear calls-to-action for attendees.
 
-Thankfully, in my current day job of Development Manager at Coolblue (one of the largest e-commerce retailers in the Netherlands), I am in a position to drive these changes, and then "report back" with the learnings we've made. Some of my most successful presentations stem from these real-world exercises, experiments & achievements.
+Thankfully, in my current role at Slalom Build (_one of the largest AWS & Azure delivery partners_), and previously as a Development Manager at Coolblue (_one of the largest e-commerce retailers in the Netherlands_), I've been in a position to drive these changes, and then "report back" with the learnings we've made. Some of my most successful presentations stem from these real-world exercises, experiments & achievements.
 
 I have also done in-house talks for all sorts of organisations that have been tailored to their specific needs. From casual brown bag meetings to coverage of a specific agenda, these talks are a great way for a company to get valuable insights with minimum overhead.
 
