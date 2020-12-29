@@ -4,11 +4,10 @@
 self.addEventListener('install', function(event) {
     var indexPage = new Request('index.html');
     event.waitUntil(
-      fetch(indexPage).then(function(response) {
-        return caches.open('pwabuilder-offline').then(function(cache) {
-          console.log('[PWA Builder] Cached index page during Install: '+ response.url);
-          return cache.put(indexPage, response);
-        });
+      fetch(indexPage).then(async function(response) {
+        const cache = await caches.open('pwabuilder-offline');
+        console.log('[PWA Builder] Install - Cached index page during install: ' + response.url);
+        return await cache.put(indexPage, response);
     }));
   });
   
@@ -17,7 +16,7 @@ self.addEventListener('install', function(event) {
     var updateCache = function(request){
       return caches.open('pwabuilder-offline').then(function (cache) {
         return fetch(request).then(function (response) {
-          console.log('[PWA Builder] add page to offline: '+response.url)
+          console.log('[PWA Builder] Fetch - add page to offline: ' + response.url)
           return cache.put(request, response);
         });
       });
@@ -26,18 +25,15 @@ self.addEventListener('install', function(event) {
     event.waitUntil(updateCache(event.request));
   
     event.respondWith(
-      fetch(event.request).catch(function(error) {
-        console.log( '[PWA Builder] Network request failed. Serving content from cache: ' + error );
+      fetch(event.request).catch(async function(error) {
+        console.log( '[PWA Builder] Error - Network request failed. Serving content from cache: ' + error );
   
         //Check to see if you have it in the cache
         //Return response
         //If not in the cache, then return error page
-        return caches.open('pwabuilder-offline').then(function (cache) {
-          return cache.match(event.request).then(function (matching) {
-            var report =  !matching || matching.status == 404?Promise.reject('no-match'): matching;
-            return report
-          });
-        });
+        const cache = await caches.open('pwabuilder-offline');
+        const matching = await cache.match(event.request);
+        return !matching || matching.status == 404 ? Promise.reject('no-match') : matching;
       })
     );
   })
