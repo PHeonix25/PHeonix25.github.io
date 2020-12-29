@@ -40,17 +40,16 @@ body {
 img.avatar, .authorimage {
   background: url(/assets/img/avatar_bw.jpg);
   background-repeat: no-repeat;
-  border: 1rem solid $border-color;
-  border-radius: 2rem; /* 1rem + 1rem border */
+  //border: 1rem solid $border-color;
+  border-radius: 5rem; /* 1rem + 1rem border */
+  width: 10rem;
+  height: 10rem;
   min-width: 10rem;
   min-height: 10rem;
   display:inline-block;
   -webkit-background-size: cover !important;
   background-size: cover !important;
   background-position: center center !important;
-  
-  /* Hide it for the moment */
-  // display:none;
 }
 
 .logo {
