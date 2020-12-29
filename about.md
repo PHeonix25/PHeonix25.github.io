@@ -34,7 +34,8 @@ I've also started documenting my own [Manager Readme](https://medium.com/@kawome
 ### Book Summaries
 
 I'm starting to take notes for the books that I've been reading recently, you can find them listed below:
-- [Resilient Management by Lara Hogan](/books/resilient_management/)
+- [Resilient Management by Lara Hogan](/books/resilient_management/) - Managerial & helpful
+- [Shoe Dog by Phil Knight](/books/shoe_dog) - Short & introspective
 
 
 ----
