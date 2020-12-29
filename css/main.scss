@@ -76,4 +76,5 @@ $on-laptop:        780px;
 html {
     visibility: visible;
     opacity: 1;
+    overflow-y: scroll; // HACK: Fixes CLS by forcing a scroll-bar on first draw
 }
