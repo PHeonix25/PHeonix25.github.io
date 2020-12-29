@@ -1,9 +1,10 @@
 ---
 layout: post
 title: "Adding Docker Containers to Windows Terminal"
-date: 2020-12-30 00:00:00 +0000
+date: 2020-12-29 00:00:00 +0000
 categories: docker windows terminal
-published: false
+published: true
+image: /assets/headers/2020-12-29-Adding-Docker-to-Windows-Terminal.png
 ---
 
 On my latest project I've been debugging Windows Server 2016 & Windows Server 2019 issues using the [Microsoft Server Core](https://hub.docker.com/publishers/microsoftowner) docker containers.
@@ -11,6 +12,9 @@ On my latest project I've been debugging Windows Server 2016 & Windows Server 20
 I'm also a huge fan of the (not-so) new [Windows Terminal](https://docs.microsoft.com/en-us/windows/terminal/), and wanted to find a way to incorporate a "fresh debugging environment" into a new tab.
 
 <!--description-->
+
+![2020-12-29-Adding-Docker-to-Windows-Terminal](/assets/headers/2020-12-29-Adding-Docker-to-Windows-Terminal.png)
+
 
 ## Windows Terminal Settings
 
@@ -62,6 +66,8 @@ Yay, that's it!
 1. If you're downloading a large container for the first time (or the container image has a significant update) this can lock up Windows Terminal until the image download is complete. I would recommend adding `--pull never` to the command if this is a problem for you.
 
 1. Asking for the latest `servercore` image doesn't work ([BY DESIGN](container-version)), so you'll have to find your specific version at [on this page](https://hub.docker.com/_/microsoft-windows-servercore) and reference it explicitly!
+
+1. I've set `suppressApplicationTitle` to `true` in order to leave our title-bar alone and for me to easily locate the debugging tab. It'll have the whale 😁
 
 ## Extending this logic
 
