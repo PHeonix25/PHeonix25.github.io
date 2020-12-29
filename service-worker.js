@@ -13,13 +13,11 @@ self.addEventListener('install', function(event) {
   
   //If any fetch fails, it will look for the request in the cache and serve it from there first
   self.addEventListener('fetch', function(event) {
-    var updateCache = function(request){
-      return caches.open('pwabuilder-offline').then(function (cache) {
-        return fetch(request).then(function (response) {
-          console.log('[PWA Builder] Fetch - add page to offline: ' + response.url)
-          return cache.put(request, response);
-        });
-      });
+    var updateCache = async function(request){
+      const cache = await caches.open('pwabuilder-offline');
+      const response = await fetch(request);
+      console.log('[PWA Builder] Fetch - add page to offline: ' + response.url);
+      return await cache.put(request, response);
     };
   
     event.waitUntil(updateCache(event.request));
