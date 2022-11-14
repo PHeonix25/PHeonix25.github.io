@@ -64,11 +64,9 @@ Thankfully the files that the `jekyll-import` gem produces are normally pretty c
 
 ## Great, I've got a whole lot of content to parse
 
-Yep, but good work on creating all that previous content - I'm envious. 
+Yep, but good work on creating all that previous content - I'm envious.
 
 For now, we should be done migrating our existing content to Markdown/Liquid and have them rendering in our new site, so jump over to the last part: `git push`ing your site and sending it live!
-
-
 
 [ph-part1]:   {% post_url 2016-10-01-Getting-started-with-Jekyll-Part-1 %}
 [ph-part2]:   {% post_url 2016-10-05-Getting-started-with-Jekyll-Part-2 %}
@@ -76,9 +74,8 @@ For now, we should be done migrating our existing content to Markdown/Liquid and
 [ph-part4]:   {% post_url 2016-10-08-Getting-started-with-Jekyll-Part-4 %}
 [ph-part5]:   {% post_url 2016-10-14-Getting-started-with-Jekyll-Part-5 %}
 [ph-part6]:   {% post_url 2016-10-17-Getting-started-with-Jekyll-Part-6 %}
-[ph-part7]:   {% post_url 2016-10-20-Getting-started-with-Jekyll-Part-7 %}
 [ph-part8]:   {% post_url 2016-10-22-Getting-started-with-Jekyll-Part-8 %}
 
 [jekyll-wiki]:   https://en.wikipedia.org/wiki/Jekyll_(software)#History
 [jekyll-docs]:   http://jekyllrb.com/docs/migrations/
-[jekyll-import]: https://import.jekyllrb.com/docs/home/ 
+[jekyll-import]: https://import.jekyllrb.com/docs/home/

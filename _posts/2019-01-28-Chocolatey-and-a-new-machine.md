@@ -12,11 +12,11 @@ I'm wiping my laptop tomorrow and starting fresh, so I figured this was as good 
 <!--description-->
 ![2019-01-28-Chocolatey-and-a-new-machine](/assets/headers/2019-01-28-Chocolatey-and-a-new-machine.png)
 
-# Let's get started
+## Let's get started
 
 I've been pretty religious in making sure that if I needed to install an application on my last personal laptop then I would use [Chocolatey](https://chocolatey.org/) wherever possible, but before we can use this to restore all my common apps, we need to make sure that Chocolatey is installed, so let's start there.
 
-## 1. Install Chocolatey
+### 1. Install Chocolatey
 
 This part is pretty straightforward! Chocolatey has [the instructions on their site](https://chocolatey.org/docs/installation#install-with-powershellexe), but the main command is this one:
 
@@ -27,7 +27,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.We
 > **NOTE:** I am normally against using "`iex wc.DownloadString https://malware.ps1`" to install software, but I have chosen to trust Chocolatey.
 > If you don't understand the risks of _"just running scripts from the Internet"_ - don't do this.
 
-## 2. Enable Windows subsystem for Linux
+### 2. Enable Windows subsystem for Linux
 
 I do a fair amount of work in Linux - mainly testing Docker containers and network/volume configuration, and WSL (the [Windows subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/about)) makes this REALLY easy!
 
@@ -49,7 +49,7 @@ You can then grab the image that you need (_for me, the latest Ubuntu LTS will d
 choco install -y wsl-ubuntu-1804
 ```
 
-## 3. Install the other applications
+### 3. Install the other applications
 
 > **NOTE:** Unfortunately, Chocolatey doesn't have a command (YET) to export everything that you have installed to a format that it can re-read. You can follow the development of this feature in [this feature request](https://github.com/chocolatey/choco/issues/357), but for now we can use the [`InstChoco`](https://chocolatey.org/packages/instchoco) package.
 
@@ -68,7 +68,7 @@ choco install (Resolve-Path ~/choco.config).Path -y
 
 > **UPDATE 2019-02-07:** For whatever reason, this didn't work when it was called `PACKAGES.CONFIG`. I needed to rename it to literally ANYTHING ELSE and then everything worked fine. I have updated my config file to be `choco.config` because of this :)
 
-## Now, be patient
+### Now, be patient
 
 This can take over an hour, even on a brand new clean system. We're talking about installing a bunch of "packages", where most of them are full applications, and one is even a complete other operating system!
 
@@ -76,9 +76,9 @@ At least this way it's all automated and I hope this gets you up and running fas
 
 ---
 
-## Time for some add-ons?
+### Time for some add-ons?
 
-### Prettify our console
+#### Prettify our console
 
 One of the things that I like to do, depending on if it's a work machine or not, is personalise the console to set the color-scheme.
 For a work machine, this is not ideal because of the amount of demos and screen-sharing I need to do, but for a personal machine, like the one I use to blog late at night, changing everything over to a [Solarized Dark](https://ethanschoonover.com/solarized/) theme.
@@ -90,7 +90,7 @@ This was based off the work of Niel Pankey's [cmd-colors-solarized](https://gith
 
 > **UPDATE 2019-02-07:** This didn't work when I tried it this time around... Please just follow the instructions in the `cmd-colors-solarized` git repo instead.
 
-### Customise PowerShell
+#### Customise PowerShell
 
 The last thing that I always load onto a new machine is my [Microsoft.Powershell_profile.ps1](/assets/Microsoft.Powershell_profile.ps1). I drop this file into `~/Documents/WindowsPowerShell` which is on the PATH so that it gets loaded by default whenever I open PowerShell.
 
@@ -104,9 +104,7 @@ Invoke-WebRequest -Uri https://raw.githubusercontent.com/PHeonix25/PHeonix25.git
 ```
 
 > **NOTE:** I have a whole section in there where I import my own Personal Keys into Pageant. You can remove that, or update it to point to your keys.
-
-> **UPDATE 2019-02-07 - SSHKEYS:** Pageant was no longer necessary as Windows10 comes with OpenSSH! Yay! You'll need to enable the `OpenSSH Agent Service` via `Services`, but then it should "just work". 
-
+> **UPDATE 2019-02-07 - SSHKEYS:** Pageant was no longer necessary as Windows10 comes with OpenSSH! Yay! You'll need to enable the `OpenSSH Agent Service` via `Services`, but then it should "just work".
 > **UPDATE 2019-02-07 - POSH-GIT:** I have also removed a lot of the clutter from the that is now incorporated into Posh-Git itself. Granted, you will need to follow [the instructions](https://github.com/dahlbyk/posh-git#installing-posh-git-via-powershellget) to install Posh-Git but once you do, then you can just call `Import-Module posh-git` from your profile [as shown here](https://github.com/dahlbyk/posh-git#using-posh-git)!
 
 ---
@@ -116,4 +114,4 @@ Invoke-WebRequest -Uri https://raw.githubusercontent.com/PHeonix25/PHeonix25.git
 Let me know if you know of a better way to get your dev machine up and running?
 Do you prefer [Ninite](https://ninite.com/)?
 What's your take on [Chocolatey vs Scoop](https://github.com/lukesampson/scoop/wiki/Chocolatey-Comparison)?
-Let me know in the comments below, or [over here on Twitter](https://twitter.com/{{ site.twitter_username }})
+Let me know in the comments below, or [over here on Twitter](<https://twitter.com/>{{ site.twitter_username }})

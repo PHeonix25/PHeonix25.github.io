@@ -23,7 +23,7 @@ In this post we're going to discuss how we can modify our template using Markdow
 ## Jekyll and the file structure
 
 Before we get started, it's worth going over the layout of a Jekyll blog in terms of the file structure - it'll come in handy later.
-The [Jekyll documentation][jekyll-docs] (which I've pointed you to time and time again) has a great section on the [required directory structure][jekyll-dirs], and if you've cloned an existing site or an empty theme then it should resemble the docs. 
+The [Jekyll documentation][jekyll-docs] (which I've pointed you to time and time again) has a great section on the [required directory structure][jekyll-dirs], and if you've cloned an existing site or an empty theme then it should resemble the docs.
 There's also a really clear breakdown over at [Jekyll Bootstrap][jekyll-intro] that I don't want to repeat here as it differs slightly from the official docs but is nice and concise and explains some things with a bit more context.
 
 ## So, what are `_layouts`?
@@ -47,7 +47,7 @@ A good starting example might look like the following
           My content goes here.
       </div>
       <div class="footer">
-          My footer goes here. 
+          My footer goes here.
       </div>
     </div>
   </body>
@@ -91,12 +91,12 @@ As you can see, this is plain HTML - nothing fancy - but it gives us a few class
         My content goes here.
       </div>
       <div class="footer">
-        My footer goes here. 
+        My footer goes here.
       </div>
     </div>
   </body>
 </html>
-{% endhighlight %} 
+{% endhighlight %}
 > _Our updated `default.html` that includes a reference to our `header.html` now._
 
 As you can see we're using some of the lessons that we learnt from the [previous step][ph-part5], using the Liquid command for `include`. When this gets processed by Jekyll it'll look for that file in your `_includes` directory and lift the content into this document (aka. [transcluding][wiki-trans], like Wikipedia does). This can obviously be nested with great success to break apart logical components of your website (like your header, footer, author information, and any plugins like Google Analytics, or Disqus) into separate files that can be version-controlled (and changed) independently.
@@ -136,7 +136,7 @@ OK, so that's some of the basics, lets continue building on the sample above:
   </body>
 </html>
 {% endhighlight %}
-> _Now we're using `link`,`include`,`gist` AND `post_url` in our `default.html`!_
+>_Now we're using `link`,`include`,`gist` AND `post_url` in our `default.html`!_
 
 Now, the "keywords" that I've mentioned above, are actually called `tags` and you can read a lot more about them at the [offical docs][liquid-tags], but if you check that link out, you'll notice it talks about a whole category of `tags` that can do all sorts of fun "control-flow" stuff. The usual suspects like `if`, `for` and `case/when` are covered, and are pretty straightforward, and you'll probably want to use these to create things like [category pages][ph-archive] or RSS feeds. _Hey, leave it alone, I still love RSS!_
 
@@ -176,7 +176,7 @@ Now I know that was a whole lot to swallow and comprehend, so it might be nicer 
 {% endhighlight %}
 > _All those `for`'s and `if`'s and `xml_escape`'s - oh my!_
 
-## It's time to write our own `_include`!
+## It's time to write our own `_include`
 
 I think we've talked enough. Let's put all this into practise and make our own `_include`. We'll keep it simple for now, and just try and add Google Analytics to our site by adding a script on the bottom of every page.
 
@@ -207,7 +207,7 @@ Let's start with our `_layouts` - probably the `default` one. We're going to wan
   </body>
 </html>
 {% endhighlight %}
-> _Our updated `default.html` with an `include` directive for a `googleanalytics.html` file_
+>_Our updated `default.html` with an `include` directive for a `googleanalytics.html` file_
 
 > **NOTE** You may prefer to abstract this out into your transcluded `footer` instead, or it might fit completely differently with your theme, but if you follow along, you'll surely get the point and can adapt it to your requirements. Maybe you want to add your [Stack Overflow flair badge][stack-badge] to your [About Me][ph-aboutme] page instead?
 
@@ -220,7 +220,7 @@ For completion's sake, lets say it contains something like the following:
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  m=s.getElementsByTagName[o](0);a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
   ga('create', '{{ site.google_analytics }}', 'auto');
   ga('send', 'pageview');
@@ -242,7 +242,7 @@ Once we've added this, we can rebuild our site (or save the files and refresh ou
       <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        m=s.getElementsByTagName[o](0);a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
         ga('create', 'UA-XXXXXXXX-X', 'auto');
         ga('send', 'pageview');
@@ -253,23 +253,21 @@ Once we've added this, we can rebuild our site (or save the files and refresh ou
 {% endraw %}
 {% endhighlight %}
 
-Yay us, we just wrote our first transcluded template modification! 
+Yay us, we just wrote our first transcluded template modification!
 
-So long as you know SOME basics about HTML and understand the Jekyll and Liquid commands we've used above, you should be well on your way to completely personalising your own theme -- or at least adding your own "plugins" and customisations... 🙂 
+So long as you know SOME basics about HTML and understand the Jekyll and Liquid commands we've used above, you should be well on your way to completely personalising your own theme -- or at least adding your own "plugins" and customisations... 🙂
 
 ## I'm happy with this. What's next?
 
-In the next step, we'll assume that we've customised our theme a bit (and it's still running fine after [we set it up in Docker][ph-part4]) - so lets move on to some of the more difficult steps, like getting our old content migrated into this new setup. 
+In the next step, we'll assume that we've customised our theme a bit (and it's still running fine after [we set it up in Docker][ph-part4]) - so lets move on to some of the more difficult steps, like getting our old content migrated into this new setup.
 
-I'll talk (very generally) about how to do this from Wordpress and some other CMS's over in [Part 7][ph-part7]. 
-
+I'll talk (very generally) about how to do this from Wordpress and some other CMS's over in [Part 7][ph-part7].
 
 [ph-part1]:   {% post_url 2016-10-01-Getting-started-with-Jekyll-Part-1 %}
 [ph-part2]:   {% post_url 2016-10-05-Getting-started-with-Jekyll-Part-2 %}
 [ph-part3]:   {% post_url 2016-10-07-Getting-started-with-Jekyll-Part-3 %}
 [ph-part4]:   {% post_url 2016-10-08-Getting-started-with-Jekyll-Part-4 %}
 [ph-part5]:   {% post_url 2016-10-14-Getting-started-with-Jekyll-Part-5 %}
-[ph-part6]:   {% post_url 2016-10-17-Getting-started-with-Jekyll-Part-6 %}
 [ph-part7]:   {% post_url 2016-10-20-Getting-started-with-Jekyll-Part-7 %}
 [ph-part8]:   {% post_url 2016-10-22-Getting-started-with-Jekyll-Part-8 %}
 [ph-archive]: /archive

@@ -21,7 +21,7 @@ In this post - we're going to push our site live!
 7. [Getting Started with Jekyll - Transitioning Content][ph-part7]
 8. Getting Started with Jekyll - Launching your Site  **<==**
 
-## Lets cover off a few assumptions first.
+## Lets cover off a few assumptions first
 
 By now I'm assuming that you have a site live (on your local/or in Docker), and that you're happy with it. I'm also assuming that you understand `git` (at least as much as `git push` and `git pull`), and that if you want to set your site up on a custom domain that you've bought that domain and will have no trouble setting DNS records. I'm also assuming that you have a GitHub account, and want to host your site using GitHub Pages.
 
@@ -42,20 +42,20 @@ git remote add origin git@github.com:<username>/<username>.github.io.git
 git push -u origin master
 ```
 
-**It truly is that simple!** 
+**It truly is that simple!**
 
 ------
 
-## Let's talk about domains...
+## Let's talk about domains
 
 First of all, if you are happy with `<username>.github.io`, then you're done, you can skip down to [How will I know if my build fails](#how-will-i-know-if-my-build-fails) if you want to read about what happens when things don't go right, but for now, maybe just go outside and enjoy the rest of your day. :)
 
-## Yeah, nah, I want a custom domain.
+## Yeah, nah, I want a custom domain
 
-If you want a custom domain, it's not hard, but it does require some configuration. 
+If you want a custom domain, it's not hard, but it does require some configuration.
 
-First of all, I would expect you to buy your domain from somewhere notable - maybe a provider that your friends can refer you to? 
-For what it's worth, I've put a few of my latest sites on [SiteGround][siteground] and I have been very happy with their service, but I strongly recommend that you find one that works for you. 
+First of all, I would expect you to buy your domain from somewhere notable - maybe a provider that your friends can refer you to?
+For what it's worth, I've put a few of my latest sites on [SiteGround][siteground] and I have been very happy with their service, but I strongly recommend that you find one that works for you.
 
 > Just please, if I ask one thing, please avoid GoDaddy - _[this post][godaddy] is the latest one I was able to find, but Google is your friend..._
 
@@ -77,13 +77,12 @@ It should be noted that GitHub has [great documentation][github-docs] and suppor
 
 <iframe src="//giphy.com/embed/W3nBUAB1Csx7G?html5=true" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
-> _Party like it's 1999?_ 
+> _Party like it's 1999?_
 
-Hopefully after following the guides from [GitHub][github-setup] and [CloudFlare][cloudflr-ssl] you have a site that's up and running, using HTTPS (like a good web citizen) and it's all for free. 
+Hopefully after following the guides from [GitHub][github-setup] and [CloudFlare][cloudflr-ssl] you have a site that's up and running, using HTTPS (like a good web citizen) and it's all for free.
 
-**We're done! Go forth and create content.** Enjoy posting your content [using Markdown and Liquid][ph-part5] - or continuing to if you've [migrated all your existing stuff][ph-part7]. 
+**We're done! Go forth and create content.** Enjoy posting your content [using Markdown and Liquid][ph-part5] - or continuing to if you've [migrated all your existing stuff][ph-part7].
 
- 
 [ph-part1]:   {% post_url 2016-10-01-Getting-started-with-Jekyll-Part-1 %}
 [ph-part2]:   {% post_url 2016-10-05-Getting-started-with-Jekyll-Part-2 %}
 [ph-part3]:   {% post_url 2016-10-07-Getting-started-with-Jekyll-Part-3 %}
@@ -91,12 +90,11 @@ Hopefully after following the guides from [GitHub][github-setup] and [CloudFlare
 [ph-part5]:   {% post_url 2016-10-14-Getting-started-with-Jekyll-Part-5 %}
 [ph-part6]:   {% post_url 2016-10-17-Getting-started-with-Jekyll-Part-6 %}
 [ph-part7]:   {% post_url 2016-10-20-Getting-started-with-Jekyll-Part-7 %}
-[ph-part8]:   {% post_url 2016-10-22-Getting-started-with-Jekyll-Part-8 %}
 
 [cloudflare]:   https;//www.cloudflare.com
 [cloudflr-su]:  https://www.cloudflare.com/a/sign-up
 [siteground]:   https://www.siteground.com/go/hermens
-[godaddy]:      https://solvid.co.uk/7-reasons-to-avoid-godaddy 
+[godaddy]:      https://solvid.co.uk/7-reasons-to-avoid-godaddy
 [github-setup]: https://help.github.com/articles/quick-start-setting-up-a-custom-domain/
 [cloudflr-ssl]: https://blog.cloudflare.com/secure-and-fast-github-pages-with-cloudflare/#step2settingupourdns
 [github-docs]:  https://help.github.com/categories/customizing-github-pages/

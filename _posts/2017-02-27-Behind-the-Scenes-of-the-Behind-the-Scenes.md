@@ -13,7 +13,7 @@ I thought it might be interesting to type up what I do to prepare for an event l
 
 ![2017-02-27-Behind-the-Scenes-of-the-Behind-the-Scenes](/assets/headers/2017-02-27-Behind-the-Scenes-of-the-Behind-the-Scenes.png)
 
-# The background
+## The background
 
 In case you've never attended one of our events, the "Behind the Scenes" nights at Coolblue are all about showing off some of the stuff that we're doing (or struggling with) internally - and this is for a few reasons:
 
@@ -24,7 +24,7 @@ In case you've never attended one of our events, the "Behind the Scenes" nights 
 
 Now normally, this event is organised by the Recruitment department (in the name of getting interesting people in the door to check out the office), but don't turn off just yet! It wouldn't happen if we didn't match the criteria above; if the developers didn't want to talk, we wouldn't force the event, and to be honest, if you've been to one of these events, you know that Coolblue is no hard sell - our office is pretty awesome after all - and hopefully you feel the people (that you're coming to listen to) are worthwhile too!
 
-# The preparation
+## The preparation
 
 It all starts with the decision of when and who - **when** should we host the session and **who** should talk? These are the two big questions that we need to answer up front.
 
@@ -32,13 +32,13 @@ As a result, the .Net recruitment guys will normally start the conversation by a
 
 We'll also do some rudimentary checking for dates that look good (and aren't overlapping other local meetups/conferences and also work for the presenters) and give them back to Recruitment - keeping in mind this normally done about three months out from the night itself - so it can be pretty easy to find a space that works for everyone. :)
 
-# The discussion
+## The discussion
 
 After we've figured out when we can host the event, and who should talk, the next step is finding a decent topic, and maybe setting a "theme" for the evening. Previously, we've had "failure nights", and "CI/CD at Coolblue", where both speakers will talk about different angles of the same topic, but there are also evenings (like [the last one][bts-feb17]) where Nathan and I found a way to relate to each other (_as "that bloody Kiwi & the stupid Aussie"_) but spoke about completely separate topics: Nathan about the Mikado method, and me about how we use the Elastic Stack as .NET developers.
 
 It's normally at this point that we have to give the Recruiters a high level summary for the [BtS page][cb-bts] and a opening statement for the website - and this is often six weeks to two months out from the actual event itself.
 
-# The research
+## The research
 
 So now we have our speakers, and our topics, and a general theme - so we need to get to it and start work on the presentations!
 
@@ -50,7 +50,7 @@ At this point it's also quite common to spend some time with the other presenter
 
 It's normally about this time that I start a repository and start publicly committing all my research and resources that I'll need for the talk. This helps me to get my thoughts straight, and I can use GitHub (and a combination of Markdown, PowerShell & Google Sheets) to keep it all lined up nicely. You can see an example of this when you look at my latest talk's commit history [over here][bts-commits].
 
-# The talk (and the dry runs!)
+## The talk (and the dry runs!)
 
 At about a month out from the event, we'll start holding "Dry Runs" for our colleagues to ~~suffer through~~enjoy. This gives us an opportunity to ensure that things go to plan, and that we're on track for the talk itself - our presentations are solid (although mostly without the "Coolblue style") and we've got a good run for the night. This is also an opportunity for our colleagues to learn about the topic (in case they haven't seen it yet) and to give us valuable feedback about what we missed, or maybe even where we blathered on too much.
 
@@ -58,7 +58,7 @@ For most nights that I've been a part of, I like to organise two of these. One h
 
 By this stage, at about a week out from the event, we'll normally have a good indication from the recruitment team about the expected numbers on the night (it's normally between 80 to 100 people + a few colleagues) so it's good to wrap your brain around that number, and this is the last chance to reschedule the evening, like if the numbers aren't good enough, or the speakers aren't ready.
 
-# The night
+## The night
 
 For the actual night itself, the Recruitment team, and the Events team will kick off with all the setup of the room (and organisation of the space, and the meals, and the entry tickets) from about 3pm and the presenters will normally just double-check their technical requirements (set up the laptop and double check the mics) from about 4 or 5pm.
 
@@ -66,9 +66,9 @@ In the case of technical issues (like at the latest event, where the HDMI port o
 
 From here on out, we allow the audience in at about 6pm, feed them and allow them to mingle for about an hour and then kick off with an introduction from a Coolblue representative (who will typically tell you a little bit more about Coolblue itself) and then the first presentation, a short break, and then the second presentation and a tour of the building - all culminating in a well-deserved drink at the company bar!
 
-# Any suggestions for improvement?
+## Any suggestions for improvement?
 
-I hope that this little write-up gives you some additional insight into what it takes to keep these events running, and I hope that I can see you at one of them! If nothing else, hopefully this will help my fellow colleagues in knowing what to expect when it comes to presenting at one of our [Behind the Scenes][cb-bts] nights. If anyone has any suggestions (or anything I missed), hit me up in the comments below, or get in touch on [Twitter](https://twitter.com/{{ site.twitter_username }}).
+I hope that this little write-up gives you some additional insight into what it takes to keep these events running, and I hope that I can see you at one of them! If nothing else, hopefully this will help my fellow colleagues in knowing what to expect when it comes to presenting at one of our [Behind the Scenes][cb-bts] nights. If anyone has any suggestions (or anything I missed), hit me up in the comments below, or get in touch on [Twitter](<https://twitter.com/>{{ site.twitter_username }}).
 
 If you're interested in what the end-result is (in terms of "assets" from a talk like this), feel free to have a look at my latest talk by [snooping around the repository][bts-repo], and checking out [the slides over on SlideShare][bts-slides]. Cheers!
 
