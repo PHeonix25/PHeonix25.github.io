@@ -22,10 +22,10 @@ If you’re looking for me, you should be able to find me:
 
 - On GitHub as <data data-icon="ei-sc-github"></data> [PHeonix25](https://github.com/PHeonix25/)
 - On Twitter as <data data-icon="ei-sc-twitter"></data> [PHermens](https://twitter.com/phermens)
+- On Mastodon as <data data-icon="ei-link" /> [@phermens@mastodon.social](https://mastodon.social/@phermens)
 - On LinkedIn as <data data-icon="ei-sc-linkedin"></data> [myself](https://linkedin.com/in/phermens)
-- On Mastodon as <data data-icon="ei-sc-linkedin" /> [@phermens@mastodon.social](https://mastodon.social/@phermens)
-- On Stack Overflow as [user\1677](https://stackoverflow.com/users/1677/pat-hermens)
-  <ul class="stackoverflow-flair">{% include so-flair.html %}</ul>
+- On Stack Overflow as [user\1677](https://stackoverflow.com/users/1677/pat-hermens):
+  {% include so-flair.html %}
 - Or worst case; <data data-icon="ei-envelope"></data> [email me](mailto:p@hermens.com.au)
 
 ### Manager Readme
