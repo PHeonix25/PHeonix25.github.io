@@ -1,0 +1,29 @@
+---
+layout: none
+permalink: .well-known/webfinger
+---
+{
+  "subject": "acct:phermens@mastodon.social",
+  "aliases":
+    [
+      "https://mastodon.social/@phermens",
+      "https://mastodon.social/users/phermens",
+    ],
+  "links":
+    [
+      {
+        "rel": "https://webfinger.net/rel/profile-page",
+        "type": "text/html",
+        "href": "https://mastodon.social/@phermens",
+      },
+      {
+        "rel": "self",
+        "type": "application/activity+json",
+        "href": "https://mastodon.social/users/phermens",
+      },
+      {
+        "rel": "https://ostatus.org/schema/1.0/subscribe",
+        "template": "https://mastodon.social/authorize_interaction?uri={uri}",
+      },
+    ],
+}
