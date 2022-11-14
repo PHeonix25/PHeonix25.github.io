@@ -3,8 +3,8 @@ services:
   jekyll:
     environment:
       - JEKYLL_ENV=docker
-    command: jekyll serve --force_polling --watch --config  _config.yml,_config.docker.yml --incremental
-    image: jekyll/jekyll:pages
+    command: jekyll serve --trace --force_polling --watch --config  _config.yml,_config.docker.yml --incremental
+    image: jekyll/builder:latest
     volumes:
       - .:/srv/jekyll
     ports:

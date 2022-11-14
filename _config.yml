@@ -22,8 +22,8 @@ permalink: /:year/:month/:day/:title/
 
 
 # Social media usernames for filling out links:
-github_username: PHeonix25 
-twitter_username: phermens 
+github_username: PHeonix25
+twitter_username: phermens
 linkedin_username: phermens
 
 # Enable posting into the future
@@ -50,6 +50,7 @@ paginate: 5
 
 # These are the add-ins we want to use
 plugins:
+  - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate
   - jemoji
@@ -67,6 +68,21 @@ authors:
     email: p@hermens.com.au
     url: https://hermens.com.au
 
+# Exclude from processing.
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - ext4.vhdx # local development env 
+
+# Provide some defaults, based off path.
 defaults:
   -
     scope:
