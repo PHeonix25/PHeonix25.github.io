@@ -40,7 +40,7 @@ kramdown:
 
 # Third-party services
 # just leave someone empty to disable it
-google_analytics: UA-18034022-3
+google_analytics: G-V6EFN3GCY3
 
 # used this for post_excerpt at index_page
 excerpt_separator: <!--description-->
