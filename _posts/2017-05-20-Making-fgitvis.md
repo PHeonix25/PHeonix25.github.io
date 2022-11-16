@@ -12,7 +12,7 @@ I thought it might be interesting to outline where my latest GitHub project [`fg
 <!--description-->
 ![2017-05-20-Making-fgitvis](/assets/headers/2017-05-20-Making-fgitvis.png)
 
-```
+```bash
  ***************************************************************************
  *                                                                         *
  *   ########\  ######\  ######\ ########\ ##\    ##\ ######\  ######\     *
@@ -26,15 +26,16 @@ I thought it might be interesting to outline where my latest GitHub project [`fg
  *                                                                         *
  ***************************************************************************
  ```
+
 [**A Git repository visualiser, written in F#**][fgitvis]
 
-# Everything has a back-story
+## Everything has a back-story
 
 At work, I've been talking with my colleague [Devon][dburriss] about life, F#, being an expat in the Netherlands, Git, GitHub, and improving ourselves (and our colleagues). By now I'm sure that's all the story you need, but...
 
 We thought it would be interesting to work on a F# "type provider" for Git repositories (not just ones hosted on GitHub), both so that you could dive through the history of a Git repository, but also to check out active contributors, commit patterns, anything really... We thought it would be cool to basically create a local copy of the [Pulse page][pulse] of your repositories on GitHub.
 
-# What problem are we solving?
+## What problem are we solving?
 
 Granted, this isn't immediately apparent -- especially considering the state of the code-base as it stands today!
 
@@ -46,7 +47,7 @@ At work (and in life) I have a policy of trying to measure something before you 
 
 In order to track down how and where we can improve our Git/GitHub processes, we should first see what things we are doing that could be a SIGN that something is amiss: radio-silence in the week and then too many commits on a Friday; regularly checking in files after midnight; or even just always committing the same two files. All these things (and many more) might be signs that we should be a bit more disciplined, or that we (or someone else) needs a hand.
 
-# OK, so why F#?
+## OK, so why F#?
 
 I've been a big fan of F# for quite some time. My first public commit to GitHub was [in 2015][fskoans-me] completing some of the awesome [F# Koans][fskoans] -- which in my opinion is a great way to jump right in in!
 
@@ -58,18 +59,18 @@ I wanted to dive back in, and figured this would be a fun, relatively simple exe
 
 I also wanted to spend some more time working on improving my F# skills, especially in relation to making scalable, well-tested, well-architected solution structures. This is not one of them (yet), but every commit counts, right?
 
-# How can I contribute?
+## How can I contribute?
 
 Great question, and we'd love some help if you think that this is worthwhile for you, please feel free to jump in and [make some PR's][pulls]!
 
 Possible candidates for submission are things like:
+
 - Adding unit tests!
 - Adding methods to the `GitOperations` module to return more `seq<string * int>`'s
 - Adding methods to the `ChartBuilders` module to return more `GenericChart`'s
 - Redesigning the architecture. I'm no F# pro (yet?) and so I know there are ways that this could be better laid out and more "functional" in design...
 
 Hopefully this explains some of the reasons that Devon and myself had when we were thinking about the solution, and we should continue to work on this so that we can make it into the tool that we want it to be :)
-
 
 [fgitvis]:      https://github.com/PHeonix25/fgitvis
 [pulls]:        https://github.com/PHeonix25/fgitvis/pulls

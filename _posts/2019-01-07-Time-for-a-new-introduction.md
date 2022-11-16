@@ -37,7 +37,7 @@ Then I read [this post](https://charity.wtf/2019/01/04/engineering-management-th
 I found myself nodding along to both; the idea that highly skilled engineers should try being managers, and highly skilled technical managers have been developers/engineers at some point in time.
 If it's not a "promotion" into technical management, then it's not a _demotion_ to try something else either, right?
 
-# Cool, so that means...?
+## Cool, so that means...?
 
 I found that a lot of the events that I enjoyed the most this year, were when I had the ability to tell stories from my heart.
 Addressing an engaged crowd with something as simple as an introduction to a department meeting, or as storied as sharing the history of my company with new-joiners, or as entertaining as being an MC at an amazing work function, or sharing my failures with new developers from a completely different background ...and even that one time I used 300+ slides in a guest lecture on "decision making and continuous delivery from the perspective of a fast-moving company". These were all awesome.
@@ -52,7 +52,7 @@ Thankfully, making new friends, learning new presentation skills, and pushing my
 
 So I've decided to spend a fair bit of my time this year further improving these skills; delivering a well-prepared story, well!
 
-# That's quite a change
+## That's quite a change
 
 Yeah, this could be just another [left turn at Albuquerque](https://tvtropes.org/pmwiki/pmwiki.php/Main/WrongTurnAtAlbuquerque) that ends with hilarious comedic value for you, the viewer, but how will we know if I don't try?
 
@@ -75,7 +75,7 @@ Looking through that list, which I really developed an affinity for, I think thi
 Keeping in mind that it's quite possible, maybe even probable that I have read the list wrong, and you're like the viewer watching Bugs Bunny reading the map upside down and screaming at the screen...
 If so, [please let me know](https://twitter.com/phermens), but otherwise, I'm going to leave it at that for now.
 
-# So, ...the bio?
+## So, ...the bio?
 
 Yeah, I'll also update my introduction and bio soon.
 "Interesting challenges" has become quite cliché, and if I want to spend more time focussing on telling stories well, I might as well add it in there.

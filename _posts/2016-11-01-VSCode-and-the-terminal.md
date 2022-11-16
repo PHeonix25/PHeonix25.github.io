@@ -60,14 +60,12 @@ You can launch multiple instances of the terminal, so why not set it up in anoth
 
 Great idea! Back in [Part 4][ph-part4] I showed you how to set up Jekyll in Docker, and because this is a command window, you can check Docker, or launch containers, or attach to running containers -- the sky is your limit!
 
-## Keep an eye on those notes!
+## Keep an eye on those notes
 
 So that's all for now; one less reason to leave the Visual Studio Code window, and one more reason to keep an eye on the [Release Notes][vs-relnts] in the future!
 
-
-
 [ph-part4]:  {% post_url 2016-10-08-Getting-started-with-Jekyll-Part-4 %}
-[ph-setpmt]: https://github.com/PHeonix25/Powershell.Dockerscripts/blob/master/Profiles/Microsoft.Powershell_profile.ps1
+[ph-setpmt]: <https://github.com/PHeonix25/Powershell.Dockerscripts/blob/master/Profiles/Microsoft.Powershell_profile.ps1>
 
 [img-vs-ls]: /assets/img/vscode_launch_screen.png
 [img-vs-tm]: /assets/img/vscode_terminal.png

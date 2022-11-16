@@ -26,13 +26,13 @@ Now, I've set this post up following the [Three Pillars of Empiricism](https://w
 
 So, let's get started with the intro-, nee, retrospection...
 
-# Inspect
+## Inspect
 
 Toward the end of 2018, from about November onwards, I felt a bit flat. A bit sad, or angry, or ... something. I'm not entirely sure why this was the case, but it led to me taking some extra time off over the Christmas break, postponing a lot of my own growth planning, and doing some serious introspection about what makes me happy, and how I could use that positive drive to "get shit done" in 2019.
 
 I found that the easiest way to get started was by opening my personal Google calendars and writing out from top-to-bottom all the key events of the year, new things I've done for the first time (_Techorama_), or things that made me happy (_Visiting Barcelona_), or even recurring events that took a lot of time/effort or produced a lot of pleasure for myself or my family: _like picking up our new puppy_!
 
-## 2018, a year of events!
+## 2018, a year of events
 
 One thing that stood out quite clearly is that more than just about any other year I could remember, **2018 was a year of events**: preparing, hosting, designing, speaking, running, attending, and evaluating. These aren't just conferences, or purely technical events, but things like presenting the Coolblue Pub Quiz, guest-lecturing at a university about business practices & decision-making, or attending (non-technical) meetups/networking events.
 
@@ -56,7 +56,7 @@ So even though the department has continued to grow, and I think we are still ac
 It would be remiss for me to not acknowledge that this has taken a toll on my personal mindset and health over the year.
 
 To end on a happy note: in terms of direct accomplishments that I can take ownership of, this year I started/co-ordinated four new events: Lead Onboarding Week, Beers & Laptops, Code Camp, and Blue Friday - each with the goal of bringing Coolblue Tech closer to "the business" or making Coolblue-ers more successful in their role.
-I also hosted the Coolblue Pub Quiz twice, told ***the*** Coolblue Story countless times, and helped to roll out a bunch of new (streamlined) business processes.
+I also hosted the Coolblue Pub Quiz twice, told **_the_** Coolblue Story countless times, and helped to roll out a bunch of new (streamlined) business processes.
 
 I spent a lot of time this year working with our Brandfather (Joost), and the Events team (Doortje, Suzanne, Lenka, en Naomi), and I couldn't have achieved half of what I have without their help and support, so, if you end up reading this at some point: THANK YOU!
 
@@ -79,7 +79,7 @@ I closed out the year spending a day each with my son and daughter doing things 
 
 I hope that you can see, that after laying everything out like that above, I came up with the title for the post: `Wow, what a year!`
 
-# Adapt
+## Adapt
 
 Retrospection is a great tool to help you identify challenges you've faced, or "sub-optimal approaches", or possibly even blockers that you should have addressed sooner, but it's all for naught if you don't do anything with it.
 
@@ -93,14 +93,14 @@ Naturally, holidays and family-time made the top of the list & spending time wit
 
 _"But that's obvious Pat! What are **you** going to do in 2019?_
 
-## 2019, a year of... events?
+### 2019, a year of... events?
 
 One of the biggest things I put time into in 2018 was _events_; so much so that there's a section almost completely dedicated to it above - but (most) of those events also gave me energy. It motivates me to be able to tell a story to a crowd and helping them with some of their challenges from a stage, at a larger scale than just pair- or mob-programming allows.
 I suppose the next step of this would be hosting a workshop, or entering into consultancy, but I'm not interested in either of those steps just yet, so what better than spending time gathering fun stories to share with larger audiences, and finding the right way to share that with them in a way that they can relate to?
 
 Toward the end of 2018, with so many events confirmed in October-December, I put a pause on submitting proposals for other events, so that I could take a moment to figure out that this is what I wanted to do... as I wrote on my [Speaking](/speaking) page. Over the last week or so, I have resumed submitting proposals, and hope to take the stage at some of the same events that I attended or spoke-at last year: Techorama, Lead Developer London, DevTalks, PSConf, and possibly even a few new ones: FutureTech, DevDays, or possibly even an NDC?
 
-## 2019, a year of... personal growth?
+### 2019, a year of... personal growth?
 
 Events isn't going to just be the focus for the year though. I still have a "day job" of being accountable for roughly 50 people spread across 6 teams (_naturally, with a new manager came a new structure_), and even though these Developers and Leads need me to enable/unblock/empower them, I am going to start putting a lot more focus on the role of the Leads in their teams, and what those Team Leads can do for their teams, hopefully saving me a lot of time that was spent on operational duties in 2018.
 
@@ -111,7 +111,7 @@ I love my employer here in the Netherlands, and I've been here for nearly 5 year
 So, I love the responsibility and freedoms that come with my role, BUT, I do acknowledge that in 2018, my role was quite draining; mentally, emotionally, and sometimes even physically...
 Moving into 2019, I will be keeping a close eye on making sure that ratio is still balanced evenly between my love for my employer, my day-to-day responsibilities, and my need to make the right decisions for myself, and also my family.
 
-# Closing out
+## Closing out
 
 Late into the year, I stumbled across a short post titled [37 lessons from this years Do lectures](http://www.emergentbusiness.co.uk/blog/37-lessons-from-this-years-do-lectures), which led me to finding out about the [Do Lectures](https://www.thedolectures.com/), and after [watching a few](https://www.thedolectures.com/talks), and finding myself nodding along in agreement, I took that post from [@Matt Spry](https://twitter.com/matt_spry) and condensed it down into a single-page [Google doc](https://docs.google.com/document/d/1I4pfd1OboEDZ8u9LCyJk6YQ_psnUFqpgYxB-R0RLFIk/) that I then printed and highlighted the ones that are most important to me.
 

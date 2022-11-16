@@ -8,14 +8,14 @@ image: /assets/headers/2016-10-01-Getting-started-with-Jekyll-Part-1.png
 ---
 
 In this series (of about 8 short posts) I want to outline the steps that you need to take to get started with Jekyll, writing your first post, previewing it via Docker, and "taking care of hosting" with GitHub Pages.
-<!--description--> 
+<!--description-->
 
 ![2016-10-01-Getting-started-with-Jekyll-Part-1](/assets/headers/2016-10-01-Getting-started-with-Jekyll-Part-1.png)
 
 1. Getting Started with Jekyll - Setting the Scene **<==**
 2. [Getting Started with Jekyll - Finding a Theme][ph-part2]
-3. [Getting Started with Jekyll - Common Theme Settings][ph-part3] 
-4. [Getting Started with Jekyll - Setting up Jekyll in Docker][ph-part4] 
+3. [Getting Started with Jekyll - Common Theme Settings][ph-part3]
+4. [Getting Started with Jekyll - Setting up Jekyll in Docker][ph-part4]
 5. [Getting Started with Jekyll - Learning Markdown and Liquid][ph-part5]
 6. [Getting Started with Jekyll - Modifying Templates][ph-part6]
 7. [Getting Started with Jekyll - Transitioning Content][ph-part7]
@@ -45,16 +45,14 @@ Now, even though GitHub is going to do all that for me, I know I will want to pr
 
 ## Why Markdown?
 
-As I wrote above, Jekyll is a post-processor that runs over flat files written in Markdown, Textile, or HTML - so why use Markdown? 
+As I wrote above, Jekyll is a post-processor that runs over flat files written in Markdown, Textile, or HTML - so why use Markdown?
 
 In my daily job, it's quite common for me to be writing Markdown documents for GitHub repositories or internal reference documents. Using Markdown as a "text format" for my blog then was an easy win for productivity. I don't need to re-learn new formatting tips and tricks, it's quite powerful and yet very succinct, and the familiarity works well for me. If you're not familiar with Markdown formatting, I'll write a separate post to give you some hints and tips later but for now if you're familiar with Textile, or you'd prefer to write your posts in plain old HTML, just know that they will also work for setting up your site with Jekyll.
 
-## Let's get started!
+## Let's get started
 
 I think that's enough explanation (and links) for now, why don't we [continue with finding a theme][ph-part2]?
 
-
-[ph-part1]:   {% post_url 2016-10-01-Getting-started-with-Jekyll-Part-1 %}
 [ph-part2]:   {% post_url 2016-10-05-Getting-started-with-Jekyll-Part-2 %}
 [ph-part3]:   {% post_url 2016-10-07-Getting-started-with-Jekyll-Part-3 %}
 [ph-part4]:   {% post_url 2016-10-08-Getting-started-with-Jekyll-Part-4 %}

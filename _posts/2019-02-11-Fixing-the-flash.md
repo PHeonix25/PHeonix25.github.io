@@ -13,11 +13,9 @@ For a long time since I last re-designed this site, I've been suffering from "th
 
 ![2019-02-11-Fixing-the-flash](/assets/headers/2019-02-11-Fixing-the-flash.png)
 
-
 ## What do you mean?
 
 A flash is more irritating than destructive or harmful. I've managed to capture a very slow rendering of the site showing it off below:
-
 
 ## First line in your header
 
@@ -37,4 +35,4 @@ html {
 
 ## Git Commit
 
-https://github.com/PHeonix25/PHeonix25.github.io/commit/98c320259904564406369f0389a7ee1544b0539f
+<https://github.com/PHeonix25/PHeonix25.github.io/commit/98c320259904564406369f0389a7ee1544b0539f>
