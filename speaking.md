@@ -11,7 +11,7 @@ Thankfully, in my current role at Slalom Build (_one of the largest AWS & Azure 
 
 I have also done in-house talks for all sorts of organisations that have been tailored to their specific needs. From casual brown bag meetings to coverage of a specific agenda, these talks are a great way for a company to get valuable insights with minimum overhead.
 
-If you'd like me to speak at your event (_or internally at your company_) then please feel free to start a conversation on twitter: <data data-icon="ei-sc-twitter"></data> [@phermens](https://twitter.com/phermens), or <data data-icon="ei-envelope"></data> [email me](mailto:p@hermens.com.au).
+If you'd like me to speak at your event (_or internally at your company_) then please feel free to start a conversation: <data data-icon="ei-envelope"></data> [email me](mailto:p@hermens.com.au).
 
 ----
 

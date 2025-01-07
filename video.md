@@ -44,4 +44,4 @@ Hosted by [TechDays Netherlands](https://www.techdays.nl/Sessies/#809b5eab-8d48-
 
 ----
 
-If you'd like to see more of my slide-decks, they're available [on my Speaking page](/speaking), and if you'd like me to talk at one of your events, or you have further questions after watching one of the talks above, [get in touch](https://twitter.com/phermens) or [send me an email](mailto:p@hermens.com.au)
+If you'd like to see more of my slide-decks, they're available [on my Speaking page](/speaking), and if you'd like me to talk at one of your events, or you have further questions after watching one of the talks above, [send me an email](mailto:p@hermens.com.au)
