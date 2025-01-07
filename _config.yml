@@ -23,7 +23,7 @@ permalink: /:year/:month/:day/:title/
 
 # Social media usernames for filling out links:
 github_username: PHeonix25
-twitter_username: phermens
+# twitter_username: phermens # Fk x.com
 linkedin_username: phermens
 
 # Enable posting into the future
