@@ -9,9 +9,6 @@ if ($BlogPostName.EndsWith(".md")) {
 };
 Write-Host "Starting to process '$BlogPostName'";
 
-$BASEPATH_HEADERS = '.\assets\headers\';
-$BASEPATH_POSTS = '.\_posts\';
-
 $PLACEHOLDER_TEXT = "<!--description-->";
 $FRONTMETA_DIVIDER = "---";
 
@@ -20,7 +17,7 @@ $IMAGE_FORMAT_REGEX = "!\[$BlogPostName\]\(.*$BlogPostName.png\)";
 $IMAGE_FORMAT = "![$BlogPostName]($IMAGE_PATH)";
 $OGIMAGE_FORMAT = "image: $IMAGE_PATH"
 
-$POST_NAME = "$BASEPATH_POSTS$BlogPostName.md";
+$POST_NAME = ".\_posts\$BlogPostName.md";
 $POST_CONTENTS = Get-Content $POST_NAME;
 
 # Makes sure there is an image immediately following the break that has the post name
@@ -28,7 +25,7 @@ if (Select-String -Pattern $IMAGE_FORMAT_REGEX -InputObject $POST_CONTENTS -Quie
     Write-Host " > We have located an image in that post. Skipping processing.";
 }
 else {
-    Write-Host " ! No image found. Adding now...";
+    Write-Host -ForegroundColor Yellow " ! No image found. Adding now...";
     
     $POST_CONTENTS | 
     ForEach-Object { 
