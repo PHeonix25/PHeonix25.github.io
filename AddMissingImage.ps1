@@ -20,6 +20,11 @@ $OGIMAGE_FORMAT = "image: $IMAGE_PATH"
 $POST_NAME = ".\_posts\$BlogPostName.md";
 $POST_CONTENTS = Get-Content $POST_NAME;
 
+if (-Not (Test-Path -Path "./$IMAGE_PATH" -PathType Leaf)) {
+    Write-Error "Header image doesn't exist for '$BlogPostName'. Skipping blog post."
+    return;
+}
+
 # Makes sure there is an image immediately following the break that has the post name
 if (Select-String -Pattern $IMAGE_FORMAT_REGEX -InputObject $POST_CONTENTS -Quiet) { 
     Write-Host " > We have located an image in that post. Skipping processing.";
