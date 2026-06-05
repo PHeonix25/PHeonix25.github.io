@@ -1,0 +1,138 @@
+/* ─── Google Fonts ──────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600;700;900&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=JetBrains+Mono:wght@300;400&display=swap');
+
+/* ─── Design tokens ─────────────────────────────────── */
+:root {
+  --black:   #1c1e22;
+  --white:   #e8eaed;
+  --grey-1:  #242830;
+  --grey-2:  #2f3440;
+  --grey-3:  #9aa0aa;   /* UI text - 4.6:1 AA ✅ */
+  --grey-4:  #b8bec8;   /* body support - 7.1:1 ✅ */
+  --grey-5:  #d0d4db;   /* body main - 9.8:1 ✅ */
+  --accent:  #00d4d4;   /* cyan - 7.2:1 AAA ✅ */
+  --accent2: #ff7a3d;   /* orange - 4.8:1 AA ✅ */
+  --accent3: #4ade80;   /* green - 9.58:1 AAA ✅ */
+  --accent4: #a8b2bc;   /* gray - 7.76:1 AAA ✅ */
+  --accent5: #f5b941;   /* amber - 9.4:1 AAA ✅ */
+  --line:    rgba(255, 255, 255, 0.07);
+
+  --font-display: 'Barlow Condensed', sans-serif;
+  --font-body:    'Newsreader', Georgia, serif;
+  --font-mono:    'JetBrains Mono', 'Fira Code', monospace;
+
+  --max-prose: 68ch;
+  --max-wide:  1200px;
+  --nav-height: 56px;
+}
+
+/* ─── Reset ─────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 18px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--black);
+  color: var(--white);
+  font-family: var(--font-body);
+  font-weight: 300;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* ─── Selection ─────────────────────────────────────── */
+::selection {
+  background: var(--accent);
+  color: var(--black);
+}
+
+/* ─── Scrollbar ─────────────────────────────────────── */
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-track { background: var(--grey-1); }
+::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 0; }
+
+/* ─── Links ─────────────────────────────────────────── */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ─── Images ────────────────────────────────────────── */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ─── Code (inline) ─────────────────────────────────── */
+:not(pre) > code {
+  font-family: var(--font-mono);
+  font-size: 0.82em;
+  color: var(--accent);
+  background: rgba(0, 212, 212, 0.1);
+  padding: 0.1em 0.35em;
+  border-radius: 2px;
+}
+
+/* ─── Code blocks (Shiki) ───────────────────────────── */
+pre {
+  background: var(--black) !important;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--accent);
+  padding: 1.25rem 1.5rem;
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  line-height: 1.65;
+  margin: 1.75rem 0;
+}
+
+pre code {
+  background: none;
+  color: inherit;
+  padding: 0;
+  font-size: 1em;
+}
+
+/* ─── Page animations ───────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.reveal { opacity: 0; animation: fadeUp 0.55s ease forwards; }
+.delay-1 { animation-delay: 0.08s; }
+.delay-2 { animation-delay: 0.18s; }
+.delay-3 { animation-delay: 0.28s; }
+.delay-4 { animation-delay: 0.40s; }
+.delay-5 { animation-delay: 0.52s; }
+
+/* ─── Utility ───────────────────────────────────────── */
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.visually-hidden { /* alias */ composes: sr-only; }
+
+/* ─── Theming ───────────────────────────────────────── */
+.cat-eng  { color: var(--accent);  border-color: var(--accent);  }
+.cat-lead { color: var(--accent2); border-color: var(--accent2); }
+.cat-speak { color: var(--accent3); border-color: var(--accent3); }
+.cat-per { color: var(--accent4); border-color: var(--accent4); }
+.cat-book { color: var(--accent5); border-color: var(--accent5); }

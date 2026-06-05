@@ -1,6 +1,0 @@
-- Push to GitHub
-    - PARTY
-- Configure GitHub 
-    - Custom domain (https://help.github.com/articles/adding-or-removing-a-custom-domain-for-your-github-pages-site/)
-- Push posts!
-    - TRULY PARTY!

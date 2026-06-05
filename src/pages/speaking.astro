@@ -1,0 +1,532 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+type Talk = {
+  date: string;
+  event: string;
+  eventUrl?: string;
+  location: string;
+  title: string;
+  titleUrl?: string;
+  links?: { label: string; url: string }[];
+  note?: string;
+};
+
+const talks: Talk[] = [
+  {
+    date: '2019-06-06',
+    event: 'Bloemert TechEvent',
+    location: 'Slaghorst, NL',
+    title: 'Culture, DevOps, and an AMA',
+  },
+  {
+    date: '2019-05-16',
+    event: '4DotNet Developer Days',
+    eventUrl: 'https://events.4dotnet.nl/move-up-with-high-performance-architecture/',
+    location: 'Meppel, NL',
+    title: 'Keynote — Finding the Second Story',
+    titleUrl: 'https://speakerdeck.com/pheonix25/finding-the-second-story-learning-from-failure',
+  },
+  {
+    date: '2019-04-02',
+    event: 'CodeMotion Amsterdam',
+    eventUrl: 'https://events.codemotion.com/conferences/amsterdam/2019/',
+    location: 'Amsterdam, NL',
+    title: 'From 100, to 1000+ deployments a day',
+    titleUrl: 'https://speakerdeck.com/pheonix25/from-100-to-1000-plus-deployments-a-day-codemotion-edition',
+  },
+  {
+    date: '2019-03-13',
+    event: 'FutureTech',
+    eventUrl: 'https://futuretech.nl/sessions/from-developer-to-development-manager/',
+    location: 'Utrecht, NL',
+    title: 'From Developer, to Development Manager',
+    links: [
+      { label: 'Slides', url: 'https://speakerdeck.com/pheonix25/from-developer-to-development-manager-futuretech-edition' },
+    ],
+  },
+  {
+    date: '2018-12-14',
+    event: 'SDN event, December 2018',
+    eventUrl: 'https://www.sdn.nl/EVENTS/14-december-2018',
+    location: 'Zeist, NL',
+    title: 'From Developer to Development Manager',
+    links: [
+      { label: 'Slides', url: 'https://speakerdeck.com/pheonix25/from-developer-to-development-manager-sdn-editie' },
+      { label: 'Video', url: 'https://www.youtube.com/watch?v=gXsP8cydEgY' },
+    ],
+  },
+  {
+    date: '2018-12-12',
+    event: 'NISI Continuous Delivery 3.0',
+    eventUrl: 'https://nisi.nl/cd30-cursus-in-het-kort',
+    location: 'Utrecht University, NL',
+    title: 'Guest Lecturer',
+  },
+  {
+    date: '2018-11-22',
+    event: 'DevTalksJnr',
+    eventUrl: 'http://www.devtalks.ro/bucharest/devtalksjr/',
+    location: 'Bucharest, Romania',
+    title: 'From Developer to Development Manager',
+    titleUrl: 'https://speakerdeck.com/pheonix25/from-developer-to-development-manager',
+  },
+  {
+    date: '2018-10-18',
+    event: 'PowerShell Conference Asia 2018',
+    eventUrl: 'http://psconf.asia',
+    location: 'Singapore',
+    title: 'From 100 to 1,000+ deployments a day!',
+    links: [
+      { label: 'Slides', url: 'https://speakerdeck.com/pheonix25/from-100-to-1000-plus-deployments-a-day-psconfasia-edition' },
+      { label: 'Video', url: 'https://livestream.com/gaelcolas/PSConfAsia/videos/182072584' },
+    ],
+    note: 'Plus a second session: "Creating a complete pipeline in as few questions as possible"',
+  },
+  {
+    date: '2018-10-01',
+    event: 'Techorama NL',
+    eventUrl: 'https://techorama.nl',
+    location: 'CineMec Ede, NL',
+    title: 'From 100 to 1,000+ deployments a day!',
+    titleUrl: 'https://speakerdeck.com/pheonix25/from-100-to-1000-plus-deployments-a-day-techoramanl-editie',
+  },
+  {
+    date: '2018-06-15',
+    event: 'SDN event, June 2018',
+    eventUrl: 'https://www.sdn.nl/EVENTS/15-juni-2018',
+    location: 'Zeist, NL',
+    title: 'A Coolblue CI/CD Story',
+    links: [
+      { label: 'Slides', url: 'https://speakerdeck.com/pheonix25/cd-story' },
+      { label: 'Video', url: 'https://youtu.be/_RrFmdjt1-A' },
+    ],
+  },
+  {
+    date: '2018-05-23',
+    event: 'Techorama BE',
+    eventUrl: 'https://techoramabelgium2018.sched.com/event/DjAe',
+    location: 'Antwerp, BE',
+    title: 'From 100 to 1,000+ deployments a day!',
+    titleUrl: 'https://speakerdeck.com/pheonix25/from-100-to-1-000-plus-deployments-a-day-techorama-edition',
+  },
+  {
+    date: '2017-10-12',
+    event: 'TechDays Netherlands',
+    eventUrl: 'https://www.techdays.nl/Sessies/',
+    location: 'Amsterdam, NL',
+    title: 'Faster to master without disaster',
+    titleUrl: 'https://www.slideshare.net/PHeonix25/faster-to-master-without-disaster',
+    links: [
+      { label: 'Video', url: 'https://www.youtube.com/watch?v=uiRkWinlvY0' },
+    ],
+  },
+  {
+    date: '2017-07-05',
+    event: 'Betabit Microservices Evenement',
+    eventUrl: 'https://betabit.nl/over-ons/evenementen',
+    location: 'Rotterdam, NL',
+    title: 'Microservices, because everyone wants to be cool',
+    titleUrl: 'https://www.slideshare.net/PHeonix25/microservices-because-everyone-wants-to-be-cool',
+  },
+  {
+    date: '2017-03-08',
+    event: 'Amsterdam .Net user group',
+    eventUrl: 'https://www.meetup.com/Amsterdam-NET/events/237831821/',
+    location: 'Amsterdam, NL',
+    title: 'Demoing C#, on AWS Lambda',
+    titleUrl: 'https://www.slideshare.net/PHeonix25/c-aws-lambda',
+  },
+  {
+    date: '2017-02-21',
+    event: "Coolblue's Behind the Scenes",
+    eventUrl: 'https://www.coolblue.nl/behindthescenes2102',
+    location: 'Rotterdam, NL',
+    title: 'Using the Elastic Stack as a .Net developer',
+    titleUrl: 'https://www.slideshare.net/PHeonix25/behind-the-scenes-at-coolblue-feb-2017',
+  },
+  {
+    date: '2016-04-22',
+    event: "Coolblue's Behind the Scenes",
+    eventUrl: 'https://www.coolblue.nl/behindthescenes2104',
+    location: 'Rotterdam, NL',
+    title: 'Dealing with offline dependencies',
+    titleUrl: 'http://www.slideshare.net/PHeonix25/behind-the-scenes-at-coolblue-april-2016-61234596',
+  },
+  {
+    date: '2015-11-12',
+    event: "Coolblue's Behind the Scenes",
+    eventUrl: 'https://www.coolblue.nl/behindthescenes1211',
+    location: 'Rotterdam, NL',
+    title: 'On the shoulders of giants',
+    titleUrl: 'http://www.slideshare.net/CBbehindthescenes/coolblue-behind-the-scenes-pat-hermens-on-the-shoulders-of-giants-55080577',
+  },
+];
+
+const byYear = talks.reduce<Record<number, Talk[]>>((acc, talk) => {
+  const year = Number(talk.date.slice(0, 4));
+  (acc[year] ??= []).push(talk);
+  return acc;
+}, {});
+
+const years = Object.keys(byYear).map(Number).sort((a, b) => b - a);
+---
+
+<BaseLayout
+  title="Speaking - Pat Hermens"
+  description="Conference talks, keynotes, and meetups by Pat Hermens — on continuous delivery, engineering leadership, and the messy bits in between."
+>
+  <article class="speaking-page">
+
+    <header class="speaking-header">
+      <div class="eyebrow">Speaking</div>
+      <h1 class="speaking-title">
+        Talks &amp;<br>
+        <span class="outline">Keynotes</span>
+      </h1>
+    </header>
+
+    <section class="intro">
+      <p class="lead">
+        I speak at technology events around the world, often with a focus on continuous
+        integration, continuous delivery, and the mindset required to be successful in
+        these areas — occasionally diving deeper into developer mentality and leadership.
+      </p>
+      <p>
+        I believe in keeping talks light and lively while making sure there are clear
+        calls-to-action for attendees. My most successful presentations stem from
+        real-world exercises, experiments, and achievements at <strong>Slalom Build</strong>
+        (one of the largest AWS &amp; Azure delivery partners) and previously at
+        <strong>Coolblue</strong> (one of the largest e-commerce retailers in the Netherlands).
+      </p>
+      <p>
+        I've also done in-house talks tailored to specific organisations — from casual
+        brown-bag meetings to coverage of a specific agenda, these are a great way to get
+        valuable insights with minimum overhead.
+      </p>
+      <p class="cta-line">
+        Want me to speak at your event, or internally at your company?
+        <a href="mailto:p@hermens.com.au">Send me an email</a>.
+      </p>
+    </section>
+
+    <section class="videos-callout">
+      <div class="callout-eyebrow">Watch</div>
+      <h2 class="callout-title">See me in action</h2>
+      <p>
+        If you're curious how I present, I've pulled together a few recordings of
+        previous talks.
+      </p>
+      <a href="/speaking/video" class="btn">Watch the videos →</a>
+    </section>
+
+    <section class="talks">
+      <header class="talks-header">
+        <h2>Previous public events</h2>
+        <span class="talks-count">{talks.length} talks</span>
+      </header>
+
+      {years.map(year => (
+        <div class="year-group">
+          <div class="year-marker">
+            <span class="year-num">{year}</span>
+            <span class="year-count">{byYear[year].length} talk{byYear[year].length !== 1 ? 's' : ''}</span>
+          </div>
+          <div class="year-talks">
+            {byYear[year].map(talk => (
+              <div class="talk">
+                <div class="talk-date">{talk.date}</div>
+                <div class="talk-body">
+                  <div class="talk-event">
+                    {talk.eventUrl
+                      ? <a href={talk.eventUrl} target="_blank" rel="noopener">{talk.event}</a>
+                      : <span>{talk.event}</span>}
+                    <span class="talk-location">{talk.location}</span>
+                  </div>
+                  <div class="talk-title">
+                    {talk.titleUrl
+                      ? <a href={talk.titleUrl} target="_blank" rel="noopener">{talk.title}</a>
+                      : <span>{talk.title}</span>}
+                  </div>
+                  {talk.links && talk.links.length > 0 && (
+                    <div class="talk-links">
+                      {talk.links.map(l => (
+                        <a href={l.url} target="_blank" rel="noopener">{l.label} ↗</a>
+                      ))}
+                    </div>
+                  )}
+                  {talk.note && <p class="talk-note">{talk.note}</p>}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </section>
+
+  </article>
+</BaseLayout>
+
+<style>
+  .speaking-page {
+    max-width: var(--max-wide);
+    margin: 0 auto;
+  }
+
+  .speaking-header {
+    padding: 4rem 3rem 3rem;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1rem;
+    display: flex; align-items: center; gap: 1rem;
+  }
+  .eyebrow::before {
+    content: ''; display: block;
+    width: 32px; height: 1px; background: var(--accent);
+  }
+
+  .speaking-title {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: clamp(4rem, 8vw, 7rem);
+    text-transform: uppercase;
+    line-height: 0.92;
+    color: var(--white);
+  }
+  .outline {
+    color: transparent;
+    -webkit-text-stroke: 1.5px var(--white);
+  }
+
+  .intro {
+    padding: 4rem 3rem;
+    max-width: 70ch;
+    border-bottom: 1px solid var(--line);
+  }
+  .intro p {
+    font-size: 1.05rem;
+    line-height: 1.82;
+    color: var(--grey-5);
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+  }
+  .intro .lead {
+    font-size: 1.15rem;
+    color: var(--white);
+    font-weight: 300;
+  }
+  .intro strong { color: var(--white); font-weight: 400; }
+  .intro a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-decoration-color: rgba(0,212,212,0.3);
+    transition: text-decoration-color 0.2s;
+  }
+  .intro a:hover { text-decoration-color: var(--accent); }
+  .cta-line { color: var(--white) !important; }
+
+  .videos-callout {
+    padding: 3rem;
+    border-bottom: 1px solid var(--line);
+    background: var(--grey-1);
+  }
+  .callout-eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--accent2);
+    margin-bottom: 0.75rem;
+  }
+  .callout-title {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: clamp(2rem, 4vw, 3rem);
+    text-transform: uppercase;
+    color: var(--white);
+    margin-bottom: 1rem;
+    line-height: 1;
+  }
+  .videos-callout p {
+    font-size: 1rem;
+    color: var(--grey-4);
+    margin-bottom: 1.5rem;
+    max-width: 50ch;
+  }
+  .btn {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.75rem 1.75rem;
+    background: var(--accent);
+    color: var(--black);
+    border: 1px solid var(--accent);
+    transition: all 0.2s;
+    display: inline-block;
+  }
+  .btn:hover { background: transparent; color: var(--accent); }
+
+  .talks {
+    padding: 4rem 3rem;
+  }
+
+  .talks-header {
+    display: flex;
+    align-items: baseline;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .talks-header h2 {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: 0.7rem;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--grey-4);
+  }
+  .talks-count {
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    color: var(--grey-2);
+    letter-spacing: 0.1em;
+  }
+
+  .year-group {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    border-bottom: 1px solid var(--line);
+    padding: 2.5rem 0;
+    gap: 2rem;
+    align-items: start;
+  }
+  .year-marker {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    position: sticky;
+    top: calc(var(--nav-height) + 1rem);
+  }
+  .year-num {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: 2rem;
+    color: var(--grey-2);
+    line-height: 1;
+  }
+  .year-count {
+    font-family: var(--font-mono);
+    font-size: 0.55rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--grey-2);
+  }
+
+  .year-talks {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--line);
+  }
+
+  .talk {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 1.5rem;
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .talk:last-child { border-bottom: none; }
+
+  .talk-date {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--grey-3);
+    letter-spacing: 0.05em;
+    padding-top: 0.15rem;
+  }
+
+  .talk-event {
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.35rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .talk-event a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .talk-event a:hover { text-decoration: underline; }
+  .talk-location {
+    color: var(--grey-3);
+    font-weight: 400;
+  }
+  .talk-location::before {
+    content: '· ';
+    margin-right: 0.15rem;
+  }
+
+  .talk-title {
+    font-family: var(--font-body);
+    font-size: 1.02rem;
+    color: var(--white);
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+  }
+  .talk-title a {
+    color: var(--white);
+    text-decoration: none;
+    border-bottom: 1px solid var(--grey-2);
+    transition: border-color 0.2s;
+  }
+  .talk-title a:hover { border-bottom-color: var(--accent); }
+
+  .talk-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .talk-links a {
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--grey-3);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .talk-links a:hover { color: var(--accent); }
+
+  .talk-note {
+    font-size: 0.85rem;
+    color: var(--grey-3);
+    margin-top: 0.5rem;
+    font-style: italic;
+  }
+
+  @media (max-width: 900px) {
+    .speaking-header { padding: 3rem 1.5rem; }
+    .intro { padding: 3rem 1.5rem; }
+    .videos-callout { padding: 2.5rem 1.5rem; }
+    .talks { padding: 3rem 1.5rem; }
+    .year-group { grid-template-columns: 1fr; gap: 1rem; }
+    .year-marker { position: static; flex-direction: row; align-items: baseline; gap: 0.75rem; }
+    .talk { grid-template-columns: 1fr; gap: 0.5rem; }
+  }
+</style>
+</content>
+</invoke>

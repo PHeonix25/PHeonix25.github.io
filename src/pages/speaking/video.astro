@@ -1,0 +1,272 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+type Video = {
+  title: string;
+  host: string;
+  hostUrl?: string;
+  date: string;
+  youtubeId?: string;
+  embedUrl?: string;
+  slidesUrl?: string;
+};
+
+const videos: Video[] = [
+  {
+    title: 'From Developer to Development Manager',
+    host: 'SDN',
+    hostUrl: 'https://www.sdn.nl/EVENTS/14-december-2018',
+    date: 'December 2018',
+    youtubeId: 'gXsP8cydEgY',
+    slidesUrl: 'https://speakerdeck.com/pheonix25/from-developer-to-development-manager-sdn-editie',
+  },
+  {
+    title: 'From 100 to 1,000+ Deployments a day',
+    host: 'PowerShell Conference Asia 2018',
+    hostUrl: 'http://psconf.asia',
+    date: 'October 2018',
+    embedUrl: 'https://livestream.com/accounts/26955461/events/8418668/videos/182072584/player?width=960&height=540&enableInfo=true&defaultDrawer=feed&autoPlay=false&mute=false',
+    slidesUrl: 'https://speakerdeck.com/pheonix25/from-100-to-1000-plus-deployments-a-day-psconfasia-edition',
+  },
+  {
+    title: 'Creating a complete pipeline in as few questions as possible',
+    host: 'PowerShell Conference Asia 2018',
+    hostUrl: 'http://psconf.asia',
+    date: 'October 2018',
+    embedUrl: 'https://livestream.com/accounts/26955461/events/8418668/videos/182707065/player?width=960&height=540&enableInfo=true&defaultDrawer=feed&autoPlay=false&mute=false',
+  },
+  {
+    title: 'Faster to Master without disaster',
+    host: 'TechDays Netherlands',
+    hostUrl: 'https://www.techdays.nl/Sessies/',
+    date: 'October 2017',
+    youtubeId: 'uiRkWinlvY0',
+    slidesUrl: 'https://www.slideshare.net/PHeonix25/faster-to-master-without-disaster',
+  },
+];
+---
+
+<BaseLayout
+  title="Speaking Videos - Pat Hermens"
+  description="Recordings of conference talks and presentations by Pat Hermens."
+>
+  <article class="video-page">
+
+    <header class="video-header">
+      <a href="/speaking" class="back-link">← Back to Speaking</a>
+      <div class="eyebrow">Watch</div>
+      <h1 class="page-title">
+        See me<br>
+        <span class="outline">in action</span>
+      </h1>
+      <p class="page-desc">
+        I've been fortunate enough to speak at a bunch of events over the years, and some
+        were recorded. Here are a few if you want to see how I present.
+      </p>
+    </header>
+
+    <section class="videos">
+      {videos.map(v => (
+        <div class="video-block">
+          <div class="video-meta">
+            <p class="video-host">
+              Hosted by{' '}
+              {v.hostUrl
+                ? <a href={v.hostUrl} target="_blank" rel="noopener">{v.host}</a>
+                : <span>{v.host}</span>}
+              {' · '}{v.date}
+            </p>
+            <h2 class="video-title">{v.title}</h2>
+          </div>
+          <div class="video-frame">
+            {v.youtubeId ? (
+              <iframe
+                src={`https://www.youtube.com/embed/${v.youtubeId}`}
+                title={v.title}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            ) : v.embedUrl ? (
+              <iframe
+                src={v.embedUrl}
+                title={v.title}
+                frameborder="0"
+                scrolling="no"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            ) : null}
+          </div>
+          {v.slidesUrl && (
+            <p class="video-slides">
+              <a href={v.slidesUrl} target="_blank" rel="noopener">Slides available here ↗</a>
+            </p>
+          )}
+        </div>
+      ))}
+    </section>
+
+    <section class="outro">
+      <p>
+        If you'd like to see more of my slide-decks, they're available
+        <a href="/speaking">on my Speaking page</a>. If you'd like me to talk at one of
+        your events, or you have questions about any of the talks above,
+        <a href="mailto:p@hermens.com.au">send me an email</a>.
+      </p>
+    </section>
+
+  </article>
+</BaseLayout>
+
+<style>
+  .video-page {
+    max-width: var(--max-wide);
+    margin: 0 auto;
+  }
+
+  .video-header {
+    padding: 4rem 3rem 3rem;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .back-link {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--grey-3);
+    text-decoration: none;
+    margin-bottom: 2rem;
+    display: inline-block;
+    transition: color 0.2s;
+  }
+  .back-link:hover { color: var(--accent); }
+
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1rem;
+    display: flex; align-items: center; gap: 1rem;
+  }
+  .eyebrow::before {
+    content: ''; display: block;
+    width: 32px; height: 1px; background: var(--accent);
+  }
+
+  .page-title {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: clamp(3.5rem, 7vw, 6rem);
+    text-transform: uppercase;
+    line-height: 0.92;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+  }
+  .outline {
+    color: transparent;
+    -webkit-text-stroke: 1.5px var(--white);
+  }
+
+  .page-desc {
+    font-size: 1.05rem;
+    color: var(--grey-4);
+    max-width: 60ch;
+    line-height: 1.7;
+  }
+
+  .videos {
+    padding: 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .video-block {
+    border: 1px solid var(--line);
+  }
+
+  .video-meta {
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .video-host {
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--grey-3);
+    margin-bottom: 0.5rem;
+  }
+  .video-host a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .video-host a:hover { text-decoration: underline; }
+
+  .video-title {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+    color: var(--white);
+    line-height: 1.15;
+  }
+
+  .video-frame {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: var(--grey-1);
+  }
+  .video-frame iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  .video-slides {
+    padding: 1rem 2rem;
+    border-top: 1px solid var(--line);
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+  }
+  .video-slides a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .video-slides a:hover { text-decoration: underline; }
+
+  .outro {
+    padding: 3rem 3rem 5rem;
+    max-width: 70ch;
+    border-top: 1px solid var(--line);
+  }
+  .outro p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--grey-5);
+  }
+  .outro a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-decoration-color: rgba(0,212,212,0.3);
+  }
+  .outro a:hover { text-decoration-color: var(--accent); }
+
+  @media (max-width: 900px) {
+    .video-header { padding: 3rem 1.5rem; }
+    .videos { padding: 2rem 1.5rem; gap: 2.5rem; }
+    .video-meta { padding: 1.25rem 1.25rem; }
+    .video-slides { padding: 0.85rem 1.25rem; }
+    .outro { padding: 2.5rem 1.5rem 4rem; }
+  }
+</style>
+</content>
+</invoke>

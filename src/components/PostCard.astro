@@ -1,0 +1,121 @@
+---
+interface Props {
+  index: number;
+  slug: string;
+  title: string;
+  description?: string;
+  date: Date;
+  category: string;
+  readingTime?: number;
+}
+
+const { index, slug, title, description, date, category, readingTime } = Astro.props;
+
+const formattedDate = date.toLocaleDateString('en-AU', {
+  day: '2-digit', month: 'short', year: 'numeric'
+});
+
+const num = String(index).padStart(3, '0');
+const catClass = {
+  engineering: 'cat-eng',
+  leadership:  'cat-lead',
+  speaking:    'cat-speak',
+  personal:    'cat-per',
+  books:       'cat-book',
+}[category] ?? 'cat-eng';
+const catLabel = category.charAt(0).toUpperCase() + category.slice(1);
+---
+
+<a href={`/writing/${slug}`} class="post-card">
+  <div class="post-number">{num}</div>
+  <span class={`post-cat ${catClass}`}>{catLabel}</span>
+  <h2 class="post-title">{title}</h2>
+  {description && <p class="post-excerpt">{description}</p>}
+  <div class="post-meta">
+    <span>{formattedDate}</span>
+    <span class="post-read">{readingTime ?? 5} min →</span>
+  </div>
+</a>
+
+<style>
+  .post-card {
+    padding: 2rem;
+    border-right: 1px solid var(--line);
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    transition: background 0.2s;
+    overflow: hidden;
+  }
+
+  .post-card:last-child { border-right: none; }
+  .post-card:hover { background: var(--grey-1); }
+
+  .post-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 0; height: 2px;
+    background: var(--accent);
+    transition: width 0.3s ease;
+  }
+  .post-card:hover::before { width: 100%; }
+
+  .post-number {
+    font-family: var(--font-mono);
+    font-size: 0.55rem;
+    color: var(--grey-2);
+    letter-spacing: 0.15em;
+    margin-bottom: 1.25rem;
+  }
+
+  .post-cat {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 0.58rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    padding: 0.15rem 0.5rem;
+    margin-bottom: 0.75rem;
+    border: 1px solid;
+    width: fit-content;
+  }
+
+  .post-title {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.35rem;
+    line-height: 1.15;
+    color: var(--white);
+    margin-bottom: 0.75rem;
+    flex: 1;
+  }
+
+  .post-excerpt {
+    font-size: 0.82rem;
+    color: var(--grey-4);
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+  }
+
+  .post-meta {
+    font-family: var(--font-mono);
+    font-size: 0.58rem;
+    color: var(--grey-3);
+    letter-spacing: 0.08em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid var(--line);
+  }
+
+  .post-read {
+    color: var(--grey-3);
+    transition: color 0.2s;
+  }
+  .post-card:hover .post-read { color: var(--accent); }
+</style>

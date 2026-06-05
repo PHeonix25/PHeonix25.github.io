@@ -1,0 +1,451 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PostCard from '../components/PostCard.astro';
+import PostRow from '../components/PostRow.astro';
+import { getCollection } from 'astro:content';
+
+const allPosts = (await getCollection('blog', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+const recentPosts = allPosts.slice(0, 3);
+const olderPosts  = allPosts.slice(3, 9);
+
+const featuredPost = allPosts[0];
+const featuredDate = featuredPost?.data.date.toLocaleDateString('en-AU', {
+  day: '2-digit', month: 'short', year: 'numeric'
+});
+---
+
+<BaseLayout title="Pat Hermens - Engineering & Leadership">
+
+  <!-- ─── HERO ─────────────────────────────────────── -->
+  <section class="hero" aria-label="Introduction">
+    <!-- Background grid -->
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="hero-slash" aria-hidden="true"></div>
+
+    <div class="hero-text">
+      <p class="hero-eyebrow reveal delay-1">Engineering &amp; Leadership</p>
+      <h1 class="hero-name reveal delay-2">
+        Pat<br>
+        <span class="outline">Hermens</span>
+      </h1>
+      <p class="hero-bio reveal delay-3">
+        <strong>.NET Developer turned Engineering Manager.</strong> Writing about technical craft,
+        leading teams, and the messy overlap between the two, as part of a highly 'Agentic' world.
+      </p>
+      <div class="hero-cta reveal delay-4">
+        <a href="/writing" class="btn btn-primary">Read the archive</a>
+        <a href="/about" class="btn btn-ghost">About me →</a>
+      </div>
+    </div>
+
+    {featuredPost && (
+      <div class="hero-featured reveal delay-5" aria-label="Latest post">
+        <p class="hero-featured-label">Latest post</p>
+        <span class={`post-cat ${featuredPost.data.category === 'leadership' ? 'cat-lead' : 'cat-eng'}`}>
+          {featuredPost.data.category.charAt(0).toUpperCase() + featuredPost.data.category.slice(1)}
+        </span>
+        <a href={`/writing/${featuredPost.id}`} class="hero-featured-title">
+          {featuredPost.data.title}
+        </a>
+        {featuredPost.data.description && (
+          <p class="hero-featured-excerpt">{featuredPost.data.description}</p>
+        )}
+        <p class="hero-featured-meta">{featuredDate} · 5 min read</p>
+      </div>
+    )}
+  </section>
+
+  <!-- ─── STATS ─────────────────────────────────────── -->
+  <div class="container">
+    <div class="stat-row reveal delay-4">
+      <div class="stat"><div class="stat-num">{allPosts.length}+</div><div class="stat-label">Posts written</div></div>
+      <div class="stat"><div class="stat-num">20+</div><div class="stat-label">Years in .NET</div></div>
+      <div class="stat"><div class="stat-num">20+</div><div class="stat-label">Conference talks</div></div>
+      <div class="stat"><div class="stat-num">10+</div><div class="stat-label">Years writing online</div></div>
+    </div>
+  </div>
+
+  <!-- ─── RECENT POSTS ──────────────────────────────── -->
+  <section class="section" aria-labelledby="recent-heading">
+    <div class="section-header">
+      <h2 class="section-title" id="recent-heading">Recent writing</h2>
+      <span class="section-count">- {String(recentPosts.length).padStart(2,'0')} of {allPosts.length}+</span>
+      <a href="/writing" class="section-link">View all →</a>
+    </div>
+
+    <div class="post-grid">
+      {recentPosts.map((post, i) => (
+        <PostCard
+          index={i + 1}
+          slug={post.id}
+          title={post.data.title}
+          description={post.data.description}
+          date={post.data.date}
+          category={post.data.category}
+        />
+      ))}
+    </div>
+  </section>
+
+  <!-- ─── ARCHIVE ROWS ──────────────────────────────── -->
+  {olderPosts.length > 0 && (
+    <section class="section" style="padding-top:0" aria-labelledby="archive-heading">
+      <div class="section-header">
+        <h2 class="section-title" id="archive-heading">Archive</h2>
+        <a href="/archive" class="section-link">Full archive →</a>
+      </div>
+      <div class="post-list-stacked">
+        {olderPosts.map((post, i) => (
+          <PostRow
+            index={allPosts.length - i - 3}
+            slug={post.id}
+            title={post.data.title}
+            date={post.data.date}
+            category={post.data.category}
+          />
+        ))}
+      </div>
+    </section>
+  )}
+
+  <!-- ─── ABOUT STRIP ───────────────────────────────── -->
+  <div class="about-strip" aria-label="About Pat">
+    <div class="container">
+      <div class="about-inner">
+        <div class="about-heading">
+          About<br>
+          <em>Pat</em>
+        </div>
+        <div>
+          <p class="about-text">
+            <strong>Aussie engineer and manager,</strong> now back in Sydney after five years in the Netherlands.
+            15+ years writing .NET code, several years leading engineering teams. I give conference talks,
+            coach other developers, and write here about what I'm learning.
+          </p>
+          <div class="about-tags">
+            {['.NET','Engineering Leadership','Docker','DevOps','Public Speaking','Mentoring','Azure','Team Management']
+              .map(tag => <span class="tag">{tag}</span>)}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</BaseLayout>
+
+<style>
+  /* ─── Hero ─────────────────────────── */
+  .hero {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 88vh;
+    overflow: hidden;
+  }
+
+  .hero-grid {
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(var(--line) 1px, transparent 1px),
+      linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    background-size: 64px 64px;
+    pointer-events: none;
+  }
+
+  .hero-slash {
+    position: absolute;
+    top: -10%; right: -5%;
+    width: 55vw; height: 120%;
+    background: linear-gradient(135deg, transparent 40%, rgba(0,212,212,0.04) 100%);
+    pointer-events: none;
+  }
+
+  .hero-text {
+    position: relative; z-index: 2;
+    display: flex; flex-direction: column; justify-content: center;
+    padding: 6rem 3rem;
+  }
+
+  .hero-eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+    display: flex; align-items: center; gap: 1rem;
+  }
+  .hero-eyebrow::before {
+    content: '';
+    display: block; width: 32px; height: 1px;
+    background: var(--accent);
+    flex-shrink: 0;
+  }
+
+  .hero-name {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: clamp(4.5rem, 9vw, 8rem);
+    line-height: 0.92;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: var(--white);
+    margin-bottom: 2rem;
+  }
+  .hero-name .outline {
+    display: block;
+    color: transparent;
+    -webkit-text-stroke: 1.5px var(--white);
+  }
+
+  .hero-bio {
+    max-width: 44ch;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--grey-5);
+    margin-bottom: 2.5rem;
+  }
+  .hero-bio strong { color: var(--white); font-weight: 400; }
+
+  .hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+  .btn {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.75rem 1.75rem;
+    border: 1px solid;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  .btn-primary { background: var(--accent); color: var(--black); border-color: var(--accent); }
+  .btn-primary:hover { background: transparent; color: var(--accent); }
+  .btn-ghost { background: transparent; color: var(--white); border-color: var(--grey-2); }
+  .btn-ghost:hover { border-color: var(--white); }
+
+  .hero-featured {
+    position: relative; z-index: 2;
+    display: flex; flex-direction: column; justify-content: flex-end;
+    padding: 6rem 3rem;
+    border-left: 1px solid var(--line);
+  }
+
+  .hero-featured-label {
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--grey-3);
+    margin-bottom: 2rem;
+    display: flex; align-items: center; gap: 0.75rem;
+  }
+  .hero-featured-label::before {
+    content: '▶';
+    color: var(--accent2);
+    font-size: 0.5rem;
+  }
+
+  .post-cat {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.6rem;
+    margin-bottom: 1rem;
+    border: 1px solid;
+    width: fit-content;
+  }
+  .cat-eng  { color: var(--accent);  border-color: var(--accent);  }
+  .cat-lead { color: var(--accent2); border-color: var(--accent2); }
+
+  .hero-featured-title {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    line-height: 1.1;
+    color: var(--white);
+    display: block;
+    margin-bottom: 1rem;
+    transition: color 0.2s;
+  }
+  .hero-featured-title:hover { color: var(--accent); }
+
+  .hero-featured-excerpt {
+    font-size: 0.9rem;
+    color: var(--grey-4);
+    line-height: 1.65;
+    margin-bottom: 1.5rem;
+    max-width: 46ch;
+  }
+
+  .hero-featured-meta {
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    color: var(--grey-3);
+    letter-spacing: 0.08em;
+  }
+
+  /* ─── Stats ────────────────────────── */
+  .container { max-width: var(--max-wide); margin: 0 auto; padding: 0 3rem; }
+
+  .stat-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 1px solid var(--line);
+    border-top: none;
+  }
+
+  .stat {
+    padding: 1.75rem 2rem;
+    border-right: 1px solid var(--line);
+  }
+  .stat:last-child { border-right: none; }
+
+  .stat-num {
+    font-family: var(--font-display);
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--accent);
+    line-height: 1;
+    margin-bottom: 0.25rem;
+  }
+
+  .stat-label {
+    font-family: var(--font-mono);
+    font-size: 0.58rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--grey-3);
+  }
+
+  /* ─── Sections ─────────────────────── */
+  .section {
+    padding: 4rem 3rem;
+    max-width: var(--max-wide);
+    margin: 0 auto;
+  }
+
+  .section-header {
+    display: flex;
+    align-items: baseline;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .section-title {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: 0.7rem;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--grey-4);
+  }
+
+  .section-count {
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    color: var(--grey-2);
+    letter-spacing: 0.1em;
+  }
+
+  .section-link {
+    margin-left: auto;
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--grey-3);
+    transition: color 0.2s;
+  }
+  .section-link:hover { color: var(--accent); }
+
+  /* ─── Post grid ────────────────────── */
+  .post-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid var(--line);
+  }
+
+  /* ─── Post stacked list ────────────── */
+  .post-list-stacked {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--line);
+  }
+
+  /* ─── About strip ──────────────────── */
+  .about-strip {
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    background: var(--grey-1);
+    padding: 4rem 3rem;
+    margin-top: 2rem;
+  }
+
+  .about-inner {
+    max-width: var(--max-wide);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .about-heading {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: clamp(3rem, 6vw, 5rem);
+    text-transform: uppercase;
+    line-height: 0.9;
+    color: var(--white);
+  }
+  .about-heading em {
+    display: block;
+    font-style: normal;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--grey-3);
+  }
+
+  .about-text {
+    font-size: 0.95rem;
+    color: var(--grey-4);
+    line-height: 1.75;
+    max-width: 60ch;
+  }
+  .about-text strong { color: var(--white); font-weight: 400; }
+
+  .about-tags {
+    margin-top: 1.5rem;
+    display: flex; flex-wrap: wrap; gap: 0.5rem;
+  }
+
+  .tag {
+    font-family: var(--font-mono);
+    font-size: 0.58rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--grey-3);
+    border: 1px solid var(--grey-2);
+    padding: 0.2rem 0.6rem;
+  }
+
+  /* ─── Responsive ───────────────────── */
+  @media (max-width: 900px) {
+    .hero { grid-template-columns: 1fr; min-height: auto; }
+    .hero-text { padding: 4rem 1.5rem 3rem; }
+    .hero-featured { display: none; }
+    .stat-row { grid-template-columns: repeat(2, 1fr); }
+    .post-grid { grid-template-columns: 1fr; }
+    .section { padding: 3rem 1.5rem; }
+    .container { padding: 0 1.5rem; }
+    .about-strip { padding: 3rem 1.5rem; }
+    .about-inner { grid-template-columns: 1fr; gap: 2rem; }
+  }
+</style>

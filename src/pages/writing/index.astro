@@ -1,0 +1,180 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostCard from '../../components/PostCard.astro';
+import { getCollection } from 'astro:content';
+
+const allPosts = (await getCollection('blog', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+const categories = ['all', 'engineering', 'leadership', 'speaking', 'personal', 'books'];
+---
+
+<BaseLayout
+  title="Writing - Pat Hermens"
+  description="All posts on engineering, leadership, and more."
+>
+  <section class="writing-hero">
+    <div class="eyebrow">All writing</div>
+    <h1 class="page-title">The Archive</h1>
+    <p class="page-desc">{allPosts.length} posts on engineering, leadership, and the space between.</p>
+  </section>
+
+  <!-- Filter tabs -->
+  <div class="filter-bar" role="tablist" aria-label="Filter posts by category">
+    {categories.map(cat => (
+      <button
+        role="tab"
+        data-cat={cat}
+        class={`filter-btn ${cat === 'all' ? 'active' : ''}`}
+        aria-selected={cat === 'all' ? 'true' : 'false'}
+      >
+        {cat === 'all' ? 'All' : cat.charAt(0).toUpperCase() + cat.slice(1)}
+        <span class="count">
+          {cat === 'all'
+            ? allPosts.length
+            : allPosts.filter(p => p.data.category === cat).length}
+        </span>
+      </button>
+    ))}
+  </div>
+
+  <!-- Grid -->
+  <div class="post-grid" id="post-grid">
+    {allPosts.map((post, i) => (
+      <div data-category={post.data.category} class="post-grid-item">
+        <PostCard
+          index={allPosts.length - i}
+          slug={post.id}
+          title={post.data.title}
+          description={post.data.description}
+          date={post.data.date}
+          category={post.data.category}
+        />
+      </div>
+    ))}
+  </div>
+</BaseLayout>
+
+<style>
+  .writing-hero {
+    padding: 4rem 3rem 3rem;
+    border-bottom: 1px solid var(--line);
+    max-width: var(--max-wide);
+    margin: 0 auto;
+  }
+
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1rem;
+    display: flex; align-items: center; gap: 1rem;
+  }
+  .eyebrow::before {
+    content: '';
+    display: block; width: 32px; height: 1px;
+    background: var(--accent);
+  }
+
+  .page-title {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: clamp(3rem, 7vw, 5.5rem);
+    text-transform: uppercase;
+    line-height: 0.95;
+    color: var(--white);
+    margin-bottom: 1rem;
+  }
+
+  .page-desc {
+    font-size: 0.95rem;
+    color: var(--grey-4);
+    max-width: 50ch;
+  }
+
+  /* ─── Filter bar ──────────────────── */
+  .filter-bar {
+    display: flex;
+    gap: 0;
+    border-bottom: 1px solid var(--line);
+    padding: 0 3rem;
+    max-width: var(--max-wide);
+    margin: 0 auto;
+    overflow-x: auto;
+  }
+
+  .filter-btn {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--grey-3);
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    padding: 0.85rem 1.25rem;
+    cursor: pointer;
+    transition: all 0.18s;
+    margin-bottom: -1px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    white-space: nowrap;
+  }
+  .filter-btn:hover { color: var(--white); }
+  .filter-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+  .count {
+    font-size: 0.55rem;
+    color: var(--grey-2);
+    background: var(--grey-1);
+    padding: 0.1rem 0.4rem;
+    border-radius: 2px;
+  }
+  .filter-btn.active .count { color: var(--accent); }
+
+  /* ─── Grid ────────────────────────── */
+  .post-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-left: 1px solid var(--line);
+    border-right: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    max-width: var(--max-wide);
+    margin: 0 auto 4rem;
+  }
+
+  .post-grid-item { display: contents; }
+  .post-grid-item.hidden { display: none; }
+
+  @media (max-width: 900px) {
+    .writing-hero { padding: 3rem 1.5rem; }
+    .filter-bar { padding: 0 1.5rem; }
+    .post-grid { grid-template-columns: 1fr; }
+  }
+</style>
+
+<script>
+  const btns = document.querySelectorAll<HTMLButtonElement>('.filter-btn');
+  const items = document.querySelectorAll<HTMLElement>('.post-grid-item');
+
+  btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const cat = btn.dataset.cat ?? 'all';
+
+      btns.forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-selected', 'false');
+      });
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected', 'true');
+
+      items.forEach(item => {
+        const match = cat === 'all' || item.dataset.category === cat;
+        item.classList.toggle('hidden', !match);
+      });
+    });
+  });
+</script>

@@ -1,9 +1,0 @@
-{
-  "workbench.colorCustomizations": {},
-  "markdownlint.config": {
-    "default": true,
-    "MD007": { "indent": 4 },
-    "MD033": { "allowed_elements": ["data"] },
-    "no-hard-tabs": false
-  }
-}

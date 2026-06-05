@@ -1,0 +1,100 @@
+---
+interface Props {
+  index: number;
+  slug: string;
+  title: string;
+  date: Date;
+  category: string;
+}
+
+const { index, slug, title, date, category } = Astro.props;
+
+const formattedDate = date.toLocaleDateString('en-AU', {
+  day: '2-digit', month: 'short', year: 'numeric'
+});
+
+const num = String(index).padStart(3, '0');
+const catClass = {
+  engineering: 'cat-eng',
+  leadership:  'cat-lead',
+  speaking:    'cat-speak',
+  personal:    'cat-per',
+  books:       'cat-book',
+}[category] ?? 'cat-eng';
+const catLabel = category.charAt(0).toUpperCase() + category.slice(1);
+---
+
+<a href={`/writing/${slug}`} class="post-row">
+  <span class="post-row-num">{num}</span>
+  <span class="post-row-title">{title}</span>
+  <span class="post-row-meta">
+    <span class="post-row-date">{formattedDate}</span>
+    <span class={`post-cat ${catClass}`}>{catLabel}</span>
+  </span>
+</a>
+
+<style>
+  .post-row {
+    display: grid;
+    grid-template-columns: 56px 1fr auto;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem 2rem;
+    border-bottom: 1px solid var(--line);
+    text-decoration: none;
+    color: inherit;
+    transition: background 0.18s;
+  }
+
+  .post-row:last-child { border-bottom: none; }
+  .post-row:hover { background: var(--grey-1); }
+
+  .post-row-num {
+    font-family: var(--font-mono);
+    font-size: 0.58rem;
+    color: var(--grey-2);
+    letter-spacing: 0.1em;
+    flex-shrink: 0;
+  }
+
+  .post-row-title {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--white);
+    transition: color 0.18s;
+  }
+  .post-row:hover .post-row-title { color: var(--accent); }
+
+  .post-row-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.3rem;
+    flex-shrink: 0;
+  }
+
+  .post-row-date {
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    color: var(--grey-3);
+    letter-spacing: 0.06em;
+    white-space: nowrap;
+  }
+
+  .post-cat {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 0.54rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 0.1rem 0.4rem;
+    border: 1px solid;
+    width: fit-content;
+  }
+
+  @media (max-width: 600px) {
+    .post-row { grid-template-columns: 48px 1fr; }
+    .post-row-meta { display: none; }
+  }
+</style>
