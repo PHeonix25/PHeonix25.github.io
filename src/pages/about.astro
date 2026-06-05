@@ -1,0 +1,231 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="About - Pat Hermens"
+  description="About Pat Hermens - .NET engineer, engineering manager, and conference speaker based in Sydney."
+>
+  <article class="about-page">
+
+    <header class="about-header">
+      <div class="eyebrow">About me</div>
+      <h1 class="about-title">
+        Pat<br>
+        <span class="outline">Hermens</span>
+      </h1>
+    </header>
+
+    <div class="about-body">
+      <div class="about-main">
+        <p class="lead">
+          I'm a software engineer and engineering leader based in Sydney, Australia.
+          I've spent significant time in Europe (based in the Netherlands) running 
+          large multi-cultural and international development teams, and I've been 
+          writing code professionally for over 20 years - mainly Windows-based dev, 
+          leveraging C# .NET, but also Python, Node, and Typescript.
+        </p>
+
+        <p>
+          I started this blog in 2016, mostly to document things I was figuring out -
+          Jekyll setups, Docker configs, AutoFixture patterns. Over time it became a
+          place to think out loud about leadership and what it means to manage people
+          who do technical work.
+        </p>
+
+        <p>
+          I care a lot about craft - the small decisions that make software easier to
+          work with over time. I care equally about people - the small decisions that
+          make teams healthier and more effective. The intersection of those two things
+          is where most of my writing lives.
+        </p>
+
+        <h2>Work</h2>
+        <p>
+          I've spent most of my career in product companies working in .NET-heavy stacks.
+          I've been an engineer, a tech lead, a team lead, an engineering manager, and a technical leader.
+          I've sold work, staffed people, consulted & advised on implementation, & guided and led delivery.
+          I've hired, I've let people go, I've restructured teams, I've shipped products, 
+          and I like to think I've primarily made people enjoy their day jobs.
+        </p>
+
+        <h2>Speaking</h2>
+        <p>
+          I've spoken at NDC, DDD, and various local meetups and conferences in Australia
+          and Europe. Topics have ranged from practical .NET patterns to engineering culture
+          and management philosophy. Check the <a href="/speaking">speaking page</a> for the full list.
+        </p>
+
+        <h2>Get in touch</h2>
+        <p>
+          The best way to reach me is on <a href="https://linkedin.com/in/pathermens" target="_blank" rel="noopener">LinkedIn</a>
+          or via <a href="https://github.com/PHeonix25" target="_blank" rel="noopener">GitHub</a>.
+          If you want to be notified of new posts, there's an <a href="/feed.xml">RSS feed</a>.
+        </p>
+      </div>
+
+      <aside class="about-aside">
+        <div class="aside-block">
+          <p class="aside-label">Currently</p>
+          <p class="aside-value">Engineering Director, Sydney</p>
+        </div>
+        <div class="aside-block">
+          <p class="aside-label">Previously</p>
+          <p class="aside-value">5 years in the Netherlands</p>
+        </div>
+        <div class="aside-block">
+          <p class="aside-label">Writing since</p>
+          <p class="aside-value">2016</p>
+        </div>
+        <div class="aside-block">
+          <p class="aside-label">Primary stack</p>
+          <p class="aside-value">.NET, Azure, Docker</p>
+        </div>
+        <div class="skill-list">
+          <p class="aside-label">Topics</p>
+          <div class="tags">
+            {['.NET','C#','Docker','Azure','DevOps','Engineering Leadership',
+              'Team Management','Mentoring','Public Speaking','Testing','Architecture']
+              .map(t => <span class="tag">{t}</span>)}
+          </div>
+        </div>
+      </aside>
+    </div>
+
+  </article>
+</BaseLayout>
+
+<style>
+  .about-page {
+    max-width: var(--max-wide);
+    margin: 0 auto;
+  }
+
+  .about-header {
+    padding: 4rem 3rem 3rem;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1rem;
+    display: flex; align-items: center; gap: 1rem;
+  }
+  .eyebrow::before {
+    content: ''; display: block;
+    width: 32px; height: 1px; background: var(--accent);
+  }
+
+  .about-title {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: clamp(4rem, 8vw, 7rem);
+    text-transform: uppercase;
+    line-height: 0.92;
+    color: var(--white);
+  }
+  .outline {
+    color: transparent;
+    -webkit-text-stroke: 1.5px var(--white);
+  }
+
+  .about-body {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 4rem;
+    padding: 4rem 3rem;
+    align-items: start;
+  }
+
+  /* ─── Main prose ──────────────────── */
+  .about-main p {
+    font-size: 1.05rem;
+    line-height: 1.82;
+    color: var(--grey-5);
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+  }
+  .about-main .lead {
+    font-size: 1.15rem;
+    color: var(--white);
+    font-weight: 300;
+  }
+  .about-main h2 {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: var(--white);
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--line);
+  }
+  .about-main a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-decoration-color: rgba(0,212,212,0.3);
+    transition: text-decoration-color 0.2s;
+  }
+  .about-main a:hover { text-decoration-color: var(--accent); }
+
+  /* ─── Aside ───────────────────────── */
+  .about-aside {
+    position: sticky;
+    top: calc(var(--nav-height) + 2rem);
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: 1px solid var(--line);
+  }
+
+  .aside-block {
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .aside-block:last-of-type { border-bottom: none; }
+
+  .skill-list {
+    padding: 1rem 1.25rem;
+  }
+
+  .aside-label {
+    font-family: var(--font-mono);
+    font-size: 0.58rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--grey-3);
+    margin-bottom: 0.35rem;
+  }
+
+  .aside-value {
+    font-family: var(--font-body);
+    font-size: 0.88rem;
+    color: var(--grey-5);
+  }
+
+  .tags {
+    margin-top: 0.5rem;
+    display: flex; flex-wrap: wrap; gap: 0.4rem;
+  }
+
+  .tag {
+    font-family: var(--font-mono);
+    font-size: 0.56rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--grey-3);
+    border: 1px solid var(--grey-2);
+    padding: 0.15rem 0.5rem;
+  }
+
+  @media (max-width: 900px) {
+    .about-header { padding: 3rem 1.5rem; }
+    .about-body { grid-template-columns: 1fr; padding: 3rem 1.5rem; gap: 2rem; }
+    .about-aside { position: static; }
+  }
+</style>

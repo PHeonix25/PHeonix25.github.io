@@ -1,0 +1,133 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PostRow from '../components/PostRow.astro';
+import { getCollection } from 'astro:content';
+
+const allPosts = (await getCollection('blog', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+// Group by year
+const byYear = allPosts.reduce<Record<number, typeof allPosts>>((acc, post) => {
+  const year = post.data.date.getFullYear();
+  if (!acc[year]) acc[year] = [];
+  acc[year].push(post);
+  return acc;
+}, {});
+
+const years = Object.keys(byYear).map(Number).sort((a, b) => b - a);
+---
+
+<BaseLayout
+  title="Archive - Pat Hermens"
+  description="Complete archive of all posts by Pat Hermens."
+>
+  <section class="archive-hero">
+    <div class="eyebrow">Complete archive</div>
+    <h1 class="page-title">{allPosts.length} Posts</h1>
+  </section>
+
+  <div class="archive-body">
+    {years.map(year => (
+      <div class="year-group">
+        <div class="year-marker" aria-label={`Posts from ${year}`}>
+          <span class="year-num">{year}</span>
+          <span class="year-count">{byYear[year].length} post{byYear[year].length !== 1 ? 's' : ''}</span>
+        </div>
+        <div class="year-posts">
+          {byYear[year].map((post, i) => (
+            <PostRow
+              index={allPosts.indexOf(post) + 1}
+              slug={post.id}
+              title={post.data.title}
+              date={post.data.date}
+              category={post.data.category}
+            />
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+</BaseLayout>
+
+<style>
+  .archive-hero {
+    padding: 4rem 3rem 3rem;
+    border-bottom: 1px solid var(--line);
+    max-width: var(--max-wide);
+    margin: 0 auto;
+  }
+
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1rem;
+    display: flex; align-items: center; gap: 1rem;
+  }
+  .eyebrow::before {
+    content: ''; display: block;
+    width: 32px; height: 1px;
+    background: var(--accent);
+  }
+
+  .page-title {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: clamp(3rem, 7vw, 5.5rem);
+    text-transform: uppercase;
+    line-height: 0.95;
+    color: var(--white);
+  }
+
+  .archive-body {
+    max-width: var(--max-wide);
+    margin: 0 auto;
+    padding: 0 3rem 4rem;
+  }
+
+  .year-group {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    border-bottom: 1px solid var(--line);
+    padding: 2.5rem 0;
+    gap: 2rem;
+    align-items: start;
+  }
+
+  .year-marker {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    position: sticky;
+    top: calc(var(--nav-height) + 1rem);
+  }
+
+  .year-num {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: 2rem;
+    color: var(--grey-2);
+    line-height: 1;
+  }
+
+  .year-count {
+    font-family: var(--font-mono);
+    font-size: 0.55rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--grey-2);
+  }
+
+  .year-posts {
+    border: 1px solid var(--line);
+  }
+
+  @media (max-width: 768px) {
+    .archive-hero { padding: 3rem 1.5rem; }
+    .archive-body { padding: 0 1.5rem 3rem; }
+    .year-group { grid-template-columns: 1fr; gap: 1rem; }
+    .year-marker { position: static; flex-direction: row; align-items: baseline; gap: 0.75rem; }
+  }
+</style>

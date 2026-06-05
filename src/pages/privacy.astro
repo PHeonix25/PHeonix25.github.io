@@ -1,0 +1,205 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Privacy Policy - Pat's Home Automation"
+  description="Privacy policy for Pat Hermens' personal home automation Google integration."
+>
+  <article class="prose-page">
+
+    <header class="prose-header">
+      <div class="eyebrow">Privacy Policy</div>
+      <h1 class="prose-title">
+        Home Automation<br>
+        <span class="outline">Privacy</span>
+      </h1>
+    </header>
+
+    <div class="prose-body">
+
+      <blockquote>
+        <p><em>This privacy policy must, together with any integration disclosures, comprehensively disclose how your integration collects, uses, and shares user data...</em></p>
+      </blockquote>
+      <p>
+        The only information this integration requires is your name and your email
+        address, in order to provide the Google Action with a context of who has executed
+        the integration. This data is stored locally — not in any cloud or any remote
+        data centre — and only leveraged to give the integration a user-context for
+        debugging.
+      </p>
+
+      <blockquote>
+        <p><em>...including the types of parties with whom it's shared.</em></p>
+      </blockquote>
+      <p>
+        This data is not shared with anyone outside of my house, with the exception of
+        the integration of device states synchronised with Google Home, of which Google
+        has a much stronger policy than this one.
+      </p>
+
+      <blockquote>
+        <p><em>It must be written in each of the languages your integration is enabled for.</em></p>
+      </blockquote>
+      <p>
+        My house operates in English (and sometimes in Dutch; so, I've added an
+        equivalent policy below).
+      </p>
+
+      <blockquote>
+        <p><em>You must limit your use of the data to the activities described in the disclosures.</em></p>
+      </blockquote>
+      <p>Agreed, and understood.</p>
+
+      <blockquote>
+        <p><em>You must allow Google crawlers to access and scan the content of the privacy document.</em></p>
+      </blockquote>
+      <p>
+        Feel free, it's available at <code>https://hermens.com.au/privacy/</code>.
+      </p>
+
+      <blockquote>
+        <p><em>Your privacy policy must remain accessible and legible for all potential and existing users of your integration.</em></p>
+      </blockquote>
+      <p>
+        As above — if you're keen for it,
+        <a href="https://hermens.com.au/privacy/" target="_blank" rel="noopener">it's freely available here</a>
+        and the version history is even
+        <a href="https://github.com/PHeonix25/personal-blog/commits/main/src/pages/privacy.astro" target="_blank" rel="noopener">available here</a>.
+      </p>
+
+      <hr>
+
+      <h2>Nederlands</h2>
+      <p>En nu in het Nederlands, toch?</p>
+      <p>
+        De enige informatie die we nodig hebben is uw naam en uw e-mailadres. Dit wordt
+        gebruikt om de Google Action een context te geven van wie de integratie heeft
+        uitgevoerd.
+      </p>
+      <p>
+        Deze gegevens worden alleen lokaal opgeslagen, niet in een extern datacenter,
+        en alleen gebruikt om de integratie een gebruikerscontext te geven voor
+        debugging.
+      </p>
+      <p>
+        Deze gegevens worden niet gedeeld met anderen buiten mijn huis, met uitzondering
+        van de integratie van apparaatstatussen die gesynchroniseerd zijn met Google
+        Home. Google heeft hiervoor natuurlijk een veel strenger policy dan mij.
+      </p>
+      <p>
+        Dit document is beschikbaar op <code>https://hermens.com.au/privacy/</code> en
+        de commitgeschiedenis is
+        <a href="https://github.com/PHeonix25/personal-blog/commits/main/src/pages/privacy.astro" target="_blank" rel="noopener">hier beschikbaar</a>.
+      </p>
+      <p>Bedankt en tot ziens.</p>
+    </div>
+
+  </article>
+</BaseLayout>
+
+<style>
+  .prose-page {
+    max-width: var(--max-wide);
+    margin: 0 auto;
+  }
+
+  .prose-header {
+    padding: 4rem 3rem 3rem;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1rem;
+    display: flex; align-items: center; gap: 1rem;
+  }
+  .eyebrow::before {
+    content: ''; display: block;
+    width: 32px; height: 1px; background: var(--accent);
+  }
+
+  .prose-title {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: clamp(3rem, 6vw, 5rem);
+    text-transform: uppercase;
+    line-height: 0.92;
+    color: var(--white);
+  }
+  .outline {
+    color: transparent;
+    -webkit-text-stroke: 1.5px var(--white);
+  }
+
+  .prose-body {
+    padding: 4rem 3rem;
+    max-width: 72ch;
+  }
+
+  .prose-body p {
+    font-size: 1.02rem;
+    line-height: 1.82;
+    color: var(--grey-5);
+    margin-bottom: 1.25rem;
+    font-weight: 300;
+  }
+  .prose-body strong { color: var(--white); font-weight: 400; }
+  .prose-body em { color: var(--grey-4); }
+
+  .prose-body h2 {
+    font-family: var(--font-display);
+    font-weight: 900;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: var(--white);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .prose-body a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-decoration-color: rgba(0,212,212,0.3);
+    transition: text-decoration-color 0.2s;
+  }
+  .prose-body a:hover { text-decoration-color: var(--accent); }
+
+  .prose-body blockquote {
+    border-left: 2px solid var(--accent2);
+    padding: 0.75rem 1.25rem;
+    background: var(--grey-1);
+    margin: 1.25rem 0 0.75rem;
+  }
+  .prose-body blockquote p {
+    margin-bottom: 0;
+    color: var(--grey-4);
+    font-size: 0.95rem;
+  }
+
+  .prose-body code {
+    font-family: var(--font-mono);
+    font-size: 0.88rem;
+    background: var(--grey-1);
+    padding: 0.1rem 0.4rem;
+    border: 1px solid var(--line);
+    color: var(--accent);
+  }
+
+  .prose-body hr {
+    border: none;
+    border-top: 1px solid var(--line);
+    margin: 3rem 0;
+  }
+
+  @media (max-width: 900px) {
+    .prose-header { padding: 3rem 1.5rem; }
+    .prose-body { padding: 3rem 1.5rem; }
+  }
+</style>
+</content>
+</invoke>
