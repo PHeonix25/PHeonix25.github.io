@@ -297,13 +297,33 @@ const catLabel = category.charAt(0).toUpperCase() + category.slice(1);
   .prose :global(li) { margin-bottom: 0.4rem; }
 
   .prose :global(blockquote) {
-    border-left: 3px solid var(--accent2);
-    padding: 1rem 1.5rem;
-    background: rgba(255, 122, 61, 0.07);
-    margin: 1.75rem 0;
-    font-style: italic;
-    color: var(--grey-4);
-    font-size: 0.95rem;
+    border-left: 4px solid var(--accent2);
+    border-radius: 0 0.35rem 0.35rem 0;
+    padding: 1.25rem 1.5rem 1.1rem;
+    background: linear-gradient(90deg, rgba(255, 122, 61, 0.12), rgba(255, 122, 61, 0.04));
+    margin: 2rem 0;
+    color: var(--grey-5);
+    font-size: 1.05rem;
+    line-height: 1.75;
+  }
+
+  .prose :global(blockquote p) {
+    margin: 0;
+  }
+
+  .prose :global(blockquote p + p) {
+    margin-top: 0.75rem;
+  }
+
+  .prose :global(blockquote p:first-of-type::first-letter) {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    float: none;
+    margin-right: 0;
+    margin-top: 0;
+    color: inherit;
   }
 
   .prose :global(hr) {
