@@ -1,117 +1,113 @@
 ---
-title: "The Step Got Faster. The Work Didn't."
-description: "AI made our engineers measurably faster at the bit it touched. The business barely noticed. Here's what we learned about the structure around the work, and why it matters more than the tools."
-pubDate: 2026-12-01
-category: Engineering
-tags: ["AI-PDLC", "engineering leadership", "flow", "metrics", "agentic"]
-series: "From metrics to agents"
-seriesPart: 2
+title: "The steps got faster but the work didn't."
+description: "AI cut scaffolding time by 71% and 89% in two teams. Delivery didn't improve consistently. What we learned about bottlenecks, waiting, and the system around the work."
+date: 2026-11-20
+category: engineering
+tags: [ai, engineering-leadership, flow, metrics, agents]
 draft: true
 ---
 
-Back in July I wrote about [the metrics that matter in an AI-accelerated product development lifecycle](/LINK-TO-JULY-POST). It was a tidy post. Lots of sensible advice about measuring outcomes instead of activity.
+In July, I wrote about [the metrics that matter in an AI-accelerated product development lifecycle](/writing/2026-07-08-metrics-that-matter-in-pdlc). The short version: measure outcomes, not AI activity.
 
-Since then I've spent the better part of a year actually *applying* that advice, with real teams, in a large and long-established enterprise. Not a startup. Not a greenfield demo. Teams with history, mainframes, change boards and twenty-year-old release processes.
+Since then, I've been applying that advice with real teams in a large, long-established enterprise. Not a startup or a greenfield demo: teams with history, mainframes, change boards and twenty-year-old release processes.
 
-So this is the sequel. Less "here's what you should measure", more "here's what happened when we did".
+I wanted to know what would happen if we measured the work and then tried to improve it. The numbers were interesting. They also made it pretty clear that speeding up one step isn't the same as speeding up delivery.
 
-Spoiler: the numbers were great, right up until they weren't.
+## The first result looked great
 
-## The good news that wasn't
-
-We started where almost everyone starts: put AI tools in the hands of engineers and see if the build gets faster.
+We started where a lot of teams start: put AI tools in engineers' hands and see if the build gets faster.
 
 Two delivery teams, five sprints, three measures agreed up front: velocity, scaffolding time (from a story going *In Progress* to the first meaningful commit), and rework (commits after the first implementation of a story).
 
 Scaffolding time fell by **71%** in one team and **89%** in the other.
 
-If I'd stopped there, I'd have had a cracking LinkedIn post. 🚀
+If I'd stopped there, I'd have had a cracking LinkedIn post.
 
-But velocity in the first team went from 29 points a sprint to 12. The second team went from 62 to 76. Rework improved from 2.5 to 1.0 in one team, and went from 0 to 3.0 in the other.
+But velocity in the first team went from 29 points a sprint to 12. In the second, it went from 62 to 76. Rework improved from 2.5 to 1.0 in one team, and went from 0 to 3.0 in the other.
 
-So: the step AI touched got dramatically faster. The work, as a whole, didn't reliably go anywhere. /facepalm
+The step AI touched got dramatically faster. End-to-end delivery didn't improve consistently. (Facepalm.)
 
-To be fair to everyone involved, it was a short window, the two teams were set up very differently, tooling arrived at different times, and nobody had much protected time to learn. But that's kind of the point. *Those things are the system.* And the system ate the gain.
+That's not a verdict on either team. We had five sprints, the teams were set up differently, the tools arrived at different times, and people had little protected time to learn. But those aren't footnotes to the work. They're part of the system the work has to move through, and the system absorbed the gain.
 
-## So we moved upstream
+## So we looked upstream
 
-Fine, we thought. If the build isn't the bottleneck, maybe it's the bit before the build. Next we tried AI in requirements shaping: helping teams turn intent into well-formed, development-ready stories.
+If the build wasn't the only constraint, maybe we should look at what happens before it. We tried using AI to help teams turn intent into well-formed, development-ready stories.
 
-The signal was genuinely useful. Two teams saw cycle time per story drop by **17%** and **38%** (small samples, so salt to taste).
+There was a useful signal: two teams saw cycle time per story drop by **17%** and **38%**. The samples were small, so I wouldn't make too much of those percentages on their own.
 
-But adoption was the ceiling. At best, **29%** of stories were AI-created, against a target of 60 to 80%. A tool that people use on less than a third of the work can only ever move less than a third of the outcome.
+Adoption was the limit. At best, **29%** of stories were AI-created, against a target of 60 to 80%. If the tool is used on less than a third of the work, it's hard for it to change the whole team's results. Useful, yes. A magic lever, no.
 
-## Then we followed a single ticket
+## Then we followed one ticket
 
-The third engagement was the one that changed how I think about all of this. Instead of asking "does AI make step X faster?", we asked a much more boring question: *where does the time actually go?*
+The third engagement changed how I think about this. Instead of asking "does AI make this step faster?", we asked a less glamorous question: *where does the time actually go?*
 
-We baselined a cross-functional squad covering design, content, QA and build. On average, a content ticket took **36.9 days**. Of those, **27.7 days** were spent waiting. Not being worked on. Waiting. For approvals, for hand-offs, for environments, for someone else's queue.
+We baselined a cross-functional squad covering design, content, QA and build. A content ticket took **36.9 days** on average. **27.7 days** of that was waiting: for approvals, hand-offs, environments or someone else's queue.
 
-That's three quarters of the elapsed time sitting in places no coding assistant will ever reach.
+That's about three quarters of the elapsed time in places a coding assistant can't reach.
 
-You can make the working time infinitely fast and you'll still have a 27.7-day ticket.
+We could make the time spent actively working on that ticket much faster and still leave most of its elapsed time untouched.
 
-## Local gains, not system outcomes
+## Faster steps aren't the same as better flow
 
-None of this is new, by the way. Anyone who has read *The Goal* or *The Phoenix Project* knows that optimising a step that isn't the constraint just moves the pile of work somewhere else. AI is simply the most dramatic, most heavily funded, most *demo-able* way we've ever found to optimise a non-constraint.
+None of this is new. If you've read *The Goal* or *The Phoenix Project*, you'll recognise the pattern: optimise a step that isn't the constraint and the queue just moves somewhere else. AI makes that mistake especially tempting because the improvements are visible, heavily funded and very *demo-able*.
 
-And because it's so demo-able, it's very easy to mistake a faster step for a faster organisation.
+It's easy to mistake a faster step for a faster organisation.
 
-The pattern we saw, and that I now see almost everywhere: when AI starts with engineering alone, individual engineers get faster, but throughput moves only a little. Intake at the front and testing and deployment at the back have to move too, or the gain evaporates.
+What we saw was that when AI starts with engineering alone, individual engineers can get faster without a matching change in throughput. Intake, testing and deployment matter too. If work can't move through those parts of the system, the local gain has nowhere to go.
 
-## What actually changes the outcome
+## What I'd change next time
 
-If the tools aren't the lever, what is? It's structure. Here's what I'd do differently from day one.
+The tools matter, but they aren't the whole intervention. Based on what we saw, here's where I'd put the effort next time.
 
 ### 1. Choose the team before you choose the tool
 
-Team set-up mattered far more than any mid-flight correction. The teams that will show you a real result tend to have clear product ownership, authority to change how they work, release independence, few outside dependencies, working environments and access, a sponsor, and, crucially, some appetite. Treat team selection and preparation as a formal phase of the work, not as admin.
+Team set-up mattered more than any mid-flight correction we could make. Before starting, I'd check for clear product ownership, authority to change how the team works, release independence, manageable dependencies, working environments and access, a sponsor, and some appetite to try this. Getting those conditions in place is part of the work, not admin to squeeze in around it.
 
 ### 2. Map the wait, then kill the biggest one first
 
-Before you add a single agent, split cycle time into *working* and *waiting*. If most of the elapsed time is waiting, your first AI investment might not be AI at all. It might be an approval that doesn't need to exist.
+Before adding an agent, split cycle time into *working* and *waiting*. If most of the elapsed time is waiting, the first useful change may not involve AI at all. It might be removing an approval that isn't helping.
 
 ### 3. Treat context as infrastructure
 
-Every team re-discovers the same things: the architecture decision nobody wrote down, the business rule that lives in one person's head. Shared, owned, current, access-controlled context is the prerequisite for anything agentic. It's not a nice-to-have; it's an operating model in its own right, with owners and freshness and provenance.
+Teams keep rediscovering the same things: the architecture decision nobody wrote down, the business rule that lives in one person's head. Agents need context people can trust too: shared, current, access-controlled, with clear owners and provenance. That takes ongoing work; it isn't a one-off prompt-writing exercise.
 
 ### 4. Enablement *is* implementation
 
-A licence and a lunch-and-learn don't change habits. Coaching, pairing, champions and genuinely protected experimentation time belong in the definition of done, along with the team being able to run without you.
+A licence and a lunch-and-learn won't change habits by themselves. Coaching, pairing, champions and protected time to experiment need to be part of the plan. So does getting the team to a point where it can keep going without the people who came in to help.
 
 ### 5. Agree a measurement contract before you start
 
-Different Jira states, different quality processes and different team shapes make cross-team comparison almost meaningless. So now I push for the same four measures on every engagement, baselined *before* any AI work starts and reported every two sprints:
+Different Jira states, quality processes and team shapes make cross-team comparisons messy. So I now push to agree on the measures before the work starts, baseline them, and review them every two sprints:
 
 - **Adoption:** how much of the work AI is actually used on
 - **Step effort:** time saved on the step AI touches
-- **End-to-end flow:** whether work finishes sooner, split into working and waiting
+- **End-to-end flow:** whether work finishes sooner, with working and waiting time tracked separately
 - **Quality:** whether the speed is costing you rework or defects
 
-Alongside them, record each team's conditions (environments, access, release independence, dependencies, approvals). That's what explains why the same measure moves differently between two teams.
+I'd also record the conditions each team is working in: environments, access, release independence, dependencies and approvals. Without that context, a difference in the numbers is hard to explain, let alone act on.
 
 ### 6. Give each team a different path
 
-Maturity isn't uniform, and it tends to follow the platform. Greenfield teams on modern stacks can start almost at the "team built around AI" end. Teams on legacy estates may need modernising before AI uplift makes sense at all.
+Teams aren't starting from the same place. Greenfield teams on modern stacks can experiment with AI-native ways of working sooner. Teams on legacy estates may have platform work to do first.
 
-So the support should change shape too. For a team just starting out, I'd put most of the effort into business value, process and change, with only around 10% in engineering. For a team that's already mature, it flips: roughly 70% engineering, with the other disciplines checking in rather than running the work. The less mature the team, the less this is a technology problem.
+The support should reflect that. As a rough guide, for a team just starting out I'd put most of the effort into business value, process and change, and perhaps 10% into engineering. For a more mature team, it might be closer to 70% engineering, with the other disciplines checking in rather than leading the work. Those aren't magic ratios; they're a reminder that the less ready the team is, the less this is just a technology problem.
 
 ## The honest bit
 
-I want to be clear about what we *haven't* shown. We haven't proven that AI tooling has increased delivery throughput across a whole enterprise. We've shown real, local gains; a lot of reusable capability; and a much clearer picture of the conditions that value depends on.
+I want to be clear about what we *haven't* shown. We haven't proven that AI tooling increases delivery throughput across an entire enterprise. We have seen local gains, built reusable capability, and got a clearer picture of the conditions those gains depend on.
 
-I'm increasingly comfortable saying that out loud. If someone tells you they've already achieved enterprise-wide AI productivity gains, ask them one question: *how much of your cycle time is waiting, and did that number move?*
+I'm increasingly comfortable saying that out loud. If someone tells you they've achieved enterprise-wide AI productivity gains, ask how much of their cycle time is waiting, and whether that number moved.
 
 ## Where this goes next
 
-Here's the thing that's got me most excited, though. Once you've done the structural work (the context, the measures, the team shape, the gates), the interesting question stops being "how do I make an engineer faster?"
+Once you've done some of the structural work - the context, the measures, the team shape, the gates - the interesting question changes. It stops being "how do I make an engineer faster?"
 
-It becomes: *which parts of this flow could agents run, and what has to be true for me to trust them?*
+It becomes: *which parts of this flow could agents run, and what would need to be true for me to trust them?*
 
-That's the next post: what it looks like to wrap agents in a deterministic harness, so the things building the software are governed as carefully as the software itself.
+That's what I want to explore next: wrapping agents in a deterministic harness, so the things building the software are governed as carefully as the software itself.
 
-And after that, the uncomfortable people question: if the shape of the work changes this much, who do we actually need to hire?
+After that, there's the people question: if the shape of the work changes this much, who do we need to hire?
 
 ---
 
-*This is part 2 of a series. Part 1: [The Metrics That Matter in an AI-Accelerated Product Development Lifecycle](/LINK-TO-JULY-POST). Part 3 (agents and harnesses) and part 4 (the people we'll need) are coming soon.*
+*This is part 2 of a series. Part 1: [The Metrics That Matter in an AI-Accelerated Product Development Lifecycle](/writing/2026-07-08-metrics-that-matter-in-pdlc).*
