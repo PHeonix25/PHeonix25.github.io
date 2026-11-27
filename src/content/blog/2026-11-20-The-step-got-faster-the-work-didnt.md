@@ -1,6 +1,6 @@
 ---
 title: "The steps got faster but the work didn't."
-description: "AI can make individual engineering tasks faster without improving delivery. The difference is in the system around the work: the waiting, hand-offs, and bottlenecks."
+description: "AI can speed up an engineering task without getting work to customers sooner. The difference is often in what the work is waiting for."
 date: 2026-11-20
 category: engineering
 tags: [ai, engineering-leadership, flow, metrics, agents]
@@ -12,15 +12,13 @@ I wanted to know what would happen if we measured the work and then tried to imp
 
 ## The first result looked great
 
-We started with engineering. We looked at velocity, scaffolding time (from a story going *In Progress* to the first meaningful commit), and rework (commits after the first implementation of a story).
+We started with engineering. We looked at how quickly people could get from a story to a first meaningful commit, then at what happened to velocity and rework.
 
-Scaffolding time improved substantially. On that measure, the AI-assisted step was getting faster.
-
-But velocity fell in one team and rose in another. Rework moved in different directions too. That's not a tidy before-and-after story, and I don't want to pretend it is.
+The AI-assisted step got faster. But velocity fell in one team and rose in another. Rework moved in different directions too. That's not a tidy before-and-after story, and I don't want to pretend it is.
 
 The step AI touched got faster. End-to-end delivery didn't improve consistently - or at all!
 
-That's not a verdict on either team. They were set up differently, the tools arrived at different times, and people had little protected time to learn. But those aren't footnotes, they're part of the system the work has to move through, and the system can absolutely absorb the gains.
+That's not a verdict on either team. The tools arrived at different times, and people had little protected time to learn. But those aren't footnotes, they're part of the system the work has to move through, and the system can absolutely absorb the gains.
 
 ## So we looked upstream
 
@@ -46,48 +44,17 @@ None of this is new. If you've read *The Goal* or *The Phoenix Project*, you'll 
 
 AI makes that mistake especially tempting because the improvements are visible, heavily funded and very *demo-able*. It's easy to mistake a faster step for a faster organisation.
 
-What I saw was that when AI starts with engineering alone, individual engineers can get faster without a matching change in throughput. Intake, testing and deployment matter too. If work can't move through those parts of the system, the local gain has nowhere to go.
+When AI starts with engineering alone, individual engineers can get faster without a matching change in throughput. Intake, testing and deployment matter too. If work can't move through those parts of the system, the local gain has nowhere to go.
 
-## What I'd change next time
+## What I'd do before adding another tool
 
-The tools matter, but they aren't the whole intervention. Here's where I'd put the effort.
+I'd follow one kind of work from the start to the point where it reaches a customer. Not to build another dashboard or invent another AI metric. Just to see where it spends its time, and what it's waiting for.
 
-### 1. Choose the team before you choose the tool
+If it's waiting on an approval, look at the approval. If it's waiting for an environment or a hand-off, look there. And if the step AI speeds up wasn't holding anything else up, well, you've got a faster step. That's nice. It still might not change delivery though.
 
-Team set-up mattered more than any mid-flight correction we could make. Before starting, I'd look for clear product ownership, authority to change how the team works, manageable dependencies, working environments and access, a sponsor, and some appetite to try this.
+Then, if AI can help with the thing that's actually slowing the work down, great. But don't pick the tool first and work backwards to a problem it can solve. A good demo can make almost anything look like progress!
 
-Getting those conditions in place is part of the work, not 'admin' to squeeze in around it.
-
-### 2. Map the wait, then tackle the biggest one
-
-Before adding an agent, split cycle time into *working* and *waiting*. If most of the elapsed time is waiting, the first useful change may not involve AI at all. It might be removing an approval that isn't helping.
-
-### 3. Treat context as infrastructure
-
-I've watched teams rediscover the same things: the architecture decision nobody wrote down, the business rule that lives in one person's head.
-
-Agents need context people can trust too. Shared, current, accessible context, with clear owners and provenance. That takes ongoing work; it isn't a one-off prompt-writing exercise.
-
-### 4. Enablement *is* implementation
-
-A licence and a lunch-and-learn won't change habits by themselves. Don't get me wrong, they can help, **but** coaching, pairing, champions and protected time to experiment need to be part of the plan. The goal should be to get the team to a point where it can keep going without the people who came in to help.
-
-### 5. Agree what success means before you start
-
-Different work item states, quality processes and team shapes make comparisons messy. So agree on the measures before the work starts, baseline them, and review them regularly:
-
-- **Adoption:** is AI being used in the work, and where?
-- **Step effort:** is the step AI touches taking less effort?
-- **End-to-end flow:** is work finishing sooner, and how much time is working versus waiting?
-- **Quality:** is the speed costing you rework or defects?
-
-I'd also record the conditions each team is working in: environments, access, release independence, dependencies and approvals. Without that context, a difference in the numbers is hard to explain, let alone act on.
-
-### 6. Give each team a different path
-
-Teams aren't starting from the same place. Greenfield teams on modern stacks can experiment with AI-native ways of working sooner. Teams on legacy estates may have platform work to do first.
-
-The support should reflect that. A team just starting out may need more help with business value, process and change. A more mature team may need deeper engineering support. There's no magic split; the less ready the team is, the less this is just a technology problem.
+And if you do bring AI into the work, give people the time to learn it in context. A licence and a lunch-and-learn won't change habits by themselves. Don't get me wrong, they can help, **but** coaching, pairing and protected time to experiment matter too.
 
 ## The honest bit
 
@@ -95,4 +62,9 @@ I want to be clear about what we *haven't* been able to demonstrate (yet). We ha
 
 I'm comfortable saying that out loud: If someone tells you *"AI has transformed our delivery"*, ask *"What happened to the waiting? **Did work actually get to customers sooner?"***
 
-The point isn't to prove AI is good or bad. It's to find out whether delivery got better. If all we measure is how fast one step became, all we've shown is that one step got faster - and that's not the same thing.
+I'm much less interested now in "How fast can AI make this step?"...
+The question I keep coming back to is:
+
+> **What is the work waiting for after this step?**
+
+If nobody can answer that, another faster step may just give the queue a head start.
